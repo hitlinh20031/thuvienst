@@ -63,7 +63,9 @@ async function api(path, opts = {}) {
   if (opts.body && typeof opts.body === 'string' && !headers['Content-Type'])
     headers['Content-Type'] = 'application/json';
 
-  const res = await fetch(url, Object.assign({}, opts, { headers }));
+  // KHÔNG dùng cache của trình duyệt: GitHub trả max-age=60 cho GET /git/ref,
+  // nếu cache thì commit thứ 2 sẽ đọc ref cũ và bị lỗi "not a fast forward".
+  const res = await fetch(url, Object.assign({}, opts, { headers, cache: 'no-store' }));
   if (res.status === 401) { doLogout('Token không hợp lệ hoặc đã hết hạn.'); throw new Error('401'); }
   if (res.status === 403) {
     const reset = res.headers.get('x-ratelimit-reset');
@@ -187,7 +189,27 @@ async function loadData() {
   }
 }
 
+/* Commit có thử lại: nếu ref vừa bị người khác (hoặc tab khác) cập nhật
+   → GitHub trả 422 "not a fast forward" → đọc lại ref rồi làm lại. */
 async function commitFiles(files, message) {
+  let lastErr;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      return await commitFilesOnce(files, message);
+    } catch (e) {
+      lastErr = e;
+      const conflict = /fast forward|422/i.test(e.message);
+      if (conflict && attempt < 3) {
+        await new Promise(r => setTimeout(r, 1200));
+        continue;
+      }
+      throw e;
+    }
+  }
+  throw lastErr;
+}
+
+async function commitFilesOnce(files, message) {
   const ref  = await repoApi(`/git/ref/heads/${BRANCH}`);
   const head = ref.object.sha;
   const headCommit = await repoApi(`/git/commits/${head}`);
