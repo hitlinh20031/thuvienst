@@ -83,6 +83,38 @@ async function init() {
   renderCategories();
   applyFilters();
   bindEvents();
+
+  // Cài đặt giao diện do admin sửa (site/data/settings.json)
+  try {
+    const r = await fetch('/data/settings.json');
+    if (r.ok) applySettings(await r.json());
+  } catch (e) { /* không có file => dùng giao diện mặc định */ }
+}
+
+/* Áp dụng cài đặt giao diện (admin.html → tab "Giao diện") */
+function applySettings(s) {
+  if (!s || typeof s !== 'object') return;
+  const set = (sel, val) => {
+    const el = document.querySelector(sel);
+    if (el && val != null && String(val).trim() !== '') el.textContent = String(val);
+  };
+  set('.logo-title', s.siteName);
+  set('.logo-sub', s.siteSub);
+  set('.logo-icon', s.logoText);
+  set('.hero h1', s.heroTitle);
+  set('.hero-desc', s.heroDesc);
+  set('.footer p', s.footerText);
+  if (s.siteName) document.title = s.siteName + ' điện tử';
+
+  const root = document.documentElement;
+  const hex = /^#[0-9a-fA-F]{6}$/.test(String(s.accent || '')) ? s.accent : null;
+  if (hex) {
+    const r = parseInt(hex.slice(1, 3), 16), g = parseInt(hex.slice(3, 5), 16), b = parseInt(hex.slice(5, 7), 16);
+    const light = (v) => Math.round(v + (255 - v) * 0.35);
+    root.style.setProperty('--accent', hex);
+    root.style.setProperty('--accent-light', `rgb(${light(r)}, ${light(g)}, ${light(b)})`);
+    root.style.setProperty('--accent-bg', `rgba(${r}, ${g}, ${b}, 0.10)`);
+  }
 }
 
 function renderStats(data) {
@@ -158,7 +190,7 @@ function renderBooks() {
     const coverUrl = getCoverUrl(b.uuid);
     // Sách PDF tự tải lên → mở file PDF (trình đọc PDF.js sẽ thay thế sau)
     const href = b.pdf
-      ? `/${String(b.pdf).replace(/^\/+/, '')}`
+      ? (/^https?:\/\//i.test(b.pdf) ? b.pdf : `/${String(b.pdf).replace(/^\/+/, '')}`)
       : `/read.html?id=${b.id}&uuid=${b.uuid}`;
     const target = b.pdf ? ' target="_blank" rel="noopener"' : '';
     return `<a class="book-card" href="${href}"${target}>

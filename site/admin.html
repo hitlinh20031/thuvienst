@@ -63,6 +63,7 @@
     <button class="tab-btn active" data-tab="cats">📁 Danh mục</button>
     <button class="tab-btn" data-tab="books">📚 Sách</button>
     <button class="tab-btn" data-tab="upload">⬆️ Tải lên PDF</button>
+    <button class="tab-btn" data-tab="theme">🎨 Giao diện</button>
     <span class="tabs-right">
       <span id="statLine" class="muted"></span>
       <a id="viewSite" href="/" target="_blank" rel="noopener" class="btn tiny">Xem trang chủ</a>
@@ -111,6 +112,7 @@
       <div class="toolbar">
         <input type="search" id="bookSearch" placeholder="Tìm theo tên sách / tác giả...">
         <select id="bookCatFilter"><option value="">Tất cả danh mục</option></select>
+        <button class="btn primary" id="addBookBtn">＋ Thêm sách</button>
         <span class="spacer"></span>
         <div class="bulk" id="bulkBar" hidden>
           <span id="selCount">0 đã chọn</span>
@@ -182,10 +184,73 @@
       </p>
     </div>
   </section>
+
+  <!-- ───── TAB GIAO DIỆN ───── -->
+  <section class="tab-panel" id="tab-theme">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Giao diện trang chủ</h2>
+        <span class="muted">Lưu vào <code>data/settings.json</code></span>
+      </div>
+
+      <div class="theme-grid">
+        <div class="theme-form">
+          <label>Tên thư viện (ô logo trên cùng)</label>
+          <input id="thSiteName" type="text" placeholder="Thư viện Sách">
+
+          <label>Dòng phụ dưới tên</label>
+          <input id="thSiteSub" type="text" placeholder="Sách điện tử — trực tuyến">
+
+          <label>Chữ trong ô logo (2–3 ký tự)</label>
+          <input id="thLogoText" type="text" maxlength="3" placeholder="ST">
+
+          <label>Tiêu đề lớn giữa trang</label>
+          <input id="thHeroTitle" type="text" placeholder="Thư viện Sách điện tử">
+
+          <label>Mô tả dưới tiêu đề</label>
+          <input id="thHeroDesc" type="text" placeholder="Kho tàng tri thức...">
+
+          <label>Dòng chân trang</label>
+          <input id="thFooterText" type="text" placeholder="Thư viện sách điện tử trực tuyến">
+
+          <label>Màu chủ đạo</label>
+          <div class="row-inline">
+            <input id="thAccent" type="color" value="#c0392b">
+            <input id="thAccentText" type="text" value="#c0392b" class="hex">
+            <span class="accent-preview" id="accentPrev">Aa — Nút bấm</span>
+          </div>
+        </div>
+
+        <div class="theme-preview">
+          <h4>Xem trước</h4>
+          <div class="tp-head">
+            <div class="tp-logo" id="tpLogo">ST</div>
+            <div>
+              <div class="tp-title" id="tpTitle">Thư viện Sách</div>
+              <div class="tp-sub" id="tpSub">Sách điện tử — trực tuyến</div>
+            </div>
+          </div>
+          <div class="tp-hero">
+            <div class="tp-hero-title" id="tpHero">Thư viện Sách điện tử</div>
+            <div class="tp-hero-desc" id="tpHeroDesc">Mô tả ngắn về thư viện</div>
+            <div class="tp-btn" id="tpBtn">Xem tất cả sách</div>
+          </div>
+          <div class="tp-footer" id="tpFooter">Thư viện sách điện tử trực tuyến</div>
+        </div>
+      </div>
+
+      <div class="row-inline">
+        <button class="btn primary" id="saveThemeBtn">💾 Lưu giao diện</button>
+        <a class="btn" href="/" target="_blank" rel="noopener">Mở trang chủ ↗</a>
+        <span class="muted" id="themeMsg"></span>
+      </div>
+      <p class="hint">Sau khi lưu, trang chủ tự dựng lại trong ~1 phút là thấy giao diện mới.</p>
+    </div>
+  </section>
 </div>
 
 <div id="toastWrap"></div>
 
-<script src="/js/admin.js?v=1"></script>
+<script src="/js/admin.js?v=2"></script>
 </body>
 </html>

@@ -10,6 +10,17 @@ const BOOKS_PATH = 'site/data/books.json';   // đường dẫn trong repo
 const PDF_DIR = 'site/pdfs';                 // đường dẫn trong repo
 const PDF_DIR_PUBLIC = 'pdfs';               // đường dẫn công khai
 const PAGE_SIZE = 100;
+const SETTINGS_PATH = 'site/data/settings.json';   // file giao diện
+
+const DEFAULT_SETTINGS = {
+  logoText: 'ST',
+  siteName: 'Thư viện Sách',
+  siteSub: 'Sách điện tử — trực tuyến',
+  heroTitle: 'Thư viện Sách điện tử',
+  heroDesc: 'Kho tàng tri thức các ngành chính trị, pháp luật và lịch sử Việt Nam',
+  accent: '#c0392b',
+  footerText: 'Thư viện sách điện tử trực tuyến'
+};
 
 const $  = (s) => document.querySelector(s);
 const $$ = (s) => Array.from(document.querySelectorAll(s));
@@ -17,6 +28,7 @@ const $$ = (s) => Array.from(document.querySelectorAll(s));
 let token = '';
 let repo  = { owner: '', name: '' };
 let data  = null;               // nội dung books.json
+let settings = Object.assign({}, DEFAULT_SETTINGS); // cài đặt giao diện
 let filtered = [];
 let selected = new Set();       // id sách được tick
 let shown = PAGE_SIZE;
@@ -87,7 +99,7 @@ async function checkScopes() {
   } catch (e) { return { scopes: '', type: '', ok: false }; }
 }
 
-const repoApi = (p) => api(`/repos/${repo.owner}/${repo.name}${p}`);
+const repoApi = (p, opts) => api(`/repos/${repo.owner}/${repo.name}${p}`, opts);
 
 /*──────────────── Thông báo / hộp thoại ────────────────*/
 function toast(msg, type = 'ok') {
@@ -166,6 +178,13 @@ async function loadData() {
   const j = await repoApi(`/contents/${BOOKS_PATH}?ref=${BRANCH}`);
   data = JSON.parse(b64ToText(j.content));
   recount();
+  // đọc file giao diện (nếu chưa có thì dùng mặc định)
+  try {
+    const s = await repoApi(`/contents/${SETTINGS_PATH}?ref=${BRANCH}`);
+    settings = Object.assign({}, DEFAULT_SETTINGS, JSON.parse(b64ToText(s.content)));
+  } catch (e) {
+    settings = Object.assign({}, DEFAULT_SETTINGS);
+  }
 }
 
 async function commitFiles(files, message) {
@@ -303,6 +322,7 @@ async function startApp(user) {
   try {
     await loadData();
     renderAll();
+    fillThemeForm();
   } catch (e) {
     doLogout('Không đọc được dữ liệu repo: ' + e.message);
   }
@@ -536,6 +556,112 @@ async function bulkDelete() {
   await saveData(`Xóa ${victims.length} sách`, extra);
 }
 
+/*══════════════ 3b. THÊM SÁCH THỦ CÔNG ══════════════*/
+async function addBook() {
+  if (!data.categories.length) { toast('Hãy tạo danh mục trước khi thêm sách.', 'err'); return; }
+  const v = await modal({
+    title: 'Thêm sách mới',
+    html: `
+      <label>Tên sách *</label><input id="mTitle" placeholder="Tên đầy đủ của sách">
+      <label>Tác giả / người biên</label><input id="mCreator" placeholder="Để trống nếu không rõ">
+      <label>Danh mục *</label><select id="mCat">${catOptions('')}</select>
+      <label>Số trang</label><input id="mPages" type="number" min="1" value="1">
+      <label>Đường dẫn file PDF (nếu có, ví dụ: pdfs/sach.pdf)</label>
+      <input id="mPdf" placeholder="Để trống nếu chưa có file PDF">
+      <p class="hint">Sách có file PDF sẽ mở trực tiếp khi bấm vào; nếu để trống thì chỉ hiện thông tin.</p>`,
+    buttons: [
+      { label: 'Hủy', value: null },
+      { label: 'Thêm sách', primary: true, onClick: (root) => {
+          const t = root.querySelector('#mTitle').value.trim();
+          if (!t) { toast('Phải có tên sách.', 'err'); return false; }
+          let pdf = root.querySelector('#mPdf').value.trim().replace(/^\/+/, '');
+          if (pdf && !/^https?:\/\//i.test(pdf) && !/^pdfs\//i.test(pdf)) pdf = 'pdfs/' + pdf;
+          return {
+            title: t,
+            creator: root.querySelector('#mCreator').value.trim(),
+            category: root.querySelector('#mCat').value,
+            pages: Math.max(1, parseInt(root.querySelector('#mPages').value, 10) || 1),
+            pdf: pdf || ''
+          };
+        }
+      }
+    ]
+  });
+  if (!v) return;
+  const id = (data.books.reduce((m, b) => Math.max(m, Number(b.id) || 0), 0) || 0) + 1;
+  const book = { id, title: v.title, creator: v.creator, category: v.category, pages: v.pages };
+  if (v.pdf) book.pdf = v.pdf;
+  data.books.push(book);
+  try {
+    await saveData(`Thêm sách "${v.title}"`);
+    toast(`Đã thêm "${v.title}" vào danh mục "${v.category}".`);
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+/*══════════════ 3c. GIAO DIỆN (theme) ══════════════*/
+const THEME_MAP = {
+  thSiteName: 'siteName', thSiteSub: 'siteSub', thLogoText: 'logoText',
+  thHeroTitle: 'heroTitle', thHeroDesc: 'heroDesc', thFooterText: 'footerText'
+};
+
+function fillThemeForm() {
+  Object.keys(THEME_MAP).forEach(id => { $('#' + id).value = settings[THEME_MAP[id]] || ''; });
+  const acc = /^#[0-9a-fA-F]{6}$/.test(String(settings.accent || '')) ? settings.accent : '#c0392b';
+  $('#thAccent').value = acc;
+  $('#thAccentText').value = acc;
+  updateThemePreview();
+}
+
+function readThemeForm() {
+  const o = {};
+  Object.keys(THEME_MAP).forEach(id => { o[THEME_MAP[id]] = $('#' + id).value.trim(); });
+  const hex = ($('#thAccentText').value || '').trim();
+  o.accent = /^#[0-9a-fA-F]{6}$/.test(hex) ? hex : (settings.accent || '#c0392b');
+  return o;
+}
+
+function updateThemePreview() {
+  const s = readThemeForm();
+  const set = (id, val) => { const e = document.getElementById(id); if (e) e.textContent = val || ''; };
+  set('tpLogo', s.logoText);
+  set('tpTitle', s.siteName);
+  set('tpSub', s.siteSub);
+  set('tpHero', s.heroTitle);
+  set('tpHeroDesc', s.heroDesc);
+  set('tpFooter', s.footerText);
+
+  const acc = s.accent;
+  const r = parseInt(acc.slice(1, 3), 16), g = parseInt(acc.slice(3, 5), 16), b = parseInt(acc.slice(5, 7), 16);
+  const light = (v) => Math.round(v + (255 - v) * 0.35);
+  const ap = $('#accentPrev');
+  ap.style.background = acc;
+  ap.style.color = '#fff';
+  const btn = $('#tpBtn');
+  btn.style.background = acc;
+  btn.style.color = '#fff';
+  const hero = document.querySelector('.tp-hero');
+  if (hero) hero.style.background = `linear-gradient(135deg, ${acc}, rgb(${light(r)}, ${light(g)}, ${light(b)}))`;
+  const logo = $('#tpLogo');
+  if (logo) { logo.style.background = acc; logo.style.color = '#fff'; }
+}
+
+async function saveTheme() {
+  const btn = $('#saveThemeBtn');
+  btn.disabled = true;
+  $('#themeMsg').textContent = 'Đang lưu...';
+  try {
+    settings = readThemeForm();
+    const files = [{ path: SETTINGS_PATH, base64: textToB64(JSON.stringify(settings, null, 2)) }];
+    const c = await commitFiles(files, 'Cập nhật giao diện trang chủ');
+    toast('Đã lưu giao diện!');
+    $('#themeMsg').textContent = '';
+    watchDeploy(c.sha);
+  } catch (e) {
+    toast(e.message, 'err');
+    $('#themeMsg').textContent = '';
+  } finally { btn.disabled = false; }
+}
+
 /*══════════════ 4. TẢI LÊN PDF ══════════════*/
 function slugify(s) {
   return String(s || '')
@@ -755,6 +881,16 @@ function bind() {
   });
   $('#bulkMove').addEventListener('click', () => { bulkMove().catch(e => toast(e.message, 'err')); });
   $('#bulkDel').addEventListener('click', () => { bulkDelete().catch(e => toast(e.message, 'err')); });
+  $('#addBookBtn').addEventListener('click', () => { addBook().catch(e => toast(e.message, 'err')); });
+
+  // giao diện
+  Object.keys(THEME_MAP).forEach(id => $('#' + id).addEventListener('input', updateThemePreview));
+  $('#thAccent').addEventListener('input', e => { $('#thAccentText').value = e.target.value; updateThemePreview(); });
+  $('#thAccentText').addEventListener('input', e => {
+    const v = e.target.value.trim();
+    if (/^#[0-9a-fA-F]{6}$/.test(v)) { $('#thAccent').value = v; updateThemePreview(); }
+  });
+  $('#saveThemeBtn').addEventListener('click', () => { saveTheme(); });
 
   // upload
   const dz = $('#dropzone'), fi = $('#fileInput');
