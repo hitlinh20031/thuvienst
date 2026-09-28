@@ -62,7 +62,7 @@ async function api(path, opts = {}) {
     throw new Error(m);
   }
   if (res.status === 404) {
-    throw new Error('Lỗi 404 (Không có quyền ghi). Token hiện tại thiếu scope "repo" — hãy tạo lại token classic và tick mục repo, rồi đăng nhập lại.');
+    throw new Error(`Lỗi 404 tại ${opts.method || 'GET'} ${path.replace(/^\/repos/, '')} — không có quyền ghi. Token thiếu scope "repo": tạo lại token classic (https://github.com/settings/tokens/new) và tick repo.`);
   }
   if (!res.ok) {
     let m = `Lỗi ${res.status}`;
