@@ -1,5 +1,5 @@
 {
-  "total": 390,
+  "total": 391,
   "total_size_gb": 9.87,
   "categories": [
     {
@@ -49,7 +49,7 @@
     },
     {
       "name": "Tài liệu",
-      "count": 31,
+      "count": 32,
       "size_gb": 0.26
     },
     {
@@ -3583,6 +3583,14 @@
       "creator": "",
       "pages": 602,
       "size_mb": 62.55
+    },
+    {
+      "id": 1506,
+      "title": "Sách kiểm thử",
+      "creator": "Tác giả kiểm thử",
+      "category": "Tài liệu",
+      "pages": 10,
+      "pdf": "pdfs/kiem-thu.pdf"
     }
   ]
 }
