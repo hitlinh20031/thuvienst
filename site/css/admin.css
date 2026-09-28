@@ -34,6 +34,11 @@ code{background:#eef1f5;padding:1px 5px;border-radius:4px;font-size:13px}
 .deploy.working{background:#3b2f0b;color:#fcd34d}
 .deploy.ok{background:#062e22;color:#6ee7b7}
 .deploy.err{background:#3b0d0d;color:#fca5a5}
+.scope-warn{
+  margin:14px auto 0;max-width:1240px;padding:11px 16px;border-radius:10px;
+  background:#fef3c7;border:1px solid #fde68a;color:#92400e;font-size:14px;line-height:1.6
+}
+.scope-warn a{color:#b45309;font-weight:600}
 
 /* ── login ── */
 .login-wrap{display:flex;align-items:flex-start;justify-content:center;padding:56px 16px}

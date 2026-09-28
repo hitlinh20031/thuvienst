@@ -48,6 +48,8 @@ async function api(path, opts = {}) {
     'X-GitHub-Api-Version': '2022-11-28',
     'Authorization': `Bearer ${token}`
   }, opts.headers || {});
+  if (opts.body && typeof opts.body === 'string' && !headers['Content-Type'])
+    headers['Content-Type'] = 'application/json';
 
   const res = await fetch(url, Object.assign({}, opts, { headers }));
   if (res.status === 401) { doLogout('Token không hợp lệ hoặc đã hết hạn.'); throw new Error('401'); }
@@ -59,12 +61,30 @@ async function api(path, opts = {}) {
       m = `Hết hạn mức API GitHub, thử lại sau ${new Date(+reset * 1000).toLocaleTimeString('vi')}.`;
     throw new Error(m);
   }
+  if (res.status === 404) {
+    throw new Error('Lỗi 404 (Không có quyền ghi). Token hiện tại thiếu scope "repo" — hãy tạo lại token classic và tick mục repo, rồi đăng nhập lại.');
+  }
   if (!res.ok) {
     let m = `Lỗi ${res.status}`;
     try { const j = await res.json(); if (j.message) m += ': ' + j.message; } catch (e) {}
     throw new Error(m);
   }
   return res.status === 204 ? null : res.json();
+}
+
+/* Đọc scope của token để chẩn đoán quyền */
+async function checkScopes() {
+  try {
+    const res = await fetch('https://api.github.com/user', {
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': `Bearer ${token}`
+      }
+    });
+    const scopes = (res.headers.get('x-oauth-scopes') || '').trim();
+    const type = res.headers.get('x-github-authentication-token-type') || '';
+    return { scopes, type, ok: /\b(repo|public_repo)\b/.test(scopes) };
+  } catch (e) { return { scopes: '', type: '', ok: false }; }
 }
 
 const repoApi = (p) => api(`/repos/${repo.owner}/${repo.name}${p}`);
@@ -76,7 +96,8 @@ function toast(msg, type = 'ok') {
   el.textContent = msg;
   $('#toastWrap').appendChild(el);
   setTimeout(() => el.classList.add('show'), 10);
-  setTimeout(() => { el.classList.remove('show'); setTimeout(() => el.remove(), 300); }, 4200);
+  const life = type === 'err' ? 9000 : 4200;
+  setTimeout(() => { el.classList.remove('show'); setTimeout(() => el.remove(), 300); }, life);
 }
 
 /* modal trả về Promise: resolve(value) — value = null nếu bấm Hủy/đóng */
@@ -263,6 +284,22 @@ async function startApp(user) {
   $('#userName').textContent = user.login;
   $('#viewRepo').href = `https://github.com/${repo.owner}/${repo.name}`;
   $('#loginErr').textContent = '';
+
+  // chẩn đoán quyền của token
+  const sc = await checkScopes();
+  const warn = $('#scopeWarn');
+  if (sc.ok) {
+    warn.hidden = true;
+  } else {
+    warn.hidden = false;
+    warn.innerHTML = `⚠️ <strong>Token chưa có quyền ghi.</strong>
+      Scope hiện tại: <code>${esc(sc.scopes || '(trống — nhiều khả năng là token fine-grained)')}</code>.
+      Hãy tạo lại <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener">token classic</a>,
+      tick mục <strong>repo</strong> → copy token mới → đăng nhập lại.
+      <button class="btn tiny" id="reloginBtn">Nhập lại token</button>`;
+    const rl = document.getElementById('reloginBtn');
+    if (rl) rl.addEventListener('click', () => doLogout());
+  }
   try {
     await loadData();
     renderAll();
