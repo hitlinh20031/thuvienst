@@ -1,0 +1,3583 @@
+{
+  "total": 390,
+  "total_size_gb": 9.87,
+  "categories": [
+    {
+      "name": "Chủ tịch Hồ Chí Minh",
+      "count": 134,
+      "size_gb": 3.3
+    },
+    {
+      "name": "Các ấn phẩm khác",
+      "count": 4,
+      "size_gb": 0.05
+    },
+    {
+      "name": "Kinh tế",
+      "count": 9,
+      "size_gb": 0.11
+    },
+    {
+      "name": "Kinh điển",
+      "count": 1,
+      "size_gb": 0.01
+    },
+    {
+      "name": "Lãnh đạo Đảng, Nhà nước",
+      "count": 75,
+      "size_gb": 2.62
+    },
+    {
+      "name": "Mới",
+      "count": 12,
+      "size_gb": 0.18
+    },
+    {
+      "name": "Những vấn đề quốc tế",
+      "count": 2,
+      "size_gb": 0.01
+    },
+    {
+      "name": "Pháp luật",
+      "count": 10,
+      "size_gb": 0.33
+    },
+    {
+      "name": "Quốc phòng, an ninh, đối ngoại",
+      "count": 16,
+      "size_gb": 0.36
+    },
+    {
+      "name": "Tài liệu",
+      "count": 31,
+      "size_gb": 0.26
+    },
+    {
+      "name": "Văn hóa, xã hội",
+      "count": 10,
+      "size_gb": 0.19
+    },
+    {
+      "name": "Văn kiện Đảng",
+      "count": 36,
+      "size_gb": 1.09
+    },
+    {
+      "name": "Xây dựng Đảng, Nhà nước",
+      "count": 50,
+      "size_gb": 1.36
+    }
+  ],
+  "books": [
+    {
+      "id": 107,
+      "uuid": "5a6da1e3910043c4ace0fcc7d0deea42",
+      "title": "Chính sách an ninh mạng trong quan hệ quốc tế hiện nay và đối sách của Việt Nam (Sách tham khảo)",
+      "category": "Pháp luật",
+      "creator": "TS. Nguyễn Việt Lâm (Chủ biên)",
+      "pages": 222,
+      "size_mb": 14.15
+    },
+    {
+      "id": 117,
+      "uuid": "f1845d3b0a17435ea7e65577eea5315a",
+      "title": "Tư tưởng Hồ Chí Minh về xây dựng, chỉnh đốn Đảng và sự vận dụng trong xây dựng Đảng về đạo đức hiện nay",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Lê Khả Phiêu (Chủ biên)",
+      "pages": 372,
+      "size_mb": 16.6
+    },
+    {
+      "id": 122,
+      "uuid": "52295796bdc64fee8864be441256b44f",
+      "title": "Văn hóa đối ngoại Việt Nam trong quá trình hội nhập quốc tế (Sách chuyên khảo) (Xuất bản lần thứ ba, có chỉnh sửa, bổ sung)",
+      "category": "Văn hóa, xã hội",
+      "creator": "PGS.TS. Vũ Trọng Lâm (Chủ biên)",
+      "pages": 198,
+      "size_mb": 16.96
+    },
+    {
+      "id": 123,
+      "uuid": "611f13887ece4d698a77d54d46c63d6d",
+      "title": "Những nội dung cơ bản và mới trong các nghị quyết của Ban Chấp hành Trung ương Đảng, Bộ Chính trị khóa XII",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 298,
+      "size_mb": 18.05
+    },
+    {
+      "id": 128,
+      "uuid": "d3f3b0f5024746c98c814080714ec226",
+      "title": "Phong cách lãnh đạo, quản lý Hồ Chí Minh - Giá trị lý luận và thực tiễn",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "PGS. TS. Lý Việt Quang",
+      "pages": 178,
+      "size_mb": 14.26
+    },
+    {
+      "id": 131,
+      "uuid": "fe81cdc1969a432d824366b02f9aa03c",
+      "title": "Vận dụng phương pháp ngoại giao Hồ Chí Minh trong sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "TS. Nguyễn Thị Minh Thùy",
+      "pages": 246,
+      "size_mb": 14.15
+    },
+    {
+      "id": 135,
+      "uuid": "e6f92f42e085442ca4d3d84bceea6ed6",
+      "title": "Đấu tranh phòng, chống “diễn biến hòa bình” ở nước ta hiện nay",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "PGS. TS. Nguyễn Viết Thông (Chủ biên)",
+      "pages": 350,
+      "size_mb": 13.56
+    },
+    {
+      "id": 141,
+      "uuid": "4e00a9fe78984ff5b8bd9259458d2dd2",
+      "title": "Tiếp xúc bí mật Việt Nam - Hoa Kỳ trước Hội nghị Pari",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "Lưu Văn Lợi",
+      "pages": 414,
+      "size_mb": 14.3
+    },
+    {
+      "id": 144,
+      "uuid": "9dae1a1779764eb9a20d2e2a81bfeb35",
+      "title": "Bác Hồ - Tấm gương đạo đức sáng ngời (Xuất bản lần thứ hai)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Song Thành",
+      "pages": 190,
+      "size_mb": 8.71
+    },
+    {
+      "id": 145,
+      "uuid": "836f0f013d944e22b6d902735c12f829",
+      "title": "Chủ quyền Việt Nam trên Biển Đông",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "PGS.TS. Hà Minh Hồng",
+      "pages": 326,
+      "size_mb": 14.21
+    },
+    {
+      "id": 146,
+      "uuid": "facf3d40bf104ffdbf6b97ab94a9d489",
+      "title": "130 câu nói của Chủ tịch Hồ Chí Minh về xây dựng Đảng Cộng sản Việt Nam",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Đại tướng, GS.TS. Tô Lâm",
+      "pages": 78,
+      "size_mb": 1.46
+    },
+    {
+      "id": 149,
+      "uuid": "262b254f9d084101bef0b8ba3bb37698",
+      "title": "Bầu cử trong Đảng - Một số vấn đề lý luận và thực tiễn từ đại hội Đảng ở cơ sở",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "TS. Nguyễn Tác Lũy",
+      "pages": 194,
+      "size_mb": 13.49
+    },
+    {
+      "id": 151,
+      "uuid": "e02e3d7d244240c5ae4be2d0b3e5cfde",
+      "title": "Triết lý hành động Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "TS. Yên Ngọc Trung",
+      "pages": 282,
+      "size_mb": 14.84
+    },
+    {
+      "id": 153,
+      "uuid": "614385335060496ea5237b4d0c5ca6a9",
+      "title": "Nhận diện về “tự diễn biến”, “tự chuyển hóa” và giải pháp đấu tranh ngăn chặn (Tái bản có chỉnh sửa, bổ sung)",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "Cao Văn Thống (Chủ biên)",
+      "pages": 282,
+      "size_mb": 16.55
+    },
+    {
+      "id": 155,
+      "uuid": "146689bec43340ff8b472604d1210a7e",
+      "title": "Phong cách Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nguyễn Khắc Nho",
+      "pages": 175,
+      "size_mb": 15.78
+    },
+    {
+      "id": 158,
+      "uuid": "a6b76d07728743a4a4083e1d37c09996",
+      "title": "Sửa đổi lối làm việc",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "X.Y.Z.",
+      "pages": 194,
+      "size_mb": 7.92
+    },
+    {
+      "id": 159,
+      "uuid": "e7488aaf7d474c38bdb30b6c6c1a4556",
+      "title": "Quan hệ Việt Nam với một số nước lớn những năm đầu thế kỷ XXI (Sách tham khảo)",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "PGS. TS. Nguyễn Thị Quế",
+      "pages": 490,
+      "size_mb": 21.77
+    },
+    {
+      "id": 161,
+      "uuid": "e790be58fd90461c8222fe08419f0cf1",
+      "title": "Đường lối quân sự của Đảng - Lịch sử hình thành, phát triển và nội dung cơ bản",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "PGS.TS. Vũ Quang Hiển",
+      "pages": 538,
+      "size_mb": 54.37
+    },
+    {
+      "id": 165,
+      "uuid": "d92dca41dc27485a8380c1c22f3e480f",
+      "title": "Tư tưởng Hồ Chí Minh hỏi - đáp (Biên soạn theo chương trình của Bộ Giáo dục và Đào tạo)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "TS. Trần Thị Phúc An (Chủ biên)",
+      "pages": 294,
+      "size_mb": 13.44
+    },
+    {
+      "id": 166,
+      "uuid": "a4fec6dab7fb4569a33d24ab37874f74",
+      "title": "Đổi mới và nâng cao chất lượng đội ngũ cán bộ và công tác cán bộ trong giai đoạn mới (Sách chuyên khảo) (Xuất bản lần thứ hai)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Cao Văn Thống",
+      "pages": 466,
+      "size_mb": 14.6
+    },
+    {
+      "id": 170,
+      "uuid": "61b0012b8f3d4fb4a9e4bacf1252efac",
+      "title": "Nghệ thuật trả lời phỏng vấn của Chủ tịch Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 442,
+      "size_mb": 12.03
+    },
+    {
+      "id": 173,
+      "uuid": "48a3b63f1f074b03a2f8adaeae87979a",
+      "title": "Tài liệu bồi dưỡng nghiệp vụ tuyên truyền miệng (Dành cho cấp ủy và cán bộ tuyên giáo ở cơ sở) (Xuất bản lần thứ hai)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 157,
+      "size_mb": 11.15
+    },
+    {
+      "id": 177,
+      "uuid": "2713bacec9374c1bb7376cd3580645ca",
+      "title": "Học tập đạo đức Bác Hồ (Tái bản lần thứ năm)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Vũ Khiêu",
+      "pages": 318,
+      "size_mb": 9.16
+    },
+    {
+      "id": 179,
+      "uuid": "01b4587f876c4d2fb90230c48bc5a1aa",
+      "title": "Nơi ở và làm việc của Chủ tịch Hồ Chí Minh tại Khu Phủ Chủ tịch",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "TS. Trần Viết Hoàn",
+      "pages": 148,
+      "size_mb": 8.95
+    },
+    {
+      "id": 180,
+      "uuid": "a0399cd6871e4e269ee5d28564db2750",
+      "title": "Sức mạnh dân tộc của cách mạng Việt Nam dưới ánh sáng tư tưởng Hồ Chí Minh",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Lê Mậu Hãn",
+      "pages": 366,
+      "size_mb": 13.32
+    },
+    {
+      "id": 181,
+      "uuid": "dc0a8476758d4c24abced3a1f3c09b2c",
+      "title": "Tài liệu tham khảo bồi dưỡng, cập nhật kiến thức cho cán bộ, đảng viên ở cơ sở (Xuất bản lần thứ hai)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 242,
+      "size_mb": 11.8
+    },
+    {
+      "id": 182,
+      "uuid": "977902de1cf640c989e882fb402eaca5",
+      "title": "Tài liệu bồi dưỡng bí thư chi bộ và cấp ủy viên ở cơ sở (Tái bản có sửa chữa, bổ sung)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 282,
+      "size_mb": 13.02
+    },
+    {
+      "id": 183,
+      "uuid": "390f1903670b4b8f89e7504c847f2416",
+      "title": "Tài liệu bồi dưỡng lý luận chính trị dành cho học viên lớp đối tượng kết nạp Đảng (Tái bản có sửa chữa, bổ sung)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 254,
+      "size_mb": 13.26
+    },
+    {
+      "id": 184,
+      "uuid": "1a1e2c18f6ed43ad83d39fe7da2b8f25",
+      "title": "Tài liệu bồi dưỡng lý luận chính trị dành cho đảng viên mới (Tái bản có sửa chữa, bổ sung)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 306,
+      "size_mb": 13.0
+    },
+    {
+      "id": 185,
+      "uuid": "a461ed12d6a44128abbed16fd6394713",
+      "title": "Chiến tranh thương mại Mỹ - Trung và an ninh quốc gia trong tình hình mới",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "Phạm Ngọc Anh",
+      "pages": 194,
+      "size_mb": 14.45
+    },
+    {
+      "id": 186,
+      "uuid": "276136787f9b4334aff0ba6af34ad2c5",
+      "title": "Bông sen trắng giữa lòng Hà Nội",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "TS. Chu Đức Tính",
+      "pages": 226,
+      "size_mb": 13.89
+    },
+    {
+      "id": 227,
+      "uuid": "eed59bb924294d9eb6a25acec2f7f570",
+      "title": "Một số nội dung cơ bản trong Văn kiện Đại hội Đảng lần thứ XII về phát triển kinh tế, chính trị, văn hoá, xã hội, quốc phòng, an ninh",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Học viện Chính trị khu vực II",
+      "pages": 674,
+      "size_mb": 80.07
+    },
+    {
+      "id": 231,
+      "uuid": "95eef4226e704affa32903c7e0a7db39",
+      "title": "Tư tưởng Hồ Chí Minh về quyền con người",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "TS. Lại Thị Thanh Bình",
+      "pages": 290,
+      "size_mb": 17.0
+    },
+    {
+      "id": 233,
+      "uuid": "6942b5e32cd5442db2f3bcf85a5469b9",
+      "title": "Về tác phẩm “Nâng cao đạo đức cách mạng, quét sạch chủ nghĩa cá nhân”",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nhiều tác giả",
+      "pages": 306,
+      "size_mb": 8.81
+    },
+    {
+      "id": 234,
+      "uuid": "e1b45733e9be4ec0818f9d52da85bb02",
+      "title": "Chuyện kể về Bác Hồ qua các tài liệu và hiện vật (Xuất bản lần thứ hai)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Khu Di tích Chủ tịch Hồ Chí Minh tại Phủ Chủ tịch",
+      "pages": 350,
+      "size_mb": 9.49
+    },
+    {
+      "id": 236,
+      "uuid": "107baf2ec8d34703bd3b91db6a0c1f4c",
+      "title": "Tuyên ngôn của Đảng Cộng sản - Giá trị lý luận và thực tiễn trong thời đại ngày nay",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 642,
+      "size_mb": 63.04
+    },
+    {
+      "id": 237,
+      "uuid": "9db98777fadd40ceaff5a7cae2a42fea",
+      "title": "Đổi mới sự lãnh đạo của Đảng trong điều kiện xây dựng Nhà nước pháp quyền xã hội chủ nghĩa ở Việt Nam (Sách chuyên khảo) (Xuất bản lần thứ hai, có chỉnh sửa, bổ sung)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS. TS. Vũ Trọng Lâm",
+      "pages": 358,
+      "size_mb": 15.47
+    },
+    {
+      "id": 238,
+      "uuid": "6d89cfe5062646b889f102ce2ddf6ed1",
+      "title": "Học Chủ tịch Hồ Chí Minh - Chúng ta học gì",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Phạm Văn Đồng",
+      "pages": 162,
+      "size_mb": 8.33
+    },
+    {
+      "id": 240,
+      "uuid": "20d2c0531f09416cbd4edd1391579bd1",
+      "title": "Hồ Chí Minh với những bức thư mong muốn hoà bình cho Việt Nam",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "TS. Nguyễn Anh Minh (Sưu tầm và tuyển chọn)",
+      "pages": 266,
+      "size_mb": 10.43
+    },
+    {
+      "id": 241,
+      "uuid": "a1faa3498c554889a1e35639f784983c",
+      "title": "Vừa đi đường vừa kể chuyện",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "T. Lan",
+      "pages": 182,
+      "size_mb": 8.23
+    },
+    {
+      "id": 242,
+      "uuid": "186c7ab1d92a4e3f808d1a9cb489a3c0",
+      "title": "Những mẩu chuyện về tấm gương đạo đức Hồ Chí Minh (Tập I)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Ban Tuyên giáo Trung ương - Trung tâm Thông tin công tác tuyên giáo",
+      "pages": 425,
+      "size_mb": 8.99
+    },
+    {
+      "id": 243,
+      "uuid": "c9074eaab3024ea79de53550927b4f47",
+      "title": "Những mẩu chuyện về tấm gương đạo đức Hồ Chí Minh (Tập II)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Ban Tuyên giáo Trung ương - Trung tâm Thông tin công tác tuyên giáo",
+      "pages": 314,
+      "size_mb": 7.8
+    },
+    {
+      "id": 244,
+      "uuid": "a2bfc3c1bf1e4206b73650a34d707180",
+      "title": "Học tập và làm theo phong cách “Dân vận khéo” Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nguyễn Bá Quang",
+      "pages": 178,
+      "size_mb": 13.01
+    },
+    {
+      "id": 245,
+      "uuid": "bc260b3a19bc4131b81df245bf926b8d",
+      "title": "Tư tưởng Hồ Chí Minh về giáo dục với vấn đề đổi mới căn bản và toàn diện giáo dục Việt Nam hiện nay",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "TS. Lý Việt Quang (Chủ biên)",
+      "pages": 306,
+      "size_mb": 12.82
+    },
+    {
+      "id": 246,
+      "uuid": "ed5e9d81d32c4dada264ff580581ab3b",
+      "title": "Tại sao là Hồ Chí Minh?",
+      "category": "Văn hóa, xã hội",
+      "creator": "Song Phil - Kyung",
+      "pages": 366,
+      "size_mb": 14.92
+    },
+    {
+      "id": 247,
+      "uuid": "57b72b56631446edb77db32ab2bff23c",
+      "title": "Tư tưởng Hồ Chí Minh về lập hiến: Nội dung và giá trị",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "TS. Lê Thị Hằng",
+      "pages": 222,
+      "size_mb": 13.78
+    },
+    {
+      "id": 248,
+      "uuid": "6044afabcb5b4fd9b53c9d2f7fdbc659",
+      "title": "Các văn bản chỉ đạo, hướng dẫn bầu cử đại biểu Quốc hội khóa XV và đại biểu Hội đồng nhân dân các cấp nhiệm kỳ 2021-2026",
+      "category": "Pháp luật",
+      "creator": "Nhiều tác giả",
+      "pages": 450,
+      "size_mb": 12.85
+    },
+    {
+      "id": 249,
+      "uuid": "40632e7315374ad2898def79f2c0b1f9",
+      "title": "Văn kiện Đại hội đại biểu toàn quốc lần thứ XIII (tập I)",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 298,
+      "size_mb": 12.1
+    },
+    {
+      "id": 250,
+      "uuid": "23cd72645d8a4fd3a54678f2fbc98dd0",
+      "title": "Văn kiện Đại hội đại biểu toàn quốc lần thứ XIII (tập II)",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 360,
+      "size_mb": 12.17
+    },
+    {
+      "id": 251,
+      "uuid": "a2117dbc847a403fb6813aef595875b6",
+      "title": "Bác Hồ của nhân dân (tập bút ký – tiểu luận chọn lọc)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nguyễn Uyển",
+      "pages": 454,
+      "size_mb": 15.66
+    },
+    {
+      "id": 263,
+      "uuid": "37ec68a3c2094033973259eb89583607",
+      "title": "Phán quyết điển hình của cơ quan tài phán quốc tế - Tóm tắt và bình luận (Tài liệu dành cho môn Công pháp quốc tế)",
+      "category": "Pháp luật",
+      "creator": "TS. Trần Thăng Long (Chủ biên), PGS.TS. Trần Thị Thuỳ Dương, ThS. Nguyễn Thị Vân Huyền, ThS. Hà Thị Hạnh",
+      "pages": 246,
+      "size_mb": 14.91
+    },
+    {
+      "id": 264,
+      "uuid": "2d7062dcceec42c9b86779996eb0e622",
+      "title": "Nâng cao hiệu quả giám sát của cơ quan dân cử đối với việc thực thi chính sách, pháp luật về an sinh xã hội ở Việt Nam",
+      "category": "Pháp luật",
+      "creator": "TS. Bùi Sỹ Lợi (Chủ biên)",
+      "pages": 454,
+      "size_mb": 18.08
+    },
+    {
+      "id": 266,
+      "uuid": "6f02a86ec34c4281826da0c77934bfe3",
+      "title": "Hoàn thiện các phương pháp cơ bản thực hiện công tác kiểm tra, giám sát và thi hành kỷ luật đảng (Sách chuyên khảo)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Cao Văn Thống (Chủ biên)",
+      "pages": 258,
+      "size_mb": 14.59
+    },
+    {
+      "id": 267,
+      "uuid": "4451315ebb6b4a6aa7e687dedf0f9861",
+      "title": "Xây dựng Tòa án nhân dân xứng đáng là biểu tượng của công lý, lẽ phải và niềm tin (Xuất bản lần thứ hai, có bổ sung)",
+      "category": "Pháp luật",
+      "creator": "PGS.TS. Nguyễn Hòa Bình",
+      "pages": 582,
+      "size_mb": 73.49
+    },
+    {
+      "id": 274,
+      "uuid": "c8fb537502694c32a3246d485f15e9f6",
+      "title": "Tài liệu bồi dưỡng nghiệp vụ công tác tuyên giáo ở cơ sở (Dành cho cấp uỷ và cán bộ tuyên giáo ở cơ sở) (Xuất bản lần thứ hai)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 242,
+      "size_mb": 16.29
+    },
+    {
+      "id": 276,
+      "uuid": "269888fcf40245dd8989f10d4c12963a",
+      "title": "Chính sách pháp luật - Những vấn đề lý luận và thực tiễn",
+      "category": "Pháp luật",
+      "creator": "GS.TS. Võ Khánh Vinh",
+      "pages": 634,
+      "size_mb": 59.25
+    },
+    {
+      "id": 278,
+      "uuid": "cafbfe9d181e4e30af2805e519e352c6",
+      "title": "75 năm hình thành, phát triển của hệ thống pháp luật hình sự Việt Nam và định hướng tiếp tục hoàn thiện (1945-2020)(Sách chuyên khảo)",
+      "category": "Pháp luật",
+      "creator": "GS.TSKH. Lê Cảm",
+      "pages": 738,
+      "size_mb": 76.07
+    },
+    {
+      "id": 279,
+      "uuid": "a70e856f58e6461e91c0fab2bcaac11c",
+      "title": "Tăng cường công tác xây dựng Đảng trong các cơ quan báo chí",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo Trung ương",
+      "pages": 616,
+      "size_mb": 62.88
+    },
+    {
+      "id": 281,
+      "uuid": "4976a4c7d76b46feae3fb096156e3771",
+      "title": "200 câu hỏi - đáp về bầu cử đại biểu Quốc hội khóa XV và đại biểu Hội đồng nhân dân các cấp nhiệm kỳ 2021 - 2026",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "TS. Nguyễn Thị Tố Uyên",
+      "pages": 314,
+      "size_mb": 11.79
+    },
+    {
+      "id": 283,
+      "uuid": "379efab5d0d64e00a35e7ab94695ef03",
+      "title": "Những điểm mới trong các văn kiện Đại hội XIII của Đảng",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Hội đồng Lý luận Trung ương",
+      "pages": 298,
+      "size_mb": 12.46
+    },
+    {
+      "id": 285,
+      "uuid": "a9373298b00c4c5d8f24698af33d4a0a",
+      "title": "Một số vấn đề lý luận và thực tiễn phát triển đất nước: Hiện trạng – vấn đề đặt ra – định hướng trong giai đoạn mới",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS. TS. Trần Quốc Toản (Chủ biên)",
+      "pages": 478,
+      "size_mb": 15.54
+    },
+    {
+      "id": 289,
+      "uuid": "75d0dfe61b4d47fab1505aaa3a0e4488",
+      "title": "Trách nhiệm hình sự và loại trừ trách nhiệm hình sự (Sách chuyên khảo) (Tái bản có sửa chữa, bổ sung)",
+      "category": "Pháp luật",
+      "creator": "PGS.TS. Trịnh Tiến Việt",
+      "pages": 422,
+      "size_mb": 13.57
+    },
+    {
+      "id": 292,
+      "uuid": "be1f3c9624e24aee9d562e46e0c656b7",
+      "title": "Tinh hoa thơ ca Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Lê Xuân Đức",
+      "pages": 1090,
+      "size_mb": 101.76
+    },
+    {
+      "id": 297,
+      "uuid": "ff2884db297646c5aa92fe3d8e233574",
+      "title": "Một số luận cứ phản bác các quan điểm sai trái, thù địch, chống phá Đại hội XIII của Đảng (Tập 1)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "GS.TS. Vũ Văn Hiền (Chủ biên)",
+      "pages": 326,
+      "size_mb": 16.12
+    },
+    {
+      "id": 298,
+      "uuid": "406fbcf3a320495284f000706db3167d",
+      "title": "Một số vấn đề về cách mạng và đổi mới",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "GS.TS. Tạ Ngọc Tấn",
+      "pages": 526,
+      "size_mb": 53.09
+    },
+    {
+      "id": 299,
+      "uuid": "643365a2a96f4a1ebf8c7f0d3612b3bc",
+      "title": "Bác Hồ ở Tân Trào",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Ngô Quân lập (Sưu tầm, tuyển chọn)",
+      "pages": 256,
+      "size_mb": 9.06
+    },
+    {
+      "id": 300,
+      "uuid": "e7a3432acdc54341879b4c97eccc253a",
+      "title": "Bác Hồ với hoạt động văn hoá nghệ thuật",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Khắc Tuế (Chủ biên)",
+      "pages": 122,
+      "size_mb": 12.62
+    },
+    {
+      "id": 301,
+      "uuid": "a86dbe9e4cb14097bd178bc98bf76fce",
+      "title": "Bác Hồ với những mùa xuân kháng chiến",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Ngô Quân lập (Sưu tầm, tuyển chọn)",
+      "pages": 138,
+      "size_mb": 7.9
+    },
+    {
+      "id": 302,
+      "uuid": "65ec872950574e63af070e72e36c0447",
+      "title": "Bác Hồ với Thái Nguyên",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Tỉnh uỷ - Hội đồng Nhân dân - Uỷ ban Nhân dân tỉnh Thái Nguyên",
+      "pages": 744,
+      "size_mb": 72.34
+    },
+    {
+      "id": 303,
+      "uuid": "b240757d967c4716b19a7a1712bfe265",
+      "title": "Chuyện kể về Bác Hồ qua các tài liệu và hiện vật",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Khu Di tích Chủ tịch Hồ Chí Minh tại Phủ Chủ tịch",
+      "pages": 352,
+      "size_mb": 8.48
+    },
+    {
+      "id": 304,
+      "uuid": "2634dec1f52b40fe8e64a07c9ca1aeda",
+      "title": "Chuyện thường ngày của Bác",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồng Khanh",
+      "pages": 188,
+      "size_mb": 12.41
+    },
+    {
+      "id": 305,
+      "uuid": "e889ea57745e47a6a651cb0f4a3b2b59",
+      "title": "Đường Bác Hồ đi cứu nước",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "GS. Trình Quang Phú (Tuyển chọn và biên soạn)",
+      "pages": 680,
+      "size_mb": 61.54
+    },
+    {
+      "id": 306,
+      "uuid": "c2db9275d16e4b87a666e74d46aaaa2a",
+      "title": "Kể chuyện Bác Hồ ở Tuyên Quang",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Ngô Quân lập (Sưu tầm, tuyển chọn)",
+      "pages": 170,
+      "size_mb": 11.03
+    },
+    {
+      "id": 307,
+      "uuid": "b729fb6776454efb8f154f0d8202ecf5",
+      "title": "Truyện kể về Bác Hồ - Những chặng đường trường kỳ kháng chiến",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Vũ Kỳ",
+      "pages": 118,
+      "size_mb": 11.65
+    },
+    {
+      "id": 308,
+      "uuid": "2269557071e746fdb1847d07e2cbf551",
+      "title": "Những bài viết của Bác Hồ trên Báo Nhân Dân. Tập 3 (1960-1969)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Báo Nhân Dân",
+      "pages": 1054,
+      "size_mb": 81.85
+    },
+    {
+      "id": 309,
+      "uuid": "cb041a685a0b427fb45676f53ce47d0e",
+      "title": "Những bài viết của Bác Hồ trên Báo Nhân Dân. Tập 2 (1955-1959)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Báo Nhân Dân",
+      "pages": 1420,
+      "size_mb": 67.2
+    },
+    {
+      "id": 310,
+      "uuid": "e9694df0b76f4430a3f8e3b2ecbb29f6",
+      "title": "Những bài viết của Bác Hồ trên Báo Nhân Dân. Tập 1 (1951-1954)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Báo Nhân Dân",
+      "pages": 764,
+      "size_mb": 50.0
+    },
+    {
+      "id": 311,
+      "uuid": "595ee3f35f77464d82a999fc0df5dbeb",
+      "title": "Phong cách Bác Hồ đến cơ sở",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồng Khanh",
+      "pages": 260,
+      "size_mb": 20.25
+    },
+    {
+      "id": 315,
+      "uuid": "4d61f4ac282b4543bec7c1c9c2017648",
+      "title": "Xây dựng và quản trị thành phố thông minh bảo đảm các chỉ số an ninh, an sinh, an toàn trong Cách mạng công nghiệp 4.0",
+      "category": "Kinh tế",
+      "creator": "PGS.TS. Nguyễn Văn Thành, GS.TS. Fredmund Malik, ThS. Đỗ Quang Hưng",
+      "pages": 294,
+      "size_mb": 17.13
+    },
+    {
+      "id": 318,
+      "uuid": "542dc4dd217747be91873e981f159ef9",
+      "title": "Đường Bác Hồ đi cứu nước (Xuất bản lần thứ hai)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "GS.TS. Trình Quang Phú (tuyển chọn và biên soạn)",
+      "pages": 678,
+      "size_mb": 59.99
+    },
+    {
+      "id": 319,
+      "uuid": "317a10fafaf24b549a4a38870236405b",
+      "title": "Cương lĩnh 2011: Những vấn đề lý luận và thực tiễn qua 10 năm thực hiện",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "GS.TS.Tạ Ngọc Tấn (Chủ biên), GS.TS. Phùng Hữu Phú, PGS.TS. Nguyễn Viết Thông, ThS. Lê Đức Thắng (Đồng chủ biên)",
+      "pages": 378,
+      "size_mb": 16.41
+    },
+    {
+      "id": 352,
+      "uuid": "28a220e379e5488bbed660d661dd2239",
+      "title": "Tư tưởng, lý luận với đổi mới và phát triển đất nước",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "GS.TS. Nguyễn Xuân Thắng",
+      "pages": 750,
+      "size_mb": 66.76
+    },
+    {
+      "id": 361,
+      "uuid": "0da7044d57ce477c8ba8d17c51bb91bc",
+      "title": "Vững bước trên con đường đổi mới, tập 2 (2015-2017)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 678,
+      "size_mb": 71.86
+    },
+    {
+      "id": 362,
+      "uuid": "ad1ef5fa8c97470682caf93d95452900",
+      "title": "Vững bước trên con đường đổi mới, tập 1 (2011-2014)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 826,
+      "size_mb": 85.54
+    },
+    {
+      "id": 363,
+      "uuid": "92a7e50ec1c247ec81d9b2a4231b9de4",
+      "title": "Tổng Bí thư, Chủ tịch nước Nguyễn Phú Trọng với tình cảm của nhân dân trong nước và bạn bè quốc tế",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Báo Nhân dân (tuyển chọn)",
+      "pages": 623,
+      "size_mb": 76.85
+    },
+    {
+      "id": 364,
+      "uuid": "15966b2f6931490ead5b94391b9dbe8d",
+      "title": "Đảng vững mạnh, đất nước phát triển, dân tộc trường tồn",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 1122,
+      "size_mb": 103.25
+    },
+    {
+      "id": 365,
+      "uuid": "750e58990b154cfaa255ad90df93be63",
+      "title": "Vững tin vào sự lãnh đạo của Đảng, khó khăn nào cũng vượt qua",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Báo Nhân dân (Tuyển chọn)Tổng Bí thư Nguyễn Phú Trọng",
+      "pages": 802,
+      "size_mb": 72.99
+    },
+    {
+      "id": 366,
+      "uuid": "d2fa952f12d1489a994aace6a1b60184",
+      "title": "Quyết tâm ngăn chặn và đẩy lùi tham nhũng",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Tổng Bí thư, Chủ tịch nước Nguyễn Phú Trọng",
+      "pages": 382,
+      "size_mb": 13.94
+    },
+    {
+      "id": 367,
+      "uuid": "36aa33546b9d417c8695bc4321d21f28",
+      "title": "Tầm nhìn chiến lược và ý chí vươn lên của dân tộc",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Báo Nhân dân (tuyển chọn)",
+      "pages": 550,
+      "size_mb": 60.2
+    },
+    {
+      "id": 368,
+      "uuid": "da7a57cf27654b8bb58fc06ee4c4069f",
+      "title": "Chuẩn bị thật tốt Đại hội Đảng bộ các cấp tiến tới Đại hội đại biểu toàn quốc lần thứ XIII của Đảng",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 198,
+      "size_mb": 12.23
+    },
+    {
+      "id": 385,
+      "uuid": "87afee4ae0864b478fbed70459d140dd",
+      "title": "Toàn Đảng, toàn dân chung sức, đồng lòng xây dựng đất nước ta ngày càng phồn vinh, hạnh phúc",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 624,
+      "size_mb": 57.52
+    },
+    {
+      "id": 389,
+      "uuid": "99c33fe9b7204f35a3f9b426975d70e3",
+      "title": "Đoàn kết, vững tin đưa đất nước bước vào giai đoạn mới",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 764,
+      "size_mb": 71.13
+    },
+    {
+      "id": 390,
+      "uuid": "9a38face82cd4d6ca1f3645812f6369a",
+      "title": "Văn kiện Đảng về công nghiệp hóa, hiện đại hóa",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 554,
+      "size_mb": 58.43
+    },
+    {
+      "id": 391,
+      "uuid": "4423e67bec7941bd8631f1de03909bf0",
+      "title": "Xây dựng Đảng và hệ thống chính trị trong tình hình mới",
+      "category": "Văn kiện Đảng",
+      "creator": "Hội đồng Lý luận Trung ương",
+      "pages": 282,
+      "size_mb": 13.09
+    },
+    {
+      "id": 392,
+      "uuid": "4e448fd45db94f3bb9e3142a903c8dcc",
+      "title": "Bảo vệ nền tảng tư tưởng của Đảng trong tình hình mới",
+      "category": "Văn kiện Đảng",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 510,
+      "size_mb": 18.83
+    },
+    {
+      "id": 393,
+      "uuid": "b3ae4fa853bd4e18934f6d8321938ac0",
+      "title": "Công an nhân dân đấu tranh phản bác những luận điệu xuyên tạc chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh, góp phần bảo vệ nền tảng tư tưởng của Đảng Cộng sản Việt Nam trong tình hình mới",
+      "category": "Văn kiện Đảng",
+      "creator": "Thiếu tướng, PGS.TS. Lê Văn Thắng",
+      "pages": 418,
+      "size_mb": 18.28
+    },
+    {
+      "id": 394,
+      "uuid": "fd841ea51a7c48249a430427299a0026",
+      "title": "Công tác tư tưởng trong điều kiện hiện nay: Thực trạng, vấn đề đặt ra và giải pháp",
+      "category": "Văn kiện Đảng",
+      "creator": "Hội đồng Lý luận Trung ương",
+      "pages": 234,
+      "size_mb": 15.17
+    },
+    {
+      "id": 395,
+      "uuid": "69d9d20bf9ef4b438ca99b2778a6f031",
+      "title": "Tăng cường sự lãnh đạo của Đảng đối với công tác báo chí và truyền thông trong tình hình mới",
+      "category": "Văn kiện Đảng",
+      "creator": "Hội đồng Lý luận Trung ương",
+      "pages": 192,
+      "size_mb": 34.0
+    },
+    {
+      "id": 396,
+      "uuid": "59521ef960df4f4d9fa3b5a72346dcee",
+      "title": "Công tác kiểm tra, giám sát của Đảng với phòng, chống lãng phí ở nước ta hiện nay - Những vấn đề đặt ra và giải pháp (Sách tham khảo)",
+      "category": "Văn kiện Đảng",
+      "creator": "Hà Quốc Trị (Chủ biên)",
+      "pages": 274,
+      "size_mb": 12.99
+    },
+    {
+      "id": 397,
+      "uuid": "762769ab774643dab8127989a2c7954c",
+      "title": "Nâng cao năng lực lãnh đạo và sức chiến đấu của Đảng, phát huy sức mạnh toàn dân tộc, tiếp tục đẩy mạnh toàn diện công cuộc đổi mới đất nước - Tập 2",
+      "category": "Văn kiện Đảng",
+      "creator": "Lê Hồng Anh",
+      "pages": 265,
+      "size_mb": 18.44
+    },
+    {
+      "id": 398,
+      "uuid": "81a36c51d75b4309bbcca9b9dc9f17f2",
+      "title": "Một số vấn đề lý luận - thực tiễn cấp thiết liên quan trực tiếp đến đổi mới nội dung, phương thức lãnh đạo của Đảng và quản lý của Nhà nước",
+      "category": "Văn kiện Đảng",
+      "creator": "PGS.TS. Nguyễn Văn Thạo",
+      "pages": 798,
+      "size_mb": 28.7
+    },
+    {
+      "id": 399,
+      "uuid": "b980761fe4e04de2bba1d29cc6e45a97",
+      "title": "Nâng cao năng lực lãnh đạo và sức chiến đấu của Đảng, phát huy sức mạnh toàn dân tộc, tiếp tục đẩy mạnh toàn diện công cuộc đổi mới đất nước - Tập 1",
+      "category": "Văn kiện Đảng",
+      "creator": "Lê Hồng Anh",
+      "pages": 818,
+      "size_mb": 27.51
+    },
+    {
+      "id": 400,
+      "uuid": "9fb4b467ea6c40df87df78771facc74c",
+      "title": "Đấu tranh chống các quan điểm, luận điệu xuyên tạc chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh",
+      "category": "Văn kiện Đảng",
+      "creator": "Tiểu ban lý luận về lĩnh vực xây dựng lực lượng Công an Nhân dân",
+      "pages": 546,
+      "size_mb": 19.43
+    },
+    {
+      "id": 401,
+      "uuid": "d213219ef6dc477cb5ed154daa4cc539",
+      "title": "Đẩy mạnh đấu tranh chống “diễn biến hòa bình” trên lĩnh vực tư tưởng văn hóa",
+      "category": "Văn kiện Đảng",
+      "creator": "Tổng cục Chính trị Quân đội Nhân dân Việt Nam",
+      "pages": 466,
+      "size_mb": 12.88
+    },
+    {
+      "id": 402,
+      "uuid": "270e3fefe178466ca3b64583a9aacb9e",
+      "title": "Cơ sở khoa học về ngăn chặn, đẩy lùi suy thoái về tư tưởng chính trị, đạo đức, lối sống, “tự diễn biến”, “tự chuyển hóa” trong đội ngũ cán bộ, công chức, viên chức ở Việt Nam (Kỷ yếu Hội thảo khoa học cấp Quốc gia)",
+      "category": "Văn kiện Đảng",
+      "creator": "Ban Tổ chức Trung ương",
+      "pages": 574,
+      "size_mb": 57.64
+    },
+    {
+      "id": 403,
+      "uuid": "12398a18056d4cf085cf5242533d8a23",
+      "title": "Thực hành dân chủ trong điều kiện một đảng duy nhất cầm quyền",
+      "category": "Văn kiện Đảng",
+      "creator": "GS.TS. Phạm Văn Đức (Chủ biên)",
+      "pages": 285,
+      "size_mb": 18.44
+    },
+    {
+      "id": 404,
+      "uuid": "9ddf4209a3e44e50bba796cf806aac5f",
+      "title": "Bình luận - Phê phán (Tuyển chọn những bài viết trên Báo Nhân dân)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Báo Nhân Dân",
+      "pages": 838,
+      "size_mb": 73.15
+    },
+    {
+      "id": 405,
+      "uuid": "38ed06b6f27f412b9f16283e38fb95e7",
+      "title": "Các học thuyết về giá trị thặng dư - Phần II",
+      "category": "Văn kiện Đảng",
+      "creator": "C. Mác",
+      "pages": 920,
+      "size_mb": 82.21
+    },
+    {
+      "id": 406,
+      "uuid": "392dfae7f5194a6ea10491793d78af33",
+      "title": "Các học thuyết về giá trị thặng dư - Phần I",
+      "category": "Văn kiện Đảng",
+      "creator": "C. Mác",
+      "pages": 664,
+      "size_mb": 58.37
+    },
+    {
+      "id": 407,
+      "uuid": "87ccc72ea6034f79b45afecddeede2a5",
+      "title": "Văn kiện Đại hội Đảng thời kỳ đổi mới - Phần I - (Đại hội VI, VII, VIII, IX)",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 1142,
+      "size_mb": 95.55
+    },
+    {
+      "id": 408,
+      "uuid": "f131437d00eb491bba258dc2fef7a012",
+      "title": "Tuyên ngôn của Đảng Cộng sản",
+      "category": "Văn kiện Đảng",
+      "creator": "C.Mác",
+      "pages": 154,
+      "size_mb": 13.43
+    },
+    {
+      "id": 409,
+      "uuid": "0f4998231467408d99ba063fe381a176",
+      "title": "Văn kiện Đại hội Đảng thời kỳ đổi mới - Phần II (Đại hội X, XI, XII)",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 878,
+      "size_mb": 84.93
+    },
+    {
+      "id": 410,
+      "uuid": "725f2653882d41d0af719ef7f7b7203c",
+      "title": "Văn kiện Đảng về an sinh xã hội",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 300,
+      "size_mb": 17.08
+    },
+    {
+      "id": 411,
+      "uuid": "4d39057d5211443da9bb4ab57e44ad90",
+      "title": "Văn kiện Đảng về lao động việc làm ",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 482,
+      "size_mb": 17.41
+    },
+    {
+      "id": 412,
+      "uuid": "8a446b12051d4f43bbdda69e208ef475",
+      "title": "Văn kiện Đảng về chống Mỹ, cứu nước – Tập I (1954-1965)",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 1152,
+      "size_mb": 89.02
+    },
+    {
+      "id": 413,
+      "uuid": "600418c94fed4c75a5c813cee8e93fef",
+      "title": "Văn kiện Đảng về chống Mỹ, cứu nước – Tập II (1966-1975)",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 906,
+      "size_mb": 82.62
+    },
+    {
+      "id": 414,
+      "uuid": "8b90c9ef098448b9b16ca877d54e0e72",
+      "title": "Các học thuyết về giá trị thặng dư - Phần III",
+      "category": "Văn kiện Đảng",
+      "creator": "C. Mác",
+      "pages": 928,
+      "size_mb": 87.83
+    },
+    {
+      "id": 415,
+      "uuid": "6646adbce0e34f699c1580f5c7870082",
+      "title": "Phê phán các quan điểm sai trái, xuyên tạc cuộc đấu tranh chống suy thoái về tư tưởng, chính trị, những biểu hiện “tự diễn biến”, “tự chuyển hóa” về chính trị trong Đảng (Xuất bản lần thứ hai)",
+      "category": "Văn kiện Đảng",
+      "creator": "Hội đồng Lý luận Trung ương",
+      "pages": 522,
+      "size_mb": 51.16
+    },
+    {
+      "id": 416,
+      "uuid": "2d15194a710740e8b8d0e4e326b3f59f",
+      "title": "Quyết tâm ngăn chặn và đẩy lùi tham nhũng",
+      "category": "Văn kiện Đảng",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 384,
+      "size_mb": 13.77
+    },
+    {
+      "id": 417,
+      "uuid": "4935ae1e243049ec85532b8e2572d6bf",
+      "title": "Đổi mới sự lãnh đạo của Đảng trong điều kiện xây dựng Nhà nước pháp quyền xã hội chủ nghĩa ở Việt Nam (Sách chuyên khảo) (Xuất bản lần thứ hai, có chỉnh sửa, bổ sung)",
+      "category": "Văn kiện Đảng",
+      "creator": "PGS.TS. Vũ Trọng Lâm",
+      "pages": 358,
+      "size_mb": 15.71
+    },
+    {
+      "id": 419,
+      "uuid": "f39baf8501d448b2acb4f9bb31ae2bd0",
+      "title": "Quản lý nhà nước trong nền kinh tế thị trường (Sách chuyên khảo)",
+      "category": "Kinh tế",
+      "creator": "TS. Đặng Xuân Hoan (Chủ biên)",
+      "pages": 502,
+      "size_mb": 15.03
+    },
+    {
+      "id": 421,
+      "uuid": "eaa90b4df46144bca38810048cda34f3",
+      "title": "Tổng quan về Luật hình sự Việt Nam (Tài liệu phục vụ giảng dạy, học tập cho giảng viên, sinh viên, học viên ngành Luật)",
+      "category": "Pháp luật",
+      "creator": "PGS.TS. Trịnh Tiến Việt",
+      "pages": 538,
+      "size_mb": 46.01
+    },
+    {
+      "id": 423,
+      "uuid": "91bc933adceb4e649a921b2b17a40e40",
+      "title": "Tư tưởng Hồ Chí Minh về cán bộ, công tác cán bộ và sự kế thừa, vận dụng vào thực tiễn cách mạng Việt Nam",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Tạp chí Tổ chức nhà nước (Bộ Nội vụ)",
+      "pages": 454,
+      "size_mb": 13.03
+    },
+    {
+      "id": 424,
+      "uuid": "e6f1651b12164137bbef5181da1aab82",
+      "title": "Một số vấn đề lý luận và thực tiễn về xây dựng Đảng hiện nay (Sách chuyên khảo)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS.TS Huỳnh Thị Gấm",
+      "pages": 274,
+      "size_mb": 12.92
+    },
+    {
+      "id": 427,
+      "uuid": "2dacb77e2d75499d9eb67859c06ad50b",
+      "title": "Từ Làng Sen đến Bến Nhà Rồng (Ký) (Xuất bản lần thứ 20, có sửa chữa, bổ sung)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "GS.TS. Trình Quang Phú",
+      "pages": 338,
+      "size_mb": 12.84
+    },
+    {
+      "id": 430,
+      "uuid": "42f154a597684a3d987579830a0cf6b1",
+      "title": "Lê Đức Thọ - Người cộng sản kiên cường, nhà lãnh đạo tài năng (Hồi ký)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nhiều tác giả",
+      "pages": 774,
+      "size_mb": 75.76
+    },
+    {
+      "id": 433,
+      "uuid": "c35fcd30e2994370a03e405fbce6b9b1",
+      "title": "Hội đồng Khoa học các cơ quan Đảng Trung ương - 1/4 thế kỷ xây dựng và phát triển (1996-2021)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Hội đồng Khoa học các cơ quan Đảng Trung ương",
+      "pages": 414,
+      "size_mb": 19.75
+    },
+    {
+      "id": 434,
+      "uuid": "46b0e90c885e458e817f243454a5cc4b",
+      "title": "Hội đồng Lý luận Trung ương - Dấu ấn một phần tư thế kỷ",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Hội đồng Lý luận Trung ương",
+      "pages": 198,
+      "size_mb": 19.97
+    },
+    {
+      "id": 435,
+      "uuid": "e04a3372a0684643829d18dfdaed0d65",
+      "title": "Điều lệ Đảng và một số quy định, hướng dẫn thi hành",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 166,
+      "size_mb": 12.15
+    },
+    {
+      "id": 436,
+      "uuid": "90f12077a4be4fe3a4747ca048c7ea28",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam - Dư luận trong nước và quốc tế về bài viết của Tổng Bí thư Nguyễn Phú Trọng",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo Trung ương Đảng (tuyển chọn)",
+      "pages": 826,
+      "size_mb": 88.11
+    },
+    {
+      "id": 437,
+      "uuid": "af783fac03814753b151dc3c0529ea95",
+      "title": "Sổ tay Những điều cần biết về Covid-19",
+      "category": "Văn hóa, xã hội",
+      "creator": "TS. Bs. Phan Minh Hoàng (Chủ biên)",
+      "pages": 124,
+      "size_mb": 16.33
+    },
+    {
+      "id": 438,
+      "uuid": "fe69131907ae46b9826da4cc08647d84",
+      "title": "Một số mô hình phòng, chống dịch bệnh Covid-19 hiệu quả của Đoàn Thanh niên",
+      "category": "Văn hóa, xã hội",
+      "creator": "Trung ương Đoàn Thanh niên Cộng sản Hồ Chí Minh",
+      "pages": 222,
+      "size_mb": 59.66
+    },
+    {
+      "id": 440,
+      "uuid": "0c7a325f88e8437e9d5779ef53480d12",
+      "title": "Định hướng, giải pháp bảo vệ nền tảng tư tưởng của Đảng, đấu tranh ngăn chặn các quan điểm sai trái, thù địch trên mạng xã hội (Sách chuyên khảo)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS.TS. Mai Đức Ngọc (Chủ biên)",
+      "pages": 322,
+      "size_mb": 16.46
+    },
+    {
+      "id": 443,
+      "uuid": "d334a0613c0641c2876cd633e11eb100",
+      "title": "Bàn về Binh pháp Tôn Tử",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 214,
+      "size_mb": 12.15
+    },
+    {
+      "id": 446,
+      "uuid": "acb03c0684b94a109b53c252fc214c38",
+      "title": "Giải pháp phát triển bền vững vùng Tây Nam Bộ trong bối cảnh mới (Sách chuyên khảo)",
+      "category": "Kinh tế",
+      "creator": "GS.TS. Nguyễn Quang Thuấn (Chủ biên)",
+      "pages": 354,
+      "size_mb": 16.49
+    },
+    {
+      "id": 448,
+      "uuid": "5c1ad2e3c89347b5a58a1adf349d79f4",
+      "title": "Mô hình tăng trưởng dựa vào khoa học - công nghệ và đổi mới sáng tạo trong chiến lược phát triển kinh tế - xã hội Việt Nam giai đoạn 2021 - 2030 (Sách chuyên khảo)",
+      "category": "Kinh tế",
+      "creator": "PGS.TS. Bùi Quang Tuấn",
+      "pages": 474,
+      "size_mb": 17.22
+    },
+    {
+      "id": 449,
+      "uuid": "12c4a60b660f4599bc51a4993ab2931e",
+      "title": "Xây dựng Đảng về tư tưởng, đạo đức (Sách chuyên khảo)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS.TS. Nguyễn Minh Tuấn",
+      "pages": 430,
+      "size_mb": 12.41
+    },
+    {
+      "id": 450,
+      "uuid": "4f9b9a8e2a24490480062beb9c9a1b03",
+      "title": "Xây dựng Đảng về tổ chức, cán bộ (Sách chuyên khảo)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS.TS. Nguyễn Minh Tuấn",
+      "pages": 402,
+      "size_mb": 12.69
+    },
+    {
+      "id": 462,
+      "uuid": "8867e135700848afb0eaca8b0079eb69",
+      "title": "Xây dựng, chỉnh đốn Đảng giai đoạn hiện nay (Sách chuyên khảo)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS.TS. Nguyễn Minh Tuấn",
+      "pages": 362,
+      "size_mb": 8.29
+    },
+    {
+      "id": 464,
+      "uuid": "073116e5d92d47b781318eff5226f322",
+      "title": "Những thành tựu quan trọng của đất nước 5 năm 2016-2020 (Tài liệu tuyên truyền trong nhân dân)",
+      "category": "Văn hóa, xã hội",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 170,
+      "size_mb": 12.64
+    },
+    {
+      "id": 465,
+      "uuid": "d3a58508cc71431d9c9da03d2107cc4a",
+      "title": "Hỏi - đáp về quy định và hướng dẫn thi hành Điều lệ Đảng",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS.TS. Lâm Quốc Tuấn - PGS.TS. Nguyễn Minh Tuấn (Đồng chủ biên)",
+      "pages": 242,
+      "size_mb": 13.79
+    },
+    {
+      "id": 468,
+      "uuid": "d4919fa1e67f48fc90cb644d8096bbe0",
+      "title": "Những điểm mới về an ninh quốc gia trong Văn kiện Đại hội XIII của Đảng",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Đại tướng, GS.TS. Tô Lâm (Chủ biên)",
+      "pages": 282,
+      "size_mb": 12.39
+    },
+    {
+      "id": 469,
+      "uuid": "6800a99f24344d70acf2698fef7fa3af",
+      "title": "Bảo đảm chủ quyền quốc gia trên không gian mạng (Kỷ yếu Hội thảo khoa học cấp quốc gia)",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "Bộ Công an",
+      "pages": 522,
+      "size_mb": 50.71
+    },
+    {
+      "id": 470,
+      "uuid": "125d8f7790d0455e9541b56766698021",
+      "title": "Documents of the 13th Party congress",
+      "category": "Kinh điển",
+      "creator": "Communist Party of Vietnam",
+      "pages": 360,
+      "size_mb": 11.01
+    },
+    {
+      "id": 473,
+      "uuid": "4897ed031cc14a73ad787bb907bacd29",
+      "title": "Sự kiện Nguyễn Tất Thành -  Hồ Chí Minh đi tìm đường cứu nước - ý nghĩa lịch sử và giá trị thời đại (Kỷ yếu Hội thảo khoa học)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nhà xuất bản Chính trị quốc gia Sự thật",
+      "pages": 994,
+      "size_mb": 49.18
+    },
+    {
+      "id": 479,
+      "uuid": "6fe40db443e348bc8636c483d70d183c",
+      "title": "ເອກະສານ ກອງປະຊຸມໃຫຍ່ຜູ້ແທນທົ່ວປະເທດ ຄັ້ງທີ XIII ຂອງພັກ",
+      "category": "Văn kiện Đảng",
+      "creator": "ພັກກອມມູນິດຫວຽດນາມ",
+      "pages": 402,
+      "size_mb": 3.65
+    },
+    {
+      "id": 481,
+      "uuid": "64644859c04145ffbd1499d9f6a95e98",
+      "title": "DOCUMENTOS DEL XIIICONGRESO NACIONAL",
+      "category": "Văn kiện Đảng",
+      "creator": "PARTIDO COMUNISTA DE VIETNAM",
+      "pages": 374,
+      "size_mb": 4.48
+    },
+    {
+      "id": 482,
+      "uuid": "394ac3e9a9594c88a20c947e094589b2",
+      "title": "ພາລະບົດບາດດ້ານເສດຖະກິດ ຂອງລັດໃນ ໄລຍະ 30 ກວ່າປີແຫ່ງການປ່ຽນແປງໃໝ່ ເບິ່ງໃນແງ່ມູມນິຕິກໍາ",
+      "category": "Kinh tế",
+      "creator": "ປອ.ຫງວຽນວັນເກືອງ (ຫົວໜ້າບັນນາທິການ)",
+      "pages": 266,
+      "size_mb": 6.06
+    },
+    {
+      "id": 483,
+      "uuid": "7f40956aaeae4cf78a4616bb839d2a83",
+      "title": "ຕຳລາ  ແນວຄິດ  ໂຮ່ຈີມິນ ຜູ້ແປ: ເຢືອງວັນຕ໋ວຽນ",
+      "category": "Các ấn phẩm khác",
+      "creator": "ສະພາສູນກາງຊີ້ນຳການຮຽບຮຽງຕຳລາແຫ່ງຊາດ ບັນດາວິຊາວິທະຍາສາດ ມາກ - ເລນິນ, ແນວຄິດ ໂຮ່ຈີມິນ",
+      "pages": 522,
+      "size_mb": 20.14
+    },
+    {
+      "id": 484,
+      "uuid": "f855365b98d34dec9ecacf18e1725c08",
+      "title": "ການພົວພັນ ລະຫວ່າງລັດ ກັບຕະຫລາດ ໃນເງື່ອນໄຂພື້ນຖານເສດຖະກິດຕະຫລາດ  ຕາມກຳນົດທິດສັງຄົມນິຍົມ ສະພາບຄວາມເປັນຈິງ, ບັນຫາ ແລະ ກຳນົດທິດນະໂຍບາຍ  ",
+      "category": "Kinh tế",
+      "creator": "ຮຈ.ປອ. ຫວູວັນຮ່າ, ຮຈ.ປອ. ດວ່ານມິງຮວ໊ນ (ບັນນາທິການຮ່ວມ)",
+      "pages": 450,
+      "size_mb": 6.63
+    },
+    {
+      "id": 485,
+      "uuid": "9995f84843b74bd8aef4089c33c6755c",
+      "title": "ຊັບພະຍາກອນທຳມະຊາດ, ສິ່ງແວດລ້ອມ  ແລະ ອຳນາດອະທິປະໄຕທາງທະເລ ແລະ ເກາະດອນຂອງຫວຽດນາມ ຜູ້ແປ:  ປທ. ຮວ່າງວັນຄາງ ປທ. ກາວທິລານແອັງ",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "ຫງວຽນຈູໂຮ່ຍ (ຫົວໜ້າບັນນາທິການ)",
+      "pages": 514,
+      "size_mb": 20.57
+    },
+    {
+      "id": 487,
+      "uuid": "b2333e08cc2f4f5c849ca241306114bb",
+      "title": "ການປະຕິວັດ ອຸດສາຫະກໍາ  4.0 ບັນຫາທີ່ຕັ້ງຂຶ້ນຕໍ່ກັບການພັດທະນາເສດຖະກິດ - ສັງຄົມ  ແລະ ການເຊື່ອມໂຍງສາກົນຂອງຫວຽດນາມ (ປຶ້ມຄົ້ນຄວ້າຈໍາເພາະ) ຜູ້ແປ ແລະ ກວດແກ້: ປທ. ຮວ່າງວັນຄາງ ປທ. ພອນວິໄລ ພົມວຽງໄຊ",
+      "category": "Kinh tế",
+      "creator": "ສຈ. ປອ. ເຈິ່ນທິເວິນຮວາ (ຫົວໜ້າບັນນາທິການ)",
+      "pages": 374,
+      "size_mb": 5.14
+    },
+    {
+      "id": 488,
+      "uuid": "ea3252c2e26343d2bc5dbbcbdd041497",
+      "title": "ການຄວບຄຸມ ອໍານາດ ຢູ່ປະເທດຫວຽດນາມ ໂດຍຜ່ານວຽກງານກວດກາ,  ຕິດຕາມ ແລະ ວິໄນພັກ  ຜູ້ແປ ແລະ ກວດແກ້: ປທ. ຮວ່າງວັນຄາງ ປທ. ບຸນທະວີ ຂຸນວົງສາ",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "ຄະນະກໍາມະການກວດກາສູນກາງ ມາຍຈຶກ (ຫົວໜ້າບັນນາທິການ)",
+      "pages": 522,
+      "size_mb": 20.68
+    },
+    {
+      "id": 489,
+      "uuid": "4a62339e82024d149708438c5a592178",
+      "title": "ແບບແຜນ ການນຳພາ, ຄຸ້ມຄອງ ຂອງໂຮ່ຈີມິນ  ຄຸນຄ່າທາງດ້ານທິດສະດີ ແລະ ພຶດຕິກຳຕົວຈິງ",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "ຮສຈ.ປອ. ຫຼີຫວຽດກວາງ - ປທ. ເຈິ່ນທິເຮີ້ຍ (ຫົວໜ້າບັນນາທິການຮ່ວມ)",
+      "pages": 182,
+      "size_mb": 5.45
+    },
+    {
+      "id": 490,
+      "uuid": "7445ae871b7d4f47901a6c96f1fdbb11",
+      "title": "Niềm tin yêu của nhân dân trong nước và bạn bè quốc tế dành cho Tổng Bí thư Nguyễn Phú Trọng",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 626,
+      "size_mb": 17.94
+    },
+    {
+      "id": 491,
+      "uuid": "51c20efaf4c84133a02ff493cf8602de",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 466,
+      "size_mb": 6.06
+    },
+    {
+      "id": 492,
+      "uuid": "d55c9c2447e544af872ab8042871f46c",
+      "title": "Xu hướng mới về quyền con người: Lý luận và thực tiễn (Sách chuyên khảo)",
+      "category": "Pháp luật",
+      "creator": "TS. Nguyễn Văn Cương",
+      "pages": 381,
+      "size_mb": 5.51
+    },
+    {
+      "id": 498,
+      "uuid": "4df28fb58b304d3d86f58081abef45d5",
+      "title": "Chiến tranh thương mại hay mâu thuẫn giai cấp – Bất bình đẳng bóp méo kinh tế toàn cầu và đe dọa hòa bình thế giới",
+      "category": "Những vấn đề quốc tế",
+      "creator": "Matthew C. Klein và Michael Pettis",
+      "pages": 370,
+      "size_mb": 5.92
+    },
+    {
+      "id": 506,
+      "uuid": "05035c43d7c24c27abe25632cb66723f",
+      "title": "Doanh nghiệp xã hội đáp ứng yêu cầu phát triển xã hội ở Việt Nam (Sách chuyên khảo)",
+      "category": "Kinh tế",
+      "creator": "PGS.TS. Bùi Đức Thọ - PGS.TS. Trương Thị Nam Thắng (Đồng chủ biên)",
+      "pages": 262,
+      "size_mb": 6.15
+    },
+    {
+      "id": 518,
+      "uuid": "a016c28e50154d2a8fbaddf5b0a1f62c",
+      "title": "Văn hóa chính trị và lịch sử dưới góc nhìn văn hóa chính trị (Chuyên luận, xuất bản lần thứ ba, có sửa chữa, bổ sung)",
+      "category": "Văn hóa, xã hội",
+      "creator": "Phạm Hồng Tung",
+      "pages": 850,
+      "size_mb": 29.08
+    },
+    {
+      "id": 522,
+      "uuid": "6cc3747e835f448885fefaacef9eae0b",
+      "title": "Crónicas de la guerra 1-2-3-4.75",
+      "category": "Văn hóa, xã hội",
+      "creator": "Trần Mai Hạnh",
+      "pages": 629,
+      "size_mb": 21.28
+    },
+    {
+      "id": 523,
+      "uuid": "31a7aaff82394e3e904b69c935308e24",
+      "title": "Pasos firmes en el camino de Doi Moi - Volumen 1: 2011-2014",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 998,
+      "size_mb": 32.97
+    },
+    {
+      "id": 524,
+      "uuid": "002d66113b2549e5b6da61a4d3233c54",
+      "title": "Pasos firmes en el camino de Doi Moi - Volumen 2: 2015-2017",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 762,
+      "size_mb": 26.99
+    },
+    {
+      "id": 548,
+      "uuid": "ccb5348871304fb194122e7a3466606c",
+      "title": "Một vùng đất lửa: Tập ký",
+      "category": "Văn hóa, xã hội",
+      "creator": "Nguyễn Thị Thúy Liên",
+      "pages": 160,
+      "size_mb": 5.22
+    },
+    {
+      "id": 549,
+      "uuid": "22243b40281849fdb7ecd96fadc6596b",
+      "title": "ຊາຍແດນມດິ ຕະພາບພເິ ສດຫວຽດ - ລາວ",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "PGS.TS. Nguyễn Hồng Thao",
+      "pages": 762,
+      "size_mb": 26.23
+    },
+    {
+      "id": 550,
+      "uuid": "9adf9fd6f6d7434fbc9d98692770867f",
+      "title": "ຈຳໜ່າຍປຶ້ມຈິນຕະນາການ ຢ່າງເປັນລະບົບສຳລັບທຸກ ຄົນ - ເລີ່ມຈາກທິດສະດີກ້າວໄປສູ່ພຶດຕິກຳຕົວຈິງຢູ່ຫວຽດນາມ",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "PGS.TS. Nguyễn Văn Thành",
+      "pages": 240,
+      "size_mb": 6.57
+    },
+    {
+      "id": 551,
+      "uuid": "d097630271774cf88e93b881e1508e29",
+      "title": "ສ້າງ ແລະ ປັບປຸງກ ົນໄກປົກປ",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "PGS.TS. Nguyễn Quốc Sửu (chủ biên)",
+      "pages": 362,
+      "size_mb": 5.56
+    },
+    {
+      "id": 552,
+      "uuid": "e4d106f5355d4a03a2ac1dab772d09a1",
+      "title": "ອາຊຽນ ໃນ ຍຸດທະສາດຂອງປະເທດໃຫຍ່",
+      "category": "Những vấn đề quốc tế",
+      "creator": "ກະຊວງຕຳຫຼວດ  ສະຖາບັນຍຸດທະສາດຕຳຫຼວດ",
+      "pages": 322,
+      "size_mb": 6.6
+    },
+    {
+      "id": 553,
+      "uuid": "b1f89b9bfaae419b83ddcd3752f1f7d1",
+      "title": "ການຄຸ້ມຄອງ ຂອງລັດ ໃນພື້ນຖານ ເສດຖະກິດຕະຫຼາດ",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "ປອ. ດັ່ງຊັວນຮວານ (ຫົວໜ້າບັນນາທິການ)",
+      "pages": 526,
+      "size_mb": 19.51
+    },
+    {
+      "id": 554,
+      "uuid": "40666a786eaa4a7386220c0d52c01e4a",
+      "title": "ສ້າງຮູບແບບລັດຖະບານນ້ອຍ, ສັງຄົມໃຫຍ່- ທ່າອ່ຽງໃນໂລກ ແລະບາງບັນຫາທີ່ຕັ້ງຂຶ້ນຢູ",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "TS NGUYỄN KHÁNH LY",
+      "pages": 154,
+      "size_mb": 5.47
+    },
+    {
+      "id": 555,
+      "uuid": "3182df7236444d07820c777752118b36",
+      "title": "ກໍ່ສ້າງ  ສະພາບແວດລ້ອມດ້ານນິຕິກໍາ ເພື່ອຮັບປະກັນໃຫ້ແກ່ ການພັດທະນາແບບຍືນຍົງ ແລະ ຜ່ອງໃສ ຂອງເສດຖະກິດເອກະຊົນ",
+      "category": "Kinh tế",
+      "creator": "ພະແນກກົດໝາຍ, ມະຫາວິທະຍາໄລແຫ່ງຊາດຮ່າໂນ້ຍ ຮສຈ.ປອ. ຫງວຽນທິເກວ໊ແອັງ, ຮສຈ.ປອ. ເລທິຮວ່າຍທູ (ບັນນາທິການຮ່ວມ)",
+      "pages": 574,
+      "size_mb": 20.99
+    },
+    {
+      "id": 557,
+      "uuid": "e3346010b8ca4c0e8dc65f74b1636e86",
+      "title": "Văn kiện Hội nghị lần thứ ba Ban Chấp hành Trung ương khóa XIII (Lưu hành nội bộ)",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 258,
+      "size_mb": 4.7
+    },
+    {
+      "id": 588,
+      "uuid": "6fc33da7774e434c8397fc880d66e47c",
+      "title": "Lịch sử nước ta",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 32,
+      "size_mb": 0.49
+    },
+    {
+      "id": 595,
+      "uuid": "2665480456374c899d4bac370fc950ca",
+      "title": "Văn kiện Hội nghị lần thứ năm Ban Chấp hành Trung ương Đảng khóa XIII (Lưu hành nội bộ)",
+      "category": "Văn kiện Đảng",
+      "creator": "Đảng Cộng sản Việt Nam",
+      "pages": 218,
+      "size_mb": 4.73
+    },
+    {
+      "id": 596,
+      "uuid": "e7b3eceef5b54ef0bf38a54d437d09aa",
+      "title": "Tài liệu nghiên cứu các văn kiện Hội nghị lần thứ năm Ban Chấp hành Trung ương Đảng khóa XIII (Dùng cho cán bộ chủ chốt và báo cáo viên)",
+      "category": "Văn kiện Đảng",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 362,
+      "size_mb": 3.96
+    },
+    {
+      "id": 597,
+      "uuid": "4fee4defba404e64bbd2a4f505c23820",
+      "title": "Tài liệu học tập các văn kiện Hội nghị lần thứ năm Ban Chấp hành Trung ương Đảng khóa XIII (Dùng cho cán bộ, đảng viên ở cơ sở)",
+      "category": "Văn kiện Đảng",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 110,
+      "size_mb": 3.97
+    },
+    {
+      "id": 598,
+      "uuid": "0ba0aacc04434ac5b5105bcbcc84613d",
+      "title": "Tài liệu hỏi - đáp về các văn kiện Hội nghị lần thứ năm Ban Chấp hành Trung ương Đảng khóa XIII (Dùng cho đoàn viên, hội viên các tổ chức chính trị - xã hội và tuyên truyền trong nhân dân)",
+      "category": "Văn kiện Đảng",
+      "creator": "Ban Tuyên giáo Trung ương Đảng",
+      "pages": 102,
+      "size_mb": 3.89
+    },
+    {
+      "id": 603,
+      "uuid": "56c8994893ef4633b04b1d2669869914",
+      "title": "Phát huy sức mạnh toàn dân tộc bảo vệ an ninh quốc gia trong tình hình mới (Kỷ yếu Hội thảo khoa học quốc gia)",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "Nhiều tác giả",
+      "pages": 1033,
+      "size_mb": 42.18
+    },
+    {
+      "id": 613,
+      "uuid": "9fcb4ca638a541d2b6b4c1600c2327c6",
+      "title": "Quá trình tranh chấp chủ quyền giữa các bên ở Quần đảo Trường Sa từ năm 1988 đến 2020 (Xuất bản lần thứ hai) (Sách chuyên khảo)",
+      "category": "Văn hóa, xã hội",
+      "creator": "PGS. TS. Nguyễn Thị Quế - TS. Bùi Đức An (Đồng chủ biên)",
+      "pages": 226,
+      "size_mb": 6.54
+    },
+    {
+      "id": 677,
+      "uuid": "ba2df24939f84d03a60bfa9b18ec9bea",
+      "title": "Kiên quyết, kiên trì đấu tranh phòng, chống tham nhũng, tiêu cực, góp phần xây dựng Đảng và Nhà nước ta ngày càng trong sạch, vững mạnh",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 626,
+      "size_mb": 26.68
+    },
+    {
+      "id": 687,
+      "uuid": "1ec5939594bc42c28a1d8397da271a2f",
+      "title": "Văn hóa và triết lý phát triển trong tư tưởng Hồ Chí Minh (Xuất bản lần thứ ba, có sửa chữa, bổ sung)",
+      "category": "Văn hóa, xã hội",
+      "creator": "GS. Đinh Xuân Lâm, PGS.TS. Bùi Đình Phong",
+      "pages": 534,
+      "size_mb": 15.96
+    },
+    {
+      "id": 703,
+      "uuid": "67bcc95003f24a03a02ce382742444e7",
+      "title": "Những bức thư của Bác Hồ nhân dịp đầu năm học mới",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 58,
+      "size_mb": 0.57
+    },
+    {
+      "id": 709,
+      "uuid": "f628c6537e9843f5a03738cdb08b6f51",
+      "title": "Hồ Chí Minh - Hành trình vì độc lập dân tộc (1911-1945) (Sách chuyên khảo)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nguyễn Mạnh Hà, Vũ Thị Hồng Dung",
+      "pages": 342,
+      "size_mb": 5.58
+    },
+    {
+      "id": 714,
+      "uuid": "75b7af055aec42a88c6b901504a963ee",
+      "title": "Xây dựng con người Việt Nam theo Di chúc của Chủ tịch Hồ Chí Minh (Xuất bản lần thứ hai, có sữa chữa, bổ sung)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "PGS.TS. Hoàng Anh",
+      "pages": 202,
+      "size_mb": 4.06
+    },
+    {
+      "id": 717,
+      "uuid": "b86d1380e38c4fb39130022c4ee9d2ae",
+      "title": "Những nội dung cơ bản và mới trong các Nghị quyết Hội nghị lần thứ năm Ban Chấp hành Trung ương Đảng khóa XIII",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS.TS. Nguyễn Viết Thông",
+      "pages": 82,
+      "size_mb": 4.36
+    },
+    {
+      "id": 723,
+      "uuid": "1d68f391d1014fa49beb6278e679ffaf",
+      "title": "Hồ Chí Minh - Người mang lại ánh sáng (Tập 1)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hội Khoa học Lịch sử Việt Nam",
+      "pages": 20,
+      "size_mb": 0.84
+    },
+    {
+      "id": 732,
+      "uuid": "26ec0aecd22b426188ed4dcb0fbc353d",
+      "title": "Danh dự là điều thiêng liêng, cao quý nhất (Những phát biểu chỉ đạo, bài viết và những  hình ảnh của Tổng Bí thư Nguyễn Phú Trọng đối với lực lượng Công an nhân dân Việt Nam)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Đảng ủy Công an Trung ương  - Bộ Công an",
+      "pages": 210,
+      "size_mb": 32.49
+    },
+    {
+      "id": 747,
+      "uuid": "09a8be2b05544de9ba47c1008fad623a",
+      "title": "Bác Hồ - Những câu chuyện và bài học (Xuất bản lần thứ ba, có sữa chữa, bổ sung)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "TS. Chu Đức Tính",
+      "pages": 162,
+      "size_mb": 2.19
+    },
+    {
+      "id": 789,
+      "uuid": "9a2333dd0f7b46a4a2675650a543b71c",
+      "title": "Tổng Bí thư Nguyễn Phú Trọng với niềm tin của nhân dân trong nước và sự ủng hộ của bạn bè quốc tế ",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Báo Nhân dân (tuyển chọn)",
+      "pages": 606,
+      "size_mb": 21.17
+    },
+    {
+      "id": 794,
+      "uuid": "62e5ddf5735c4c20b32ff5e0e3f9edd0",
+      "title": "Mối quan hệ giữa thực hành dân chủ và tăng cường pháp chế, bảo đảm kỷ cương xã hội (Sách chuyên khảo)",
+      "category": "Các ấn phẩm khác",
+      "creator": "PGS.TS. Vũ Trọng Lâm (Chủ biên)",
+      "pages": 402,
+      "size_mb": 15.21
+    },
+    {
+      "id": 803,
+      "uuid": "22ed7a42d4354cfdbd1e20daaf96464b",
+      "title": "Hồ Chí Minh - Người mang lại ánh sáng, tập 2",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hội Khoa học Lịch sử Việt Nam",
+      "pages": 270,
+      "size_mb": 14.59
+    },
+    {
+      "id": 805,
+      "uuid": "22fc10009abc430f935c8a4fdd53a5e0",
+      "title": "Một số vấn đề về đường lối quân sự, chiến lược quốc phòng trong sự nghiệp xây dựng và bảo vệ Tổ quốc Việt Nam xã hội chủ nghĩa thời kỳ mới",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 446,
+      "size_mb": 18.9
+    },
+    {
+      "id": 812,
+      "uuid": "d1c9bb54bb524d22912332b89821dbfe",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Tây Ban Nha) - Algunas cuestiones teóricas y prácticas sobre el Socialismo y el camino hacia el Socialismo en Vietnam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 580,
+      "size_mb": 61.45
+    },
+    {
+      "id": 815,
+      "uuid": "8b10365ec95846758586087be4913a3a",
+      "title": "Lịch sử 60 năm quan hệ quốc phòng Việt Nam - Cuba (1960- 2020) - 60 años de historia de las relaciones de defensa entre Vietnam y Cuba (1960 - 2020)",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "Ministerio de defensa Instituto de historia militar de Vietnam",
+      "pages": 438,
+      "size_mb": 13.43
+    },
+    {
+      "id": 816,
+      "uuid": "d7a620e5c1e54da2b9212fc9eb6a9605",
+      "title": "Quan hệ quốc phòng Việt Nam - Cuba (1960-2020) - Biên niên sự kiện - Relaciones de defensa Vietnam-Cuba. Crónica de eventos (1960- 2020)",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "Ministerio de defensa Instituto de historia militar de Vietnam",
+      "pages": 514,
+      "size_mb": 49.95
+    },
+    {
+      "id": 821,
+      "uuid": "5a8949ee048f46bdb47f148e238fa43f",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Hà Lan) - Theorie en praktijk van het socialisme in Vietnam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 552,
+      "size_mb": 54.18
+    },
+    {
+      "id": 823,
+      "uuid": "979e4a6484b3492bb7a81bd36715c220",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Lào) - ບາງບັນຫາທິດສະດີ ແລະ ພຶດຕິກຳກ່ຽວກັບສັງຄົມນິຍົມ ແລະ ເສັ້ນທາງກ້າວຂຶ້ນສູ່ສັງຄົມນິຍົມຢູ່ຫວຽດນາມ",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 556,
+      "size_mb": 64.37
+    },
+    {
+      "id": 824,
+      "uuid": "9ed9a7c8d52a46218c0af8560b2b0ad3",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Anh) - Theory and Practice of Socialism in Vietnam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 524,
+      "size_mb": 53.81
+    },
+    {
+      "id": 825,
+      "uuid": "cbba9534303a45739a56c55c23508755",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Nga) - Некоторые теоретические и практические вопросы о социализме и пути к социализму во Вьетнаме",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 600,
+      "size_mb": 63.52
+    },
+    {
+      "id": 827,
+      "uuid": "743730cec62b48eda3cf3696fce3c1b1",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Pháp) - Questions théoriques et pratiques sur le socialisme et la voie vers le socialisme au Vietnam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 544,
+      "size_mb": 54.48
+    },
+    {
+      "id": 831,
+      "uuid": "c8800e1a41e7455d9b5eb21ffa0658bc",
+      "title": "Hồ Chí Minh - Tiểu sử",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Bảo tàng Hồ Chí Minh",
+      "pages": 334,
+      "size_mb": 10.46
+    },
+    {
+      "id": 833,
+      "uuid": "d36c4db1ba284820b2d35ece445be321",
+      "title": "125 câu nói của Chủ tịch Hồ Chí Minh về Công an nhân dân (Xuất bản lần thứ tư)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Đại tướng, GS.TS. Tô Lâm (Chủ biên)",
+      "pages": 54,
+      "size_mb": 1.81
+    },
+    {
+      "id": 855,
+      "uuid": "699c07282010468aa972d3ab97dae967",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Trung) - 关于社会主义和越南走向社会主义道路的 若干理论与实践问题",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 420,
+      "size_mb": 20.21
+    },
+    {
+      "id": 857,
+      "uuid": "2567fb6d598a4da9a8a037bacbd1d203",
+      "title": "Cả nước đồng lòng, tranh thủ mọi thời cơ, vượt qua mọi khó khăn, thách thức, quyết tâm thực hiện thắng lợi Nghị quyết Đại hội XIII của Đảng",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 512,
+      "size_mb": 58.2
+    },
+    {
+      "id": 860,
+      "uuid": "e35944cd7c0446aba0281863755b114b",
+      "title": "Xây dựng lực lượng Công an nhân dân thật sự trong sạch, vững mạnh, chính quy, tinh nhuệ, hiện đại, đáp ứng yêu cầu, nhiệm vụ trong tình hình mới theo tư tưởng Hồ Chí Minh (Sách chuyên khảo)",
+      "category": "Quốc phòng, an ninh, đối ngoại",
+      "creator": "Đại tướng, GS.TS. Tô Lâm (Chủ biên)",
+      "pages": 389,
+      "size_mb": 17.06
+    },
+    {
+      "id": 862,
+      "uuid": "6efb7e35bd344d8fbd26b4ec7a3dbc48",
+      "title": "50 năm tác phẩm Nâng cao đạo đức cách mạng, quét sạch chủ nghĩa cá nhân của Chủ tịch Hồ Chí Minh – Giá trị lý luận và thực tiễn đối với công tác xây dựng Đảng hiện nay",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 462,
+      "size_mb": 14.68
+    },
+    {
+      "id": 864,
+      "uuid": "6f0fca2a8fbf4bd19b037eb03ef39189",
+      "title": "Các cương lĩnh cách mạng của Đảng Cộng sản Việt Nam (Tái bản, có chỉnh sửa, bổ sung)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Lê Mậu Hãn",
+      "pages": 228,
+      "size_mb": 10.58
+    },
+    {
+      "id": 878,
+      "uuid": "febd7f0f83a343ffb1e7dc92b0c13de3",
+      "title": "Chủ tịch Hồ Chí Minh với Quốc hội Việt Nam (Tuyển chọn tài liệu lưu trữ)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nhiều tác giả",
+      "pages": 692,
+      "size_mb": 76.74
+    },
+    {
+      "id": 884,
+      "uuid": "1449d11f084440be8c389e794ba32f02",
+      "title": "Nâng cao vai trò của cấp ủy đảng trong tiếp công dân, giải quyết khiếu nại, tố cáo",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Cao Văn Thống (Chủ biên)",
+      "pages": 254,
+      "size_mb": 13.8
+    },
+    {
+      "id": 888,
+      "uuid": "1f67b43a29fb445c893c6227d53b1fc7",
+      "title": "Tài liệu bồi dưỡng bí thư chi bộ và cấp ủy viên cơ sở trong đảng bộ Khối các cơ quan Trung ương",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Đảng ủy Khối các cơ quan Trung ương",
+      "pages": 282,
+      "size_mb": 12.3
+    },
+    {
+      "id": 889,
+      "uuid": "682d6b1952f945cbbcd8a7ea2f20172a",
+      "title": "Hỏi - đáp về nghiệp vụ công tác đảng trong Đảng bộ Khối các cơ quan Trung ương",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Đảng ủy Khối các cơ quan Trung ương",
+      "pages": 282,
+      "size_mb": 11.84
+    },
+    {
+      "id": 890,
+      "uuid": "6142ca6ddd1e4e19a85251f555493a15",
+      "title": "Xây dựng và phát triển nền đối ngoại, ngoại giao Việt Nam toàn diện, hiện đại, mang đậm bản sắc “cây tre Việt Nam”.",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 810,
+      "size_mb": 136.68
+    },
+    {
+      "id": 891,
+      "uuid": "4051ec9ef89d484b906cf7b34519c21d",
+      "title": "Phát huy truyền thống đại đoàn kết toàn dân tộc, xây dựng đất nước ta ngày càng giàu mạnh, văn minh, hạnh phúc",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 750,
+      "size_mb": 108.46
+    },
+    {
+      "id": 902,
+      "uuid": "ad1d4d7a663747cd838628769b7f54bb",
+      "title": "Bác Hồ trong trái tim những người bạn quốc tế",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Bùi Phúc Hải (Sưu tầm, tổ chức biên soạn)",
+      "pages": 254,
+      "size_mb": 9.38
+    },
+    {
+      "id": 906,
+      "uuid": "fda90ab49e8e41c5b990db1aaf086d9e",
+      "title": "Tư tưởng Hồ Chí Minh và con đường cách mạng Việt Nam",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Đại tướng Võ Nguyên Giáp (Chủ biên)",
+      "pages": 406,
+      "size_mb": 15.01
+    },
+    {
+      "id": 960,
+      "uuid": "de2e7b773408451c9e818fb1c670a39c",
+      "title": "Tự hào và tin tưởng dưới lá cờ vẻ vang của Đảng, quyết tâm xây dựng một nước Việt Nam ngày càng giàu mạnh, văn minh, văn hiến và anh hùng",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 74,
+      "size_mb": 0.88
+    },
+    {
+      "id": 972,
+      "uuid": "b31d151b3bdb4f8ea7041e12720b805c",
+      "title": "Tuổi trẻ Việt Nam học tập và làm theo Bác Hồ xây dựng đất nước hùng cường, thịnh vượng",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS.TS. Hoàng Anh - TS. Trần Văn Đông (Đồng chủ biên)",
+      "pages": 198,
+      "size_mb": 12.3
+    },
+    {
+      "id": 992,
+      "uuid": "a0ad4616a40b4dbf9b459f419f0e7839",
+      "title": "Những hoạt động của Chủ tịch Hồ Chí Minh giai đoạn 1954-1969, Tập 2 (1959-1964)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Khu Di tích Chủ tịch Hồ Chí Minh tại Phủ Chủ tịch",
+      "pages": 874,
+      "size_mb": 73.02
+    },
+    {
+      "id": 993,
+      "uuid": "e1173256d98b4fe596ac8a8948bf9ee3",
+      "title": "Những hoạt động của Chủ tịch Hồ Chí Minh giai đoạn 1954-1969, Tập 1 (1954-1958)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Khu Di tích Chủ tịch Hồ Chí Minh tại Phủ Chủ tịch",
+      "pages": 594,
+      "size_mb": 52.27
+    },
+    {
+      "id": 994,
+      "uuid": "33708a063acd4648b0db3b0620bf6299",
+      "title": "Những hoạt động của Chủ tịch Hồ Chí Minh giai đoạn 1954-1969, Tập 3 (1965-1969)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Khu Di tích Chủ tịch Hồ Chí Minh tại Phủ Chủ tịch",
+      "pages": 714,
+      "size_mb": 55.32
+    },
+    {
+      "id": 995,
+      "uuid": "c37f3c9d84d94d7b9b9fe9261f8ce93a",
+      "title": "Lời Bác Hồ dạy ngày này năm xưa",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Cục Tuyên huấn, Tổng cục Chính trị Quân đội nhân dân Việt Nam",
+      "pages": 562,
+      "size_mb": 61.21
+    },
+    {
+      "id": 996,
+      "uuid": "57a9e2239c1f4b089e0597a078bb34d9",
+      "title": "155 câu nói của Chủ tịch Hồ Chí Minh về Quân đội nhân dân Việt Nam",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nhiều tác giả",
+      "pages": 106,
+      "size_mb": 8.08
+    },
+    {
+      "id": 997,
+      "uuid": "9bc25090b0e2493ba3292a9622871456",
+      "title": "Kiểm tra, giám sát của Đảng về công tác cán bộ",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "TS. Phan Thăng An (Chủ biên)",
+      "pages": 294,
+      "size_mb": 14.31
+    },
+    {
+      "id": 1007,
+      "uuid": "4a86be96524346d0a2b85c666d6cc5ec",
+      "title": "Hồ Chí Minh với hành trình thực hiện khát vọng độc lập, tự do, hạnh phúc",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 826,
+      "size_mb": 77.49
+    },
+    {
+      "id": 1008,
+      "uuid": "ee5a0e7060a94ae495e9735a49f34e20",
+      "title": "Quy định về kỷ luật tổ chức đảng, đảng viên vi phạm",
+      "category": "Các ấn phẩm khác",
+      "creator": "Ủy ban Kiểm tra Trung ương",
+      "pages": 254,
+      "size_mb": 12.55
+    },
+    {
+      "id": 1020,
+      "uuid": "c3b4b0c0d8f448a59ad37e3f545f21f9",
+      "title": "Tư tưởng Hồ Chí Minh về xây dựng đất nước phồn vinh, hạnh phúc",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 634,
+      "size_mb": 57.63
+    },
+    {
+      "id": 1044,
+      "uuid": "9cccab477a954b038cb9fc9ec0000114",
+      "title": "Nâng cao đạo đức cách mạng, quét sạch chủ nghĩa cá nhân theo tư tưởng, đạo đức, phong cách Hồ Chí Minh (Kỷ yếu Hội thảo khoa học quốc gia)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Đảng ủy Khối các cơ quan Trung ương",
+      "pages": 840,
+      "size_mb": 83.71
+    },
+    {
+      "id": 1054,
+      "uuid": "6a4840988555485094f8f42463a57132",
+      "title": "Quốc hội trong tiến trình đổi mới đáp ứng yêu cầu xây dựng, hoàn thiện Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 846,
+      "size_mb": 106.27
+    },
+    {
+      "id": 1055,
+      "uuid": "e23288cdc0a2427f9fea11fa501327d2",
+      "title": "Xây dựng và phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 930,
+      "size_mb": 42.21
+    },
+    {
+      "id": 1056,
+      "uuid": "7b89a42c16ef487684d5dcbc43e7a7ee",
+      "title": "Một số vấn đề cần được đặc biệt quan tâm trong công tác chuẩn bị nhân sự Đại hội XIV của Đảng",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 37,
+      "size_mb": 1.57
+    },
+    {
+      "id": 1057,
+      "uuid": "b8ca042741734c07a660aacd16baeb80",
+      "title": "Xây dựng Đảng và hệ thống chính trị trong sạch, vững mạnh, góp phần thực hiện thắng lợi Nghị quyết Đại hội XIII của Đảng",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 500,
+      "size_mb": 17.47
+    },
+    {
+      "id": 1058,
+      "uuid": "b7573263cfe3422980fcd4f163899d49",
+      "title": "Giương cao ngọn cờ đại đoàn kết toàn dân tộc, phát huy truyền thống yêu nước, vai trò nòng cốt chính trị của Mặt trận Tổ quốc Việt Nam, quyết tâm xây dựng đất nước ta ngày càng giàu mạnh, phồn vinh, văn minh, hạnh phúc",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 62,
+      "size_mb": 1.99
+    },
+    {
+      "id": 1059,
+      "uuid": "daa6dfb737f44b00bf33fd05eeee0e0c",
+      "title": "Kế thừa, phát huy truyền thống dân tộc, tư tưởng ngoại giao Hồ Chí Minh, quyết tâm xây dựng và phát triển nền đối ngoại, ngoại giao toàn diện, hiện đại, mang đậm bản sắc “cây tre Việt Nam”",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 58,
+      "size_mb": 1.49
+    },
+    {
+      "id": 1061,
+      "uuid": "ef02d0d33ee04719bcc171a6e4388d14",
+      "title": "Nguyên tắc tập trung dân chủ phải chăng đã lỗi thời?",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 74,
+      "size_mb": 1.16
+    },
+    {
+      "id": 1062,
+      "uuid": "bfa2168ffd5342259b6c7278ce4fcc5f",
+      "title": "Tìm hiểu sự lãnh đạo của Đảng đối với Công đoàn",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 162,
+      "size_mb": 13.46
+    },
+    {
+      "id": 1063,
+      "uuid": "30309e936b814a879021ece42ad989ad",
+      "title": "Về các mối quan hệ lớn cần được giải quyết tốt trong quá trình đổi mới đi lên chủ nghĩa xã hội ở nước ta",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng (Chủ biên)",
+      "pages": 282,
+      "size_mb": 18.21
+    },
+    {
+      "id": 1064,
+      "uuid": "b5af0163a6ae4e26a830abf16d0205f7",
+      "title": "Phát huy dân chủ, tiếp tục xây dựng Nhà nước pháp quyền xã hội chủ nghĩa của nhân dân, do nhân dân, vì nhân dân",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 756,
+      "size_mb": 60.73
+    },
+    {
+      "id": 1065,
+      "uuid": "ad0329b647bf47c8aad2265e9bac9a2e",
+      "title": "Vietnam from 1986",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 115,
+      "size_mb": 18.48
+    },
+    {
+      "id": 1066,
+      "uuid": "ee1856f571384bb28909858178cbafea",
+      "title": "Quyết tâm ngăn chặn và đẩy lùi tham nhũng",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 382,
+      "size_mb": 13.87
+    },
+    {
+      "id": 1067,
+      "uuid": "c0561b710abd4b2682e9d646726662d6",
+      "title": "Sổ tang điện tử Tổng Bí thư Nguyễn Phú Trọng trong lòng độc giả Vietnam Net",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Báo VietNamNet",
+      "pages": 321,
+      "size_mb": 150.93
+    },
+    {
+      "id": 1068,
+      "uuid": "9a34dde86de1477caa2c72bd5e2c94ea",
+      "title": "Biến thách thức thành cơ hội, quyết tâm tạo đột phá đưa đất nước phát triển nhanh, bền vững",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 870,
+      "size_mb": 32.37
+    },
+    {
+      "id": 1069,
+      "uuid": "83cdd798f0604b7ab1403314ddc3fe3f",
+      "title": "Đấu tranh phòng, chống tham nhũng, tiêu cực: Một việc làm cần thiết, tất yếu; một xu thế không thể đảo ngược",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 66,
+      "size_mb": 1.43
+    },
+    {
+      "id": 1070,
+      "uuid": "96f41160686c4341bd5d703253d0905e",
+      "title": "Cương lĩnh chính trị - Ngọn cờ tư tưởng lý luận chỉ đạo sự nghiệp cách mạng của chúng ta",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 98,
+      "size_mb": 4.55
+    },
+    {
+      "id": 1071,
+      "uuid": "d2707c1226d64033a1d72dcc91981997",
+      "title": "Vì một nền văn hóa Việt Nam dân tộc, hiện đại",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 366,
+      "size_mb": 4.73
+    },
+    {
+      "id": 1072,
+      "uuid": "0db1e745ea5541a4a60803e3098ae01d",
+      "title": "Nhận thức lý luận về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam qua các tác phẩm của Tổng Bí thư Nguyễn Phú Trọng (Sách chuyên khảo)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "PGS. TS. Vũ Trọng Lâm (Chủ biên)",
+      "pages": 347,
+      "size_mb": 7.19
+    },
+    {
+      "id": 1073,
+      "uuid": "ae2382311a7940e4bae7372832590cfd",
+      "title": "Vững bước trên con đường đã chọn (Xuất bản lần thứ ba, có chỉnh sửa)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng (Chủ biên)",
+      "pages": 462,
+      "size_mb": 4.88
+    },
+    {
+      "id": 1074,
+      "uuid": "76543f70039144cebc1b3a1dc32d8e53",
+      "title": "Đảng Cộng sản Việt Nam trong tiến trình đổi mới đất nước (Xuất bản lần thứ hai)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 697,
+      "size_mb": 21.93
+    },
+    {
+      "id": 1075,
+      "uuid": "3fe28410c7f4425d9a15f9a4da173800",
+      "title": "Renewal in Việt Nam – Theory and reality",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 406,
+      "size_mb": 10.95
+    },
+    {
+      "id": 1076,
+      "uuid": "ef2d73eee29a4ffb85b084a1a8ad5fa3",
+      "title": "Vững bước trên con đường đổi mới, tập 4 (2021-2024)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 1258,
+      "size_mb": 32.95
+    },
+    {
+      "id": 1077,
+      "uuid": "8aa5d0fc1c674e0fba0894c1cffe002e",
+      "title": "Xây dưng, chỉnh đốn Đảng - Một số vấn đề lý luận và thực tiễn (Xuất bản lần thứ ba, có chỉnh sửa)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 654,
+      "size_mb": 21.62
+    },
+    {
+      "id": 1078,
+      "uuid": "a8088420f6524aadbb424ebd93d97125",
+      "title": "Hướng tới 1.000 năm Thăng Long - Hà Nội, xây dựng Thủ đô phát triển toàn diện, bền vững",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 704,
+      "size_mb": 22.64
+    },
+    {
+      "id": 1079,
+      "uuid": "8fe241bfc96f43feb156ac3bf17f7cf7",
+      "title": "Luận cứ khoa học cho việc nâng cao chất lượng đội ngũ cán bộ trong thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước (Xuất bản lần thứ hai, có chỉnh sửa)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "PGS. TS. Nguyễn Phú Trọng",
+      "pages": 390,
+      "size_mb": 4.99
+    },
+    {
+      "id": 1080,
+      "uuid": "d7bc8b9843604ca1aa686d1fdce3ad6d",
+      "title": "Nâng cao năng lực lãnh đạo và sức chiến đấu của Đảng trong thời kỳ mới (Xuất bản lần thứ hai, có chỉnh sửa)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "GS.TS. Nguyễn Phú Trọng",
+      "pages": 258,
+      "size_mb": 4.79
+    },
+    {
+      "id": 1081,
+      "uuid": "c87c3d6c7ce543b782063dd679f220e8",
+      "title": "Vững bước trên con đường đổi mới, tập 3 (2017-2020)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 970,
+      "size_mb": 32.11
+    },
+    {
+      "id": 1082,
+      "uuid": "767e7977935c43b295b0b8ff2a7a85b0",
+      "title": "Xây dựng, chỉnh đốn Đảng là nhiệm vụ then chốt để phát triển đất nước (Xuất bản lần thứ hai)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 214,
+      "size_mb": 4.69
+    },
+    {
+      "id": 1083,
+      "uuid": "a7b7c028def54bddb47b3c3bd3bbe2f4",
+      "title": "Nghiên cứu Nghị quyết Hội nghị đại biểu toàn quốc giữa nhiệm kỳ của Đảng (Xuất bản lần thứ hai, có chỉnh sửa)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 102,
+      "size_mb": 4.56
+    },
+    {
+      "id": 1084,
+      "uuid": "b3bbcb3008784af89b4d2e7da701301c",
+      "title": "Sự lãnh đạo và hoạt động của Đảng trong điều kiện cơ chế thị trường (Xuất bản lần thứ hai)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 138,
+      "size_mb": 3.93
+    },
+    {
+      "id": 1085,
+      "uuid": "7a366165899f448a8a3f8e055336f149",
+      "title": "Ý Đảng quyện lòng dân (Xuất bản lần thứ hai)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Báo Nhân Dân",
+      "pages": 486,
+      "size_mb": 7.1
+    },
+    {
+      "id": 1086,
+      "uuid": "4171ab293a454a2dad7030fdcd80dc8a",
+      "title": "Quyết tâm cao, biện pháp quyết liệt, nhằm tạo chuyển biến mới về xây dựng Đảng (Xuất bản lần thứ hai)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 130,
+      "size_mb": 4.47
+    },
+    {
+      "id": 1087,
+      "uuid": "6b9c8436bd8b4efea9120db2aca875ea",
+      "title": "Phát huy hào khí Thăng Long - Hà Nội, xây dựng Thủ đô ngày càng giàu đẹp, văn minh, hiện đại",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 666,
+      "size_mb": 18.52
+    },
+    {
+      "id": 1088,
+      "uuid": "7f3c337b0f694e0fad2dca17bb5f8244",
+      "title": "Quyết tâm ngăn chặn và đẩy lùi tham nhũng (Tiếng Lào)",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 386,
+      "size_mb": 6.54
+    },
+    {
+      "id": 1089,
+      "uuid": "4eb192dbc47a432aabd5b88a1613ea35",
+      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Italia) - Teoria e pratica del socialismo in Vietnam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng",
+      "pages": 304,
+      "size_mb": 6.21
+    },
+    {
+      "id": 1092,
+      "uuid": "3cf40f01e347446d93f001785aaf4e49",
+      "title": "Vận dụng tư tưởng Hồ Chí Minh về công tác xuất bản trong giai đoạn hiện nay",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nhà xuất bản Chính trị quốc gia Sự thật",
+      "pages": 358,
+      "size_mb": 5.73
+    },
+    {
+      "id": 1093,
+      "uuid": "891b3b68f28b4fd7be3ea7cb89a9d22d",
+      "title": "Về định hướng xã hội chủ nghĩa và con đường đi lên chủ nghĩa xã hội ở Việt Nam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Phú Trọng (Chủ biên)",
+      "pages": 422,
+      "size_mb": 5.82
+    },
+    {
+      "id": 1109,
+      "uuid": "12faa1cf8e384c94b20f646f95fd77b6",
+      "title": "Hồ Chí Minh Toàn tập, Tập 11 (1957-1958) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 702,
+      "size_mb": 53.8
+    },
+    {
+      "id": 1110,
+      "uuid": "e9fb249c360948c1a90d8676e3beca1a",
+      "title": "Hồ Chí Minh Toàn tập, Tập 15 (1966-1969) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 802,
+      "size_mb": 61.51
+    },
+    {
+      "id": 1111,
+      "uuid": "258cccc5604f4564aa793d7554d7f637",
+      "title": "Hồ Chí Minh Toàn tập, Tập 14 (1963-1965) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 854,
+      "size_mb": 66.55
+    },
+    {
+      "id": 1112,
+      "uuid": "6caf1c69b99146c996cabf7ee7ea7e67",
+      "title": "Hồ Chí Minh Toàn tập, Tập 13 (1961-1962) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 640,
+      "size_mb": 49.93
+    },
+    {
+      "id": 1113,
+      "uuid": "b9e2df7e6a7145e7b52549cc65244d4f",
+      "title": "Hồ Chí Minh Toàn tập, Tập 9 (1954-1955) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 616,
+      "size_mb": 42.52
+    },
+    {
+      "id": 1114,
+      "uuid": "1305a7fa826d4bc5b08dfe38b5da8954",
+      "title": "Hồ Chí Minh Toàn tập, Tập 12 (1959-1960) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 854,
+      "size_mb": 67.37
+    },
+    {
+      "id": 1115,
+      "uuid": "bd106d200a1b42e598e38d72daf00f40",
+      "title": "Hồ Chí Minh Toàn tập, Tập 8 (1953-1954) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 658,
+      "size_mb": 48.27
+    },
+    {
+      "id": 1116,
+      "uuid": "8449e6f1ed9a40dfaa15c94ec9baa8b3",
+      "title": "Hồ Chí Minh Toàn tập, Tập 5 (1947-1948) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 790,
+      "size_mb": 51.1
+    },
+    {
+      "id": 1117,
+      "uuid": "1f387efd31e24868b969b26f279b0d27",
+      "title": "Hồ Chí Minh Toàn tập, Tập 10 (1955-1957) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 730,
+      "size_mb": 52.11
+    },
+    {
+      "id": 1118,
+      "uuid": "da93060a0d864c0cad0c09d55aea9136",
+      "title": "Hồ Chí Minh Toàn tập, Tập 7 (1951-1952) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 688,
+      "size_mb": 50.33
+    },
+    {
+      "id": 1119,
+      "uuid": "a6003cadda274fda8b8ed854a0d25b37",
+      "title": "Hồ Chí Minh Toàn tập, Tập 4 (1945-1946) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 676,
+      "size_mb": 11.33
+    },
+    {
+      "id": 1120,
+      "uuid": "bc83db5eab554440b765a5a71dcaf84e",
+      "title": "Hồ Chí Minh Toàn tập, Tập 1 (1912-1924) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 626,
+      "size_mb": 50.38
+    },
+    {
+      "id": 1121,
+      "uuid": "7e348afc73b9407f96d5ea709530a7e3",
+      "title": "Hồ Chí Minh Toàn tập, Tập 3 (1930-1945) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 724,
+      "size_mb": 47.93
+    },
+    {
+      "id": 1122,
+      "uuid": "95cdd22bf86d4767a1dc69bdc1b8ed3a",
+      "title": "Hồ Chí Minh Toàn tập, Tập 2 (1924-1929) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 688,
+      "size_mb": 57.87
+    },
+    {
+      "id": 1124,
+      "uuid": "b88a09d1eeb14caea994926203e0f793",
+      "title": "Những bức thư của Bác Hồ nhân dịp đầu năm học mới",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 58,
+      "size_mb": 1.0
+    },
+    {
+      "id": 1125,
+      "uuid": "870cb22ec7ab44eeb10a930cc24a3062",
+      "title": "Lời Bác (Xuất bản lần thứ tư)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 154,
+      "size_mb": 7.61
+    },
+    {
+      "id": 1126,
+      "uuid": "87cc8d6154c748618c337494b3b2f6c7",
+      "title": "Hồ Chí Minh Toàn tập, Tập 6 (1949-1950) (Xuất bản lần thứ ba, có sửa chữa)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 644,
+      "size_mb": 45.62
+    },
+    {
+      "id": 1127,
+      "uuid": "c57006ca40074775b090d806ec37fee7",
+      "title": "Lời Bác dạy thanh niên",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 126,
+      "size_mb": 11.23
+    },
+    {
+      "id": 1128,
+      "uuid": "81081278e12943cea183a993d190b6c4",
+      "title": "Hồ Chí Minh - Vĩ đại một con người",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "GS. Trần Văn Giàu",
+      "pages": 182,
+      "size_mb": 9.03
+    },
+    {
+      "id": 1129,
+      "uuid": "73f72690721a438880c0eabb76bc27cc",
+      "title": "Nhật ký trong tù",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 262,
+      "size_mb": 12.14
+    },
+    {
+      "id": 1130,
+      "uuid": "041c55b17e4d4c31958a4c38a46f8074",
+      "title": "Những tên gọi, bí danh, bút danh của Chủ tịch Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Bảo tàng Hồ Chí Minh",
+      "pages": 176,
+      "size_mb": 8.0
+    },
+    {
+      "id": 1131,
+      "uuid": "926a2cd110ef4786b319a5aa341f4459",
+      "title": "Tình cảm của nhân dân thế giới với Chủ tịch Hồ Chí Minh (The world people’s affection for President Ho Chi Minh)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Vụ Ngoại giao văn hóa và UNESCO, Bộ Ngoại giao",
+      "pages": 266,
+      "size_mb": 86.46
+    },
+    {
+      "id": 1132,
+      "uuid": "424f498943f1437b96ac17d1eb14c180",
+      "title": "Truyện về Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Trần Dân Tiên",
+      "pages": 258,
+      "size_mb": 12.49
+    },
+    {
+      "id": 1133,
+      "uuid": "a89dde1f628640759b8184218980800c",
+      "title": "Tư tưởng Hồ Chí Minh: Một số chuyên đề lý luận và thực tiễn (sách chuyên khảo)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "PGS.TS. Nguyễn Ngọc Khá",
+      "pages": 366,
+      "size_mb": 15.05
+    },
+    {
+      "id": 1134,
+      "uuid": "a5803c607a0049a8b77986f9ebe54f32",
+      "title": "President Ho Chi Minh - Biography and Career",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Ho Chi Minh’s Vestige in the Presidential Palace Area",
+      "pages": 164,
+      "size_mb": 15.05
+    },
+    {
+      "id": 1135,
+      "uuid": "760594d438af46d5bebbe060246fdc80",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 1",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 388,
+      "size_mb": 13.57
+    },
+    {
+      "id": 1136,
+      "uuid": "07f1b644bf214dccbf61c63d047f0e35",
+      "title": "Tuổi trẻ Việt Nam học tập và làm theo Bác Hồ xây dựng đất nước hùng cường, thịnh vượng",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "PGS.TS. Hoàng Anh",
+      "pages": 198,
+      "size_mb": 11.98
+    },
+    {
+      "id": 1137,
+      "uuid": "8808189946324326b582edb076c77f3f",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 2",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 300,
+      "size_mb": 16.89
+    },
+    {
+      "id": 1138,
+      "uuid": "a64f94a6a38c42538ab6ffccdf9f27fb",
+      "title": "Xây dựng ý chí tự lực, tự cường và khát vọng phát triển đất nước phồn vinh, hạnh phúc",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "ThS. Phạm Trường Minh",
+      "pages": 192,
+      "size_mb": 7.09
+    },
+    {
+      "id": 1139,
+      "uuid": "3176c33ef2f4454b879dca9e63f33bdf",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 3",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 404,
+      "size_mb": 16.63
+    },
+    {
+      "id": 1140,
+      "uuid": "e598b6e296e34d2bb5a4cf334d4c3059",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 4",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 476,
+      "size_mb": 15.35
+    },
+    {
+      "id": 1141,
+      "uuid": "b5f4caa97ea8432288634fbc0cf4eaf3",
+      "title": "Tư tưởng Hồ Chí Minh và con đường cách mạng Việt Nam",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Đại tướng Võ Nguyên Giáp (Chủ biên)",
+      "pages": 406,
+      "size_mb": 13.59
+    },
+    {
+      "id": 1142,
+      "uuid": "dfd2a329aba84a3f8440db1ac9ff854f",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 7",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 524,
+      "size_mb": 50.13
+    },
+    {
+      "id": 1143,
+      "uuid": "4cf46ad4fe774e519d8ccf06fd9185f7",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 8",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 456,
+      "size_mb": 15.95
+    },
+    {
+      "id": 1144,
+      "uuid": "c1b238843f4845e1a761d365f340b820",
+      "title": "Trái tim, quả đất",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Sơn Tùng",
+      "pages": 328,
+      "size_mb": 13.72
+    },
+    {
+      "id": 1145,
+      "uuid": "c0419968b72f4080bf1c28eac59d2cca",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 5",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 524,
+      "size_mb": 50.56
+    },
+    {
+      "id": 1146,
+      "uuid": "5354fe44d1024d4e8dfc127d2842351e",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 9",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 507,
+      "size_mb": 15.89
+    },
+    {
+      "id": 1147,
+      "uuid": "938cd4a92b50476cb047b756fba1b75b",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 10",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 424,
+      "size_mb": 15.54
+    },
+    {
+      "id": 1148,
+      "uuid": "51bd7291ea7143b494f622213d97b071",
+      "title": "Từ Làng Sen đến Bến Nhà Rồng (Ký) (Xuất bản lần thứ 20, có sửa chữa, bổ sung)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Trình Quang Phú",
+      "pages": 366,
+      "size_mb": 15.36
+    },
+    {
+      "id": 1149,
+      "uuid": "1d09d7bb9cd247c4bb82b607218c0124",
+      "title": "Hồ Chí Minh - Biên niên tiểu sử, Tập 6",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 520,
+      "size_mb": 51.21
+    },
+    {
+      "id": 1151,
+      "uuid": "24c90b7cee0342e894c4ce053361d4fb",
+      "title": "Về đạo đức cách mạng",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 216,
+      "size_mb": 10.79
+    },
+    {
+      "id": 1152,
+      "uuid": "b948b5805518441d8d79c16a5708826c",
+      "title": "Hồ Chí Minh qua hồi ức của những cựu tù chính trị Côn Đảo",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Tập thể tác giả",
+      "pages": 290,
+      "size_mb": 13.84
+    },
+    {
+      "id": 1153,
+      "uuid": "31ad5ac144cc447bac5543470bdd53a0",
+      "title": "Di chúc của Chủ tịch Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 52,
+      "size_mb": 2.11
+    },
+    {
+      "id": 1154,
+      "uuid": "7eb0ef1af91d4c288df2dec80de4a418",
+      "title": "Bông sen vàng (Xuất bản lần thứ ba)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Sơn Tùng",
+      "pages": 426,
+      "size_mb": 12.22
+    },
+    {
+      "id": 1155,
+      "uuid": "605138c01e2746c9ab713ad4848a30a8",
+      "title": "Hồ Chí Minh - vĩ đại một con người",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "GS. Trần Văn Giàu",
+      "pages": 278,
+      "size_mb": 14.45
+    },
+    {
+      "id": 1156,
+      "uuid": "ce444043a5f34949badd9b9b68205908",
+      "title": "Phong cách ứng xử Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Bảo tàng Hồ Chí Minh (Sưu tầm và tuyển chọn)",
+      "pages": 198,
+      "size_mb": 6.69
+    },
+    {
+      "id": 1157,
+      "uuid": "0c84d1f4d74546e7b8a51eac8c03533d",
+      "title": "Phong cách tư duy Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Bảo tàng Hồ Chí Minh (Sưu tầm và tuyển chọn)",
+      "pages": 182,
+      "size_mb": 7.39
+    },
+    {
+      "id": 1158,
+      "uuid": "e5408292350d4a33b92c9a9405455261",
+      "title": "Phong cách sống Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Bảo tàng Hồ Chí Minh (Sưu tầm và tuyển chọn)",
+      "pages": 146,
+      "size_mb": 7.37
+    },
+    {
+      "id": 1159,
+      "uuid": "17ccfdad3abd499aab82820eac254626",
+      "title": "Phong cách làm việc Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Bảo tàng Hồ Chí Minh (Sưu tầm và tuyển chọn)",
+      "pages": 158,
+      "size_mb": 6.21
+    },
+    {
+      "id": 1160,
+      "uuid": "02351375f655468f892b1542336aa806",
+      "title": "Bác Hồ của chúng em",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Chu Trọng Huyến",
+      "pages": 242,
+      "size_mb": 11.96
+    },
+    {
+      "id": 1162,
+      "uuid": "757a9cd57a664325bc6d255da256ae2f",
+      "title": "Chủ tịch Hồ Chí Minh với Đại tướng Võ Nguyên Giáp",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Chu Trọng Huyến",
+      "pages": 226,
+      "size_mb": 12.15
+    },
+    {
+      "id": 1164,
+      "uuid": "52d4fd03d0ca43fb98a1be2edf289036",
+      "title": "Một số mô hình hay, cách làm hiệu quả trong học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Ban Tuyên giáo Trung ương",
+      "pages": 204,
+      "size_mb": 8.33
+    },
+    {
+      "id": 1165,
+      "uuid": "87275025ecf846ffa72daabca2c0184f",
+      "title": "Hồ Chí Minh về chống quan liêu, tham nhũng, tiêu cực",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "PGS.TS. Phạm Minh Tuấn (Chủ biên)",
+      "pages": 121,
+      "size_mb": 10.35
+    },
+    {
+      "id": 1166,
+      "uuid": "83b9d6ff02724f7292143b5320f05093",
+      "title": "Một câu chuyện nhỏ, một bài học lớn",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Khu Di tích Chủ tịch Hồ Chí Minh",
+      "pages": 258,
+      "size_mb": 4.84
+    },
+    {
+      "id": 1169,
+      "uuid": "5e654f3c5e7b4a83b64ea329058df642",
+      "title": "Ta bên Người, Người tỏa sáng trong ta",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nhiều tác giả",
+      "pages": 228,
+      "size_mb": 4.22
+    },
+    {
+      "id": 1170,
+      "uuid": "d2e9c9784a1b471cbc8b3d809129da00",
+      "title": "Thơ chúc Tết - mừng Xuân của Bác Hồ và lời bình",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Lê Xuân Đức",
+      "pages": 212,
+      "size_mb": 2.53
+    },
+    {
+      "id": 1171,
+      "uuid": "902bb8f7a876404d93f946465ae35638",
+      "title": "Những chuyện kể về tấm gương trung thực, trách nhiệm, gắn bó với nhân dân của Chủ tịch Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Lê Trang (Sưu tầm)",
+      "pages": 264,
+      "size_mb": 3.45
+    },
+    {
+      "id": 1172,
+      "uuid": "ea0a21ec96674d32b8331d9b62b54a06",
+      "title": "Chuyện thường ngày của Bác Hồ (Tái bản có sửa chữa, bổ sung)",
+      "category": "Các ấn phẩm khác",
+      "creator": "Hồng Khanh",
+      "pages": 188,
+      "size_mb": 4.52
+    },
+    {
+      "id": 1173,
+      "uuid": "5d90eab1c8a5423a9123f4e1343d81d6",
+      "title": "Chủ tịch Hồ Chí Minh và các nhà lãnh đạo tiền bối tiêu biểu của Đảng và cách mạng Việt Nam",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Viện Hồ Chí Minh",
+      "pages": 220,
+      "size_mb": 4.02
+    },
+    {
+      "id": 1175,
+      "uuid": "1c9edeae54f246da8d1756f4280fdb8b",
+      "title": "Theo dấu chân Bác",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nguyễn Đức Quý",
+      "pages": 222,
+      "size_mb": 3.66
+    },
+    {
+      "id": 1176,
+      "uuid": "ff226eeb97d14e4580cabd439f80eb23",
+      "title": "Sổ tay các văn bản triển khai Chỉ thị số 03-CT/TW của Bộ Chính trị về tiếp tục đẩy mạnh học tập và làm theo tấm gương đạo đức Hồ Chí Minh",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Ban Tuyên giáo Trung ương",
+      "pages": 316,
+      "size_mb": 3.97
+    },
+    {
+      "id": 1177,
+      "uuid": "8354e1d89dd14c3fa0630fe4a9a994a1",
+      "title": "Hồ Chí Minh - Tấm gương lớn về sự nêu gương",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "PGS.TS. Trần Quang Nhiếp",
+      "pages": 180,
+      "size_mb": 3.62
+    },
+    {
+      "id": 1178,
+      "uuid": "e05fb1f0597b4ed4aa869b6e6a2fd97a",
+      "title": "Học tập và làm theo tư tưởng, tấm gương đạo đức Hồ Chí Minh về nâng cao ý thức trách nhiệm, hết lòng, hết sức phụng sự Tổ quốc, phục vụ nhân dân (Tài liệu học tập năm 2009)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Nhiều tác giả",
+      "pages": 54,
+      "size_mb": 0.7
+    },
+    {
+      "id": 1179,
+      "uuid": "d8d67a20900244aa9a9a895bcffce42d",
+      "title": "Bản án chế độ thực dân Pháp",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 191,
+      "size_mb": 12.11
+    },
+    {
+      "id": 1180,
+      "uuid": "8f61f9d7006d41228409360b651bc5a0",
+      "title": "Đường cách mệnh (Xuất bản lần thứ năm)",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 115,
+      "size_mb": 9.21
+    },
+    {
+      "id": 1183,
+      "uuid": "7e44a173971d4ee9bff1a34038a0f298",
+      "title": "Một số tác phẩm chính luận tiêu biểu",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 73,
+      "size_mb": 0.83
+    },
+    {
+      "id": 1188,
+      "uuid": "12faf5e31f4e4284a80a13f484d19500",
+      "title": "Tham nhũng và hoạt động của Công an nhân dân trong đấu tranh phòng, chống tham nhũng ở Việt Nam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Đại tướng, GS.TS. Tô Lâm",
+      "pages": 267,
+      "size_mb": 5.21
+    },
+    {
+      "id": 1189,
+      "uuid": "ee7562955f2d49fa879cc3f2291c9fdd",
+      "title": "Tư tưởng Hồ Chí Minh về vai trò của nhân dân trong sự nghiệp giữ gìn trật tự, an ninh",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Thượng tướng, GS.TS. Tô Lâm",
+      "pages": 259,
+      "size_mb": 4.88
+    },
+    {
+      "id": 1190,
+      "uuid": "daeaff1267574272a47cfe0a53f3e04e",
+      "title": "Tư tưởng Hồ Chí Minh về công an nhân dân",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Thượng tướng, GS.TS. Tô Lâm",
+      "pages": 215,
+      "size_mb": 6.64
+    },
+    {
+      "id": 1191,
+      "uuid": "6ea12d276dbb4f4db24d20c0abe1a9a1",
+      "title": "Tư tưởng Hồ Chí Minh về cán bộ và công tác cán bộ Công an nhân dân",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Thượng tướng, GS.TS. Tô Lâm",
+      "pages": 346,
+      "size_mb": 4.92
+    },
+    {
+      "id": 1192,
+      "uuid": "1b6b8895b23341dcb49a65b55b3e926f",
+      "title": "Nâng cao chất lượng giáo dục tư tưởng chính trị trong Công an nhân dân trước tình hình mới",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Đại tướng, GS.TS. Tô Lâm",
+      "pages": 241,
+      "size_mb": 5.57
+    },
+    {
+      "id": 1193,
+      "uuid": "09dd125c482e4b7fb39415c73cd58074",
+      "title": "Tư tưởng Hồ Chí Minh về nhận diện và đấu tranh với những biểu hiện suy thoái về tư tưởng chính trị, đạo đức, lối sống trong cán bộ, đảng viên",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Đại tướng, GS.TS. Tô Lâm",
+      "pages": 129,
+      "size_mb": 3.45
+    },
+    {
+      "id": 1229,
+      "uuid": "818d4653adfb4e978653dfceefa4f57c",
+      "title": "Những điểm mới về an ninh quốc gia trong Văn kiện Đại hội XIII của Đảng",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Đại tướng, GS.TS. Tô Lâm (Chủ biên)",
+      "pages": 282,
+      "size_mb": 79.46
+    },
+    {
+      "id": 1231,
+      "uuid": "05dc70e11afe40f396efbd3f8873e4f5",
+      "title": "Nâng cao chất lượng giáo dục tư tưởng chính trị trong Công an nhân dân trước tình hình mới",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Đại tướng, GS.TS. Tô Lâm",
+      "pages": 241,
+      "size_mb": 99.07
+    },
+    {
+      "id": 1232,
+      "uuid": "1a8fdc36a1d640a3a2d74fda39c49f47",
+      "title": "Tham nhũng và hoạt động của Công an nhân dân trong đấu tranh phòng, chống tham nhũng ở Việt Nam",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Đại tướng, GS.TS. Tô Lâm",
+      "pages": 267,
+      "size_mb": 90.91
+    },
+    {
+      "id": 1279,
+      "uuid": "06b8540b25f74f65885afbc830f63c74",
+      "title": "Một số vấn đề lý luận và thực tiễn về bảo vệ Tổ quốc từ sớm, từ xa",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Thượng tướng, PGS.TS. Nguyễn Văn Thành (Chủ biên)",
+      "pages": 474,
+      "size_mb": 88.11
+    },
+    {
+      "id": 1294,
+      "uuid": "f9013a9db5b34ff4a9bf3347200c0009",
+      "title": "Xây dựng mô hình tổ chức tổng thể hệ thống chính trị ở Việt Nam trong tình hình mới - Lý luận và thực tiễn (Sách chuyên khảo)",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "PGS. TS. Nguyễn Văn Giang",
+      "pages": 373,
+      "size_mb": 93.47
+    },
+    {
+      "id": 1413,
+      "uuid": "8083891be0034ad89ece6e6c91356e54",
+      "title": "Giữ trọn lời hứa với đất nước và Nhân dân - Tập 1",
+      "category": "Lãnh đạo Đảng, Nhà nước",
+      "creator": "Nguyễn Thị Kim Ngân ",
+      "pages": 362,
+      "size_mb": 126.19
+    },
+    {
+      "id": 1415,
+      "uuid": "57f2aab26ba44e8aaf1218cc2c92524f",
+      "title": "Ngành Tuyên giáo và Dân vận trong nhiệm kỳ Đại hội XIII của Đảng: Bước chuyển từ tư duy lý luận đến hành động thực tiễn",
+      "category": "Xây dựng Đảng, Nhà nước",
+      "creator": "Ban Tuyên giáo và Dân vận Trung ương ",
+      "pages": 315,
+      "size_mb": 162.78
+    },
+    {
+      "id": 1428,
+      "uuid": "7c47448fcadb4fb4b040dbc5d41d846a",
+      "title": "Ho Chi Minh: Vida y carrera del líder de la liberación nacional de Vietnam",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Pedro de Oliveira",
+      "pages": 446,
+      "size_mb": 101.07
+    },
+    {
+      "id": 1431,
+      "uuid": "d2edf491d19e4c688f04aa401f5e24e7",
+      "title": "Residencia y lugar de trabajo del presidente Ho Chi Minh en el Palacio Presidencial - Hanoi",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Área de reliquias del Presidente Ho Chi Minh en el palacio Presidenci",
+      "pages": 114,
+      "size_mb": 118.22
+    },
+    {
+      "id": 1433,
+      "uuid": "2689e502aeb8470fb214db2f569beb6e",
+      "title": "Ho Chi Minh: Antología, Volumen 3 - Acerca de la democracia y el progreso social",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 413,
+      "size_mb": 82.47
+    },
+    {
+      "id": 1434,
+      "uuid": "ccded8c54b19415a87dc4e34e4e61ac6",
+      "title": "Ho Chi Minh: Antología, Volumen 5: Acerca de la educación-formación y ciencia, técnica",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "creator": "Hồ Chí Minh",
+      "pages": 412,
+      "size_mb": 64.23
+    },
+    {
+      "id": 1453,
+      "uuid": "50386852e4a4439a9de7c7c789d90d76",
+      "title": "Văn hóa soi sáng con đường phát triển đất nước trong kỷ nguyên mới",
+      "category": "Tài liệu",
+      "creator": "Đào Văn Hiếu, Vụ Văn hóa - Văn nghệ, Ban Tuyên giáo và Dân vận Trung ương",
+      "pages": 27,
+      "size_mb": 30.84
+    },
+    {
+      "id": 1454,
+      "uuid": "dcf1da0eaf8347d59b709b4c6cf2f87e",
+      "title": "Xây dựng xã hội trật tự, kỷ cương, an toàn, lành mạnh, nền tảng cốt yếu của phát triển bền vững trong kỷ nguyên vươn mình của dân tộc",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Hữu Tuấn",
+      "pages": 10,
+      "size_mb": 15.25
+    },
+    {
+      "id": 1455,
+      "uuid": "297d6605431d487fb71afc18b537b75f",
+      "title": "Concert quốc gia từ góc nhìn công tác tư tưởng: Khơi dậy tinh thần dân tộc trong thời đại số",
+      "category": "Tài liệu",
+      "creator": "Lê Diệu Ly",
+      "pages": 21,
+      "size_mb": 7.84
+    },
+    {
+      "id": 1456,
+      "uuid": "60f72ac3a9954d589aecda2e8813d9bd",
+      "title": "Thách thức và yêu cầu bảo vệ chủ quyền dữ liệu quốc gia trong kỷ nguyên số",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Thị Xuyên",
+      "pages": 18,
+      "size_mb": 15.11
+    },
+    {
+      "id": 1457,
+      "uuid": "f2ab93379c2b4741980ddbea96d5756d",
+      "title": "Tiếng nói lạc lõng giữa nỗi đau đồng bào",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Tiến Hiếu",
+      "pages": 21,
+      "size_mb": 8.61
+    },
+    {
+      "id": 1458,
+      "uuid": "2287897ba7cf495891fb39a072f22267",
+      "title": "Loạt bài 3 kỳ: \"Khi sự im lặng không còn vô can\"",
+      "category": "Tài liệu",
+      "creator": "Cù Tất Dũng",
+      "pages": 13,
+      "size_mb": 12.18
+    },
+    {
+      "id": 1459,
+      "uuid": "819b2368b21e425dafdff42e765dec9d",
+      "title": "Biên cương vững từ Ý Đảng, lòng dân (3 kỳ)",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Trung Thành",
+      "pages": 19,
+      "size_mb": 15.87
+    },
+    {
+      "id": 1460,
+      "uuid": "9f973eaf0e16428b89f56da206a975cb",
+      "title": "Kinh tế tư nhân là một động lực quan trọng nhất của nền kinh tế quốc gia” là bước tiến của tư duy đổi mới, không “chệch hướng” xã hội chủ nghĩa",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Cao Siêng",
+      "pages": 14,
+      "size_mb": 13.34
+    },
+    {
+      "id": 1461,
+      "uuid": "754aae67c661418da74626a10283a5e0",
+      "title": "Chùm bài viết: Xây dựng “Hệ miễn dịch số” trên trận địa tư tưởng",
+      "category": "Tài liệu",
+      "creator": "Vũ Mai Hoàng",
+      "pages": 49,
+      "size_mb": 11.6
+    },
+    {
+      "id": 1462,
+      "uuid": "36541e32e66f4fa78b0ad34916e97bb1",
+      "title": "Từ sắp xếp tổ chức bộ máy đến tái cấu trúc quyền lực quản trị: Nhận diện, đấu tranh và phản bác một số nhận thức lệch lạc, phiến diện",
+      "category": "Tài liệu",
+      "creator": "Ngô Xuân Thủy",
+      "pages": 12,
+      "size_mb": 14.01
+    },
+    {
+      "id": 1463,
+      "uuid": "f87190fd230d413f94505062b5b46d45",
+      "title": "“Những chiếc lồng vô hình” trong chủ nghĩa tư bản số - Nhận diện sự tha hóa tự do và định hướng của đảng theo tinh thần Đại hội XIV",
+      "category": "Tài liệu",
+      "creator": "Khoa Nhà nước và Pháp luật, Học viện Báo chí và Tuyên truyền, Học viện Chính trị quốc gia Hồ Chí Minh",
+      "pages": 19,
+      "size_mb": 12.91
+    },
+    {
+      "id": 1464,
+      "uuid": "3dd84d1485514bb7946c132d6e691e01",
+      "title": "Bảo đảm an ninh kinh tế số: Từ ứng phó thách thức đến kiến tạo phát triển (5 kỳ)",
+      "category": "Tài liệu",
+      "creator": "Song Linh, Trà My, Quang Huy, Bích Liên, Ngọc Hiếu, Đăng Phi, Duy Long",
+      "pages": 22,
+      "size_mb": 15.38
+    },
+    {
+      "id": 1465,
+      "uuid": "2268b6ca1aad40cf8d870081112ed860",
+      "title": "Xã hội hóa giáo dục không phải là “thương mại hóa” Hiểu đúng để đồng thuận",
+      "category": "Tài liệu",
+      "creator": "Phạm Minh Tâm",
+      "pages": 11,
+      "size_mb": 17.15
+    },
+    {
+      "id": 1466,
+      "uuid": "bf5c90f8c5234618a5c7a7130aaa9343",
+      "title": "“Phủ xanh” không gian mạng bằng thông tin  tích cực - phương thức xây dựng thế trận truyền thông nhân dân trong kỷ nguyên số",
+      "category": "Tài liệu",
+      "creator": "Vũ Thị Mai Liên",
+      "pages": 15,
+      "size_mb": 11.87
+    },
+    {
+      "id": 1467,
+      "uuid": "d0903a05b15f4613b6bd05299af75ccc",
+      "title": "Tư duy tự chủ chiến lược trong Văn kiện đại hội XIV của Đảng và vấn đề đấu tranh phản bác các quan điểm sai trái, thù địch, xuyên tạc",
+      "category": "Tài liệu",
+      "creator": "Lê Trung Nghĩa",
+      "pages": 12,
+      "size_mb": 16.32
+    },
+    {
+      "id": 1468,
+      "uuid": "0a94a1a802e04149bbd2d8d76fd5bed0",
+      "title": "Nhận diện, phản bác luận điệu xuyên tạc quanh chế định luật sư công (4 bài)",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Phi Hùng, Mai Văn Đỉnh, Đỗ Văn Việt, Nguyễn Thu Trang",
+      "pages": 18,
+      "size_mb": 14.57
+    },
+    {
+      "id": 1469,
+      "uuid": "feb383f0e450485aaebf6bc92d456747",
+      "title": "Báo in: Nâng cao bản lĩnh chính trị của cán bộ khoa học trong bảo vệ nền tảng tư tưởng của đảng",
+      "category": "Tài liệu",
+      "creator": "Chi bộ SH4 – Đảng bộ Viện Sinh học Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
+      "pages": 8,
+      "size_mb": 12.37
+    },
+    {
+      "id": 1470,
+      "uuid": "2bc68b486d154c09a905edf07734a01b",
+      "title": "Phát triển văn hóa số, chủ quyền văn hóa số và cuộc đấu tranh chống các giá trị phản văn hóa hiện nay",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Thị Nhàn",
+      "pages": 10,
+      "size_mb": 11.7
+    },
+    {
+      "id": 1471,
+      "uuid": "8216fc6bec7f4b9ea8c77887ffe12f1f",
+      "title": "Núi sông bờ cõi: Lạc lối và trở về",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Minh Hiếu, Lưu Gia Huy, Bùi Nam Hải, Nguyễn Đăng Quang, Phạm Phi Long",
+      "pages": 1,
+      "size_mb": 0.33
+    },
+    {
+      "id": 1472,
+      "uuid": "5ea1c5cc41a2423596a07141e377b9cb",
+      "title": "Xóa bỏ tà đạo",
+      "category": "Tài liệu",
+      "creator": "Hồ Thái, Vĩnh Lộc, Tài Toàn, Tấn Hiền, Đình Đại, Ngọc Ánh, Thùy Trang",
+      "pages": 1,
+      "size_mb": 0.33
+    },
+    {
+      "id": 1473,
+      "uuid": "6d424697b4ce45bfa52ca8392f7b07b0",
+      "title": "Đại hội XIV: Dấu mốc lịch sử đưa dân tộc  bước vào kỷ nguyên mới",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Việt Hải, Vũ Phương Thịnh, Nguyễn Minh Phương, Đàm Trần Huyền Trang",
+      "pages": 1,
+      "size_mb": 0.38
+    },
+    {
+      "id": 1474,
+      "uuid": "04bcbaa99c9d41999c1d2ed7d4de1cad",
+      "title": "Nghĩa vụ vinh quang - Tình thân bền chặt",
+      "category": "Tài liệu",
+      "creator": "Ngô Huy Phong, Nguyễn Anh Tuấn, Nguyễn Bá Trung, Cao Đăng Giang, Nguyễn Duy Dũng",
+      "pages": 1,
+      "size_mb": 0.37
+    },
+    {
+      "id": 1475,
+      "uuid": "52784c0f42134f04b42bab08db077b57",
+      "title": "Sự thật đập tan những luận điệu xuyên tạc về bầu cử Đại biểu Quốc hội khóa XVI và Hồi đồng Nhân dân các cấp",
+      "category": "Tài liệu",
+      "creator": "Thân Ngọc Anh, Nguyễn Thị Huỳnh Như, Nguyễn Thị Thanh Hà ",
+      "pages": 1,
+      "size_mb": 0.4
+    },
+    {
+      "id": 1476,
+      "uuid": "45307cbc7f924b00bc2fb8d538d09199",
+      "title": "Đi trên con đường sáng",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Thị Thu Dung, Chu Việt Hùng, Vũ Thị Hiền",
+      "pages": 1,
+      "size_mb": 0.32
+    },
+    {
+      "id": 1477,
+      "uuid": "60c394145c3e4bc4a2715e0f5e01bb5b",
+      "title": "Nhận diện và \"phản bác\" các luận điệu xuyên tạc về Nghị quyết số 68-NQ/TWcủa Bộ Chính trị về phat triển kinh tế tư nhân",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Văn Điển (trưởng nhóm) & Thành viên: Trương Hoàng Đức, Vũ Thị Thụy và Vũ Thị Cẩm My, Lương Quang Huy. Khoa Kinh tế chính trị, Học viện Chính trị khu vực II",
+      "pages": 1,
+      "size_mb": 0.48
+    },
+    {
+      "id": 1478,
+      "uuid": "1b96c595901e44b9809549415455719e",
+      "title": "Việt Nam: Tăng trưởng 2 con số là mệnh lệnh phát triển",
+      "category": "Tài liệu",
+      "creator": "Vũ Hồ Điệp, Nguyễn Thị Hằng Nga",
+      "pages": 1,
+      "size_mb": 0.34
+    },
+    {
+      "id": 1479,
+      "uuid": "8891b37384eb482eb536533f87a92c68",
+      "title": "Từ tia lửa sẽ bùng lên ngọn lửa",
+      "category": "Tài liệu",
+      "creator": "Bùi Thị Thúy Hà Nguyễn Hồng Anh Nguyễn Ngọc Anh Phạm Nguyễn Sơn Tùng",
+      "pages": 1,
+      "size_mb": 0.36
+    },
+    {
+      "id": 1480,
+      "uuid": "19eb19049a2c4acc9d781a1c400b42e0",
+      "title": "Việt Nam: Tuổi trẻ đấu tranh chống sự \"xâm lăng\" về văn hoá Việt Nam trên không gian số, góp phần hiện thực hoá tinh thần đại hội XIV của Đảng",
+      "category": "Tài liệu",
+      "creator": "Tô Mạnh Cường, Đinh Thị Thu Hằng ",
+      "pages": 1,
+      "size_mb": 0.41
+    },
+    {
+      "id": 1481,
+      "uuid": "a9f408b1102142088d08a62c833cab87",
+      "title": "Nhận diện âm mưu, thủ đoạn “diễn biến hòa bình”, lợi dụng những vụ việc, điểm nóng nhằm gây ra nguy cơ “cách mạng màu” ở Việt Nam",
+      "category": "Tài liệu",
+      "creator": "1.  Phạm Văn Cường - Ban Xây dựng Đảng, Báo Nhân Dân",
+      "pages": 1,
+      "size_mb": 0.77
+    },
+    {
+      "id": 1482,
+      "uuid": "f0b250550f5c491082752bc2865432de",
+      "title": "Nhận diện sự thật - bóc trần luận điệu xuyên tạc chế định luật sư công",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Thị Hằng Nga",
+      "pages": 1,
+      "size_mb": 0.37
+    },
+    {
+      "id": 1483,
+      "uuid": "029df9d05d584ef1815fabfd051d8f08",
+      "title": "Bảo vệ nền tảng tư tưởng của Đảng thông qua hoạt động dạy và học Tiếng Việt trong cộng đồng người Việt ở nước ngoài",
+      "category": "Tài liệu",
+      "creator": "Nguyễn Thục Hiền, Trần Ý Dịu",
+      "pages": 1,
+      "size_mb": 0.38
+    },
+    {
+      "id": 1494,
+      "uuid": "d060d09a030c430c8900529361bb8358",
+      "title": "Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV - Tập II",
+      "category": "Mới",
+      "creator": "",
+      "pages": 409,
+      "size_mb": 13.12
+    },
+    {
+      "id": 1495,
+      "uuid": "609e14d910d140448667cb5eff426def",
+      "title": "Văn kiện Hội nghị lần thứ ba Ban Chấp hành Trung ương khóa XIV - Tập I",
+      "category": "Mới",
+      "creator": "",
+      "pages": 282,
+      "size_mb": 15.07
+    },
+    {
+      "id": 1496,
+      "uuid": "e35a85c501c54c18953bd1f37dcb7411",
+      "title": "Văn kiện Hội nghị lần thứ ba Ban Chấp hành Trung ương khóa XIV - Tập II",
+      "category": "Mới",
+      "creator": "",
+      "pages": 273,
+      "size_mb": 14.08
+    },
+    {
+      "id": 1497,
+      "uuid": "0545138c374d44e6814a70304b92a45f",
+      "title": "Tài liệu nghiên cứu về những điểm mới, nội dung cốt lõi trong Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV của Đảng (Dùng cho cán bộ chủ chốt và báo cáo viên)",
+      "category": "Mới",
+      "creator": "",
+      "pages": 121,
+      "size_mb": 15.18
+    },
+    {
+      "id": 1498,
+      "uuid": "f3465a62e36c4a6e8ab88394dbc8cb32",
+      "title": "Tìm hiểu một số thuật ngữ trong Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV của Đảng (Dùng cho ủy viên cấp ủy từ cấp ủy cơ sở trở lên)",
+      "category": "Mới",
+      "creator": "",
+      "pages": 253,
+      "size_mb": 14.19
+    },
+    {
+      "id": 1499,
+      "uuid": "6922caef5e8a4594a44ccea4e1e82e80",
+      "title": "Tài liệu hỏi - đáp về nội dung cơ bản của Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV của Đảng (Dùng cho cán bộ, đảng viên và tuyên truyền trong nhân dân)",
+      "category": "Mới",
+      "creator": "",
+      "pages": 274,
+      "size_mb": 15.1
+    },
+    {
+      "id": 1500,
+      "uuid": "b33e15985add4953bdc628d0212d35c7",
+      "title": "Tài liệu chuyên đề: Nhiệm vụ, giải pháp xây dựng, phát triển văn hóa và con người Việt Nam, giáo dục, khoa học và công nghệ theo tinh thần Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng (Dùng cho lãnh đạo các cơ quan báo chí, xuất bản; lãnh đạ",
+      "category": "Mới",
+      "creator": "",
+      "pages": 218,
+      "size_mb": 16.05
+    },
+    {
+      "id": 1501,
+      "uuid": "9ad4043bb3ba4b3e9ebe85482188a1c4",
+      "title": "Những nội dung cơ bản về chuyển đổi số: Hỏi và đáp",
+      "category": "Mới",
+      "creator": "",
+      "pages": 226,
+      "size_mb": 5.76
+    },
+    {
+      "id": 1502,
+      "uuid": "72bfdad3ccde45e6889151ab57369bd5",
+      "title": "Văn kiện Hội nghị lần thứ hai Ban Chấp hành Trung ương khóa XIV",
+      "category": "Mới",
+      "creator": "",
+      "pages": 309,
+      "size_mb": 13.04
+    },
+    {
+      "id": 1503,
+      "uuid": "5dcc2d64afb845438bc57b0ed2062f2b",
+      "title": "Điều lệ Đảng và Hướng dẫn thi hành Điều lệ Đảng",
+      "category": "Mới",
+      "creator": "",
+      "pages": 33,
+      "size_mb": 2.33
+    },
+    {
+      "id": 1504,
+      "uuid": "dee73d0a4f3c4f8a864fbe0577697149",
+      "title": "19 điều đảng viên không được làm và Hướng dẫn thực hiện",
+      "category": "Mới",
+      "creator": "",
+      "pages": 28,
+      "size_mb": 1.18
+    },
+    {
+      "id": 1505,
+      "uuid": "ff456ee1bca9475f803deeb4683c5c9f",
+      "title": "Xã hội số: Những vấn đề lý luận và thực tiễn (Kỷ yếu Hội thảo khoa học quốc gia)",
+      "category": "Mới",
+      "creator": "",
+      "pages": 602,
+      "size_mb": 62.55
+    }
+  ]
+}

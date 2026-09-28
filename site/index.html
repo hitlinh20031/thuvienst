@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư viện Sách điện tử</title>
+  <link rel="stylesheet" href="/css/style.css?v=20260925">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <div class="logo-icon">ST</div>
+        <div class="logo-text">
+          <span class="logo-title">Thư viện Sách</span>
+          <span class="logo-sub">Sách điện tử trực tuyến</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/" class="nav-link active">Trang chủ</a>
+        <div class="nav-dropdown" id="catDropdown">
+          <button class="nav-link nav-drop-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            Danh mục
+            <svg class="caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-drop-panel" id="catMenu"></div>
+        </div>
+        <a href="#all-books" class="nav-link">Tất cả sách</a>
+      </nav>
+      <div class="search-box">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Tìm kiếm sách...">
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Thư viện Sách điện tử</h1>
+      <p class="hero-desc">Kho tàng tri thức chính trị, pháp luật và lịch sử Việt Nam</p>
+      <div class="hero-stats" id="heroStats"></div>
+    </div>
+  </section>
+
+  <section class="books-section" id="all-books">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tất cả sách</h2>
+        <div class="filter-bar">
+          <select id="catFilter">
+            <option value="">Tất cả danh mục</option>
+          </select>
+          <select id="sortFilter">
+            <option value="title">Theo tên</option>
+            <option value="pages-desc">Nhiều trang nhất</option>
+            <option value="pages-asc">Ít trang nhất</option>
+          </select>
+        </div>
+      </div>
+      <div class="book-grid" id="bookGrid"></div>
+      <div class="load-more" id="loadMore" style="display:none;">
+        <button class="btn btn-outline" id="loadMoreBtn">Xem thêm</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Thư viện sách điện tử trực tuyến</p>
+      <p class="footer-sub">&copy; 2026 Thư viện ST</p>
+    </div>
+  </footer>
+
+  <script src="/js/catalog.js?v=20260925"></script>
+</body>
+</html>

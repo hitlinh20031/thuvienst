@@ -1,0 +1,9 @@
+name = "thuvienst"
+compatibility_date = "2024-09-25"
+
+[site]
+bucket = "./site"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "thuvienst"

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc sách — Thư viện Sách</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/reader.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="reader-body">
+  <header class="reader-header">
+    <a href="/" class="reader-back" title="Quay lại thư viện">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </a>
+    <div class="reader-title" id="bookTitle">Đang tải...</div>
+    <div class="reader-controls">
+      <button class="reader-btn" id="btnLayout" title="Xem 2 trang">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="8" height="18" rx="1"/><rect x="14" y="3" width="8" height="18" rx="1"/></svg>
+      </button>
+      <button class="reader-btn" id="btnFullscreen" title="Toàn màn hình">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="reader-main" id="readerMain">
+    <div class="reader-loading" id="readerLoading">
+      <div class="spinner"></div>
+      <p>Đang tải sách...</p>
+    </div>
+    <div class="viewer-wrapper" id="viewerWrapper" style="display:none;">
+      <button class="nav-arrow nav-prev" id="btnPrev" title="Trang trước">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="book-stage"><div id="book"></div></div>
+      <button class="nav-arrow nav-next" id="btnNext" title="Trang sau">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </main>
+
+  <footer class="reader-footer">
+    <div class="page-slider-container">
+      <input type="range" id="pageSlider" min="1" max="1" value="1" step="1">
+    </div>
+    <div class="page-info">
+      Trang <span id="currentPage">1</span> / <span id="totalPages">1</span>
+    </div>
+  </footer>
+
+  <script src="/js/page-flip.browser.js"></script>
+  <script src="/js/reader.js"></script>
+</body>
+</html>
