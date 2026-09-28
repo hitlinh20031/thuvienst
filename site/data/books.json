@@ -1,5 +1,5 @@
 {
-  "total": 390,
+  "total": 391,
   "total_size_gb": 9.87,
   "categories": [
     {
@@ -66,6 +66,11 @@
       "name": "Xây dựng Đảng, Nhà nước",
       "count": 50,
       "size_gb": 1.36
+    },
+    {
+      "name": "Chưa phân loại",
+      "count": 1,
+      "size_gb": 0
     }
   ],
   "books": [
@@ -3578,6 +3583,9 @@
       "creator": "",
       "pages": 602,
       "size_mb": 62.55
+    },
+    {
+      "id": 1506
     }
   ]
 }
