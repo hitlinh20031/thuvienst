@@ -1,5 +1,5 @@
 {
-  "total": 391,
+  "total": 390,
   "total_size_gb": 9.87,
   "categories": [
     {
@@ -54,7 +54,7 @@
     },
     {
       "name": "Văn hóa, xã hội",
-      "count": 11,
+      "count": 10,
       "size_gb": 0.19
     },
     {
@@ -66,11 +66,6 @@
       "name": "Xây dựng Đảng, Nhà nước",
       "count": 50,
       "size_gb": 1.36
-    },
-    {
-      "name": "Chưa phân loại",
-      "count": 0,
-      "size_gb": 0
     }
   ],
   "books": [
@@ -3583,14 +3578,6 @@
       "creator": "",
       "pages": 602,
       "size_mb": 62.55
-    },
-    {
-      "id": 1506,
-      "title": "Sách kiểm thử",
-      "creator": "Tác giả kiểm thử",
-      "category": "Văn hóa, xã hội",
-      "pages": 10,
-      "pdf": "pdfs/kiem-thu.pdf"
     }
   ]
 }
