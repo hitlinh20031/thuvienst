@@ -66,6 +66,11 @@
       "name": "Xây dựng Đảng, Nhà nước",
       "count": 50,
       "size_gb": 1.36
+    },
+    {
+      "name": "Kiểm thử tạm",
+      "count": 0,
+      "size_gb": 0
     }
   ],
   "books": [
@@ -328,7 +333,7 @@
       "category": "Xây dựng Đảng, Nhà nước",
       "creator": "Ban Tuyên giáo Trung ương Đảng",
       "pages": 306,
-      "size_mb": 13.0
+      "size_mb": 13
     },
     {
       "id": 185,
@@ -364,7 +369,7 @@
       "category": "Chủ tịch Hồ Chí Minh",
       "creator": "TS. Lại Thị Thanh Bình",
       "pages": 290,
-      "size_mb": 17.0
+      "size_mb": 17
     },
     {
       "id": 233,
@@ -760,7 +765,7 @@
       "category": "Chủ tịch Hồ Chí Minh",
       "creator": "Báo Nhân Dân",
       "pages": 764,
-      "size_mb": 50.0
+      "size_mb": 50
     },
     {
       "id": 311,
@@ -949,7 +954,7 @@
       "category": "Văn kiện Đảng",
       "creator": "Hội đồng Lý luận Trung ương",
       "pages": 192,
-      "size_mb": 34.0
+      "size_mb": 34
     },
     {
       "id": 396,
@@ -2578,7 +2583,7 @@
       "category": "Chủ tịch Hồ Chí Minh",
       "creator": "Hồ Chí Minh",
       "pages": 58,
-      "size_mb": 1.0
+      "size_mb": 1
     },
     {
       "id": 1125,
@@ -2632,7 +2637,7 @@
       "category": "Chủ tịch Hồ Chí Minh",
       "creator": "Bảo tàng Hồ Chí Minh",
       "pages": 176,
-      "size_mb": 8.0
+      "size_mb": 8
     },
     {
       "id": 1131,
