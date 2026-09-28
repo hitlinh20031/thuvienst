@@ -131,9 +131,14 @@ function modal({ title, html, buttons }) {
       btn.className = 'btn ' + (b.primary ? 'primary ' : '') + (b.danger ? 'danger' : '');
       btn.textContent = b.label;
       btn.addEventListener('click', () => {
-        let keepOpen = false;
-        if (b.onClick) keepOpen = b.onClick(ov) === false;   // trả false = giữ hộp thoại
-        if (!keepOpen) { ov.remove(); resolve(b.value === undefined ? true : b.value); }
+        let val = b.value;
+        if (b.onClick) {
+          const r = b.onClick(ov);
+          if (r === false) return;              // trả false = giữ hộp thoại
+          if (r !== undefined) val = r;         // lấy giá trị mà onClick trả về
+        }
+        ov.remove();
+        resolve(val === undefined ? true : val);
       });
       actions.appendChild(btn);
     });
