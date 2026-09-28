@@ -49,12 +49,12 @@
     },
     {
       "name": "Tài liệu",
-      "count": 32,
+      "count": 31,
       "size_gb": 0.26
     },
     {
       "name": "Văn hóa, xã hội",
-      "count": 10,
+      "count": 11,
       "size_gb": 0.19
     },
     {
@@ -3588,7 +3588,7 @@
       "id": 1506,
       "title": "Sách kiểm thử",
       "creator": "Tác giả kiểm thử",
-      "category": "Tài liệu",
+      "category": "Văn hóa, xã hội",
       "pages": 10,
       "pdf": "pdfs/kiem-thu.pdf"
     }
