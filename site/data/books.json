@@ -1,5 +1,5 @@
 {
-  "total": 390,
+  "total": 391,
   "total_size_gb": 9.87,
   "categories": [
     {
@@ -29,7 +29,7 @@
     },
     {
       "name": "Mới",
-      "count": 12,
+      "count": 13,
       "size_gb": 0.18
     },
     {
@@ -3578,6 +3578,15 @@
       "creator": "",
       "pages": 602,
       "size_mb": 62.55
+    },
+    {
+      "id": 1506,
+      "title": "Suối nguồn tươi trẻ_Peter Kelder",
+      "creator": "Peter Kelder",
+      "category": "Mới",
+      "pages": 29,
+      "size_mb": 0.64,
+      "pdf": "pdfs/suoi-nguon-tuoi-tre-peter-kelder.pdf"
     }
   ]
 }
