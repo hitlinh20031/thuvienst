@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản trị — Thư viện Sách</title>
+  <link rel="stylesheet" href="/css/admin.css?v=1">
+</head>
+<body>
+
+<header class="adm-header">
+  <div class="adm-brand">
+    <a href="/" class="back-link">← Về trang chủ</a>
+    <strong>Quản trị thư viện</strong>
+  </div>
+  <div class="adm-right">
+    <span id="deployStatus" class="deploy"></span>
+    <span id="userBox" class="user-box" hidden>
+      <img id="avatar" alt="" width="24" height="24">
+      <span id="userName"></span>
+      <button class="btn tiny" id="logoutBtn">Đăng xuất</button>
+    </span>
+  </div>
+</header>
+
+<!-- ═══════════ ĐĂNG NHẬP ═══════════ -->
+<section id="loginView" class="login-wrap">
+  <div class="login-card">
+    <h1>Đăng nhập bằng GitHub</h1>
+    <p class="hint">
+      Trang quản trị ghi thay đổi trực tiếp vào repo GitHub rồi tự động triển khai lại website.
+      Bạn cần một <strong>Personal Access Token</strong> có quyền <code>repo</code>.
+    </p>
+
+    <label>Token GitHub</label>
+    <input type="password" id="tokenInput" placeholder="ghp_xxxxxxxxxxxx hoặc github_pat_xxxxxxxx" autocomplete="off">
+
+    <label>Repository (owner/name)</label>
+    <input type="text" id="repoInput" value="hitlinh20031/thuvienst">
+
+    <div class="row-inline">
+      <button class="btn primary" id="loginBtn">Đăng nhập</button>
+      <span class="err" id="loginErr"></span>
+    </div>
+
+    <details class="help">
+      <summary>Cách tạo token (30 giây)</summary>
+      <ol>
+        <li>Vào <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">github.com/settings/tokens</a></li>
+        <li><strong>Generate new token (classic)</strong></li>
+        <li>Expiration: chọn thời hạn bạn muốn</li>
+        <li>Tick mục <strong>repo</strong> (toàn bộ)</li>
+        <li>Generate token → copy dán vào ô trên</li>
+      </ol>
+      <p class="hint">Token chỉ lưu trong trình duyệt của máy bạn (localStorage), không gửi đi nơi khác.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ═══════════ ỨNG DỤNG ═══════════ -->
+<div id="appView" hidden>
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="cats">📁 Danh mục</button>
+    <button class="tab-btn" data-tab="books">📚 Sách</button>
+    <button class="tab-btn" data-tab="upload">⬆️ Tải lên PDF</button>
+    <span class="tabs-right">
+      <span id="statLine" class="muted"></span>
+      <a id="viewSite" href="/" target="_blank" rel="noopener" class="btn tiny">Xem trang chủ</a>
+      <a id="viewRepo" href="#" target="_blank" rel="noopener" class="btn tiny">Repo</a>
+    </span>
+  </nav>
+
+  <!-- ───── TAB DANH MỤC ───── -->
+  <section class="tab-panel active" id="tab-cats">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Danh mục sách</h2>
+        <span class="muted" id="catSummary"></span>
+      </div>
+
+      <div class="row-inline">
+        <input type="text" id="newCatName" placeholder="Tên danh mục mới...">
+        <button class="btn primary" id="addCatBtn">＋ Tạo danh mục</button>
+      </div>
+
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th style="width:96px">Thứ tự</th>
+            <th>Tên danh mục</th>
+            <th style="width:88px">Số sách</th>
+            <th style="width:250px">Thao tác</th>
+          </tr>
+        </thead>
+        <tbody id="catBody"></tbody>
+      </table>
+      <p class="hint">Thứ tự trong bảng = thứ tự hiển thị ở menu "Danh mục" trên trang chủ.</p>
+    </div>
+  </section>
+
+  <!-- ───── TAB SÁCH ───── -->
+  <section class="tab-panel" id="tab-books">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Sách</h2>
+        <span class="muted" id="bookSummary"></span>
+      </div>
+
+      <div class="toolbar">
+        <input type="search" id="bookSearch" placeholder="Tìm theo tên sách / tác giả...">
+        <select id="bookCatFilter"><option value="">Tất cả danh mục</option></select>
+        <span class="spacer"></span>
+        <div class="bulk" id="bulkBar" hidden>
+          <span id="selCount">0 đã chọn</span>
+          <select id="bulkCat"></select>
+          <button class="btn" id="bulkMove">Chuyển vào</button>
+          <button class="btn danger" id="bulkDel">Xóa đã chọn</button>
+        </div>
+      </div>
+
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th style="width:34px"><input type="checkbox" id="selAll"></th>
+            <th>Tên sách</th>
+            <th style="width:170px">Tác giả</th>
+            <th style="width:190px">Danh mục</th>
+            <th style="width:70px">Trang</th>
+            <th style="width:74px">Nguồn</th>
+            <th style="width:130px">Thao tác</th>
+          </tr>
+        </thead>
+        <tbody id="bookBody"></tbody>
+      </table>
+
+      <div class="load-more">
+        <button class="btn" id="moreBtn" hidden>Xem thêm</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── TAB TẢI LÊN ───── -->
+  <section class="tab-panel" id="tab-upload">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Tải lên sách PDF</h2>
+        <span class="muted">PDF được lưu vào <code>/pdfs/</code> trong repo</span>
+      </div>
+
+      <div class="dropzone" id="dropzone">
+        <div class="dz-icon">📄</div>
+        <div><strong>Thả file PDF vào đây</strong> hoặc bấm để chọn file</div>
+        <div class="hint">Chọn được nhiều file cùng lúc (mỗi file ≤ 100MB)</div>
+      </div>
+      <input type="file" id="fileInput" accept="application/pdf,.pdf" multiple hidden>
+
+      <div id="queueWrap" hidden>
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>File</th>
+              <th style="width:26%">Tên sách</th>
+              <th style="width:18%">Tác giả</th>
+              <th style="width:20%">Danh mục</th>
+              <th style="width:74px">Trang</th>
+              <th style="width:44px"></th>
+            </tr>
+          </thead>
+          <tbody id="queueBody"></tbody>
+        </table>
+        <div class="row-inline">
+          <button class="btn primary" id="uploadBtn">⬆ Tải lên</button>
+          <span class="muted" id="uploadMsg"></span>
+        </div>
+      </div>
+
+      <p class="hint">
+        Sau khi tải lên, trang web tự động dựng lại trong ~1 phút. Sách mới sẽ hiện ở trang chủ;
+        danh mục được tính lại số lượng tự động.
+      </p>
+    </div>
+  </section>
+</div>
+
+<div id="toastWrap"></div>
+
+<script src="/js/admin.js?v=1"></script>
+</body>
+</html>

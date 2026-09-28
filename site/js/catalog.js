@@ -70,8 +70,14 @@ async function init() {
   const resp = await fetch('/data/books.json');
   const data = await resp.json();
   allBooks = data.books;
-  categories = data.categories;
-  categories.sort((a, b) => b.count - a.count);
+  categories = data.categories || [];
+
+  // Đồng bộ danh mục: GIỮ NGUYÊN THỨ TỰ trong books.json (admin sắp xếp),
+  // đếm lại số sách, và bổ sung danh mục phát sinh (sách có category lạ).
+  const counts = {};
+  allBooks.forEach(b => { if (b.category) counts[b.category] = (counts[b.category] || 0) + 1; });
+  categories.forEach(c => { c.count = counts[c.name] || 0; delete counts[c.name]; });
+  Object.keys(counts).forEach(name => categories.push({ name, count: counts[name] }));
 
   renderStats(data);
   renderCategories();
@@ -150,7 +156,12 @@ function renderBooks() {
 
   grid.innerHTML = visible.map(b => {
     const coverUrl = getCoverUrl(b.uuid);
-    return `<a class="book-card" href="/read.html?id=${b.id}&uuid=${b.uuid}">
+    // Sách PDF tự tải lên → mở file PDF (trình đọc PDF.js sẽ thay thế sau)
+    const href = b.pdf
+      ? `/${String(b.pdf).replace(/^\/+/, '')}`
+      : `/read.html?id=${b.id}&uuid=${b.uuid}`;
+    const target = b.pdf ? ' target="_blank" rel="noopener"' : '';
+    return `<a class="book-card" href="${href}"${target}>
       <div class="book-cover">
         <img src="${coverUrl}" alt="${esc(b.title)}" loading="lazy"
              onerror="this.parentNode.innerHTML='<div class=\\'book-cover-placeholder\\'><div class=\\'placeholder-icon\\'>&#128214;</div><div class=\\'placeholder-title\\'>${esc(b.title)}</div></div>'">
