@@ -1,5 +1,5 @@
 {
-  "total": 391,
+  "total": 390,
   "total_size_gb": 9.87,
   "categories": [
     {
@@ -69,7 +69,7 @@
     },
     {
       "name": "Chưa phân loại",
-      "count": 1,
+      "count": 0,
       "size_gb": 0
     }
   ],
@@ -3583,9 +3583,6 @@
       "creator": "",
       "pages": 602,
       "size_mb": 62.55
-    },
-    {
-      "id": 1506
     }
   ]
 }
