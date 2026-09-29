@@ -29,8 +29,8 @@
     },
     {
       "name": "Mới",
-      "count": 7,
-      "size_gb": 0.14
+      "count": 6,
+      "size_gb": 0.12
     },
     {
       "name": "Những vấn đề quốc tế",
@@ -59,8 +59,8 @@
     },
     {
       "name": "Văn kiện Đảng",
-      "count": 37,
-      "size_gb": 1.12
+      "count": 38,
+      "size_gb": 1.14
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
@@ -3319,7 +3319,7 @@
       "id": 1498,
       "uuid": "f3465a62e36c4a6e8ab88394dbc8cb32",
       "title": "Tìm hiểu một số thuật ngữ trong Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV của Đảng (Dùng cho ủy viên cấp ủy từ cấp ủy cơ sở trở lên)",
-      "category": "Mới",
+      "category": "Văn kiện Đảng",
       "creator": "",
       "pages": 253,
       "size_mb": 14.19
