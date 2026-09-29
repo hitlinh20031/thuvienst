@@ -1,6 +1,6 @@
 {
-  "total": 390,
-  "total_size_gb": 9.37,
+  "total": 406,
+  "total_size_gb": 9.58,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -69,8 +69,8 @@
     },
     {
       "name": "Thiếu nhi",
-      "count": 0,
-      "size_gb": 0
+      "count": 16,
+      "size_gb": 0.21
     },
     {
       "name": "Các ấn phẩm khác",
@@ -3588,6 +3588,150 @@
       "pages": 18,
       "size_mb": 1.17,
       "pdf": "pdfs/vo-nhat-kim-lan.pdf"
+    },
+    {
+      "id": 1547,
+      "title": "Chu kỳ sống của loài bướm",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 9,
+      "size_mb": 18.96,
+      "pdf": "pdfs/chu-ky-song-cua-loai-buom.pdf"
+    },
+    {
+      "id": 1548,
+      "title": "Chuột Con Tham Lam",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 16,
+      "size_mb": 19.05,
+      "pdf": "pdfs/chuot-con-tham-lam.pdf"
+    },
+    {
+      "id": 1549,
+      "title": "Cô Thỏ trở thành đầu bếp",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 19,
+      "size_mb": 19.66,
+      "pdf": "pdfs/co-tho-tro-thanh-dau-bep.pdf"
+    },
+    {
+      "id": 1550,
+      "title": "Dế mèn phiêu lưu ký_Tô Hoài",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 36,
+      "size_mb": 1.34,
+      "pdf": "pdfs/de-men-phieu-luu-ky-to-hoai.pdf"
+    },
+    {
+      "id": 1551,
+      "title": "Mầm non - Truyện bé hành khám bệnh",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 4,
+      "size_mb": 8.13,
+      "pdf": "pdfs/mam-non-truyen-be-hanh-kham-benh.pdf"
+    },
+    {
+      "id": 1552,
+      "title": "Mầm non - Truyện chim con và gà con",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 4,
+      "size_mb": 12.82,
+      "pdf": "pdfs/mam-non-truyen-chim-con-va-ga-con.pdf"
+    },
+    {
+      "id": 1553,
+      "title": "Mầm non - Truyện cô con út của ông mặt trời",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 5,
+      "size_mb": 12.3,
+      "pdf": "pdfs/mam-non-truyen-co-con-ut-cua-ong-mat-troi.pdf"
+    },
+    {
+      "id": 1554,
+      "title": "Mầm non - Truyện đôi bạn nhỏ",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 11,
+      "size_mb": 14.38,
+      "pdf": "pdfs/mam-non-truyen-doi-ban-nho.pdf"
+    },
+    {
+      "id": 1555,
+      "title": "Mầm non - Truyện Gà Út đi kiếm mồi",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 5,
+      "size_mb": 16.9,
+      "pdf": "pdfs/mam-non-truyen-ga-ut-di-kiem-moi.pdf"
+    },
+    {
+      "id": 1556,
+      "title": "Mầm non - Truyện gấu con trồng cây",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 7,
+      "size_mb": 9.67,
+      "pdf": "pdfs/mam-non-truyen-gau-con-trong-cay.pdf"
+    },
+    {
+      "id": 1557,
+      "title": "Mầm non - Truyện một bó hoa tươi thắm",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 3,
+      "size_mb": 6.09,
+      "pdf": "pdfs/mam-non-truyen-mot-bo-hoa-tuoi-tham.pdf"
+    },
+    {
+      "id": 1558,
+      "title": "Mầm non - Truyện Ngày Tết của Thỏ Con",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 4,
+      "size_mb": 12.8,
+      "pdf": "pdfs/mam-non-truyen-ngay-tet-cua-tho-con.pdf"
+    },
+    {
+      "id": 1559,
+      "title": "Mầm non - Truyện Thần Sắt",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 6,
+      "size_mb": 15.11,
+      "pdf": "pdfs/mam-non-truyen-than-sat.pdf"
+    },
+    {
+      "id": 1560,
+      "title": "Mầm non - Truyện thỏ con sang đường",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 4,
+      "size_mb": 10.16,
+      "pdf": "pdfs/mam-non-truyen-tho-con-sang-duong.pdf"
+    },
+    {
+      "id": 1561,
+      "title": "Những bài đồng dao, ca dao",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 19,
+      "size_mb": 24.79,
+      "pdf": "pdfs/nhung-bai-dong-dao-ca-dao.pdf"
+    },
+    {
+      "id": 1562,
+      "title": "Những chú kiến bận rộn",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 15,
+      "size_mb": 16.2,
+      "pdf": "pdfs/nhung-chu-kien-ban-ron.pdf"
     }
   ]
 }
