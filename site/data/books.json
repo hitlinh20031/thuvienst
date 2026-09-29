@@ -3727,7 +3727,8 @@
       "category": "Thiếu nhi",
       "pages": 11,
       "size_mb": 14.38,
-      "pdf": "pdfs/mam-non-truyen-doi-ban-nho.pdf"
+      "pdf": "pdfs/mam-non-truyen-doi-ban-nho.pdf",
+      "cover": "covers/mam-non-truyen-doi-ban-nho.jpg"
     },
     {
       "id": 1555,
@@ -3736,7 +3737,8 @@
       "category": "Thiếu nhi",
       "pages": 5,
       "size_mb": 16.9,
-      "pdf": "pdfs/mam-non-truyen-ga-ut-di-kiem-moi.pdf"
+      "pdf": "pdfs/mam-non-truyen-ga-ut-di-kiem-moi.pdf",
+      "cover": "covers/mam-non-truyen-ga-ut-di-kiem-moi.jpg"
     },
     {
       "id": 1556,
@@ -3745,7 +3747,8 @@
       "category": "Thiếu nhi",
       "pages": 7,
       "size_mb": 9.67,
-      "pdf": "pdfs/mam-non-truyen-gau-con-trong-cay.pdf"
+      "pdf": "pdfs/mam-non-truyen-gau-con-trong-cay.pdf",
+      "cover": "covers/mam-non-truyen-gau-con-trong-cay.jpg"
     },
     {
       "id": 1557,
@@ -3754,7 +3757,8 @@
       "category": "Thiếu nhi",
       "pages": 3,
       "size_mb": 6.09,
-      "pdf": "pdfs/mam-non-truyen-mot-bo-hoa-tuoi-tham.pdf"
+      "pdf": "pdfs/mam-non-truyen-mot-bo-hoa-tuoi-tham.pdf",
+      "cover": "covers/mam-non-truyen-mot-bo-hoa-tuoi-tham.jpg"
     },
     {
       "id": 1558,
@@ -3763,7 +3767,8 @@
       "category": "Thiếu nhi",
       "pages": 4,
       "size_mb": 12.8,
-      "pdf": "pdfs/mam-non-truyen-ngay-tet-cua-tho-con.pdf"
+      "pdf": "pdfs/mam-non-truyen-ngay-tet-cua-tho-con.pdf",
+      "cover": "covers/mam-non-truyen-ngay-tet-cua-tho-con.jpg"
     },
     {
       "id": 1559,
@@ -3772,7 +3777,8 @@
       "category": "Thiếu nhi",
       "pages": 6,
       "size_mb": 15.11,
-      "pdf": "pdfs/mam-non-truyen-than-sat.pdf"
+      "pdf": "pdfs/mam-non-truyen-than-sat.pdf",
+      "cover": "covers/mam-non-truyen-than-sat.jpg"
     },
     {
       "id": 1560,
@@ -3781,7 +3787,8 @@
       "category": "Thiếu nhi",
       "pages": 4,
       "size_mb": 10.16,
-      "pdf": "pdfs/mam-non-truyen-tho-con-sang-duong.pdf"
+      "pdf": "pdfs/mam-non-truyen-tho-con-sang-duong.pdf",
+      "cover": "covers/mam-non-truyen-tho-con-sang-duong.jpg"
     },
     {
       "id": 1561,
@@ -3790,7 +3797,8 @@
       "category": "Thiếu nhi",
       "pages": 19,
       "size_mb": 24.79,
-      "pdf": "pdfs/nhung-bai-dong-dao-ca-dao.pdf"
+      "pdf": "pdfs/nhung-bai-dong-dao-ca-dao.pdf",
+      "cover": "covers/nhung-bai-dong-dao-ca-dao.jpg"
     },
     {
       "id": 1562,
