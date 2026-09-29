@@ -1,6 +1,6 @@
 {
-  "total": 368,
-  "total_size_gb": 9.3,
+  "total": 376,
+  "total_size_gb": 9.33,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -54,8 +54,8 @@
     },
     {
       "name": "Nước ngoài",
-      "count": 0,
-      "size_gb": 0
+      "count": 8,
+      "size_gb": 0.03
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
@@ -3380,6 +3380,78 @@
       "pages": 78,
       "size_mb": 1.69,
       "pdf": "pdfs/phuong-phap-tiep-can-co-ban-cho-can-bo-khuyen-nong.pdf"
+    },
+    {
+      "id": 1525,
+      "title": "20 giờ đầu tiên_Josh Kaufman",
+      "creator": "Josh Kaufman",
+      "category": "Nước ngoài",
+      "pages": 210,
+      "size_mb": 2.81,
+      "pdf": "pdfs/20-gio-dau-tien-josh-kaufman.pdf"
+    },
+    {
+      "id": 1526,
+      "title": "Ba người thầy vĩ đại_Robin Sharma",
+      "creator": "Robin Sharma",
+      "category": "Nước ngoài",
+      "pages": 120,
+      "size_mb": 1.29,
+      "pdf": "pdfs/ba-nguoi-thay-vi-dai-robin-sharma.pdf"
+    },
+    {
+      "id": 1527,
+      "title": "Bí Quyết Trưởng Thành_Sean Covey",
+      "creator": "Sean Covey",
+      "category": "Nước ngoài",
+      "pages": 375,
+      "size_mb": 11.02,
+      "pdf": "pdfs/bi-quyet-truong-thanh-sean-covey.pdf"
+    },
+    {
+      "id": 1528,
+      "title": "Bóng Ma Trong Nhà Hát_Gaston Leroux",
+      "creator": "Gaston Leroux",
+      "category": "Nước ngoài",
+      "pages": 28,
+      "size_mb": 0.62,
+      "pdf": "pdfs/bong-ma-trong-nha-hat-gaston-leroux.pdf"
+    },
+    {
+      "id": 1529,
+      "title": "Chiến binh cầu vồng_Andrea Hirata",
+      "creator": "Andrea Hirata",
+      "category": "Nước ngoài",
+      "pages": 299,
+      "size_mb": 2.4,
+      "pdf": "pdfs/chien-binh-cau-vong-andrea-hirata.pdf"
+    },
+    {
+      "id": 1530,
+      "title": "Đắc nhân tâm_Dale Carnegie",
+      "creator": "Dale Carnegie",
+      "category": "Nước ngoài",
+      "pages": 318,
+      "size_mb": 2.13,
+      "pdf": "pdfs/dac-nhan-tam-dale-carnegie.pdf"
+    },
+    {
+      "id": 1531,
+      "title": "Không gia đình_HectorMalot",
+      "creator": "HectorMalot",
+      "category": "Nước ngoài",
+      "pages": 593,
+      "size_mb": 10.15,
+      "pdf": "pdfs/khong-gia-dinh-hectormalot.pdf"
+    },
+    {
+      "id": 1532,
+      "title": "Tôi tài giỏi bạn cũng thế_Adam Khoo",
+      "creator": "Adam Khoo",
+      "category": "Nước ngoài",
+      "pages": 206,
+      "size_mb": 2.41,
+      "pdf": "pdfs/toi-tai-gioi-ban-cung-the-adam-khoo.pdf"
     }
   ]
 }
