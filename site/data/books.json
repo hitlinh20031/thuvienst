@@ -3407,7 +3407,8 @@
       "category": "Khuyến nông",
       "pages": 116,
       "size_mb": 2.48,
-      "pdf": "pdfs/khuyen-nong-co-ban.pdf"
+      "pdf": "pdfs/khuyen-nong-co-ban.pdf",
+      "cover": "covers/khuyen-nong-co-ban.jpg"
     },
     {
       "id": 1523,
@@ -3416,7 +3417,8 @@
       "category": "Khuyến nông",
       "pages": 120,
       "size_mb": 2.14,
-      "pdf": "pdfs/mot-so-phuong-phap-ky-nang-khuyen-nong.pdf"
+      "pdf": "pdfs/mot-so-phuong-phap-ky-nang-khuyen-nong.pdf",
+      "cover": "covers/mot-so-phuong-phap-ky-nang-khuyen-nong.jpg"
     },
     {
       "id": 1524,
@@ -3425,7 +3427,8 @@
       "category": "Khuyến nông",
       "pages": 78,
       "size_mb": 1.69,
-      "pdf": "pdfs/phuong-phap-tiep-can-co-ban-cho-can-bo-khuyen-nong.pdf"
+      "pdf": "pdfs/phuong-phap-tiep-can-co-ban-cho-can-bo-khuyen-nong.pdf",
+      "cover": "covers/phuong-phap-tiep-can-co-ban-cho-can-bo-khuyen-nong.jpg"
     },
     {
       "id": 1525,
@@ -3434,7 +3437,8 @@
       "category": "Nước ngoài",
       "pages": 210,
       "size_mb": 2.81,
-      "pdf": "pdfs/20-gio-dau-tien-josh-kaufman.pdf"
+      "pdf": "pdfs/20-gio-dau-tien-josh-kaufman.pdf",
+      "cover": "covers/20-gio-dau-tien-josh-kaufman.jpg"
     },
     {
       "id": 1526,
@@ -3443,7 +3447,8 @@
       "category": "Nước ngoài",
       "pages": 120,
       "size_mb": 1.29,
-      "pdf": "pdfs/ba-nguoi-thay-vi-dai-robin-sharma.pdf"
+      "pdf": "pdfs/ba-nguoi-thay-vi-dai-robin-sharma.pdf",
+      "cover": "covers/ba-nguoi-thay-vi-dai-robin-sharma.jpg"
     },
     {
       "id": 1527,
@@ -3452,7 +3457,8 @@
       "category": "Nước ngoài",
       "pages": 375,
       "size_mb": 11.02,
-      "pdf": "pdfs/bi-quyet-truong-thanh-sean-covey.pdf"
+      "pdf": "pdfs/bi-quyet-truong-thanh-sean-covey.pdf",
+      "cover": "covers/bi-quyet-truong-thanh-sean-covey.jpg"
     },
     {
       "id": 1528,
@@ -3461,7 +3467,8 @@
       "category": "Nước ngoài",
       "pages": 28,
       "size_mb": 0.62,
-      "pdf": "pdfs/bong-ma-trong-nha-hat-gaston-leroux.pdf"
+      "pdf": "pdfs/bong-ma-trong-nha-hat-gaston-leroux.pdf",
+      "cover": "covers/bong-ma-trong-nha-hat-gaston-leroux.jpg"
     },
     {
       "id": 1529,
@@ -3470,7 +3477,8 @@
       "category": "Nước ngoài",
       "pages": 299,
       "size_mb": 2.4,
-      "pdf": "pdfs/chien-binh-cau-vong-andrea-hirata.pdf"
+      "pdf": "pdfs/chien-binh-cau-vong-andrea-hirata.pdf",
+      "cover": "covers/chien-binh-cau-vong-andrea-hirata.jpg"
     },
     {
       "id": 1530,
