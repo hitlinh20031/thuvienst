@@ -29,7 +29,7 @@
     },
     {
       "name": "Mới",
-      "count": 12,
+      "count": 11,
       "size_gb": 0.18
     },
     {
@@ -64,7 +64,7 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 49,
+      "count": 50,
       "size_gb": 1.33
     },
     {
@@ -3373,7 +3373,7 @@
       "id": 1504,
       "uuid": "dee73d0a4f3c4f8a864fbe0577697149",
       "title": "19 điều đảng viên không được làm và Hướng dẫn thực hiện",
-      "category": "Mới",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "",
       "pages": 28,
       "size_mb": 1.18
