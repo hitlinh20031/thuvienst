@@ -3247,7 +3247,8 @@
       "category": "Người cao tuổi",
       "pages": 29,
       "size_mb": 0.64,
-      "pdf": "pdfs/suoi-nguon-tuoi-tre-peter-kelder.pdf"
+      "pdf": "pdfs/suoi-nguon-tuoi-tre-peter-kelder.pdf",
+      "cover": "covers/suoi-nguon-tuoi-tre-peter-kelder.jpg"
     },
     {
       "id": 1507,
@@ -3256,7 +3257,8 @@
       "category": "Người cao tuổi",
       "pages": 83,
       "size_mb": 0.5,
-      "pdf": "pdfs/an-lac-tu-tam-thich-thanh-nghiem.pdf"
+      "pdf": "pdfs/an-lac-tu-tam-thich-thanh-nghiem.pdf",
+      "cover": "covers/an-lac-tu-tam-thich-thanh-nghiem.jpg"
     },
     {
       "id": 1508,
@@ -3265,7 +3267,8 @@
       "category": "Người cao tuổi",
       "pages": 36,
       "size_mb": 14.17,
-      "pdf": "pdfs/cam-nang-cham-soc-suc-khoe-nguoi-cao-tuoi.pdf"
+      "pdf": "pdfs/cam-nang-cham-soc-suc-khoe-nguoi-cao-tuoi.pdf",
+      "cover": "covers/cam-nang-cham-soc-suc-khoe-nguoi-cao-tuoi.jpg"
     },
     {
       "id": 1509,
@@ -3274,7 +3277,8 @@
       "category": "Người cao tuổi",
       "pages": 177,
       "size_mb": 1.03,
-      "pdf": "pdfs/con-duong-an-vui-thich-nhat-tu.pdf"
+      "pdf": "pdfs/con-duong-an-vui-thich-nhat-tu.pdf",
+      "cover": "covers/con-duong-an-vui-thich-nhat-tu.jpg"
     },
     {
       "id": 1510,
@@ -3283,7 +3287,8 @@
       "category": "Người cao tuổi",
       "pages": 59,
       "size_mb": 0.4,
-      "pdf": "pdfs/mot-nghe-thuat-song-nguyen-duy-can.pdf"
+      "pdf": "pdfs/mot-nghe-thuat-song-nguyen-duy-can.pdf",
+      "cover": "covers/mot-nghe-thuat-song-nguyen-duy-can.jpg"
     },
     {
       "id": 1511,
@@ -3292,7 +3297,8 @@
       "category": "Người cao tuổi",
       "pages": 115,
       "size_mb": 1.02,
-      "pdf": "pdfs/song-chung-an-lac-thich-nhat-hanh.pdf"
+      "pdf": "pdfs/song-chung-an-lac-thich-nhat-hanh.pdf",
+      "cover": "covers/song-chung-an-lac-thich-nhat-hanh.jpg"
     },
     {
       "id": 1512,
@@ -3301,7 +3307,8 @@
       "category": "Người cao tuổi",
       "pages": 32,
       "size_mb": 0.29,
-      "pdf": "pdfs/thien-chat-lieu-nuoi-duong-tri-lieu-va-chuyen-hoa.pdf"
+      "pdf": "pdfs/thien-chat-lieu-nuoi-duong-tri-lieu-va-chuyen-hoa.pdf",
+      "cover": "covers/thien-chat-lieu-nuoi-duong-tri-lieu-va-chuyen-hoa.jpg"
     },
     {
       "id": 1513,
@@ -3310,7 +3317,8 @@
       "category": "Người cao tuổi",
       "pages": 160,
       "size_mb": 5.47,
-      "pdf": "pdfs/tim-thay-nhan-nha-va-thong-dong-trong-an-vui-longchenpa.pdf"
+      "pdf": "pdfs/tim-thay-nhan-nha-va-thong-dong-trong-an-vui-longchenpa.pdf",
+      "cover": "covers/tim-thay-nhan-nha-va-thong-dong-trong-an-vui-longchenpa.jpg"
     },
     {
       "id": 1514,
