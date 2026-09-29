@@ -1,6 +1,6 @@
 {
-  "total": 376,
-  "total_size_gb": 9.33,
+  "total": 390,
+  "total_size_gb": 9.37,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -64,8 +64,8 @@
     },
     {
       "name": "Văn học và đời sống",
-      "count": 0,
-      "size_gb": 0
+      "count": 14,
+      "size_gb": 0.03
     },
     {
       "name": "Các ấn phẩm khác",
@@ -3457,6 +3457,132 @@
       "pages": 206,
       "size_mb": 2.41,
       "pdf": "pdfs/toi-tai-gioi-ban-cung-the-adam-khoo.pdf"
+    },
+    {
+      "id": 1533,
+      "title": "Cho tôi xin một vé đi tuổi thơ_Nguyễn Nhật Ánh",
+      "creator": "Nguyễn Nhật Ánh",
+      "category": "Văn học và đời sống",
+      "pages": 114,
+      "size_mb": 1.36,
+      "pdf": "pdfs/cho-toi-xin-mot-ve-di-tuoi-tho-nguyen-nhat-anh.pdf"
+    },
+    {
+      "id": 1534,
+      "title": "Đối nhân xử thế.Hài hước nhỏ, trí tuệ lớn_Gia Khanh",
+      "creator": "Gia Khanh",
+      "category": "Văn học và đời sống",
+      "pages": 212,
+      "size_mb": 18.54,
+      "pdf": "pdfs/doi-nhan-xu-the-hai-huoc-nho-tri-tue-lon-gia-khanh.pdf"
+    },
+    {
+      "id": 1535,
+      "title": "Gió đầu mùa_Thạch Lam",
+      "creator": "Thạch Lam",
+      "category": "Văn học và đời sống",
+      "pages": 93,
+      "size_mb": 1.19,
+      "pdf": "pdfs/gio-dau-mua-thach-lam.pdf"
+    },
+    {
+      "id": 1536,
+      "title": "Hạ đỏ_Nguyễn Nhật Ánh",
+      "creator": "Nguyễn Nhật Ánh",
+      "category": "Văn học và đời sống",
+      "pages": 169,
+      "size_mb": 0.91,
+      "pdf": "pdfs/ha-do-nguyen-nhat-anh.pdf"
+    },
+    {
+      "id": 1537,
+      "title": "Lửa thiêng_Huy Cận",
+      "creator": "Huy Cận",
+      "category": "Văn học và đời sống",
+      "pages": 77,
+      "size_mb": 0.45,
+      "pdf": "pdfs/lua-thieng-huy-can.pdf"
+    },
+    {
+      "id": 1538,
+      "title": "Số đỏ_Vũ Trọng Phụng",
+      "creator": "Vũ Trọng Phụng",
+      "category": "Văn học và đời sống",
+      "pages": 165,
+      "size_mb": 0.68,
+      "pdf": "pdfs/so-do-vu-trong-phung.pdf"
+    },
+    {
+      "id": 1539,
+      "title": "Thần thoại Hy Lạp_Nguyễn Văn Khỏa",
+      "creator": "Nguyễn Văn Khỏa",
+      "category": "Văn học và đời sống",
+      "pages": 1047,
+      "size_mb": 4.33,
+      "pdf": "pdfs/than-thoai-hy-lap-nguyen-van-khoa.pdf"
+    },
+    {
+      "id": 1540,
+      "title": "Thơ thơ_Xuân Diệu",
+      "creator": "Xuân Diệu",
+      "category": "Văn học và đời sống",
+      "pages": 31,
+      "size_mb": 0.19,
+      "pdf": "pdfs/tho-tho-xuan-dieu.pdf"
+    },
+    {
+      "id": 1541,
+      "title": "Tôi thấy hoa vàng trên cỏ xanh_Nguyễn Nhật Ánh",
+      "creator": "Nguyễn Nhật Ánh",
+      "category": "Văn học và đời sống",
+      "pages": 227,
+      "size_mb": 2,
+      "pdf": "pdfs/toi-thay-hoa-vang-tren-co-xanh-nguyen-nhat-anh.pdf"
+    },
+    {
+      "id": 1542,
+      "title": "Tuyển tập Nam Cao",
+      "creator": "Nam Cao",
+      "category": "Văn học và đời sống",
+      "pages": 797,
+      "size_mb": 2.33,
+      "pdf": "pdfs/tuyen-tap-nam-cao.pdf"
+    },
+    {
+      "id": 1543,
+      "title": "TUYỂN TẬP THƠ SGK CŨ",
+      "creator": "Nhiều tác giả",
+      "category": "Văn học và đời sống",
+      "pages": 50,
+      "size_mb": 0.45,
+      "pdf": "pdfs/tuyen-tap-tho-sgk-cu.pdf"
+    },
+    {
+      "id": 1544,
+      "title": "Tuyển tập thơ Trần Đăng Khoa",
+      "creator": "Trần Đăng Khoa",
+      "category": "Văn học và đời sống",
+      "pages": 136,
+      "size_mb": 0.32,
+      "pdf": "pdfs/tuyen-tap-tho-tran-dang-khoa.pdf"
+    },
+    {
+      "id": 1545,
+      "title": "Tuyển tập thơ_Lưu Quang Vũ",
+      "creator": "Lưu Quang Vũ",
+      "category": "Văn học và đời sống",
+      "pages": 434,
+      "size_mb": 1.89,
+      "pdf": "pdfs/tuyen-tap-tho-luu-quang-vu.pdf"
+    },
+    {
+      "id": 1546,
+      "title": "Vợ nhặt_Kim Lân",
+      "creator": "Kim Lân",
+      "category": "Văn học và đời sống",
+      "pages": 18,
+      "size_mb": 1.17,
+      "pdf": "pdfs/vo-nhat-kim-lan.pdf"
     }
   ]
 }
