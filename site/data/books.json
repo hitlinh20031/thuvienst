@@ -29,8 +29,8 @@
     },
     {
       "name": "Mới",
-      "count": 10,
-      "size_gb": 0.18
+      "count": 9,
+      "size_gb": 0.17
     },
     {
       "name": "Những vấn đề quốc tế",
@@ -59,8 +59,8 @@
     },
     {
       "name": "Văn kiện Đảng",
-      "count": 34,
-      "size_gb": 1.08
+      "count": 35,
+      "size_gb": 1.1
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
@@ -3292,7 +3292,7 @@
       "id": 1495,
       "uuid": "609e14d910d140448667cb5eff426def",
       "title": "Văn kiện Hội nghị lần thứ ba Ban Chấp hành Trung ương khóa XIV - Tập I",
-      "category": "Mới",
+      "category": "Văn kiện Đảng",
       "creator": "",
       "pages": 282,
       "size_mb": 15.07
