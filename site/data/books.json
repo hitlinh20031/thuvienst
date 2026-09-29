@@ -4127,7 +4127,8 @@
       "category": "Văn học và đời sống",
       "pages": 164,
       "size_mb": 1.27,
-      "pdf": "pdfs/noi-buon-chien-tranh-bao-ninh.pdf"
+      "pdf": "pdfs/noi-buon-chien-tranh-bao-ninh.pdf",
+      "cover": "covers/noi-buon-chien-tranh-bao-ninh.jpg"
     },
     {
       "id": 1595,
@@ -4136,7 +4137,8 @@
       "category": "Văn học và đời sống",
       "pages": 209,
       "size_mb": 1.01,
-      "pdf": "pdfs/song-o-day-song-le-luu.pdf"
+      "pdf": "pdfs/song-o-day-song-le-luu.pdf",
+      "cover": "covers/song-o-day-song-le-luu.jpg"
     },
     {
       "id": 1596,
@@ -4145,7 +4147,8 @@
       "category": "Văn học và đời sống",
       "pages": 84,
       "size_mb": 0.76,
-      "pdf": "pdfs/tat-den-ngo-tat-to.pdf"
+      "pdf": "pdfs/tat-den-ngo-tat-to.pdf",
+      "cover": "covers/tat-den-ngo-tat-to.jpg"
     },
     {
       "id": 1597,
@@ -4154,7 +4157,8 @@
       "category": "Văn học và đời sống",
       "pages": 654,
       "size_mb": 2.95,
-      "pdf": "pdfs/tuoi-tho-du-doi-phung-quan.pdf"
+      "pdf": "pdfs/tuoi-tho-du-doi-phung-quan.pdf",
+      "cover": "covers/tuoi-tho-du-doi-phung-quan.jpg"
     },
     {
       "id": 1598,
@@ -4163,7 +4167,8 @@
       "category": "Nước ngoài",
       "pages": 253,
       "size_mb": 0.91,
-      "pdf": "pdfs/chua-ruoi-william-golding.pdf"
+      "pdf": "pdfs/chua-ruoi-william-golding.pdf",
+      "cover": "covers/chua-ruoi-william-golding.jpg"
     },
     {
       "id": 1599,
@@ -4172,7 +4177,8 @@
       "category": "Nước ngoài",
       "pages": 183,
       "size_mb": 0.75,
-      "pdf": "pdfs/lau-dai-bay-cua-phap-su-howl-diana-wynne-jones.pdf"
+      "pdf": "pdfs/lau-dai-bay-cua-phap-su-howl-diana-wynne-jones.pdf",
+      "cover": "covers/lau-dai-bay-cua-phap-su-howl-diana-wynne-jones.jpg"
     },
     {
       "id": 1600,
@@ -4181,7 +4187,8 @@
       "category": "Nước ngoài",
       "pages": 157,
       "size_mb": 0.59,
-      "pdf": "pdfs/nguoi-an-chay-han-kang.pdf"
+      "pdf": "pdfs/nguoi-an-chay-han-kang.pdf",
+      "cover": "covers/nguoi-an-chay-han-kang.jpg"
     },
     {
       "id": 1601,
@@ -4190,7 +4197,8 @@
       "category": "Nước ngoài",
       "pages": 215,
       "size_mb": 1.31,
-      "pdf": "pdfs/qua-chuong-ac-mong-sylvia-plath.pdf"
+      "pdf": "pdfs/qua-chuong-ac-mong-sylvia-plath.pdf",
+      "cover": "covers/qua-chuong-ac-mong-sylvia-plath.jpg"
     },
     {
       "id": 1602,
