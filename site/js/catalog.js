@@ -17,6 +17,18 @@ function getCoverUrl(uuid) {
 
 const BOOKS_PER_PAGE = 24;
 
+/* ── danh mục phân cấp (cha – con), phân cách bằng "/" ── */
+const SEP = '/';
+const leafOf   = n => { const s = String(n); const i = s.lastIndexOf(SEP); return i < 0 ? s : s.slice(i + 1); };
+const parentOf = n => { const s = String(n); const i = s.lastIndexOf(SEP); return i < 0 ? '' : s.slice(0, i); };
+const kidsOf   = p => categories.filter(c => parentOf(c.name) === p);
+const inSubtree = (cat, path) => cat === path || String(cat || '').startsWith(path + SEP);
+const catCount = path => allBooks.filter(b => inSubtree(b.category, path)).length;
+function rootCats() {
+  const names = new Set(categories.map(c => c.name));
+  return categories.filter(c => !c.name.includes(SEP) || !names.has(parentOf(c.name)));
+}
+
 const CAT_ICONS = {
   'Chủ tịch Hồ Chí Minh':    { svg: 'star',      bg: '#fdf2f2', color: '#b91c1c' },
   'Chính trị':                { svg: 'landmark',   bg: '#fef2f2', color: '#991b1b' },
@@ -139,27 +151,46 @@ function renderCategories() {
   const menu = document.getElementById('catMenu');
   const catFilter = document.getElementById('catFilter');
 
+  // 1 mục cha + các mục con của nó = 1 nhóm (giữ bố cục 2 cột của menu)
+  const item = (c, d) => {
+    const style = CAT_ICONS[c.name] || CAT_ICONS[leafOf(c.name)] || DEFAULT_CAT;
+    const total = catCount(c.name);                 // gồm cả mọi danh mục con
+    return `<a class="cat-item${d ? ' cat-sub' : ''}" data-cat="${esc(c.name)}"
+        style="padding-left:${10 + d * 20}px">
+        <span class="cat-item-icon" style="background:${style.bg};color:${style.color}">${svgIcon(style.svg, style.color, 16)}</span>
+        <span class="cat-item-name">${esc(leafOf(c.name))}</span>
+        <span class="cat-item-count">${total}</span>
+      </a>`;
+  };
+  const opt = (c, d) => {
+    const ind = d ? '&nbsp;'.repeat(d * 3) + '└ ' : '';
+    return `<option value="${esc(c.name)}">${ind}${esc(leafOf(c.name))} (${catCount(c.name)})</option>`;
+  };
+
+  let groups = '', optHtml = '';
+  rootCats().forEach(root => {                      // đi theo cây: cha trước, con lùi vào
+    let inner = '';
+    const walk = (c, d) => {
+      inner += item(c, d);
+      optHtml += opt(c, d);
+      kidsOf(c.name).forEach(k => walk(k, d + 1));
+    };
+    walk(root, 0);
+    groups += `<div class="cat-group">${inner}</div>`;
+  });
+
   menu.innerHTML =
     `<a class="cat-item cat-item-all" data-cat="">
       <span class="cat-item-name">Tất cả sách</span>
       <span class="cat-item-count">${allBooks.length}</span>
-    </a>` +
-    categories.map(c => {
-      const style = CAT_ICONS[c.name] || DEFAULT_CAT;
-      return `<a class="cat-item" data-cat="${esc(c.name)}">
-        <span class="cat-item-icon" style="background:${style.bg};color:${style.color}">${svgIcon(style.svg, style.color, 16)}</span>
-        <span class="cat-item-name">${esc(c.name)}</span>
-        <span class="cat-item-count">${c.count}</span>
-      </a>`;
-    }).join('');
-
-  catFilter.innerHTML = '<option value="">Tất cả danh mục</option>' +
-    categories.map(c => `<option value="${esc(c.name)}">${esc(c.name)} (${c.count})</option>`).join('');
+    </a>` + groups;
+  catFilter.innerHTML = '<option value="">Tất cả danh mục</option>' + optHtml;
 }
 
 function applyFilters() {
   filteredBooks = allBooks.filter(b => {
-    if (currentCat && b.category !== currentCat) return false;
+    // chọn danh mục cha = xem cả sách của mọi danh mục con
+    if (currentCat && !inSubtree(b.category, currentCat)) return false;
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
       return b.title.toLowerCase().includes(q) ||
@@ -202,7 +233,9 @@ function renderBooks() {
       <div class="book-info">
         <div class="book-title">${esc(b.title)}</div>
         <div class="book-meta">
-          <span>${esc(b.category || '')}</span>
+          <span>${b.category
+            ? `${parentOf(b.category) ? `<span class="meta-parent">${esc(parentOf(b.category))}/</span>` : ''}${esc(leafOf(b.category))}`
+            : ''}</span>
         </div>
       </div>
     </a>`;

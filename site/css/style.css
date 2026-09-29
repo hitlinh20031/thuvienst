@@ -522,3 +522,11 @@ body {
   .book-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
   .filter-bar { flex-wrap: wrap; }
 }
+
+/* ── danh mục phân cấp (cha – con) ── */
+.cat-group { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.cat-item.cat-sub { background: #fbfbfd; }
+.cat-item.cat-sub:hover { background: #f1f1f5; }
+.cat-item.cat-sub .cat-item-name { font-weight: 500; color: #55606f; }
+.cat-item.cat-sub .cat-item-icon { width: 24px; height: 24px; border-radius: 6px; }
+.book-meta .meta-parent { color: var(--text-muted); }

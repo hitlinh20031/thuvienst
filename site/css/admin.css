@@ -203,3 +203,9 @@ input[type=color]{width:48px;height:38px;padding:2px;border:1px solid var(--line
 .help-card.warn{background:#fffbeb;border-color:#fde68a}
 .help-card.warn h3{color:#92400e}
 .help .hint{margin-top:18px;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:10px}
+
+/* ── danh mục phân cấp ── */
+.cat-name .branch{color:#9ca3af;margin-right:5px;font-weight:700}
+.cat-name .folder-ic{margin-right:5px}
+.cat-name .path{font-size:12.5px;font-weight:400}
+.cat-cell{font-size:13.5px}

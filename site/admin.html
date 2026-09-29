@@ -91,14 +91,20 @@
         <thead>
           <tr>
             <th style="width:96px">Thứ tự</th>
-            <th>Tên danh mục</th>
-            <th style="width:88px">Số sách</th>
-            <th style="width:250px">Thao tác</th>
+            <th>Danh mục</th>
+            <th style="width:110px">Sách</th>
+            <th style="width:300px">Thao tác</th>
           </tr>
         </thead>
         <tbody id="catBody"></tbody>
       </table>
-      <p class="hint">Thứ tự trong bảng = thứ tự hiển thị ở menu "Danh mục" trên trang chủ.</p>
+      <p class="hint">
+        <strong>📁 Danh mục con:</strong> bấm <strong>＋ Con</strong> ở dòng cha để tạo danh mục bên trong
+        (vd: <code>Văn kiện Đảng</code> → <code>Văn kiện Đảng/Đại hội XIV</code>).
+        Khi chọn lọc/bấm vào danh mục cha thì <strong>gồm cả sách của mọi danh mục con</strong>.
+        Thứ tự ↑↓ áp dụng trong cùng cấp. Số ở cột "Sách" là sách nằm trực tiếp;
+        <em>(tổng ...)</em> là tổng cả cây gồm mọi danh mục con.
+      </p>
     </div>
   </section>
 
@@ -336,6 +342,6 @@
 
 <div id="toastWrap"></div>
 
-<script src="/js/admin.js?v=5"></script>
+<script src="/js/admin.js?v=6"></script>
 </body>
 </html>

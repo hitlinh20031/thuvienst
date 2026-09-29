@@ -162,6 +162,15 @@ const esc = (s) => String(s == null ? '' : s)
 /*──────────────── Dữ liệu ────────────────*/
 function recount() {
   if (!data) return;
+  // bảo đảm mọi danh mục cha đều tồn tại: có sách/con ở "A/B" thì phải có "A"
+  const seen = new Set(data.categories.map(c => c.name));
+  data.categories.slice().forEach(c => {
+    const parts = String(c.name).split(SEP);
+    for (let i = 1; i < parts.length; i++) {
+      const p = parts.slice(0, i).join(SEP);
+      if (!seen.has(p)) { seen.add(p); data.categories.push({ name: p, count: 0, size_gb: 0 }); }
+    }
+  });
   const map = {}, size = {};
   data.books.forEach(b => {
     const c = b.category || 'Chưa phân loại';
@@ -355,106 +364,202 @@ async function startApp(user) {
   }
 }
 
-/*══════════════ 2. DANH MỤC ══════════════*/
+/*══════════════ 2. DANH MỤC (có cấp cha – con) ══════════════*/
+/* Tên danh mục = đường dẫn phân cấp, phân cách bằng "/" vd: "Văn kiện Đảng/Đại hội XIV" */
+const SEP = '/';
+const leafOf   = n => { const s = String(n); const i = s.lastIndexOf(SEP); return i < 0 ? s : s.slice(i + 1); };
+const parentOf = n => { const s = String(n); const i = s.lastIndexOf(SEP); return i < 0 ? '' : s.slice(0, i); };
+const depthOf  = n => String(n).split(SEP).length - 1;
+const kidsOf   = p => data.categories.filter(c => parentOf(c.name) === p);
+const inSubtree = (cat, path) => cat === path || String(cat || '').startsWith(path + SEP);
+
+function rootCats() {
+  const names = new Set(data.categories.map(c => c.name));
+  return data.categories.filter(c => !c.name.includes(SEP) || !names.has(parentOf(c.name)));
+}
+/* Thứ tự hiển thị: cha trước, các con ngay sau (DFS) */
+function catTree() {
+  const out = [];
+  const walk = list => list.forEach(c => { out.push(c); walk(kidsOf(c.name)); });
+  walk(rootCats());
+  return out;
+}
+function siblingsOf(c) {
+  const p = parentOf(c.name);
+  const names = new Set(data.categories.map(x => x.name));
+  return (!p || !names.has(p)) ? rootCats() : kidsOf(p);
+}
+
 function renderCats() {
   $('#catSummary').textContent = `${data.categories.length} danh mục · ${data.books.length} sách`;
-  $('#catBody').innerHTML = data.categories.map((c, i) => `
+  const tree = catTree();
+  $('#catBody').innerHTML = tree.map(c => {
+    const i    = data.categories.indexOf(c);
+    const d    = depthOf(c.name);
+    const kids = kidsOf(c.name);
+    const sib  = siblingsOf(c);
+    const k    = sib.indexOf(c);
+    const total = kids.length
+      ? data.books.filter(b => inSubtree(b, c.name)).length
+      : c.count;
+    return `
     <tr>
       <td>
-        <button class="btn tiny" data-act="up"   data-i="${i}" ${i === 0 ? 'disabled' : ''} title="Lên">↑</button>
-        <button class="btn tiny" data-act="down" data-i="${i}" ${i === data.categories.length - 1 ? 'disabled' : ''} title="Xuống">↓</button>
+        <button class="btn tiny" data-act="up"   data-i="${i}" ${k <= 0 ? 'disabled' : ''} title="Lên">↑</button>
+        <button class="btn tiny" data-act="down" data-i="${i}" ${k >= sib.length - 1 ? 'disabled' : ''} title="Xuống">↓</button>
       </td>
-      <td><strong>${esc(c.name)}</strong></td>
-      <td>${c.count}</td>
+      <td class="cat-name" style="padding-left:${6 + d * 22}px" title="${esc(c.name)}">${d ? '<span class="branch">└</span>' : '<span class="folder-ic">📁</span>'}${d ? `<span class="muted path">${esc(parentOf(c.name))}/</span>` : ''}<strong>${esc(leafOf(c.name))}</strong></td>
+      <td>${c.count}${total !== c.count ? ` <span class="muted">(tổng ${total})</span>` : ''}</td>
       <td>
+        <button class="btn tiny" data-act="add"    data-i="${i}" title="Tạo danh mục bên trong">＋ Con</button>
         <button class="btn tiny" data-act="rename" data-i="${i}">Đổi tên</button>
         <button class="btn tiny danger" data-act="del" data-i="${i}">Xóa</button>
       </td>
-    </tr>`).join('');
+    </tr>`;
+  }).join('');
 }
 
 async function catAction(act, i) {
   const c = data.categories[i];
+  if (!c) return;
   try {
+    /* ---- sắp xếp trong cùng cấp ---- */
     if (act === 'up' || act === 'down') {
-      const j = act === 'up' ? i - 1 : i + 1;
-      if (j < 0 || j >= data.categories.length) return;
-      [data.categories[i], data.categories[j]] = [data.categories[j], data.categories[i]];
-      await saveData(`Sắp xếp thứ tự danh mục "${c.name}"`);
+      const sib = siblingsOf(c), k = sib.indexOf(c);
+      const other = act === 'up' ? sib[k - 1] : sib[k + 1];
+      if (!other) return;
+      const pi = data.categories.indexOf(c), pj = data.categories.indexOf(other);
+      [data.categories[pi], data.categories[pj]] = [data.categories[pj], data.categories[pi]];
+      await saveData(`Sắp xếp thứ tự danh mục "${leafOf(c.name)}"`);
       return;
     }
 
+    /* ---- tạo danh mục con ---- */
+    if (act === 'add') {
+      let np = '';
+      const v = await modal({
+        title: `Thêm danh mục con trong "${leafOf(c.name)}"`,
+        html: `<label>Tên danh mục con</label>
+               <input id="mName" placeholder="Ví dụ: Đại hội XIV">
+               <p class="hint">Sẽ tạo: <code>${esc(c.name + SEP + 'tên-bạn-nhập')}</code></p>`,
+        buttons: [
+          { label: 'Hủy', value: null },
+          { label: 'Tạo danh mục con', primary: true, onClick: (root) => {
+              const nv = root.querySelector('#mName').value.trim();
+              if (!nv) return false;
+              if (nv.includes(SEP)) { alert('Tên không được chứa dấu "/"'); return false; }
+              np = c.name + SEP + nv;
+              if (data.categories.some(x => x.name === np)) { alert('Đã có danh mục này rồi.'); return false; }
+              return nv;
+            }
+          }
+        ]
+      });
+      if (v) {
+        data.categories.push({ name: np, count: 0, size_gb: 0 });
+        await saveData(`Tạo danh mục con "${v}" trong "${leafOf(c.name)}"`);
+      }
+      return;
+    }
+
+    /* ---- đổi tên (đổi cả đường dẫn của mọi thứ bên trong) ---- */
     if (act === 'rename') {
+      const oldName = c.name, p = parentOf(oldName);
+      let nv = '';
       const v = await modal({
         title: 'Đổi tên danh mục',
-        html: `<label>Tên mới</label><input id="mName" value="${esc(c.name)}">`,
+        html: `<label>Tên mới</label><input id="mName" value="${esc(leafOf(oldName))}">
+               ${kidsOf(oldName).length ? `<p class="hint">Có ${kidsOf(oldName).length} danh mục con — đường dẫn của chúng sẽ tự cập nhật theo.</p>` : ''}`,
         buttons: [
           { label: 'Hủy', value: null },
           { label: 'Lưu', primary: true, onClick: (root) => {
-              const nv = root.querySelector('#mName').value.trim();
-              if (!nv) return false;
-              if (nv !== c.name && data.categories.some(x => x.name === nv)) {
-                alert('Danh mục "' + nv + '" đã tồn tại.'); return false;
+              const t = root.querySelector('#mName').value.trim();
+              if (!t) return false;
+              if (t.includes(SEP)) { alert('Tên không được chứa dấu "/"'); return false; }
+              const np = p ? p + SEP + t : t;
+              if (np !== oldName && data.categories.some(x => x.name === np)) { alert('Danh mục "' + t + '" đã tồn tại.'); return false; }
+              nv = t; return true;
+            }
+          }
+        ]
+      });
+      if (v) {
+        const np = p ? p + SEP + nv : nv;
+        const move = s => s === oldName ? np
+          : (s.startsWith(oldName + SEP) ? np + SEP + s.slice(oldName.length + 1) : s);
+        data.categories.forEach(x => { x.name = move(x.name); });
+        data.books.forEach(b => { if (b.category) b.category = move(b.category); });
+        await saveData(`Đổi danh mục "${leafOf(oldName)}" → "${nv}"`);
+      }
+      return;
+    }
+
+    /* ---- xóa ---- */
+    if (act === 'del') {
+      const oldName = c.name;
+      const kids    = kidsOf(oldName);
+      const direct  = data.books.filter(b => b.category === oldName).length;
+      const targets = data.categories.filter(x => !inSubtree(x.name, oldName));
+      if ((direct || kids.length) && !targets.length) {
+        alert('Không còn danh mục nào khác để chứa sách/con. Hãy tạo thêm 1 danh mục khác trước.');
+        return;
+      }
+      let movedTo = null;
+      const v = await modal({
+        title: `Xóa danh mục "${leafOf(oldName)}"?`,
+        html: `
+          ${direct ? `<p><strong>${direct}</strong> sách đang nằm trực tiếp ở đây → chọn nơi chuyển sang:</p>
+                      <select id="mCat">${treeOptions(targets, '')}</select>` : ''}
+          ${kids.length ? `<p>Danh mục con (${kids.length}) sẽ <strong>lên cấp trên</strong>, không mất gì cả.</p>` : ''}
+          ${!direct && !kids.length ? '<p>Danh mục trống, xóa là mất luôn tên này.</p>' : ''}`,
+        buttons: [
+          { label: 'Hủy', value: null },
+          { label: 'Xóa danh mục', danger: true, onClick: (root) => {
+              const sel = root.querySelector('#mCat');
+              if (direct) { movedTo = sel.value; if (!movedTo) return false; }
+              if (direct) data.books.forEach(b => { if (b.category === oldName) b.category = movedTo; });
+              if (kids.length) {
+                const fix = s => s.startsWith(oldName + SEP) ? s.slice(oldName.length + 1) : s;
+                data.categories.forEach(x => { if (x.name.startsWith(oldName + SEP)) x.name = fix(x.name); });
+                data.books.forEach(b => { if (b.category && b.category.startsWith(oldName + SEP)) b.category = fix(b.category); });
               }
-              data.books.forEach(b => { if (b.category === c.name) b.category = nv; });
-              c.name = nv;
+              data.categories = data.categories.filter(x => x !== c);
               return true;
             }
           }
         ]
       });
-      if (v) await saveData(`Đổi tên danh mục → "${c.name}"`);
-      return;
-    }
-
-    if (act === 'del') {
-      if (c.count > 0) {
-        const others = data.categories.filter(x => x.name !== c.name);
-        if (!others.length) { alert('Không còn danh mục nào khác để chuyển sách vào.'); return; }
-        let movedTo = null;
-        const v = await modal({
-          title: `Danh mục "${c.name}" có ${c.count} sách`,
-          html: `<p>Phải chuyển hết sách sang danh mục khác trước khi xóa.</p>
-                 <label>Chuyển ${c.count} sách vào</label>
-                 <select id="mCat">${others.map(o => `<option>${esc(o.name)}</option>`).join('')}</select>`,
-          buttons: [
-            { label: 'Hủy', value: null },
-            { label: 'Chuyển rồi xóa', danger: true, onClick: (root) => {
-                movedTo = root.querySelector('#mCat').value;
-                data.books.forEach(b => { if (b.category === c.name) b.category = movedTo; });
-                data.categories = data.categories.filter(x => x !== c);
-                return true;
-              }
-            }
-          ]
-        });
-        if (v) await saveData(`Xóa danh mục "${c.name}", chuyển ${c.count} sách sang "${movedTo}"`);
-      } else {
-        const ok = await modal({
-          title: `Xóa danh mục "${c.name}"?`,
-          html: `<p>Danh mục trống, xóa là mất luôn tên này.</p>`,
-          buttons: [ { label: 'Hủy', value: null }, { label: 'Xóa', danger: true, value: true } ]
-        });
-        if (ok) {
-          data.categories = data.categories.filter(x => x !== c);
-          await saveData(`Xóa danh mục "${c.name}"`);
-        }
+      if (v) {
+        let msg = `Xóa danh mục "${leafOf(oldName)}"`;
+        if (kids.length) msg += `, ${kids.length} danh mục con lên cấp trên`;
+        if (direct) msg += `, chuyển ${direct} sách sang "${movedTo}"`;
+        await saveData(msg);
       }
+      return;
     }
   } catch (e) { toast(e.message, 'err'); }
 }
 
 /*══════════════ 3. SÁCH ══════════════*/
-function catOptions(sel) {
-  return data.categories.map(c =>
-    `<option value="${esc(c.name)}" ${c.name === sel ? 'selected' : ''}>${esc(c.name)}</option>`).join('');
+/* Tạo <option> theo cây (cha trên, con lùi vào) — nhận 1 danh sách để loại trừ khi cần */
+function treeOptions(list, sel) {
+  const names = new Set(list.map(x => x.name));
+  const kids  = p => list.filter(x => parentOf(x.name) === p);
+  const roots = list.filter(x => !x.name.includes(SEP) || !names.has(parentOf(x.name)));
+  const walk = (arr, d) => arr.map(x => {
+    const ind = d ? '&nbsp;'.repeat(d * 3) + '└ ' : '';
+    return `<option value="${esc(x.name)}" ${x.name === sel ? 'selected' : ''}>${ind}${esc(leafOf(x.name))}</option>`
+         + walk(kids(x.name), d + 1);
+  }).join('');
+  return walk(roots, 0);
 }
+const catOptions = (sel) => treeOptions(data.categories, sel);
 
 function applyBookFilter() {
   const q = ($('#bookSearch').value || '').trim().toLowerCase();
   const cf = $('#bookCatFilter').value;
   filtered = data.books.filter(b => {
-    if (cf && b.category !== cf) return false;
+    if (cf && !inSubtree(b.category, cf)) return false;   // chọn cha = gồm cả mọi danh mục con
     if (!q) return true;
     return (b.title || '').toLowerCase().includes(q)
         || (b.creator || '').toLowerCase().includes(q);
@@ -477,7 +582,9 @@ function renderBooks() {
         ${b.uuid ? `<span class="badge ghost">${esc(String(b.uuid).slice(0, 8))}…</span>` : ''}
       </td>
       <td>${esc(b.creator || '')}</td>
-      <td>${esc(b.category || '')}</td>
+      <td class="cat-cell" title="${esc(b.category || '')}">${b.category
+        ? `${parentOf(b.category) ? `<span class="muted">${esc(parentOf(b.category))}/</span>` : ''}${esc(leafOf(b.category))}`
+        : '<span class="muted">—</span>'}</td>
       <td>${b.pages || 0}</td>
       <td>${b.pdf ? 'PDF' : 'Ảnh'}</td>
       <td>
@@ -866,10 +973,9 @@ async function doUpload() {
 /*══════════════ CÁC TAB / RENDER TỔNG ══════════════*/
 function renderAll() {
   renderCats();
-  // bộ lọc danh mục
+  // bộ lọc danh mục (theo cây)
   const cur = $('#bookCatFilter').value;
-  $('#bookCatFilter').innerHTML = '<option value="">Tất cả danh mục</option>' +
-    data.categories.map(c => `<option>${esc(c.name)}</option>`).join('');
+  $('#bookCatFilter').innerHTML = '<option value="">Tất cả danh mục</option>' + treeOptions(data.categories, cur);
   $('#bookCatFilter').value = cur;
   $('#bulkCat').innerHTML = catOptions('');
   fillUpCat();
@@ -894,6 +1000,7 @@ function bind() {
   $('#addCatBtn').addEventListener('click', async () => {
     const name = $('#newCatName').value.trim();
     if (!name) return;
+    if (name.includes(SEP)) { toast('Tên danh mục không được chứa dấu "/".', 'err'); return; }
     if (data.categories.some(c => c.name === name)) { toast('Danh mục đã tồn tại.', 'err'); return; }
     data.categories.push({ name, count: 0, size_gb: 0 });
     $('#newCatName').value = '';
