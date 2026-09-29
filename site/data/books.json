@@ -49,13 +49,13 @@
     },
     {
       "name": "Tài liệu",
-      "count": 12,
-      "size_gb": 0.15
+      "count": 11,
+      "size_gb": 0.14
     },
     {
       "name": "Văn hóa, xã hội",
-      "count": 12,
-      "size_gb": 0.27
+      "count": 13,
+      "size_gb": 0.29
     },
     {
       "name": "Văn kiện Đảng",
@@ -3099,7 +3099,7 @@
       "id": 1465,
       "uuid": "2268b6ca1aad40cf8d870081112ed860",
       "title": "Xã hội hóa giáo dục không phải là “thương mại hóa” Hiểu đúng để đồng thuận",
-      "category": "Tài liệu",
+      "category": "Văn hóa, xã hội",
       "creator": "Phạm Minh Tâm",
       "pages": 11,
       "size_mb": 17.15
