@@ -19,8 +19,8 @@
     },
     {
       "name": "Pháp luật",
-      "count": 9,
-      "size_gb": 0.31
+      "count": 10,
+      "size_gb": 0.33
     },
     {
       "name": "Quốc phòng, an ninh, đối ngoại",
@@ -29,8 +29,8 @@
     },
     {
       "name": "Tài liệu",
-      "count": 3,
-      "size_gb": 0.04
+      "count": 2,
+      "size_gb": 0.02
     },
     {
       "name": "Văn hóa, xã hội",
@@ -3111,7 +3111,7 @@
       "id": 1468,
       "uuid": "0a94a1a802e04149bbd2d8d76fd5bed0",
       "title": "Nhận diện, phản bác luận điệu xuyên tạc quanh chế định luật sư công (4 bài)",
-      "category": "Tài liệu",
+      "category": "Pháp luật",
       "creator": "Nguyễn Phi Hùng, Mai Văn Đỉnh, Đỗ Văn Việt, Nguyễn Thu Trang",
       "pages": 18,
       "size_mb": 14.57
