@@ -29,8 +29,8 @@
     },
     {
       "name": "Tài liệu",
-      "count": 11,
-      "size_gb": 0.14
+      "count": 10,
+      "size_gb": 0.12
     },
     {
       "name": "Văn hóa, xã hội",
@@ -64,8 +64,8 @@
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
-      "count": 0,
-      "size_gb": 0
+      "count": 1,
+      "size_gb": 0.01
     },
     {
       "name": "Các ấn phẩm khác",
@@ -3003,7 +3003,7 @@
       "id": 1456,
       "uuid": "60f72ac3a9954d589aecda2e8813d9bd",
       "title": "Thách thức và yêu cầu bảo vệ chủ quyền dữ liệu quốc gia trong kỷ nguyên số",
-      "category": "Tài liệu",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
       "creator": "Nguyễn Thị Xuyên",
       "pages": 18,
       "size_mb": 15.11
