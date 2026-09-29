@@ -4447,7 +4447,8 @@
       "category": "Pháp luật/Hôn nhân và gia đình",
       "pages": 0,
       "size_mb": 0.08,
-      "pdf": "pdfs/tieu-pham-ve-pl-hon-nhan-gia-dinh.docx"
+      "pdf": "pdfs/tieu-pham-ve-pl-hon-nhan-gia-dinh.docx",
+      "cover": "covers/tieu-pham-ve-pl-hon-nhan-gia-dinh.jpg"
     },
     {
       "id": 1627,
@@ -4456,7 +4457,8 @@
       "category": "Pháp luật/Hôn nhân và gia đình",
       "pages": 0,
       "size_mb": 0.03,
-      "pdf": "pdfs/tinh-huong-ve-pl-hon-nhan-va-gia-dinh.docx"
+      "pdf": "pdfs/tinh-huong-ve-pl-hon-nhan-va-gia-dinh.docx",
+      "cover": "covers/tinh-huong-ve-pl-hon-nhan-va-gia-dinh.jpg"
     }
   ]
 }
