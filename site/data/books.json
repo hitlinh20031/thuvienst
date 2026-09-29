@@ -1,6 +1,6 @@
 {
-  "total": 466,
-  "total_size_gb": 9.75,
+  "total": 471,
+  "total_size_gb": 9.76,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Pháp luật/Hôn nhân và gia đình",
-      "count": 0,
+      "count": 5,
       "size_gb": 0
     },
     {
@@ -4292,6 +4292,51 @@
       "pages": 164,
       "size_mb": 1.7,
       "pdf": "pdfs/luan-an-thua-ke-theo-pl-theo-blds-2015.pdf"
+    },
+    {
+      "id": 1623,
+      "title": "Hỏi đáp PL về hôn nhân gia đình_01",
+      "creator": "",
+      "category": "Pháp luật/Hôn nhân và gia đình",
+      "pages": 0,
+      "size_mb": 0.28,
+      "pdf": "pdfs/hoi-dap-pl-ve-hon-nhan-gia-dinh-01.doc"
+    },
+    {
+      "id": 1624,
+      "title": "Hỏi đáp PL về hôn nhân gia đình_02",
+      "creator": "",
+      "category": "Pháp luật/Hôn nhân và gia đình",
+      "pages": 0,
+      "size_mb": 0.09,
+      "pdf": "pdfs/hoi-dap-pl-ve-hon-nhan-gia-dinh-02.docx"
+    },
+    {
+      "id": 1625,
+      "title": "Luật hôn nhân và gia đình 2014",
+      "creator": "",
+      "category": "Pháp luật/Hôn nhân và gia đình",
+      "pages": 38,
+      "size_mb": 0.59,
+      "pdf": "pdfs/luat-hon-nhan-va-gia-dinh-2014.pdf"
+    },
+    {
+      "id": 1626,
+      "title": "Tiểu phẩm về PL hôn nhân gia đình",
+      "creator": "",
+      "category": "Pháp luật/Hôn nhân và gia đình",
+      "pages": 0,
+      "size_mb": 0.08,
+      "pdf": "pdfs/tieu-pham-ve-pl-hon-nhan-gia-dinh.docx"
+    },
+    {
+      "id": 1627,
+      "title": "Tình huống về PL hôn nhân và gia đình",
+      "creator": "",
+      "category": "Pháp luật/Hôn nhân và gia đình",
+      "pages": 0,
+      "size_mb": 0.03,
+      "pdf": "pdfs/tinh-huong-ve-pl-hon-nhan-va-gia-dinh.docx"
     }
   ]
 }
