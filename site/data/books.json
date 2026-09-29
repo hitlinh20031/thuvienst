@@ -1,10 +1,10 @@
 {
-  "total": 427,
-  "total_size_gb": 9.67,
+  "total": 441,
+  "total_size_gb": 9.69,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
-      "count": 133,
+      "count": 134,
       "size_gb": 3.19
     },
     {
@@ -64,8 +64,8 @@
     },
     {
       "name": "Văn học và đời sống",
-      "count": 14,
-      "size_gb": 0.03
+      "count": 27,
+      "size_gb": 0.05
     },
     {
       "name": "Thiếu nhi",
@@ -3936,6 +3936,132 @@
       "pages": 35,
       "size_mb": 3.45,
       "pdf": "pdfs/truyen-tieng-nhac-ve.pdf"
+    },
+    {
+      "id": 1584,
+      "title": "Bản Án Chế Độ Thực Dân Pháp - Nguyễn Ái Quốc",
+      "creator": "Nguyễn Ái Quốc",
+      "category": "Chủ tịch Hồ Chí Minh",
+      "pages": 113,
+      "size_mb": 0.65,
+      "pdf": "pdfs/ban-an-che-do-thuc-dan-phap-nguyen-ai-quoc.pdf"
+    },
+    {
+      "id": 1585,
+      "title": "Bỉ vỏ_Nguyên Hồng",
+      "creator": "Nguyên Hồng",
+      "category": "Văn học và đời sống",
+      "pages": 172,
+      "size_mb": 0.51,
+      "pdf": "pdfs/bi-vo-nguyen-hong.pdf"
+    },
+    {
+      "id": 1586,
+      "title": "Cánh đồng bất tận_Nguyễn Ngọc Tư",
+      "creator": "Nguyễn Ngọc Tư",
+      "category": "Văn học và đời sống",
+      "pages": 25,
+      "size_mb": 0.3,
+      "pdf": "pdfs/canh-dong-bat-tan-nguyen-ngoc-tu.pdf"
+    },
+    {
+      "id": 1587,
+      "title": "Hà Nội 36 Phố Phường_Thạch Lam",
+      "creator": "Thạch Lam",
+      "category": "Văn học và đời sống",
+      "pages": 55,
+      "size_mb": 0.44,
+      "pdf": "pdfs/ha-noi-36-pho-phuong-thach-lam.pdf"
+    },
+    {
+      "id": 1588,
+      "title": "Mãi Mãi Tuổi Hai Mươi_Nguyễn Văn Thạc",
+      "creator": "Nguyễn Văn Thạc",
+      "category": "Văn học và đời sống",
+      "pages": 191,
+      "size_mb": 1.13,
+      "pdf": "pdfs/mai-mai-tuoi-hai-muoi-nguyen-van-thac.pdf"
+    },
+    {
+      "id": 1589,
+      "title": "Mưa đỏ_Chu Lai",
+      "creator": "Chu Lai",
+      "category": "Văn học và đời sống",
+      "pages": 316,
+      "size_mb": 1.88,
+      "pdf": "pdfs/mua-do-chu-lai.pdf"
+    },
+    {
+      "id": 1590,
+      "title": "Ngồi khóc trên cây_Nguyễn Nhật Ánh",
+      "creator": "Nguyễn Nhật Ánh",
+      "category": "Văn học và đời sống",
+      "pages": 228,
+      "size_mb": 1.72,
+      "pdf": "pdfs/ngoi-khoc-tren-cay-nguyen-nhat-anh.pdf"
+    },
+    {
+      "id": 1591,
+      "title": "Nguyên Hồng - Tuyển tập truyện lẻ",
+      "creator": "Nguyên Hồng",
+      "category": "Văn học và đời sống",
+      "pages": 99,
+      "size_mb": 0.75,
+      "pdf": "pdfs/nguyen-hong-tuyen-tap-truyen-le.pdf"
+    },
+    {
+      "id": 1592,
+      "title": "Nhật Ký Đặng Thuỳ Trâm_Đặng Thuỳ Trâm",
+      "creator": "Đặng Thuỳ Trâm",
+      "category": "Văn học và đời sống",
+      "pages": 224,
+      "size_mb": 2.47,
+      "pdf": "pdfs/nhat-ky-dang-thuy-tram-dang-thuy-tram.pdf"
+    },
+    {
+      "id": 1593,
+      "title": "Những Ngày Thơ Ấu_Nguyên Hồng",
+      "creator": "Nguyên Hồng",
+      "category": "Văn học và đời sống",
+      "pages": 80,
+      "size_mb": 0.67,
+      "pdf": "pdfs/nhung-ngay-tho-au-nguyen-hong.pdf"
+    },
+    {
+      "id": 1594,
+      "title": "Nỗi buồn chiến tranh_Bảo Ninh",
+      "creator": "Bảo Ninh",
+      "category": "Văn học và đời sống",
+      "pages": 164,
+      "size_mb": 1.27,
+      "pdf": "pdfs/noi-buon-chien-tranh-bao-ninh.pdf"
+    },
+    {
+      "id": 1595,
+      "title": "Sóng Ở Đáy Sông_Lê Lựu",
+      "creator": "Lê Lựu",
+      "category": "Văn học và đời sống",
+      "pages": 209,
+      "size_mb": 1.01,
+      "pdf": "pdfs/song-o-day-song-le-luu.pdf"
+    },
+    {
+      "id": 1596,
+      "title": "Tắt đèn_Ngô Tất Tố",
+      "creator": "Ngô Tất Tố",
+      "category": "Văn học và đời sống",
+      "pages": 84,
+      "size_mb": 0.76,
+      "pdf": "pdfs/tat-den-ngo-tat-to.pdf"
+    },
+    {
+      "id": 1597,
+      "title": "Tuổi thơ dữ dội_Phùng Quán",
+      "creator": "Phùng Quán",
+      "category": "Văn học và đời sống",
+      "pages": 654,
+      "size_mb": 2.95,
+      "pdf": "pdfs/tuoi-tho-du-doi-phung-quan.pdf"
     }
   ]
 }
