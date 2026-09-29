@@ -39,13 +39,13 @@
     },
     {
       "name": "Pháp luật",
-      "count": 10,
-      "size_gb": 0.33
+      "count": 9,
+      "size_gb": 0.31
     },
     {
       "name": "Quốc phòng, an ninh, đối ngoại",
-      "count": 12,
-      "size_gb": 0.31
+      "count": 13,
+      "size_gb": 0.33
     },
     {
       "name": "Tài liệu",
@@ -78,7 +78,7 @@
       "id": 107,
       "uuid": "5a6da1e3910043c4ace0fcc7d0deea42",
       "title": "Chính sách an ninh mạng trong quan hệ quốc tế hiện nay và đối sách của Việt Nam (Sách tham khảo)",
-      "category": "Pháp luật",
+      "category": "Quốc phòng, an ninh, đối ngoại",
       "creator": "TS. Nguyễn Việt Lâm (Chủ biên)",
       "pages": 222,
       "size_mb": 14.15
