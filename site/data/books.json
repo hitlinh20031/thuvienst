@@ -86,6 +86,11 @@
       "name": "TestHome",
       "count": 0,
       "size_gb": 0
+    },
+    {
+      "name": "TestHome/Con",
+      "count": 0,
+      "size_gb": 0
     }
   ],
   "books": [
