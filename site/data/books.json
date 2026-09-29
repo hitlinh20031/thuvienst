@@ -49,13 +49,13 @@
     },
     {
       "name": "Tài liệu",
-      "count": 13,
-      "size_gb": 0.16
+      "count": 12,
+      "size_gb": 0.15
     },
     {
       "name": "Văn hóa, xã hội",
-      "count": 11,
-      "size_gb": 0.26
+      "count": 12,
+      "size_gb": 0.27
     },
     {
       "name": "Văn kiện Đảng",
@@ -3009,7 +3009,7 @@
       "id": 1455,
       "uuid": "297d6605431d487fb71afc18b537b75f",
       "title": "Concert quốc gia từ góc nhìn công tác tư tưởng: Khơi dậy tinh thần dân tộc trong thời đại số",
-      "category": "Tài liệu",
+      "category": "Văn hóa, xã hội",
       "creator": "Lê Diệu Ly",
       "pages": 21,
       "size_mb": 7.84
