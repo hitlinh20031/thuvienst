@@ -4287,7 +4287,8 @@
       "category": "Pháp luật/Đất đai",
       "pages": 46,
       "size_mb": 0.52,
-      "pdf": "pdfs/hoi-dap-pl-ve-luat-dat-dai-2024-02.pdf"
+      "pdf": "pdfs/hoi-dap-pl-ve-luat-dat-dai-2024-02.pdf",
+      "cover": "covers/hoi-dap-pl-ve-luat-dat-dai-2024-02.jpg"
     },
     {
       "id": 1611,
@@ -4296,7 +4297,8 @@
       "category": "Pháp luật/Đất đai",
       "pages": 94,
       "size_mb": 1.28,
-      "pdf": "pdfs/luat-dat-dai-2024.pdf"
+      "pdf": "pdfs/luat-dat-dai-2024.pdf",
+      "cover": "covers/luat-dat-dai-2024.jpg"
     },
     {
       "id": 1612,
@@ -4305,7 +4307,8 @@
       "category": "Pháp luật/Đất đai",
       "pages": 189,
       "size_mb": 2.59,
-      "pdf": "pdfs/so-tay-huong-dan-cong-tac-qlnn-trong-linh-vuc-dat-dai.pdf"
+      "pdf": "pdfs/so-tay-huong-dan-cong-tac-qlnn-trong-linh-vuc-dat-dai.pdf",
+      "cover": "covers/so-tay-huong-dan-cong-tac-qlnn-trong-linh-vuc-dat-dai.jpg"
     },
     {
       "id": 1613,
@@ -4314,7 +4317,8 @@
       "category": "Pháp luật/Doanh nghiệp, kinh doanh",
       "pages": 15,
       "size_mb": 4.69,
-      "pdf": "pdfs/cam-nang-danh-muc-tai-lieu-phap-ly-doanh-nghiep-can-co.pdf"
+      "pdf": "pdfs/cam-nang-danh-muc-tai-lieu-phap-ly-doanh-nghiep-can-co.pdf",
+      "cover": "covers/cam-nang-danh-muc-tai-lieu-phap-ly-doanh-nghiep-can-co.jpg"
     },
     {
       "id": 1614,
@@ -4323,7 +4327,8 @@
       "category": "Pháp luật/Doanh nghiệp, kinh doanh",
       "pages": 10,
       "size_mb": 2.71,
-      "pdf": "pdfs/cam-nang-he-thong-chinh-sach-thue-va-thu-tuc-doi-voi-ca-nhan.pdf"
+      "pdf": "pdfs/cam-nang-he-thong-chinh-sach-thue-va-thu-tuc-doi-voi-ca-nhan.pdf",
+      "cover": "covers/cam-nang-he-thong-chinh-sach-thue-va-thu-tuc-doi-voi-ca-nhan.jpg"
     },
     {
       "id": 1615,
@@ -4332,7 +4337,8 @@
       "category": "Pháp luật/Doanh nghiệp, kinh doanh",
       "pages": 143,
       "size_mb": 1.19,
-      "pdf": "pdfs/hoi-dap-pl-cac-vb-qd-ve-cong-tac-ho-tro-phap-ly-cho-dn-vua-v.pdf"
+      "pdf": "pdfs/hoi-dap-pl-cac-vb-qd-ve-cong-tac-ho-tro-phap-ly-cho-dn-vua-v.pdf",
+      "cover": "covers/hoi-dap-pl-cac-vb-qd-ve-cong-tac-ho-tro-phap-ly-cho-dn-vua-v.jpg"
     },
     {
       "id": 1616,
@@ -4341,7 +4347,8 @@
       "category": "Pháp luật/Doanh nghiệp, kinh doanh",
       "pages": 33,
       "size_mb": 0.37,
-      "pdf": "pdfs/hoi-dap-pl-ve-doanh-nghiep-2020.pdf"
+      "pdf": "pdfs/hoi-dap-pl-ve-doanh-nghiep-2020.pdf",
+      "cover": "covers/hoi-dap-pl-ve-doanh-nghiep-2020.jpg"
     },
     {
       "id": 1617,
@@ -4350,7 +4357,8 @@
       "category": "Pháp luật/Doanh nghiệp, kinh doanh",
       "pages": 76,
       "size_mb": 1.15,
-      "pdf": "pdfs/luat-dau-tu-2025.pdf"
+      "pdf": "pdfs/luat-dau-tu-2025.pdf",
+      "cover": "covers/luat-dau-tu-2025.jpg"
     },
     {
       "id": 1618,
