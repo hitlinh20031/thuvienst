@@ -1,6 +1,6 @@
 {
-  "total": 386,
-  "total_size_gb": 9.37,
+  "total": 385,
+  "total_size_gb": 9.36,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -19,8 +19,8 @@
     },
     {
       "name": "Kinh điển",
-      "count": 1,
-      "size_gb": 0.01
+      "count": 0,
+      "size_gb": 0
     },
     {
       "name": "Lãnh đạo Đảng, Nhà nước",
@@ -1375,15 +1375,6 @@
       "creator": "Bộ Công an",
       "pages": 522,
       "size_mb": 50.71
-    },
-    {
-      "id": 470,
-      "uuid": "125d8f7790d0455e9541b56766698021",
-      "title": "Documents of the 13th Party congress",
-      "category": "Kinh điển",
-      "creator": "Communist Party of Vietnam",
-      "pages": 360,
-      "size_mb": 11.01
     },
     {
       "id": 473,
