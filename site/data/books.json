@@ -49,13 +49,13 @@
     },
     {
       "name": "Tài liệu",
-      "count": 14,
-      "size_gb": 0.19
+      "count": 13,
+      "size_gb": 0.16
     },
     {
       "name": "Văn hóa, xã hội",
-      "count": 10,
-      "size_gb": 0.23
+      "count": 11,
+      "size_gb": 0.26
     },
     {
       "name": "Văn kiện Đảng",
@@ -2991,7 +2991,7 @@
       "id": 1453,
       "uuid": "50386852e4a4439a9de7c7c789d90d76",
       "title": "Văn hóa soi sáng con đường phát triển đất nước trong kỷ nguyên mới",
-      "category": "Tài liệu",
+      "category": "Văn hóa, xã hội",
       "creator": "Đào Văn Hiếu, Vụ Văn hóa - Văn nghệ, Ban Tuyên giáo và Dân vận Trung ương",
       "pages": 27,
       "size_mb": 30.84
