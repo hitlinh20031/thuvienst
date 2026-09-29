@@ -4,7 +4,7 @@
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
-      "count": 133,
+      "count": 134,
       "size_gb": 3.19
     },
     {
@@ -26,11 +26,6 @@
       "name": "Mới",
       "count": 0,
       "size_gb": 0
-    },
-    {
-      "name": "Những vấn đề quốc tế",
-      "count": 1,
-      "size_gb": 0.01
     },
     {
       "name": "Pháp luật",
@@ -1411,7 +1406,7 @@
       "id": 498,
       "uuid": "4df28fb58b304d3d86f58081abef45d5",
       "title": "Chiến tranh thương mại hay mâu thuẫn giai cấp – Bất bình đẳng bóp méo kinh tế toàn cầu và đe dọa hòa bình thế giới",
-      "category": "Những vấn đề quốc tế",
+      "category": "Chủ tịch Hồ Chí Minh",
       "creator": "Matthew C. Klein và Michael Pettis",
       "pages": 370,
       "size_mb": 5.92
