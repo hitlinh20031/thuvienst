@@ -29,7 +29,7 @@
     },
     {
       "name": "Mới",
-      "count": 11,
+      "count": 10,
       "size_gb": 0.18
     },
     {
@@ -64,7 +64,7 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 50,
+      "count": 51,
       "size_gb": 1.33
     },
     {
@@ -3364,7 +3364,7 @@
       "id": 1503,
       "uuid": "5dcc2d64afb845438bc57b0ed2062f2b",
       "title": "Điều lệ Đảng và Hướng dẫn thi hành Điều lệ Đảng",
-      "category": "Mới",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "",
       "pages": 33,
       "size_mb": 2.33
