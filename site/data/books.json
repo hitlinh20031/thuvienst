@@ -1,6 +1,6 @@
 {
-  "total": 443,
-  "total_size_gb": 9.69,
+  "total": 452,
+  "total_size_gb": 9.71,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -54,8 +54,8 @@
     },
     {
       "name": "Nước ngoài",
-      "count": 10,
-      "size_gb": 0.03
+      "count": 19,
+      "size_gb": 0.05
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
@@ -4080,6 +4080,87 @@
       "pages": 183,
       "size_mb": 0.75,
       "pdf": "pdfs/lau-dai-bay-cua-phap-su-howl-diana-wynne-jones.pdf"
+    },
+    {
+      "id": 1600,
+      "title": "Người ăn chay_Han Kang",
+      "creator": "Han Kang",
+      "category": "Nước ngoài",
+      "pages": 157,
+      "size_mb": 0.59,
+      "pdf": "pdfs/nguoi-an-chay-han-kang.pdf"
+    },
+    {
+      "id": 1601,
+      "title": "Quả Chuông Ác Mộng_Sylvia Plath",
+      "creator": "Sylvia Plath",
+      "category": "Nước ngoài",
+      "pages": 215,
+      "size_mb": 1.31,
+      "pdf": "pdfs/qua-chuong-ac-mong-sylvia-plath.pdf"
+    },
+    {
+      "id": 1602,
+      "title": "Cây Cam Ngọt Của Tôi_José Mauro de Vasconcelos",
+      "creator": "José Mauro de Vasconcelos",
+      "category": "Nước ngoài",
+      "pages": 135,
+      "size_mb": 1.48,
+      "pdf": "pdfs/cay-cam-ngot-cua-toi-jose-mauro-de-vasconcelos.pdf"
+    },
+    {
+      "id": 1603,
+      "title": "Tiếng chim hót trong bụi mận gai_Colleen McCullough",
+      "creator": "Colleen McCullough",
+      "category": "Nước ngoài",
+      "pages": 967,
+      "size_mb": 3.92,
+      "pdf": "pdfs/tieng-chim-hot-trong-bui-man-gai-colleen-mccullough.pdf"
+    },
+    {
+      "id": 1604,
+      "title": "Tội Ác Và Sự Trừng Phạt - Fyodor Dostoevsky",
+      "creator": "Fyodor Dostoevsky",
+      "category": "Nước ngoài",
+      "pages": 664,
+      "size_mb": 3.28,
+      "pdf": "pdfs/toi-ac-va-su-trung-phat-fyodor-dostoevsky.pdf"
+    },
+    {
+      "id": 1605,
+      "title": "Dòng sông ly biệt_Quỳnh Dao",
+      "creator": "Quỳnh Dao",
+      "category": "Nước ngoài",
+      "pages": 334,
+      "size_mb": 1.5,
+      "pdf": "pdfs/dong-song-ly-biet-quynh-dao.pdf"
+    },
+    {
+      "id": 1606,
+      "title": "Hoàng Tử Bé - Antoine de Saint-Exupéry",
+      "creator": "Antoine de Saint-Exupéry",
+      "category": "Nước ngoài",
+      "pages": 85,
+      "size_mb": 1.14,
+      "pdf": "pdfs/hoang-tu-be-antoine-de-saint-exupery.pdf"
+    },
+    {
+      "id": 1607,
+      "title": "Trò bịp trên phố Wall _Michael Lewis",
+      "creator": "Michael Lewis",
+      "category": "Nước ngoài",
+      "pages": 312,
+      "size_mb": 0.92,
+      "pdf": "pdfs/tro-bip-tren-pho-wall-michael-lewis.pdf"
+    },
+    {
+      "id": 1608,
+      "title": "Sói Già Phố Wall 2_Jordan Belfort",
+      "creator": "Jordan Belfort",
+      "category": "Nước ngoài",
+      "pages": 552,
+      "size_mb": 5.54,
+      "pdf": "pdfs/soi-gia-pho-wall-2-jordan-belfort.pdf"
     }
   ]
 }
