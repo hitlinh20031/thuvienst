@@ -1,6 +1,6 @@
 {
-  "total": 406,
-  "total_size_gb": 9.58,
+  "total": 427,
+  "total_size_gb": 9.67,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -69,8 +69,8 @@
     },
     {
       "name": "Thiếu nhi",
-      "count": 16,
-      "size_gb": 0.21
+      "count": 37,
+      "size_gb": 0.31
     },
     {
       "name": "Các ấn phẩm khác",
@@ -3732,6 +3732,195 @@
       "pages": 15,
       "size_mb": 16.2,
       "pdf": "pdfs/nhung-chu-kien-ban-ron.pdf"
+    },
+    {
+      "id": 1563,
+      "title": "Stem mầm non - Giác giác quan của em",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 55,
+      "size_mb": 3.01,
+      "pdf": "pdfs/stem-mam-non-giac-giac-quan-cua-em.pdf"
+    },
+    {
+      "id": 1564,
+      "title": "Stem mầm non - Giấc mơ rừng xanh",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 67,
+      "size_mb": 1.6,
+      "pdf": "pdfs/stem-mam-non-giac-mo-rung-xanh.pdf"
+    },
+    {
+      "id": 1565,
+      "title": "Stem mầm non - Khi em lớn lên",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 65,
+      "size_mb": 3.6,
+      "pdf": "pdfs/stem-mam-non-khi-em-lon-len.pdf"
+    },
+    {
+      "id": 1566,
+      "title": "Stem mầm non - Một ngày ở thành phố",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 55,
+      "size_mb": 3.51,
+      "pdf": "pdfs/stem-mam-non-mot-ngay-o-thanh-pho.pdf"
+    },
+    {
+      "id": 1567,
+      "title": "Stem mầm non - Ngày xửa ngày xưa có một hành tinh xanh",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 65,
+      "size_mb": 3.64,
+      "pdf": "pdfs/stem-mam-non-ngay-xua-ngay-xua-co-mot-hanh-tinh-xanh.pdf"
+    },
+    {
+      "id": 1568,
+      "title": "Stem mầm non - Nhìn vào vũ trụ",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 57,
+      "size_mb": 3.28,
+      "pdf": "pdfs/stem-mam-non-nhin-vao-vu-tru.pdf"
+    },
+    {
+      "id": 1569,
+      "title": "Sư Tử và Chuột Nhắt",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 9,
+      "size_mb": 1.07,
+      "pdf": "pdfs/su-tu-va-chuot-nhat.pdf"
+    },
+    {
+      "id": 1570,
+      "title": "Thám tử Kaushik tốt bụng",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 14,
+      "size_mb": 12.58,
+      "pdf": "pdfs/tham-tu-kaushik-tot-bung.pdf"
+    },
+    {
+      "id": 1571,
+      "title": "Thơ hay dành cho trẻ em tập 1",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 9,
+      "size_mb": 0.9,
+      "pdf": "pdfs/tho-hay-danh-cho-tre-em-tap-1.pdf"
+    },
+    {
+      "id": 1572,
+      "title": "Thơ hay dành cho trẻ em tập 2",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 9,
+      "size_mb": 1.59,
+      "pdf": "pdfs/tho-hay-danh-cho-tre-em-tap-2.pdf"
+    },
+    {
+      "id": 1573,
+      "title": "Truyện cổ tích Việt Nam - Ăn khế trả vàng",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 12,
+      "size_mb": 9.28,
+      "pdf": "pdfs/truyen-co-tich-viet-nam-an-khe-tra-vang.pdf"
+    },
+    {
+      "id": 1574,
+      "title": "Truyện cổ tích Việt Nam - Cậu bé thông minh",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 16,
+      "size_mb": 5.41,
+      "pdf": "pdfs/truyen-co-tich-viet-nam-cau-be-thong-minh.pdf"
+    },
+    {
+      "id": 1575,
+      "title": "Truyện cổ tích Việt Nam - Cây tre trăm đốt",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 33,
+      "size_mb": 6.88,
+      "pdf": "pdfs/truyen-co-tich-viet-nam-cay-tre-tram-dot.pdf"
+    },
+    {
+      "id": 1576,
+      "title": "Truyện cổ tích Việt Nam - Hai anh em",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 10,
+      "size_mb": 1.67,
+      "pdf": "pdfs/truyen-co-tich-viet-nam-hai-anh-em.pdf"
+    },
+    {
+      "id": 1577,
+      "title": "Truyện cổ tích Việt Nam - Năm hũ vàng",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 37,
+      "size_mb": 2.73,
+      "pdf": "pdfs/truyen-co-tich-viet-nam-nam-hu-vang.pdf"
+    },
+    {
+      "id": 1578,
+      "title": "Truyện cổ tích Việt Nam - Sọ dừa",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 35,
+      "size_mb": 3.18,
+      "pdf": "pdfs/truyen-co-tich-viet-nam-so-dua.pdf"
+    },
+    {
+      "id": 1579,
+      "title": "Truyện cổ tích Việt Nam - Sự tích bánh chưng bánh dày",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 6,
+      "size_mb": 17.23,
+      "pdf": "pdfs/truyen-co-tich-viet-nam-su-tich-banh-chung-banh-day.pdf"
+    },
+    {
+      "id": 1580,
+      "title": "Truyện cổ tích Việt Nam - Thánh Gióng",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 12,
+      "size_mb": 7.31,
+      "pdf": "pdfs/truyen-co-tich-viet-nam-thanh-giong.pdf"
+    },
+    {
+      "id": 1581,
+      "title": "Truyện cổ tích Việt Nam - Trí khôn của ta đây",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 8,
+      "size_mb": 1.86,
+      "pdf": "pdfs/truyen-co-tich-viet-nam-tri-khon-cua-ta-day.pdf"
+    },
+    {
+      "id": 1582,
+      "title": "Truyện ngụ ngôn - Con lừa bị mất",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 22,
+      "size_mb": 0.54,
+      "pdf": "pdfs/truyen-ngu-ngon-con-lua-bi-mat.pdf"
+    },
+    {
+      "id": 1583,
+      "title": "Truyện Tiếng nhạc ve",
+      "creator": "",
+      "category": "Thiếu nhi",
+      "pages": 35,
+      "size_mb": 3.45,
+      "pdf": "pdfs/truyen-tieng-nhac-ve.pdf"
     }
   ]
 }
