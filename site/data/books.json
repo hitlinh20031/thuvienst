@@ -1,6 +1,6 @@
 {
-  "total": 385,
-  "total_size_gb": 9.36,
+  "total": 368,
+  "total_size_gb": 9.3,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -49,13 +49,13 @@
     },
     {
       "name": "Tài liệu",
-      "count": 31,
-      "size_gb": 0.26
+      "count": 18,
+      "size_gb": 0.25
     },
     {
       "name": "Văn hóa, xã hội",
-      "count": 11,
-      "size_gb": 0.25
+      "count": 10,
+      "size_gb": 0.23
     },
     {
       "name": "Văn kiện Đảng",
@@ -64,8 +64,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 53,
-      "size_gb": 1.36
+      "count": 51,
+      "size_gb": 1.33
     },
     {
       "name": "Người cao tuổi",
@@ -84,8 +84,8 @@
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
-      "count": 1,
-      "size_gb": 0.01
+      "count": 0,
+      "size_gb": 0
     }
   ],
   "books": [
@@ -1620,15 +1620,6 @@
       "size_mb": 21.17
     },
     {
-      "id": 794,
-      "uuid": "62e5ddf5735c4c20b32ff5e0e3f9edd0",
-      "title": "Mối quan hệ giữa thực hành dân chủ và tăng cường pháp chế, bảo đảm kỷ cương xã hội (Sách chuyên khảo)",
-      "category": "Xây dựng Đảng, Nhà nước",
-      "creator": "PGS.TS. Vũ Trọng Lâm (Chủ biên)",
-      "pages": 402,
-      "size_mb": 15.21
-    },
-    {
       "id": 803,
       "uuid": "22ed7a42d4354cfdbd1e20daaf96464b",
       "title": "Hồ Chí Minh - Người mang lại ánh sáng, tập 2",
@@ -3159,123 +3150,6 @@
       "size_mb": 11.7
     },
     {
-      "id": 1471,
-      "uuid": "8216fc6bec7f4b9ea8c77887ffe12f1f",
-      "title": "Núi sông bờ cõi: Lạc lối và trở về",
-      "category": "Tài liệu",
-      "creator": "Nguyễn Minh Hiếu, Lưu Gia Huy, Bùi Nam Hải, Nguyễn Đăng Quang, Phạm Phi Long",
-      "pages": 1,
-      "size_mb": 0.33
-    },
-    {
-      "id": 1472,
-      "uuid": "5ea1c5cc41a2423596a07141e377b9cb",
-      "title": "Xóa bỏ tà đạo",
-      "category": "Tài liệu",
-      "creator": "Hồ Thái, Vĩnh Lộc, Tài Toàn, Tấn Hiền, Đình Đại, Ngọc Ánh, Thùy Trang",
-      "pages": 1,
-      "size_mb": 0.33
-    },
-    {
-      "id": 1473,
-      "uuid": "6d424697b4ce45bfa52ca8392f7b07b0",
-      "title": "Đại hội XIV: Dấu mốc lịch sử đưa dân tộc  bước vào kỷ nguyên mới",
-      "category": "Tài liệu",
-      "creator": "Nguyễn Việt Hải, Vũ Phương Thịnh, Nguyễn Minh Phương, Đàm Trần Huyền Trang",
-      "pages": 1,
-      "size_mb": 0.38
-    },
-    {
-      "id": 1474,
-      "uuid": "04bcbaa99c9d41999c1d2ed7d4de1cad",
-      "title": "Nghĩa vụ vinh quang - Tình thân bền chặt",
-      "category": "Tài liệu",
-      "creator": "Ngô Huy Phong, Nguyễn Anh Tuấn, Nguyễn Bá Trung, Cao Đăng Giang, Nguyễn Duy Dũng",
-      "pages": 1,
-      "size_mb": 0.37
-    },
-    {
-      "id": 1475,
-      "uuid": "52784c0f42134f04b42bab08db077b57",
-      "title": "Sự thật đập tan những luận điệu xuyên tạc về bầu cử Đại biểu Quốc hội khóa XVI và Hồi đồng Nhân dân các cấp",
-      "category": "Tài liệu",
-      "creator": "Thân Ngọc Anh, Nguyễn Thị Huỳnh Như, Nguyễn Thị Thanh Hà ",
-      "pages": 1,
-      "size_mb": 0.4
-    },
-    {
-      "id": 1476,
-      "uuid": "45307cbc7f924b00bc2fb8d538d09199",
-      "title": "Đi trên con đường sáng",
-      "category": "Tài liệu",
-      "creator": "Nguyễn Thị Thu Dung, Chu Việt Hùng, Vũ Thị Hiền",
-      "pages": 1,
-      "size_mb": 0.32
-    },
-    {
-      "id": 1477,
-      "uuid": "60c394145c3e4bc4a2715e0f5e01bb5b",
-      "title": "Nhận diện và \"phản bác\" các luận điệu xuyên tạc về Nghị quyết số 68-NQ/TWcủa Bộ Chính trị về phat triển kinh tế tư nhân",
-      "category": "Tài liệu",
-      "creator": "Nguyễn Văn Điển (trưởng nhóm) & Thành viên: Trương Hoàng Đức, Vũ Thị Thụy và Vũ Thị Cẩm My, Lương Quang Huy. Khoa Kinh tế chính trị, Học viện Chính trị khu vực II",
-      "pages": 1,
-      "size_mb": 0.48
-    },
-    {
-      "id": 1478,
-      "uuid": "1b96c595901e44b9809549415455719e",
-      "title": "Việt Nam: Tăng trưởng 2 con số là mệnh lệnh phát triển",
-      "category": "Tài liệu",
-      "creator": "Vũ Hồ Điệp, Nguyễn Thị Hằng Nga",
-      "pages": 1,
-      "size_mb": 0.34
-    },
-    {
-      "id": 1479,
-      "uuid": "8891b37384eb482eb536533f87a92c68",
-      "title": "Từ tia lửa sẽ bùng lên ngọn lửa",
-      "category": "Tài liệu",
-      "creator": "Bùi Thị Thúy Hà Nguyễn Hồng Anh Nguyễn Ngọc Anh Phạm Nguyễn Sơn Tùng",
-      "pages": 1,
-      "size_mb": 0.36
-    },
-    {
-      "id": 1480,
-      "uuid": "19eb19049a2c4acc9d781a1c400b42e0",
-      "title": "Việt Nam: Tuổi trẻ đấu tranh chống sự \"xâm lăng\" về văn hoá Việt Nam trên không gian số, góp phần hiện thực hoá tinh thần đại hội XIV của Đảng",
-      "category": "Tài liệu",
-      "creator": "Tô Mạnh Cường, Đinh Thị Thu Hằng ",
-      "pages": 1,
-      "size_mb": 0.41
-    },
-    {
-      "id": 1481,
-      "uuid": "a9f408b1102142088d08a62c833cab87",
-      "title": "Nhận diện âm mưu, thủ đoạn “diễn biến hòa bình”, lợi dụng những vụ việc, điểm nóng nhằm gây ra nguy cơ “cách mạng màu” ở Việt Nam",
-      "category": "Tài liệu",
-      "creator": "1.  Phạm Văn Cường - Ban Xây dựng Đảng, Báo Nhân Dân",
-      "pages": 1,
-      "size_mb": 0.77
-    },
-    {
-      "id": 1482,
-      "uuid": "f0b250550f5c491082752bc2865432de",
-      "title": "Nhận diện sự thật - bóc trần luận điệu xuyên tạc chế định luật sư công",
-      "category": "Tài liệu",
-      "creator": "Nguyễn Thị Hằng Nga",
-      "pages": 1,
-      "size_mb": 0.37
-    },
-    {
-      "id": 1483,
-      "uuid": "029df9d05d584ef1815fabfd051d8f08",
-      "title": "Bảo vệ nền tảng tư tưởng của Đảng thông qua hoạt động dạy và học Tiếng Việt trong cộng đồng người Việt ở nước ngoài",
-      "category": "Tài liệu",
-      "creator": "Nguyễn Thục Hiền, Trần Ý Dịu",
-      "pages": 1,
-      "size_mb": 0.38
-    },
-    {
       "id": 1494,
       "uuid": "d060d09a030c430c8900529361bb8358",
       "title": "Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV - Tập II",
@@ -3319,33 +3193,6 @@
       "creator": "",
       "pages": 253,
       "size_mb": 14.19
-    },
-    {
-      "id": 1499,
-      "uuid": "6922caef5e8a4594a44ccea4e1e82e80",
-      "title": "Tài liệu hỏi - đáp về nội dung cơ bản của Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV của Đảng (Dùng cho cán bộ, đảng viên và tuyên truyền trong nhân dân)",
-      "category": "Xây dựng Đảng, Nhà nước",
-      "creator": "",
-      "pages": 274,
-      "size_mb": 15.1
-    },
-    {
-      "id": 1500,
-      "uuid": "b33e15985add4953bdc628d0212d35c7",
-      "title": "Tài liệu chuyên đề: Nhiệm vụ, giải pháp xây dựng, phát triển văn hóa và con người Việt Nam, giáo dục, khoa học và công nghệ theo tinh thần Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng (Dùng cho lãnh đạo các cơ quan báo chí, xuất bản; lãnh đạ",
-      "category": "Văn hóa, xã hội",
-      "creator": "",
-      "pages": 218,
-      "size_mb": 16.05
-    },
-    {
-      "id": 1501,
-      "uuid": "9ad4043bb3ba4b3e9ebe85482188a1c4",
-      "title": "Những nội dung cơ bản về chuyển đổi số: Hỏi và đáp",
-      "category": "Khoa học, công nghệ, chuyển đổi số",
-      "creator": "",
-      "pages": 226,
-      "size_mb": 5.76
     },
     {
       "id": 1502,
