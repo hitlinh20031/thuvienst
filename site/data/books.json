@@ -4,12 +4,12 @@
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
-      "count": 132,
-      "size_gb": 3.18
+      "count": 133,
+      "size_gb": 3.19
     },
     {
       "name": "Các ấn phẩm khác",
-      "count": 3,
+      "count": 2,
       "size_gb": 0.03
     },
     {
@@ -2779,7 +2779,7 @@
       "id": 1172,
       "uuid": "ea0a21ec96674d32b8331d9b62b54a06",
       "title": "Chuyện thường ngày của Bác Hồ (Tái bản có sửa chữa, bổ sung)",
-      "category": "Các ấn phẩm khác",
+      "category": "Chủ tịch Hồ Chí Minh",
       "creator": "Hồng Khanh",
       "pages": 188,
       "size_mb": 4.52
