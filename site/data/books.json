@@ -76,6 +76,11 @@
       "name": "Khuyến nông",
       "count": 9,
       "size_gb": 0.02
+    },
+    {
+      "name": "Nước ngoài",
+      "count": 0,
+      "size_gb": 0
     }
   ],
   "books": [
