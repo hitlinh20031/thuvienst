@@ -29,8 +29,8 @@
     },
     {
       "name": "Tài liệu",
-      "count": 2,
-      "size_gb": 0.02
+      "count": 1,
+      "size_gb": 0.01
     },
     {
       "name": "Văn hóa, xã hội",
@@ -44,8 +44,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 60,
-      "size_gb": 1.44
+      "count": 61,
+      "size_gb": 1.46
     },
     {
       "name": "Người cao tuổi",
@@ -3120,7 +3120,7 @@
       "id": 1469,
       "uuid": "feb383f0e450485aaebf6bc92d456747",
       "title": "Báo in: Nâng cao bản lĩnh chính trị của cán bộ khoa học trong bảo vệ nền tảng tư tưởng của đảng",
-      "category": "Tài liệu",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "Chi bộ SH4 – Đảng bộ Viện Sinh học Viện Hàn lâm Khoa học và Công nghệ Việt Nam",
       "pages": 8,
       "size_mb": 12.37
