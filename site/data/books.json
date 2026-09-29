@@ -29,13 +29,13 @@
     },
     {
       "name": "Tài liệu",
-      "count": 1,
-      "size_gb": 0.01
+      "count": 0,
+      "size_gb": 0
     },
     {
       "name": "Văn hóa, xã hội",
-      "count": 13,
-      "size_gb": 0.29
+      "count": 14,
+      "size_gb": 0.3
     },
     {
       "name": "Văn kiện Đảng",
@@ -3129,7 +3129,7 @@
       "id": 1470,
       "uuid": "2bc68b486d154c09a905edf07734a01b",
       "title": "Phát triển văn hóa số, chủ quyền văn hóa số và cuộc đấu tranh chống các giá trị phản văn hóa hiện nay",
-      "category": "Tài liệu",
+      "category": "Văn hóa, xã hội",
       "creator": "Nguyễn Thị Nhàn",
       "pages": 10,
       "size_mb": 11.7
