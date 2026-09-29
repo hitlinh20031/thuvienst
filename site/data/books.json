@@ -3647,7 +3647,8 @@
       "category": "Văn học và đời sống",
       "pages": 18,
       "size_mb": 1.17,
-      "pdf": "pdfs/vo-nhat-kim-lan.pdf"
+      "pdf": "pdfs/vo-nhat-kim-lan.pdf",
+      "cover": "covers/vo-nhat-kim-lan.jpg"
     },
     {
       "id": 1547,
@@ -3656,7 +3657,8 @@
       "category": "Thiếu nhi",
       "pages": 9,
       "size_mb": 18.96,
-      "pdf": "pdfs/chu-ky-song-cua-loai-buom.pdf"
+      "pdf": "pdfs/chu-ky-song-cua-loai-buom.pdf",
+      "cover": "covers/chu-ky-song-cua-loai-buom.jpg"
     },
     {
       "id": 1548,
@@ -3665,7 +3667,8 @@
       "category": "Thiếu nhi",
       "pages": 16,
       "size_mb": 19.05,
-      "pdf": "pdfs/chuot-con-tham-lam.pdf"
+      "pdf": "pdfs/chuot-con-tham-lam.pdf",
+      "cover": "covers/chuot-con-tham-lam.jpg"
     },
     {
       "id": 1549,
@@ -3674,7 +3677,8 @@
       "category": "Thiếu nhi",
       "pages": 19,
       "size_mb": 19.66,
-      "pdf": "pdfs/co-tho-tro-thanh-dau-bep.pdf"
+      "pdf": "pdfs/co-tho-tro-thanh-dau-bep.pdf",
+      "cover": "covers/co-tho-tro-thanh-dau-bep.jpg"
     },
     {
       "id": 1550,
@@ -3683,7 +3687,8 @@
       "category": "Thiếu nhi",
       "pages": 36,
       "size_mb": 1.34,
-      "pdf": "pdfs/de-men-phieu-luu-ky-to-hoai.pdf"
+      "pdf": "pdfs/de-men-phieu-luu-ky-to-hoai.pdf",
+      "cover": "covers/de-men-phieu-luu-ky-to-hoai.jpg"
     },
     {
       "id": 1551,
@@ -3692,7 +3697,8 @@
       "category": "Thiếu nhi",
       "pages": 4,
       "size_mb": 8.13,
-      "pdf": "pdfs/mam-non-truyen-be-hanh-kham-benh.pdf"
+      "pdf": "pdfs/mam-non-truyen-be-hanh-kham-benh.pdf",
+      "cover": "covers/mam-non-truyen-be-hanh-kham-benh.jpg"
     },
     {
       "id": 1552,
@@ -3701,7 +3707,8 @@
       "category": "Thiếu nhi",
       "pages": 4,
       "size_mb": 12.82,
-      "pdf": "pdfs/mam-non-truyen-chim-con-va-ga-con.pdf"
+      "pdf": "pdfs/mam-non-truyen-chim-con-va-ga-con.pdf",
+      "cover": "covers/mam-non-truyen-chim-con-va-ga-con.jpg"
     },
     {
       "id": 1553,
@@ -3710,7 +3717,8 @@
       "category": "Thiếu nhi",
       "pages": 5,
       "size_mb": 12.3,
-      "pdf": "pdfs/mam-non-truyen-co-con-ut-cua-ong-mat-troi.pdf"
+      "pdf": "pdfs/mam-non-truyen-co-con-ut-cua-ong-mat-troi.pdf",
+      "cover": "covers/mam-non-truyen-co-con-ut-cua-ong-mat-troi.jpg"
     },
     {
       "id": 1554,
