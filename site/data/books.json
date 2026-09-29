@@ -29,8 +29,8 @@
     },
     {
       "name": "Mới",
-      "count": 4,
-      "size_gb": 0.1
+      "count": 3,
+      "size_gb": 0.08
     },
     {
       "name": "Những vấn đề quốc tế",
@@ -64,8 +64,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 52,
-      "size_gb": 1.34
+      "count": 53,
+      "size_gb": 1.36
     },
     {
       "name": "Người cao tuổi",
@@ -3328,7 +3328,7 @@
       "id": 1499,
       "uuid": "6922caef5e8a4594a44ccea4e1e82e80",
       "title": "Tài liệu hỏi - đáp về nội dung cơ bản của Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV của Đảng (Dùng cho cán bộ, đảng viên và tuyên truyền trong nhân dân)",
-      "category": "Mới",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "",
       "pages": 274,
       "size_mb": 15.1
