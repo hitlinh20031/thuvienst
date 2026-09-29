@@ -4047,7 +4047,8 @@
       "category": "Văn học và đời sống",
       "pages": 25,
       "size_mb": 0.3,
-      "pdf": "pdfs/canh-dong-bat-tan-nguyen-ngoc-tu.pdf"
+      "pdf": "pdfs/canh-dong-bat-tan-nguyen-ngoc-tu.pdf",
+      "cover": "covers/canh-dong-bat-tan-nguyen-ngoc-tu.jpg"
     },
     {
       "id": 1587,
@@ -4056,7 +4057,8 @@
       "category": "Văn học và đời sống",
       "pages": 55,
       "size_mb": 0.44,
-      "pdf": "pdfs/ha-noi-36-pho-phuong-thach-lam.pdf"
+      "pdf": "pdfs/ha-noi-36-pho-phuong-thach-lam.pdf",
+      "cover": "covers/ha-noi-36-pho-phuong-thach-lam.jpg"
     },
     {
       "id": 1588,
@@ -4065,7 +4067,8 @@
       "category": "Văn học và đời sống",
       "pages": 191,
       "size_mb": 1.13,
-      "pdf": "pdfs/mai-mai-tuoi-hai-muoi-nguyen-van-thac.pdf"
+      "pdf": "pdfs/mai-mai-tuoi-hai-muoi-nguyen-van-thac.pdf",
+      "cover": "covers/mai-mai-tuoi-hai-muoi-nguyen-van-thac.jpg"
     },
     {
       "id": 1589,
@@ -4074,7 +4077,8 @@
       "category": "Văn học và đời sống",
       "pages": 316,
       "size_mb": 1.88,
-      "pdf": "pdfs/mua-do-chu-lai.pdf"
+      "pdf": "pdfs/mua-do-chu-lai.pdf",
+      "cover": "covers/mua-do-chu-lai.jpg"
     },
     {
       "id": 1590,
@@ -4083,7 +4087,8 @@
       "category": "Văn học và đời sống",
       "pages": 228,
       "size_mb": 1.72,
-      "pdf": "pdfs/ngoi-khoc-tren-cay-nguyen-nhat-anh.pdf"
+      "pdf": "pdfs/ngoi-khoc-tren-cay-nguyen-nhat-anh.pdf",
+      "cover": "covers/ngoi-khoc-tren-cay-nguyen-nhat-anh.jpg"
     },
     {
       "id": 1591,
@@ -4092,7 +4097,8 @@
       "category": "Văn học và đời sống",
       "pages": 99,
       "size_mb": 0.75,
-      "pdf": "pdfs/nguyen-hong-tuyen-tap-truyen-le.pdf"
+      "pdf": "pdfs/nguyen-hong-tuyen-tap-truyen-le.pdf",
+      "cover": "covers/nguyen-hong-tuyen-tap-truyen-le.jpg"
     },
     {
       "id": 1592,
@@ -4101,7 +4107,8 @@
       "category": "Văn học và đời sống",
       "pages": 224,
       "size_mb": 2.47,
-      "pdf": "pdfs/nhat-ky-dang-thuy-tram-dang-thuy-tram.pdf"
+      "pdf": "pdfs/nhat-ky-dang-thuy-tram-dang-thuy-tram.pdf",
+      "cover": "covers/nhat-ky-dang-thuy-tram-dang-thuy-tram.jpg"
     },
     {
       "id": 1593,
@@ -4110,7 +4117,8 @@
       "category": "Văn học và đời sống",
       "pages": 80,
       "size_mb": 0.67,
-      "pdf": "pdfs/nhung-ngay-tho-au-nguyen-hong.pdf"
+      "pdf": "pdfs/nhung-ngay-tho-au-nguyen-hong.pdf",
+      "cover": "covers/nhung-ngay-tho-au-nguyen-hong.jpg"
     },
     {
       "id": 1594,
