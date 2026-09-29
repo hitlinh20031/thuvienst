@@ -1,11 +1,11 @@
 {
-  "total": 381,
-  "total_size_gb": 9.75,
+  "total": 368,
+  "total_size_gb": 9.33,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
-      "count": 133,
-      "size_gb": 3.3
+      "count": 132,
+      "size_gb": 3.18
     },
     {
       "name": "Các ấn phẩm khác",
@@ -14,8 +14,8 @@
     },
     {
       "name": "Kinh tế",
-      "count": 6,
-      "size_gb": 0.09
+      "count": 5,
+      "size_gb": 0.07
     },
     {
       "name": "Kinh điển",
@@ -24,8 +24,8 @@
     },
     {
       "name": "Lãnh đạo Đảng, Nhà nước",
-      "count": 75,
-      "size_gb": 2.62
+      "count": 70,
+      "size_gb": 2.39
     },
     {
       "name": "Mới",
@@ -34,7 +34,7 @@
     },
     {
       "name": "Những vấn đề quốc tế",
-      "count": 2,
+      "count": 1,
       "size_gb": 0.01
     },
     {
@@ -44,8 +44,8 @@
     },
     {
       "name": "Quốc phòng, an ninh, đối ngoại",
-      "count": 14,
-      "size_gb": 0.33
+      "count": 12,
+      "size_gb": 0.31
     },
     {
       "name": "Tài liệu",
@@ -54,18 +54,18 @@
     },
     {
       "name": "Văn hóa, xã hội",
-      "count": 10,
-      "size_gb": 0.19
+      "count": 9,
+      "size_gb": 0.17
     },
     {
       "name": "Văn kiện Đảng",
-      "count": 35,
-      "size_gb": 1.09
+      "count": 34,
+      "size_gb": 1.08
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 48,
-      "size_gb": 1.32
+      "count": 47,
+      "size_gb": 1.3
     },
     {
       "name": "Người cao tuổi",
@@ -1380,15 +1380,6 @@
       "size_mb": 49.18
     },
     {
-      "id": 481,
-      "uuid": "64644859c04145ffbd1499d9f6a95e98",
-      "title": "DOCUMENTOS DEL XIIICONGRESO NACIONAL",
-      "category": "Văn kiện Đảng",
-      "creator": "PARTIDO COMUNISTA DE VIETNAM",
-      "pages": 374,
-      "size_mb": 4.48
-    },
-    {
       "id": 490,
       "uuid": "7445ae871b7d4f47901a6c96f1fdbb11",
       "title": "Niềm tin yêu của nhân dân trong nước và bạn bè quốc tế dành cho Tổng Bí thư Nguyễn Phú Trọng",
@@ -1443,24 +1434,6 @@
       "size_mb": 29.08
     },
     {
-      "id": 522,
-      "uuid": "6cc3747e835f448885fefaacef9eae0b",
-      "title": "Crónicas de la guerra 1-2-3-4.75",
-      "category": "Văn hóa, xã hội",
-      "creator": "Trần Mai Hạnh",
-      "pages": 629,
-      "size_mb": 21.28
-    },
-    {
-      "id": 523,
-      "uuid": "31a7aaff82394e3e904b69c935308e24",
-      "title": "Pasos firmes en el camino de Doi Moi - Volumen 1: 2011-2014",
-      "category": "Lãnh đạo Đảng, Nhà nước",
-      "creator": "Nguyễn Phú Trọng",
-      "pages": 998,
-      "size_mb": 32.97
-    },
-    {
       "id": 524,
       "uuid": "002d66113b2549e5b6da61a4d3233c54",
       "title": "Pasos firmes en el camino de Doi Moi - Volumen 2: 2015-2017",
@@ -1477,51 +1450,6 @@
       "creator": "Nguyễn Thị Thúy Liên",
       "pages": 160,
       "size_mb": 5.22
-    },
-    {
-      "id": 551,
-      "uuid": "d097630271774cf88e93b881e1508e29",
-      "title": "ສ້າງ ແລະ ປັບປຸງກ ົນໄກປົກປ",
-      "category": "Quốc phòng, an ninh, đối ngoại",
-      "creator": "PGS.TS. Nguyễn Quốc Sửu (chủ biên)",
-      "pages": 362,
-      "size_mb": 5.56
-    },
-    {
-      "id": 552,
-      "uuid": "e4d106f5355d4a03a2ac1dab772d09a1",
-      "title": "ອາຊຽນ ໃນ ຍຸດທະສາດຂອງປະເທດໃຫຍ່",
-      "category": "Những vấn đề quốc tế",
-      "creator": "ກະຊວງຕຳຫຼວດ  ສະຖາບັນຍຸດທະສາດຕຳຫຼວດ",
-      "pages": 322,
-      "size_mb": 6.6
-    },
-    {
-      "id": 553,
-      "uuid": "b1f89b9bfaae419b83ddcd3752f1f7d1",
-      "title": "ການຄຸ້ມຄອງ ຂອງລັດ ໃນພື້ນຖານ ເສດຖະກິດຕະຫຼາດ",
-      "category": "Xây dựng Đảng, Nhà nước",
-      "creator": "ປອ. ດັ່ງຊັວນຮວານ (ຫົວໜ້າບັນນາທິການ)",
-      "pages": 526,
-      "size_mb": 19.51
-    },
-    {
-      "id": 554,
-      "uuid": "40666a786eaa4a7386220c0d52c01e4a",
-      "title": "ສ້າງຮູບແບບລັດຖະບານນ້ອຍ, ສັງຄົມໃຫຍ່- ທ່າອ່ຽງໃນໂລກ ແລະບາງບັນຫາທີ່ຕັ້ງຂຶ້ນຢູ",
-      "category": "Quốc phòng, an ninh, đối ngoại",
-      "creator": "TS NGUYỄN KHÁNH LY",
-      "pages": 154,
-      "size_mb": 5.47
-    },
-    {
-      "id": 555,
-      "uuid": "3182df7236444d07820c777752118b36",
-      "title": "ກໍ່ສ້າງ  ສະພາບແວດລ້ອມດ້ານນິຕິກໍາ ເພື່ອຮັບປະກັນໃຫ້ແກ່ ການພັດທະນາແບບຍືນຍົງ ແລະ ຜ່ອງໃສ ຂອງເສດຖະກິດເອກະຊົນ",
-      "category": "Kinh tế",
-      "creator": "ພະແນກກົດໝາຍ, ມະຫາວິທະຍາໄລແຫ່ງຊາດຮ່າໂນ້ຍ ຮສຈ.ປອ. ຫງວຽນທິເກວ໊ແອັງ, ຮສຈ.ປອ. ເລທິຮວ່າຍທູ (ບັນນາທິການຮ່ວມ)",
-      "pages": 574,
-      "size_mb": 20.99
     },
     {
       "id": 557,
@@ -1749,15 +1677,6 @@
       "size_mb": 54.18
     },
     {
-      "id": 823,
-      "uuid": "979e4a6484b3492bb7a81bd36715c220",
-      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Lào) - ບາງບັນຫາທິດສະດີ ແລະ ພຶດຕິກຳກ່ຽວກັບສັງຄົມນິຍົມ ແລະ ເສັ້ນທາງກ້າວຂຶ້ນສູ່ສັງຄົມນິຍົມຢູ່ຫວຽດນາມ",
-      "category": "Lãnh đạo Đảng, Nhà nước",
-      "creator": "Nguyễn Phú Trọng",
-      "pages": 556,
-      "size_mb": 64.37
-    },
-    {
       "id": 824,
       "uuid": "9ed9a7c8d52a46218c0af8560b2b0ad3",
       "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Anh) - Theory and Practice of Socialism in Vietnam",
@@ -1765,24 +1684,6 @@
       "creator": "Nguyễn Phú Trọng",
       "pages": 524,
       "size_mb": 53.81
-    },
-    {
-      "id": 825,
-      "uuid": "cbba9534303a45739a56c55c23508755",
-      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Nga) - Некоторые теоретические и практические вопросы о социализме и пути к социализму во Вьетнаме",
-      "category": "Lãnh đạo Đảng, Nhà nước",
-      "creator": "Nguyễn Phú Trọng",
-      "pages": 600,
-      "size_mb": 63.52
-    },
-    {
-      "id": 827,
-      "uuid": "743730cec62b48eda3cf3696fce3c1b1",
-      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Pháp) - Questions théoriques et pratiques sur le socialisme et la voie vers le socialisme au Vietnam",
-      "category": "Lãnh đạo Đảng, Nhà nước",
-      "creator": "Nguyễn Phú Trọng",
-      "pages": 544,
-      "size_mb": 54.48
     },
     {
       "id": 831,
@@ -1801,15 +1702,6 @@
       "creator": "Đại tướng, GS.TS. Tô Lâm (Chủ biên)",
       "pages": 54,
       "size_mb": 1.81
-    },
-    {
-      "id": 855,
-      "uuid": "699c07282010468aa972d3ab97dae967",
-      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Trung) - 关于社会主义和越南走向社会主义道路的 若干理论与实践问题",
-      "category": "Lãnh đạo Đảng, Nhà nước",
-      "creator": "Nguyễn Phú Trọng",
-      "pages": 420,
-      "size_mb": 20.21
     },
     {
       "id": 857,
@@ -3079,15 +2971,6 @@
       "creator": "Pedro de Oliveira",
       "pages": 446,
       "size_mb": 101.07
-    },
-    {
-      "id": 1431,
-      "uuid": "d2edf491d19e4c688f04aa401f5e24e7",
-      "title": "Residencia y lugar de trabajo del presidente Ho Chi Minh en el Palacio Presidencial - Hanoi",
-      "category": "Chủ tịch Hồ Chí Minh",
-      "creator": "Área de reliquias del Presidente Ho Chi Minh en el palacio Presidenci",
-      "pages": 114,
-      "size_mb": 118.22
     },
     {
       "id": 1433,
