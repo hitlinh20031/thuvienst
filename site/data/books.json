@@ -8,14 +8,14 @@
       "size_gb": 3.19
     },
     {
-      "name": "Kinh tế",
-      "count": 5,
-      "size_gb": 0.07
-    },
-    {
       "name": "Các ấn phẩm khác",
       "count": 0,
       "size_gb": 0
+    },
+    {
+      "name": "Kinh tế",
+      "count": 5,
+      "size_gb": 0.07
     },
     {
       "name": "Lãnh đạo Đảng, Nhà nước",
