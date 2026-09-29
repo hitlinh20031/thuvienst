@@ -62,7 +62,7 @@
   <nav class="tabs">
     <button class="tab-btn active" data-tab="cats">📁 Danh mục</button>
     <button class="tab-btn" data-tab="books">📚 Sách</button>
-    <button class="tab-btn" data-tab="upload">⬆️ Tải lên PDF</button>
+    <button class="tab-btn" data-tab="upload">⬆️ Tải lên PDF/Word</button>
     <button class="tab-btn" data-tab="theme">🎨 Giao diện</button>
     <button class="tab-btn" data-tab="help">❓ Hướng dẫn</button>
     <span class="tabs-right">
@@ -154,8 +154,8 @@
   <section class="tab-panel" id="tab-upload">
     <div class="panel">
       <div class="panel-head">
-        <h2>Tải lên sách PDF</h2>
-        <span class="muted">PDF được lưu vào <code>/pdfs/</code> trong repo</span>
+        <h2>Tải lên sách (PDF / Word)</h2>
+        <span class="muted">File được lưu vào <code>/pdfs/</code> trong repo</span>
       </div>
 
       <div class="up-default">
@@ -166,10 +166,10 @@
 
       <div class="dropzone" id="dropzone">
         <div class="dz-icon">📄</div>
-        <div><strong>Thả file PDF vào đây</strong> hoặc bấm để chọn file</div>
+        <div><strong>Thả file PDF hoặc Word (.docx) vào đây</strong> hoặc bấm để chọn file</div>
         <div class="hint">Chọn được nhiều file cùng lúc (mỗi file ≤ 100MB)</div>
       </div>
-      <input type="file" id="fileInput" accept="application/pdf,.pdf" multiple hidden>
+      <input type="file" id="fileInput" accept="application/pdf,.pdf,.docx,.doc,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword" multiple hidden>
 
       <div id="queueWrap" hidden>
         <table class="tbl">
@@ -281,31 +281,33 @@
         </div>
 
         <div class="help-card">
-          <h3>2. Danh mục</h3>
+          <h3>2. Danh mục (có cấp cha – con)</h3>
           <ul>
-            <li><strong>＋ Tạo danh mục</strong>: gõ tên → Enter.</li>
-            <li><strong>↑ ↓</strong>: đổi thứ tự hiển thị ở menu trang chủ.</li>
-            <li><strong>Đổi tên</strong>: tên mới sẽ tự áp dụng cho mọi sách đang ở trong đó.</li>
-            <li><strong>Xóa</strong> danh mục đang có sách: chọn danh mục đích để chuyển hết sách sang, rồi mới xóa.</li>
+            <li><strong>＋ Tạo danh mục</strong>: gõ tên → Enter (tạo ở cấp trên cùng).</li>
+            <li><strong>＋ Con</strong>: tạo danh mục bên trong một danh mục, kiểu folder con (vd: <code>Pháp luật</code> → <code>Pháp luật/Thừa kế, di chúc</code>). Tên không được chứa dấu <code>/</code>.</li>
+            <li><strong>↑ ↓</strong>: đổi thứ tự hiển thị (chỉ trong cùng cấp).</li>
+            <li><strong>Đổi tên</strong>: tên mới tự áp dụng cho mọi sách và danh mục con bên trong.</li>
+            <li><strong>Xóa</strong> danh mục đang có sách: chọn danh mục đích để chuyển hết sách sang, rồi mới xóa. Danh mục con sẽ tự <em>lên cấp trên</em>.</li>
+            <li>Bấm vào danh mục cha ở trang chủ = xem <strong>cả sách của mọi danh mục con</strong>.</li>
           </ul>
         </div>
 
         <div class="help-card">
           <h3>3. Thêm / sửa / xóa sách</h3>
           <ul>
-            <li><strong>＋ Thêm sách</strong> (tab Sách): nhập tên, tác giả, danh mục, số trang; có file PDF thì điền đường dẫn.</li>
+            <li><strong>＋ Thêm sách</strong> (tab Sách): nhập tên, tác giả, danh mục, số trang; có file PDF/Word thì điền đường dẫn.</li>
             <li><strong>Sửa</strong>: đổi tên, tác giả, <em>danh mục</em> (đây là cách chuyển 1 cuốn sang danh mục khác), số trang.</li>
-            <li><strong>Xóa</strong>: bỏ 1 cuốn; tick vào ô nếu muốn xóa luôn file PDF kèm theo.</li>
+            <li><strong>Xóa</strong>: bỏ 1 cuốn; tick vào ô nếu muốn xóa luôn file đính kèm.</li>
             <li><strong>Chuyển nhiều cuốn</strong>: tick các ô bên trái → chọn danh mục ở thanh <em>Chuyển vào</em>.</li>
           </ul>
         </div>
 
         <div class="help-card">
-          <h3>4. Tải sách PDF (nhiều file 1 lúc)</h3>
+          <h3>4. Tải sách PDF / Word (nhiều file 1 lúc)</h3>
           <ul>
             <li><strong>Chọn "Danh mục cho lần tải này" trước</strong> — mọi file thả vào sẽ vào danh mục đó.</li>
-            <li>Thả nhiều file PDF cùng lúc (mỗi file ≤ 100MB).</li>
-            <li>Sửa nhanh tên sách / tác giả / số trang ngay trong bảng (mỗi dòng 1 cuốn).</li>
+            <li>Thả nhiều file cùng lúc, nhận <strong>PDF</strong> và <strong>Word (.docx, .doc)</strong> (mỗi file ≤ 100MB).</li>
+            <li>Sửa nhanh tên sách / tác giả / số trang ngay trong bảng (mỗi dòng 1 cuốn). File Word không tự đếm được trang → bạn nhập số trang nếu biết (để trống cũng được).</li>
             <li>Bấm <strong>⬆ Tải lên</strong> — xong. File nằm ở <code>/pdfs/</code>, sách hiện ở trang chủ.</li>
             <li>Cần file riêng 1 danh mục khác: sửa ô danh mục của dòng đó trước khi bấm Tải lên.</li>
           </ul>
@@ -342,6 +344,6 @@
 
 <div id="toastWrap"></div>
 
-<script src="/js/admin.js?v=6"></script>
+<script src="/js/admin.js?v=7"></script>
 </body>
 </html>

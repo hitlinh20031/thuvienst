@@ -24,6 +24,7 @@ const parentOf = n => { const s = String(n); const i = s.lastIndexOf(SEP); retur
 const kidsOf   = p => categories.filter(c => parentOf(c.name) === p);
 const inSubtree = (cat, path) => cat === path || String(cat || '').startsWith(path + SEP);
 const catCount = path => allBooks.filter(b => inSubtree(b.category, path)).length;
+const extOf = p => String(p || '').split('.').pop().toUpperCase();   // PDF, DOCX…
 function rootCats() {
   const names = new Set(categories.map(c => c.name));
   return categories.filter(c => !c.name.includes(SEP) || !names.has(parentOf(c.name)));
@@ -228,7 +229,7 @@ function renderBooks() {
       <div class="book-cover">
         <img src="${coverUrl}" alt="${esc(b.title)}" loading="lazy"
              onerror="this.parentNode.innerHTML='<div class=\\'book-cover-placeholder\\'><div class=\\'placeholder-icon\\'>&#128214;</div><div class=\\'placeholder-title\\'>${esc(b.title)}</div></div>'">
-        <div class="book-badge">${b.pages} trang</div>
+        <div class="book-badge">${b.pages > 0 ? `${b.pages} trang` : (b.pdf ? extOf(b.pdf) : 'Tài liệu')}</div>
       </div>
       <div class="book-info">
         <div class="book-title">${esc(b.title)}</div>

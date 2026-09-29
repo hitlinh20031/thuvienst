@@ -32,7 +32,7 @@ let settings = Object.assign({}, DEFAULT_SETTINGS); // cài đặt giao diện
 let filtered = [];
 let selected = new Set();       // id sách được tick
 let shown = PAGE_SIZE;
-let queue = [];                 // hàng đợi file PDF chờ upload
+let queue = [];                 // hàng đợi file chờ upload
 let deployTimer = null;
 
 /*──────────────── Encoding ────────────────*/
@@ -578,7 +578,7 @@ function renderBooks() {
       <td><input type="checkbox" class="rowChk" ${selected.has(b.id) ? 'checked' : ''}></td>
       <td>
         <div class="b-title">${esc(b.title)}</div>
-        ${b.pdf ? `<span class="badge pdf">PDF</span>` : `<span class="badge">stbook</span>`}
+        ${b.pdf ? `<span class="badge${b.pdf.toLowerCase().endsWith('.pdf') ? ' pdf' : ''}">${extLabel(b.pdf)}</span>` : `<span class="badge">stbook</span>`}
         ${b.uuid ? `<span class="badge ghost">${esc(String(b.uuid).slice(0, 8))}…</span>` : ''}
       </td>
       <td>${esc(b.creator || '')}</td>
@@ -586,7 +586,7 @@ function renderBooks() {
         ? `${parentOf(b.category) ? `<span class="muted">${esc(parentOf(b.category))}/</span>` : ''}${esc(leafOf(b.category))}`
         : '<span class="muted">—</span>'}</td>
       <td>${b.pages || 0}</td>
-      <td>${b.pdf ? 'PDF' : 'Ảnh'}</td>
+      <td>${b.pdf ? extLabel(b.pdf) : 'Ảnh'}</td>
       <td>
         <button class="btn tiny" data-act="edit">Sửa</button>
         <button class="btn tiny danger" data-act="del">Xóa</button>
@@ -615,7 +615,7 @@ async function bookAction(act, id) {
         <label>Tác giả / nguồn</label><input id="mCreator" value="${esc(b.creator || '')}">
         <label>Danh mục</label><select id="mCat">${catOptions(b.category)}</select>
         <label>Số trang</label><input id="mPages" type="number" min="1" value="${b.pages || 1}">
-        ${b.pdf ? `<label>File PDF (không sửa)</label><input id="mPdf" value="${esc(b.pdf)}" readonly>` : ''}`,
+        ${b.pdf ? `<label>File đính kèm (không sửa)</label><input id="mPdf" value="${esc(b.pdf)}" readonly>` : ''}`,
       buttons: [
         { label: 'Hủy', value: null },
         { label: 'Lưu', primary: true, onClick: (root) => {
@@ -673,7 +673,7 @@ async function bulkDelete() {
   const v = await modal({
     title: `Xóa ${victims.length} sách?`,
     html: `<p>Không hoàn tác được.</p>
-      ${withPdf.length ? `<label><input type="checkbox" id="mDelPdf"> Xóa cả ${withPdf.length} file PDF kèm theo</label>` : ''}`,
+      ${withPdf.length ? `<label><input type="checkbox" id="mDelPdf"> Xóa cả ${withPdf.length} file đính kèm</label>` : ''}`,
     buttons: [
       { label: 'Hủy', value: null },
       { label: `Xóa ${victims.length} sách`, danger: true, onClick: (root) => {
@@ -700,9 +700,9 @@ async function addBook() {
       <label>Tác giả / người biên</label><input id="mCreator" placeholder="Để trống nếu không rõ">
       <label>Danh mục *</label><select id="mCat">${catOptions('')}</select>
       <label>Số trang</label><input id="mPages" type="number" min="1" value="1">
-      <label>Đường dẫn file PDF (nếu có, ví dụ: pdfs/sach.pdf)</label>
-      <input id="mPdf" placeholder="Để trống nếu chưa có file PDF">
-      <p class="hint">Sách có file PDF sẽ mở trực tiếp khi bấm vào; nếu để trống thì chỉ hiện thông tin.</p>`,
+      <label>Đường dẫn file (nếu có, ví dụ: pdfs/sach.pdf hoặc pdfs/sach.docx)</label>
+      <input id="mPdf" placeholder="Để trống nếu chưa có file">
+      <p class="hint">Sách có file (PDF/Word) sẽ mở khi bấm vào; nếu để trống thì chỉ hiện thông tin.</p>`,
     buttons: [
       { label: 'Hủy', value: null },
       { label: 'Thêm sách', primary: true, onClick: (root) => {
@@ -796,7 +796,12 @@ async function saveTheme() {
   } finally { btn.disabled = false; }
 }
 
-/*══════════════ 4. TẢI LÊN PDF ══════════════*/
+/*══════════════ 4. TẢI LÊN TÀI LIỆU (PDF / DOCX) ══════════════*/
+/* Nhận file PDF và file Word (.docx, .doc) */
+const OK_FILE = /\.(pdf|docx|doc)$/i;
+const isWordFile = f => !/\.pdf$/i.test(f.name) && f.type !== 'application/pdf';
+function fileExt(f) { const m = /\.([a-z0-9]+)$/i.exec(f.name); return m ? m[1].toLowerCase() : 'pdf'; }
+function extLabel(p) { const e = String(p || '').split('.').pop().toUpperCase(); return e === 'DOCX' ? 'DOCX' : e; }
 /* Danh mục đã chọn cho lần tải này (ưu tiên ô đang chọn → lần trước → đầu tiên) */
 function defaultCat() {
   const cur = $('#upCat') ? $('#upCat').value : '';
@@ -853,16 +858,18 @@ async function countPages(file) {
 }
 
 function addFiles(fileList) {
-  const files = Array.from(fileList).filter(f =>
-    f.type === 'application/pdf' || /\.pdf$/i.test(f.name));
-  if (!files.length) { toast('Chỉ nhận file PDF.', 'err'); return; }
+  const all = Array.from(fileList);
+  const files = all.filter(f => OK_FILE.test(f.name) || f.type === 'application/pdf');
+  const dropped = all.length - files.length;
+  if (!files.length) { toast('Chỉ nhận file PDF hoặc Word (.docx, .doc).', 'err'); return; }
+  if (dropped) toast(`Bỏ qua ${dropped} file không phải PDF/Word.`, 'err');
   const tooBig = files.filter(f => f.size > 100 * 1048576);
   if (tooBig.length) {
     toast(`${tooBig.length} file vượt 100MB (giới hạn GitHub): ${tooBig[0].name}`, 'err');
     return;
   }
   files.forEach(f => {
-    const base = f.name.replace(/\.pdf$/i, '');
+    const base = f.name.replace(/\.[^.]+$/, '');        // bỏ đuôi file (.pdf/.docx/...)
     queue.push({
       file: f,
       title: base,
@@ -877,7 +884,8 @@ function addFiles(fileList) {
 }
 
 async function detectPages() {
-  const pending = queue.filter(q => !q.pages && !q.checking);
+  // chỉ PDF mới đọc được số trang; file Word để trống cho người nhập tay
+  const pending = queue.filter(q => !q.pages && !q.checking && OK_FILE.test(q.file.name) && !isWordFile(q.file));
   if (!pending.length) return;
   $('#uploadMsg').textContent = 'Đang đọc số trang...';
   for (const it of pending) {
@@ -906,19 +914,19 @@ function renderQueue() {
   $('#uploadBtn').textContent = `⬆ Tải lên ${queue.length} cuốn`;
 }
 
-function uniquePdfPath(title) {
+function uniqueDocPath(title, ext) {
   const used = new Set(data.books.filter(b => b.pdf).map(b => b.pdf));
-  let slug = slugify(title), n = 1, p = `${PDF_DIR_PUBLIC}/${slug}.pdf`;
-  while (used.has(p)) p = `${PDF_DIR_PUBLIC}/${slug}-${++n}.pdf`;
+  let slug = slugify(title), n = 1, p = `${PDF_DIR_PUBLIC}/${slug}.${ext}`;
+  while (used.has(p)) p = `${PDF_DIR_PUBLIC}/${slug}-${++n}.${ext}`;
   return p;
 }
 
 async function doUpload() {
   if (!queue.length) return;
   const total = queue.length;
-  const bad = queue.find(q => !q.title.trim() || !(q.pages > 0));
+  const bad = queue.find(q => !q.title.trim() || (!isWordFile(q.file) && !(q.pages > 0)));
   if (bad) {
-    toast('Mỗi cuốn cần có tên sách và số trang (>0). Kiểm tra lại ô trống.', 'err');
+    toast('Mỗi cuốn cần có tên sách; file PDF cần số trang (>0). File Word để trống cũng được.', 'err');
     return;
   }
   const btn = $('#uploadBtn');
@@ -929,7 +937,7 @@ async function doUpload() {
     msg.textContent = 'Lấy dữ liệu mới nhất...';
     await loadData();                                   // tránh commit trên dữ liệu cũ
 
-    msg.textContent = 'Tạo blob file PDF...';
+    msg.textContent = 'Tạo blob file...';
     const files = [];
     for (let i = 0; i < queue.length; i++) {
       const it = queue[i];
@@ -938,14 +946,14 @@ async function doUpload() {
         method: 'POST',
         body: JSON.stringify({ content: bufToB64(await it.file.arrayBuffer()), encoding: 'base64' })
       });
-      const path = uniquePdfPath(it.title);
+      const path = uniqueDocPath(it.title, fileExt(it.file));
       files.push({ path: `site/${path}`, sha: blob.sha });
       data.books.push({
         id: (data.books.reduce((m, b) => Math.max(m, Number(b.id) || 0), 0) || 0) + 1,
         title: it.title.trim(),
         creator: it.creator.trim(),
         category: it.category,
-        pages: it.pages,
+        pages: Number(it.pages) || 0,
         size_mb: +(it.file.size / 1048576).toFixed(2),
         pdf: path
       });
@@ -954,7 +962,7 @@ async function doUpload() {
     msg.textContent = 'Commit...';
     recount();
     files.push({ path: BOOKS_PATH, base64: textToB64(JSON.stringify(data, null, 2)) });
-    const c = await commitFiles(files, `Tải lên ${queue.length} sách PDF`);
+    const c = await commitFiles(files, `Tải lên ${queue.length} tài liệu (PDF/Word)`);
 
     queue = [];
     renderQueue();
