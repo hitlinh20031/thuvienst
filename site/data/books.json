@@ -3567,7 +3567,8 @@
       "category": "Văn học và đời sống",
       "pages": 165,
       "size_mb": 0.68,
-      "pdf": "pdfs/so-do-vu-trong-phung.pdf"
+      "pdf": "pdfs/so-do-vu-trong-phung.pdf",
+      "cover": "covers/so-do-vu-trong-phung.jpg"
     },
     {
       "id": 1539,
@@ -3576,7 +3577,8 @@
       "category": "Văn học và đời sống",
       "pages": 1047,
       "size_mb": 4.33,
-      "pdf": "pdfs/than-thoai-hy-lap-nguyen-van-khoa.pdf"
+      "pdf": "pdfs/than-thoai-hy-lap-nguyen-van-khoa.pdf",
+      "cover": "covers/than-thoai-hy-lap-nguyen-van-khoa.jpg"
     },
     {
       "id": 1540,
@@ -3585,7 +3587,8 @@
       "category": "Văn học và đời sống",
       "pages": 31,
       "size_mb": 0.19,
-      "pdf": "pdfs/tho-tho-xuan-dieu.pdf"
+      "pdf": "pdfs/tho-tho-xuan-dieu.pdf",
+      "cover": "covers/tho-tho-xuan-dieu.jpg"
     },
     {
       "id": 1541,
@@ -3594,7 +3597,8 @@
       "category": "Văn học và đời sống",
       "pages": 227,
       "size_mb": 2,
-      "pdf": "pdfs/toi-thay-hoa-vang-tren-co-xanh-nguyen-nhat-anh.pdf"
+      "pdf": "pdfs/toi-thay-hoa-vang-tren-co-xanh-nguyen-nhat-anh.pdf",
+      "cover": "covers/toi-thay-hoa-vang-tren-co-xanh-nguyen-nhat-anh.jpg"
     },
     {
       "id": 1542,
@@ -3603,7 +3607,8 @@
       "category": "Văn học và đời sống",
       "pages": 797,
       "size_mb": 2.33,
-      "pdf": "pdfs/tuyen-tap-nam-cao.pdf"
+      "pdf": "pdfs/tuyen-tap-nam-cao.pdf",
+      "cover": "covers/tuyen-tap-nam-cao.jpg"
     },
     {
       "id": 1543,
@@ -3612,7 +3617,8 @@
       "category": "Văn học và đời sống",
       "pages": 50,
       "size_mb": 0.45,
-      "pdf": "pdfs/tuyen-tap-tho-sgk-cu.pdf"
+      "pdf": "pdfs/tuyen-tap-tho-sgk-cu.pdf",
+      "cover": "covers/tuyen-tap-tho-sgk-cu.jpg"
     },
     {
       "id": 1544,
@@ -3621,7 +3627,8 @@
       "category": "Văn học và đời sống",
       "pages": 136,
       "size_mb": 0.32,
-      "pdf": "pdfs/tuyen-tap-tho-tran-dang-khoa.pdf"
+      "pdf": "pdfs/tuyen-tap-tho-tran-dang-khoa.pdf",
+      "cover": "covers/tuyen-tap-tho-tran-dang-khoa.jpg"
     },
     {
       "id": 1545,
@@ -3630,7 +3637,8 @@
       "category": "Văn học và đời sống",
       "pages": 434,
       "size_mb": 1.89,
-      "pdf": "pdfs/tuyen-tap-tho-luu-quang-vu.pdf"
+      "pdf": "pdfs/tuyen-tap-tho-luu-quang-vu.pdf",
+      "cover": "covers/tuyen-tap-tho-luu-quang-vu.jpg"
     },
     {
       "id": 1546,
