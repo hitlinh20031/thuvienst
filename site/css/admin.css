@@ -192,3 +192,14 @@ input[type=color]{width:48px;height:38px;padding:2px;border:1px solid var(--line
 .up-default label{font-size:14px;color:var(--txt);white-space:nowrap}
 .up-default select{min-width:250px}
 .up-default .hint{flex:1;min-width:250px}
+
+/* ── tab hướng dẫn ── */
+.help-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}
+.help-card{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.help-card h3{margin:0 0 10px;font-size:15.5px}
+.help-card ul{margin:0;padding-left:18px}
+.help-card li{margin:6px 0;font-size:14px;line-height:1.65}
+.help-card a{color:var(--pri);word-break:break-all}
+.help-card.warn{background:#fffbeb;border-color:#fde68a}
+.help-card.warn h3{color:#92400e}
+.help .hint{margin-top:18px;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:10px}

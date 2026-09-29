@@ -64,6 +64,7 @@
     <button class="tab-btn" data-tab="books">📚 Sách</button>
     <button class="tab-btn" data-tab="upload">⬆️ Tải lên PDF</button>
     <button class="tab-btn" data-tab="theme">🎨 Giao diện</button>
+    <button class="tab-btn" data-tab="help">❓ Hướng dẫn</button>
     <span class="tabs-right">
       <span id="statLine" class="muted"></span>
       <a id="viewSite" href="/" target="_blank" rel="noopener" class="btn tiny">Xem trang chủ</a>
@@ -251,6 +252,84 @@
         <span class="muted" id="themeMsg"></span>
       </div>
       <p class="hint">Sau khi lưu, trang chủ tự dựng lại trong ~1 phút là thấy giao diện mới.</p>
+    </div>
+  </section>
+
+  <!-- ───── TAB HƯỚNG DẪN ───── -->
+  <section class="tab-panel" id="tab-help">
+    <div class="panel help">
+      <div class="panel-head">
+        <h2>Hướng dẫn sử dụng</h2>
+        <span class="muted">Mọi thao tác lưu vào GitHub, trang web tự dựng lại trong ~1 phút</span>
+      </div>
+
+      <div class="help-grid">
+        <div class="help-card">
+          <h3>1. Đăng nhập</h3>
+          <ul>
+            <li>Tạo token 1 lần: <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener">github.com/settings/tokens/new</a></li>
+            <li>Đặt <em>Expiration</em> (hạn), tick mục <strong>repo</strong> → <strong>Generate token</strong></li>
+            <li>Dán token vào ô → bấm <strong>Đăng nhập</strong>. Trang sẽ <strong>nhớ token</strong>, lần sau mở là vào thẳng.</li>
+            <li>Đổi/xoá token: <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">Settings → Developer settings → Tokens</a></li>
+          </ul>
+        </div>
+
+        <div class="help-card">
+          <h3>2. Danh mục</h3>
+          <ul>
+            <li><strong>＋ Tạo danh mục</strong>: gõ tên → Enter.</li>
+            <li><strong>↑ ↓</strong>: đổi thứ tự hiển thị ở menu trang chủ.</li>
+            <li><strong>Đổi tên</strong>: tên mới sẽ tự áp dụng cho mọi sách đang ở trong đó.</li>
+            <li><strong>Xóa</strong> danh mục đang có sách: chọn danh mục đích để chuyển hết sách sang, rồi mới xóa.</li>
+          </ul>
+        </div>
+
+        <div class="help-card">
+          <h3>3. Thêm / sửa / xóa sách</h3>
+          <ul>
+            <li><strong>＋ Thêm sách</strong> (tab Sách): nhập tên, tác giả, danh mục, số trang; có file PDF thì điền đường dẫn.</li>
+            <li><strong>Sửa</strong>: đổi tên, tác giả, <em>danh mục</em> (đây là cách chuyển 1 cuốn sang danh mục khác), số trang.</li>
+            <li><strong>Xóa</strong>: bỏ 1 cuốn; tick vào ô nếu muốn xóa luôn file PDF kèm theo.</li>
+            <li><strong>Chuyển nhiều cuốn</strong>: tick các ô bên trái → chọn danh mục ở thanh <em>Chuyển vào</em>.</li>
+          </ul>
+        </div>
+
+        <div class="help-card">
+          <h3>4. Tải sách PDF (nhiều file 1 lúc)</h3>
+          <ul>
+            <li><strong>Chọn "Danh mục cho lần tải này" trước</strong> — mọi file thả vào sẽ vào danh mục đó.</li>
+            <li>Thả nhiều file PDF cùng lúc (mỗi file ≤ 100MB).</li>
+            <li>Sửa nhanh tên sách / tác giả / số trang ngay trong bảng (mỗi dòng 1 cuốn).</li>
+            <li>Bấm <strong>⬆ Tải lên</strong> — xong. File nằm ở <code>/pdfs/</code>, sách hiện ở trang chủ.</li>
+            <li>Cần file riêng 1 danh mục khác: sửa ô danh mục của dòng đó trước khi bấm Tải lên.</li>
+          </ul>
+        </div>
+
+        <div class="help-card">
+          <h3>5. Đổi giao diện</h3>
+          <ul>
+            <li>Tab <strong>🎨 Giao diện</strong>: sửa tên thư viện, tiêu đề, mô tả, màu chủ đạo.</li>
+            <li>Bấm <strong>Xem trước</strong> thấy ngay, rồi <strong>💾 Lưu giao diện</strong>.</li>
+            <li>Không cần biết code — toàn bộ lưu vào file <code>data/settings.json</code>.</li>
+          </ul>
+        </div>
+
+        <div class="help-card warn">
+          <h3>6. Khi có lỗi</h3>
+          <ul>
+            <li><strong>Lỗi 401</strong>: token sai/hết hạn → tạo token mới (bước 1).</li>
+            <li><strong>Lỗi 404</strong>: token thiếu quyền → tạo lại token classic và tick <strong>repo</strong>.</li>
+            <li><strong>"Có người khác vừa commit"</strong>: bấm thử lại sau vài giây.</li>
+            <li><strong>Hết hạn mức API</strong>: chờ khoảng 1 giờ rồi làm tiếp.</li>
+            <li>Sửa nhầm? Vào <a href="https://github.com/hitlinh20031/thuvienst/commits/main" target="_blank" rel="noopener">lịch sử commit</a> để xem, hoặc báo mình hoàn tác.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="hint">
+        <strong>Bảo mật:</strong> token giống như mật khẩu — ai có token thì ghi được vào web của bạn.
+        Dùng máy chung nhớ bấm <strong>Đăng xuất</strong> khi xong. Không gửi token cho ai.
+      </p>
     </div>
   </section>
 </div>
