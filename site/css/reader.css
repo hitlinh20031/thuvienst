@@ -5,7 +5,8 @@
 .reader-body {
   background: #111118;
   color: #e0e0e8;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -74,8 +75,9 @@
 
 .reader-main {
   flex: 1;
+  min-height: 0;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -104,22 +106,42 @@
 /* Viewer wrapper */
 .viewer-wrapper {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
+  flex: 1;
   width: 100%;
-  height: 100%;
-  padding: 8px;
+  min-width: 0;
+  min-height: 0;
+  padding: 10px 12px;
 }
 
-/* Sân khấu chứa flipbook StPageFlip */
+/* Vùng chứa sách — cuộn được khi phóng to */
+.stage-scroll {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+/* Ô chứa: kích thước = sách × tỉ lệ zoom, căn giữa khi vừa màn hình */
+.zoom-holder {
+  position: relative;
+  margin: auto;
+  flex-shrink: 0;
+}
+
+/* Sân khấu chứa flipbook StPageFlip — kích thước do JS tính (vừa bề ngang lẫn bề cao) */
 .book-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 110px);
-  width: 100%;
-  max-width: 100%;
 }
 
 #book {
@@ -144,6 +166,34 @@
   line-height: 0;
   overflow: hidden;
   background: #fff;
+}
+
+/* Trang PDF / Word: 1 ảnh đầy trang, không cắt */
+.flip-image.fit > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+
+/* Trang Word (docx-preview) */
+.flip-image .docx-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.flip-image .docx-page > section {
+  transform-origin: top left;
+  margin: 0 !important;
+  box-shadow: none !important;
 }
 
 .flip-image > img {
@@ -264,4 +314,22 @@
   .nav-arrow svg { width: 20px; height: 20px; }
   .reader-footer { padding: 8px 12px; gap: 10px; }
   .page-info { font-size: 12px; min-width: 80px; }
+}
+
+/* ── Zoom ── */
+.reader-btn.zoom-value {
+  min-width: 54px;
+  width: auto;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #c8c8d8;
+  font-variant-numeric: tabular-nums;
+}
+.reader-btn[hidden] { display: none !important; }
+.reader-loading p { margin: 0; }
+.reader-loading .load-sub { font-size: 12px; color: #606080; }
+
+@media (max-width: 640px) {
+  .reader-btn.zoom-value { min-width: 46px; padding: 0 5px; font-size: 11px; }
 }

@@ -857,6 +857,150 @@ async function countPages(file) {
   } catch (e) { return 0; }
 }
 
+/* ── Ảnh bìa khi tải lên ───────────────────────────────
+   PDF   → chụp trang đầu tiên
+   Word  → bìa dựng bằng canvas (đậm màu theo tên/danh mục)      */
+const THUMB_THEMES = [
+  ['#1e3a8a', '#3b82f6'], ['#7c2d12', '#f97316'], ['#064e3b', '#10b981'],
+  ['#4c1d95', '#8b5cf6'], ['#7f1d1d', '#ef4444'], ['#0c4a6e', '#0ea5e9'],
+  ['#374151', '#9ca3af'], ['#713f12', '#eab308'], ['#134e4a', '#14b8a6'],
+  ['#581c87', '#d946ef'],
+];
+
+function hashStr(s) {
+  let h = 0;
+  for (let i = 0; i < String(s || '').length; i++) h = (h * 31 + String(s).charCodeAt(i)) >>> 0;
+  return h;
+}
+
+async function coverFromPdfBuf(buf) {
+  try {
+    const pdfjs = await ensurePdfJs();
+    const doc = await pdfjs.getDocument({ data: new Uint8Array(buf) }).promise;
+    const page = await doc.getPage(1);
+    const v1 = page.getViewport({ scale: 1 });
+    const vp = page.getViewport({ scale: 460 / v1.width });
+    const cv = document.createElement('canvas');
+    cv.width = Math.round(vp.width);
+    cv.height = Math.round(vp.height);
+    await page.render({ canvasContext: cv.getContext('2d'), viewport: vp }).promise;
+    await doc.destroy();
+    const url = cv.toDataURL('image/jpeg', 0.85);
+    cv.width = cv.height = 0;
+    return url;
+  } catch (e) { return null; }
+}
+
+function wrapLines(g, text, maxW) {
+  const out = [];
+  let cur = '';
+  for (const w of String(text || '').trim().split(/\s+/)) {
+    const t = cur ? cur + ' ' + w : w;
+    if (g.measureText(t).width <= maxW) cur = t;
+    else { if (cur) out.push(cur); cur = w; }
+    while (g.measureText(cur).width > maxW && cur.length > 1) {
+      let cut = cur.length;
+      while (cut > 1 && g.measureText(cur.slice(0, cut)).width > maxW) cut--;
+      out.push(cur.slice(0, cut));
+      cur = cur.slice(cut);
+    }
+  }
+  if (cur) out.push(cur);
+  return out;
+}
+
+function thumbCanvas(opt) {
+  const W = 460, H = 613;
+  const cv = document.createElement('canvas');
+  cv.width = W; cv.height = H;
+  const g = cv.getContext('2d');
+  const th = THUMB_THEMES[hashStr(opt.title + '|' + (opt.category || '')) % THUMB_THEMES.length];
+  const grad = g.createLinearGradient(0, 0, W, H);
+  grad.addColorStop(0, th[0]); grad.addColorStop(1, th[1]);
+  g.fillStyle = grad; g.fillRect(0, 0, W, H);
+  g.fillStyle = 'rgba(0,0,0,.32)'; g.fillRect(0, 0, 17, H);
+  g.fillStyle = 'rgba(255,255,255,.14)'; g.fillRect(17, 0, 3, H);
+
+  g.fillStyle = 'rgba(255,255,255,.75)';
+  g.font = 'bold 21px Arial, sans-serif';
+  g.fillText('THƯ VIỆN SÁCH', 42, 66);
+
+  const ext = String(opt.ext || 'PDF').toUpperCase().slice(0, 5);
+  g.font = 'bold 24px Arial, sans-serif';
+  const bw = Math.max(76, g.measureText(ext).width + 32);
+  g.fillStyle = 'rgba(0,0,0,.42)';
+  if (g.roundRect) { g.beginPath(); g.roundRect(W - 42 - bw, 36, bw, 46, 10); g.fill(); }
+  else g.fillRect(W - 42 - bw, 36, bw, 46);
+  g.fillStyle = '#fff'; g.textAlign = 'center';
+  g.fillText(ext, W - 42 - bw / 2, 67);
+  g.textAlign = 'left';
+
+  g.fillStyle = 'rgba(255,255,255,.55)'; g.fillRect(42, 96, 72, 5);
+
+  const fs = 34, lh = 42;
+  g.font = 'bold ' + fs + 'px Arial, sans-serif';
+  const lines = wrapLines(g, opt.title, W - 84).slice(0, 6);
+  g.fillStyle = '#fff';
+  let y = H / 2 - (lines.length - 1) * lh / 2 + 12;
+  lines.forEach(l => { g.fillText(l, 42, y); y += lh; });
+
+  g.fillStyle = 'rgba(255,255,255,.85)';
+  g.font = '22px Arial, sans-serif';
+  g.fillText(String(opt.category || '').split('/').pop().slice(0, 30), 42, H - 46);
+  g.fillStyle = 'rgba(255,255,255,.28)'; g.fillRect(42, H - 30, W - 84, 2);
+
+  const url = cv.toDataURL('image/jpeg', 0.85);
+  cv.width = cv.height = 0;
+  return url;
+}
+
+/* Tạo bìa (chụp trang 1 / bìa dựng) cho những cuốn đã tải lên chưa có ảnh bìa */
+async function generateCovers() {
+  if (!data) return;
+  const btn = $('#genCoverBtn');
+  const msg = $('#uploadMsg');
+  btn.disabled = true;
+  try {
+    msg.textContent = 'Lấy dữ liệu mới nhất...';
+    await loadData();
+    const targets = data.books.filter(b => b.pdf && !b.cover);
+    if (!targets.length) { msg.textContent = ''; toast('Mọi sách tải lên đã có bìa.', 'ok'); return; }
+
+    let batch = [], done = 0;
+    const flush = async () => {
+      if (!batch.length) return;
+      batch.push({ path: BOOKS_PATH, base64: textToB64(JSON.stringify(data, null, 2)) });
+      await commitFiles(batch, `Tạo bìa cho sách (${done}/${targets.length})`);
+      batch = [];
+    };
+
+    for (const b of targets) {
+      msg.textContent = `Tạo bìa ${done + 1}/${targets.length}: ${b.title.slice(0, 34)}`;
+      let url = null;
+      if (/\.pdf$/i.test(b.pdf)) {
+        try {
+          const resp = await fetch('/' + String(b.pdf).replace(/^\/+/, ''));
+          if (resp.ok) url = await coverFromPdfBuf(await resp.arrayBuffer());
+        } catch (e) { url = null; }
+      }
+      if (!url) url = thumbCanvas({ title: b.title, category: b.category, ext: extLabel(b.pdf) });
+      const path = `covers/${String(b.pdf).split('/').pop().replace(/\.[^.]+$/, '')}.jpg`;
+      batch.push({ path: `site/${path}`, base64: url.split(',')[1] });
+      b.cover = path;
+      done++;
+      if (batch.length >= 8) { msg.textContent = `Đang commit ${done}/${targets.length}...`; await flush(); }
+    }
+    await flush();
+    msg.textContent = '';
+    toast(`Đã tạo bìa cho ${done} cuốn.`, 'ok');
+    await loadData();
+    renderAll();
+  } catch (e) {
+    msg.textContent = '';
+    toast('Lỗi tạo bìa: ' + e.message, 'err');
+  } finally { btn.disabled = false; }
+}
+
 function addFiles(fileList) {
   const all = Array.from(fileList);
   const files = all.filter(f => OK_FILE.test(f.name) || f.type === 'application/pdf');
@@ -948,6 +1092,19 @@ async function doUpload() {
       });
       const path = uniqueDocPath(it.title, fileExt(it.file));
       files.push({ path: `site/${path}`, sha: blob.sha });
+
+      // ảnh bìa: PDF → chụp trang đầu; Word → bìa dựng theo tên/danh mục
+      msg.textContent = `Tạo bìa ${i + 1}/${queue.length}: ${it.file.name}`;
+      let coverUrl = null;
+      if (!isWordFile(it.file)) {
+        try { coverUrl = await coverFromPdfBuf(await it.file.arrayBuffer()); } catch (e) { coverUrl = null; }
+      }
+      if (!coverUrl) {
+        coverUrl = thumbCanvas({ title: it.title, category: it.category, ext: fileExt(it.file).toUpperCase() });
+      }
+      const coverPath = `covers/${path.split('/').pop().replace(/\.[^.]+$/, '')}.jpg`;
+      files.push({ path: `site/${coverPath}`, base64: coverUrl.split(',')[1] });
+
       data.books.push({
         id: (data.books.reduce((m, b) => Math.max(m, Number(b.id) || 0), 0) || 0) + 1,
         title: it.title.trim(),
@@ -955,7 +1112,8 @@ async function doUpload() {
         category: it.category,
         pages: Number(it.pages) || 0,
         size_mb: +(it.file.size / 1048576).toFixed(2),
-        pdf: path
+        pdf: path,
+        cover: coverPath
       });
     }
 
@@ -1092,6 +1250,7 @@ function bind() {
     if (rm) { queue.splice(+rm.dataset.rm, 1); renderQueue(); }
   });
   $('#uploadBtn').addEventListener('click', () => { doUpload(); });
+  if ($('#genCoverBtn')) $('#genCoverBtn').addEventListener('click', () => { generateCovers(); });
 }
 
 /*══════════════ KHỞI TẠO ══════════════*/

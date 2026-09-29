@@ -8,10 +8,80 @@ const IMAGE_SOURCE = 'stbook';
 const R2_BASE = 'https://pub-thuvienst.r2.dev';
 const CUSTOM_BASE = '';
 
-function getCoverUrl(uuid) {
+function coverSourceUrl(uuid) {
   if (IMAGE_SOURCE === 'stbook') return `https://stbook.vn/static/covers/${uuid}/thumb.png`;
   if (IMAGE_SOURCE === 'r2') return `${R2_BASE}/covers/${uuid}/thumb.png`;
   return `${CUSTOM_BASE}/covers/${uuid}/thumb.png`;
+}
+
+/* ── Bìa tự dựng cho sách tải lên (chưa có ảnh bìa) ── */
+const COVER_THEMES = [
+  ['#1e3a8a', '#3b82f6'], ['#7c2d12', '#f97316'], ['#064e3b', '#10b981'],
+  ['#4c1d95', '#8b5cf6'], ['#7f1d1d', '#ef4444'], ['#0c4a6e', '#0ea5e9'],
+  ['#374151', '#9ca3af'], ['#713f12', '#eab308'], ['#134e4a', '#14b8a6'],
+  ['#581c87', '#d946ef'],
+];
+
+function hashStr(s) {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+function wrapText(str, max) {
+  const lines = [];
+  let cur = '';
+  for (const w of String(str).trim().split(/\s+/)) {
+    if (!cur) cur = w;
+    else if ((cur + ' ' + w).length <= max) cur += ' ' + w;
+    else { lines.push(cur); cur = w; }
+    while (cur.length > max) { lines.push(cur.slice(0, max)); cur = cur.slice(max); }   // từ quá dài
+  }
+  if (cur) lines.push(cur);
+  return lines;
+}
+
+function makeCover(b) {
+  const title = (b.title || 'Tài liệu').trim();
+  const type = b.pdf ? extOf(b.pdf) : 'PDF';
+  const cat = b.category ? leafOf(b.category) : '';
+  const th = COVER_THEMES[hashStr(title + '|' + (b.category || '')) % COVER_THEMES.length];
+  const all = wrapText(title, 16);
+  const lines = all.slice(0, 6);
+  if (all.length > 6) lines[5] = lines[5].slice(0, 15) + '…';
+  const fs = lines.length > 4 ? 30 : 36;
+  const lh = lines.length > 4 ? 38 : 44;
+  const y0 = 330 - (lines.length - 1) * lh / 2;
+  const tspans = lines.map((l, i) =>
+    `<tspan x="44" dy="${i === 0 ? 0 : lh}">${esc(l)}</tspan>`).join('');
+
+  const svg =
+`<svg xmlns="http://www.w3.org/2000/svg" width="480" height="640" viewBox="0 0 480 640">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="${th[0]}"/><stop offset="1" stop-color="${th[1]}"/>
+</linearGradient></defs>
+<rect width="480" height="640" fill="url(#g)"/>
+<rect width="18" height="640" fill="rgba(0,0,0,.32)"/>
+<rect x="18" width="3" height="640" fill="rgba(255,255,255,.14)"/>
+<text x="44" y="66" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="bold" letter-spacing="3" fill="rgba(255,255,255,.72)">THƯ VIỆN SÁCH</text>
+<rect x="356" y="38" width="82" height="42" rx="10" fill="rgba(0,0,0,.42)"/>
+<text x="397" y="66" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="bold" fill="#fff">${esc(type)}</text>
+<rect x="44" y="96" width="72" height="5" rx="2.5" fill="rgba(255,255,255,.55)"/>
+<text y="${y0}" font-family="Arial,Helvetica,sans-serif" font-size="${fs}" font-weight="bold" fill="#fff">${tspans}</text>
+<text x="44" y="574" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="rgba(255,255,255,.82)">${esc(cat)}</text>
+<rect x="44" y="592" width="392" height="2" fill="rgba(255,255,255,.28)"/>
+</svg>`;
+
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+}
+
+/* Ảnh bìa: file đã tải lên → ảnh bìa thật; sách PDF/Word chưa có → bìa tự dựng;
+   sách stbook → ảnh bìa từ nguồn cấu hình. */
+function getCoverUrl(b) {
+  if (!b) return '';
+  if (b.cover) return '/' + String(b.cover).replace(/^\/+/, '');
+  if (b.pdf) return makeCover(b);
+  return coverSourceUrl(b.uuid);
 }
 /*──────────────────────────────────────────────────────*/
 
@@ -219,12 +289,15 @@ function renderBooks() {
   const visible = filteredBooks.slice(0, end);
 
   grid.innerHTML = visible.map(b => {
-    const coverUrl = getCoverUrl(b.uuid);
-    // Sách PDF tự tải lên → mở file PDF (trình đọc PDF.js sẽ thay thế sau)
+    const coverUrl = getCoverUrl(b);
+    // Sách tải lên (PDF/Word) → mở trong trình đọc lật trang; liên kết ngoài vẫn mở tab mới
+    const remote = /^https?:\/\//i.test(b.pdf || '');
     const href = b.pdf
-      ? (/^https?:\/\//i.test(b.pdf) ? b.pdf : `/${String(b.pdf).replace(/^\/+/, '')}`)
+      ? (remote
+          ? b.pdf
+          : `/read.html?id=${b.id}&pdf=${encodeURIComponent('/' + String(b.pdf).replace(/^\/+/, ''))}`)
       : `/read.html?id=${b.id}&uuid=${b.uuid}`;
-    const target = b.pdf ? ' target="_blank" rel="noopener"' : '';
+    const target = (b.pdf && remote) ? ' target="_blank" rel="noopener"' : '';
     return `<a class="book-card" href="${href}"${target}>
       <div class="book-cover">
         <img src="${coverUrl}" alt="${esc(b.title)}" loading="lazy"
