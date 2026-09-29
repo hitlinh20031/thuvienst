@@ -1,5 +1,5 @@
 {
-  "total": 464,
+  "total": 466,
   "total_size_gb": 9.75,
   "categories": [
     {
@@ -109,8 +109,8 @@
     },
     {
       "name": "Pháp luật/Thừa kế, di chúc",
-      "count": 0,
-      "size_gb": 0
+      "count": 2,
+      "size_gb": 0.01
     }
   ],
   "books": [
@@ -4289,6 +4289,24 @@
       "pages": 60,
       "size_mb": 3.78,
       "pdf": "pdfs/so-tay-huong-dan-thuc-hien-nghia-vu-thue-danh-cho-ho-kinh-do.pdf"
+    },
+    {
+      "id": 1621,
+      "title": "Luận án-Hình thức di chúc theo PLDS VN",
+      "creator": "",
+      "category": "Pháp luật/Thừa kế, di chúc",
+      "pages": 260,
+      "size_mb": 4.09,
+      "pdf": "pdfs/luan-an-hinh-thuc-di-chuc-theo-plds-vn.pdf"
+    },
+    {
+      "id": 1622,
+      "title": "Luận án-Thừa kế theo PL theo BLDS 2015",
+      "creator": "",
+      "category": "Pháp luật/Thừa kế, di chúc",
+      "pages": 164,
+      "size_mb": 1.7,
+      "pdf": "pdfs/luan-an-thua-ke-theo-pl-theo-blds-2015.pdf"
     }
   ]
 }
