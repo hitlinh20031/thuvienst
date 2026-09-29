@@ -29,8 +29,8 @@
     },
     {
       "name": "Mới",
-      "count": 8,
-      "size_gb": 0.15
+      "count": 7,
+      "size_gb": 0.14
     },
     {
       "name": "Những vấn đề quốc tế",
@@ -59,8 +59,8 @@
     },
     {
       "name": "Văn kiện Đảng",
-      "count": 36,
-      "size_gb": 1.11
+      "count": 37,
+      "size_gb": 1.12
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
@@ -3355,7 +3355,7 @@
       "id": 1502,
       "uuid": "72bfdad3ccde45e6889151ab57369bd5",
       "title": "Văn kiện Hội nghị lần thứ hai Ban Chấp hành Trung ương khóa XIV",
-      "category": "Mới",
+      "category": "Văn kiện Đảng",
       "creator": "",
       "pages": 309,
       "size_mb": 13.04
