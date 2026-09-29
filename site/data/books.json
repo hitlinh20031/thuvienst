@@ -49,8 +49,8 @@
     },
     {
       "name": "Tài liệu",
-      "count": 16,
-      "size_gb": 0.22
+      "count": 15,
+      "size_gb": 0.21
     },
     {
       "name": "Văn hóa, xã hội",
@@ -64,8 +64,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 53,
-      "size_gb": 1.36
+      "count": 54,
+      "size_gb": 1.37
     },
     {
       "name": "Người cao tuổi",
@@ -3045,7 +3045,7 @@
       "id": 1459,
       "uuid": "819b2368b21e425dafdff42e765dec9d",
       "title": "Biên cương vững từ Ý Đảng, lòng dân (3 kỳ)",
-      "category": "Tài liệu",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "Nguyễn Trung Thành",
       "pages": 19,
       "size_mb": 15.87
