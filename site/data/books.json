@@ -3887,7 +3887,8 @@
       "category": "Thiếu nhi",
       "pages": 14,
       "size_mb": 12.58,
-      "pdf": "pdfs/tham-tu-kaushik-tot-bung.pdf"
+      "pdf": "pdfs/tham-tu-kaushik-tot-bung.pdf",
+      "cover": "covers/tham-tu-kaushik-tot-bung.jpg"
     },
     {
       "id": 1571,
@@ -3896,7 +3897,8 @@
       "category": "Thiếu nhi",
       "pages": 9,
       "size_mb": 0.9,
-      "pdf": "pdfs/tho-hay-danh-cho-tre-em-tap-1.pdf"
+      "pdf": "pdfs/tho-hay-danh-cho-tre-em-tap-1.pdf",
+      "cover": "covers/tho-hay-danh-cho-tre-em-tap-1.jpg"
     },
     {
       "id": 1572,
@@ -3905,7 +3907,8 @@
       "category": "Thiếu nhi",
       "pages": 9,
       "size_mb": 1.59,
-      "pdf": "pdfs/tho-hay-danh-cho-tre-em-tap-2.pdf"
+      "pdf": "pdfs/tho-hay-danh-cho-tre-em-tap-2.pdf",
+      "cover": "covers/tho-hay-danh-cho-tre-em-tap-2.jpg"
     },
     {
       "id": 1573,
@@ -3914,7 +3917,8 @@
       "category": "Thiếu nhi",
       "pages": 12,
       "size_mb": 9.28,
-      "pdf": "pdfs/truyen-co-tich-viet-nam-an-khe-tra-vang.pdf"
+      "pdf": "pdfs/truyen-co-tich-viet-nam-an-khe-tra-vang.pdf",
+      "cover": "covers/truyen-co-tich-viet-nam-an-khe-tra-vang.jpg"
     },
     {
       "id": 1574,
@@ -3923,7 +3927,8 @@
       "category": "Thiếu nhi",
       "pages": 16,
       "size_mb": 5.41,
-      "pdf": "pdfs/truyen-co-tich-viet-nam-cau-be-thong-minh.pdf"
+      "pdf": "pdfs/truyen-co-tich-viet-nam-cau-be-thong-minh.pdf",
+      "cover": "covers/truyen-co-tich-viet-nam-cau-be-thong-minh.jpg"
     },
     {
       "id": 1575,
@@ -3932,7 +3937,8 @@
       "category": "Thiếu nhi",
       "pages": 33,
       "size_mb": 6.88,
-      "pdf": "pdfs/truyen-co-tich-viet-nam-cay-tre-tram-dot.pdf"
+      "pdf": "pdfs/truyen-co-tich-viet-nam-cay-tre-tram-dot.pdf",
+      "cover": "covers/truyen-co-tich-viet-nam-cay-tre-tram-dot.jpg"
     },
     {
       "id": 1576,
@@ -3941,7 +3947,8 @@
       "category": "Thiếu nhi",
       "pages": 10,
       "size_mb": 1.67,
-      "pdf": "pdfs/truyen-co-tich-viet-nam-hai-anh-em.pdf"
+      "pdf": "pdfs/truyen-co-tich-viet-nam-hai-anh-em.pdf",
+      "cover": "covers/truyen-co-tich-viet-nam-hai-anh-em.jpg"
     },
     {
       "id": 1577,
@@ -3950,7 +3957,8 @@
       "category": "Thiếu nhi",
       "pages": 37,
       "size_mb": 2.73,
-      "pdf": "pdfs/truyen-co-tich-viet-nam-nam-hu-vang.pdf"
+      "pdf": "pdfs/truyen-co-tich-viet-nam-nam-hu-vang.pdf",
+      "cover": "covers/truyen-co-tich-viet-nam-nam-hu-vang.jpg"
     },
     {
       "id": 1578,
