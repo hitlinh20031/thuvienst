@@ -71,6 +71,11 @@
       "name": "Người cao tuổi",
       "count": 10,
       "size_gb": 0.03
+    },
+    {
+      "name": "Khuyến nông",
+      "count": 0,
+      "size_gb": 0
     }
   ],
   "books": [
