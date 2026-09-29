@@ -4367,7 +4367,8 @@
       "category": "Pháp luật/Doanh nghiệp, kinh doanh",
       "pages": 20,
       "size_mb": 9.16,
-      "pdf": "pdfs/luat-thue-gia-tri-gia-tang-2025.pdf"
+      "pdf": "pdfs/luat-thue-gia-tri-gia-tang-2025.pdf",
+      "cover": "covers/luat-thue-gia-tri-gia-tang-2025.jpg"
     },
     {
       "id": 1619,
@@ -4376,7 +4377,8 @@
       "category": "Pháp luật/Doanh nghiệp, kinh doanh",
       "pages": 15,
       "size_mb": 6.48,
-      "pdf": "pdfs/luat-thue-thu-nhap-ca-nhan-2025.pdf"
+      "pdf": "pdfs/luat-thue-thu-nhap-ca-nhan-2025.pdf",
+      "cover": "covers/luat-thue-thu-nhap-ca-nhan-2025.jpg"
     },
     {
       "id": 1620,
@@ -4385,7 +4387,8 @@
       "category": "Pháp luật/Doanh nghiệp, kinh doanh",
       "pages": 60,
       "size_mb": 3.78,
-      "pdf": "pdfs/so-tay-huong-dan-thuc-hien-nghia-vu-thue-danh-cho-ho-kinh-do.pdf"
+      "pdf": "pdfs/so-tay-huong-dan-thuc-hien-nghia-vu-thue-danh-cho-ho-kinh-do.pdf",
+      "cover": "covers/so-tay-huong-dan-thuc-hien-nghia-vu-thue-danh-cho-ho-kinh-do.jpg"
     },
     {
       "id": 1621,
@@ -4394,7 +4397,8 @@
       "category": "Pháp luật/Thừa kế, di chúc",
       "pages": 260,
       "size_mb": 4.09,
-      "pdf": "pdfs/luan-an-hinh-thuc-di-chuc-theo-plds-vn.pdf"
+      "pdf": "pdfs/luan-an-hinh-thuc-di-chuc-theo-plds-vn.pdf",
+      "cover": "covers/luan-an-hinh-thuc-di-chuc-theo-plds-vn.jpg"
     },
     {
       "id": 1622,
@@ -4403,7 +4407,8 @@
       "category": "Pháp luật/Thừa kế, di chúc",
       "pages": 164,
       "size_mb": 1.7,
-      "pdf": "pdfs/luan-an-thua-ke-theo-pl-theo-blds-2015.pdf"
+      "pdf": "pdfs/luan-an-thua-ke-theo-pl-theo-blds-2015.pdf",
+      "cover": "covers/luan-an-thua-ke-theo-pl-theo-blds-2015.jpg"
     },
     {
       "id": 1623,
@@ -4412,7 +4417,8 @@
       "category": "Pháp luật/Hôn nhân và gia đình",
       "pages": 0,
       "size_mb": 0.28,
-      "pdf": "pdfs/hoi-dap-pl-ve-hon-nhan-gia-dinh-01.doc"
+      "pdf": "pdfs/hoi-dap-pl-ve-hon-nhan-gia-dinh-01.doc",
+      "cover": "covers/hoi-dap-pl-ve-hon-nhan-gia-dinh-01.jpg"
     },
     {
       "id": 1624,
@@ -4421,7 +4427,8 @@
       "category": "Pháp luật/Hôn nhân và gia đình",
       "pages": 0,
       "size_mb": 0.09,
-      "pdf": "pdfs/hoi-dap-pl-ve-hon-nhan-gia-dinh-02.docx"
+      "pdf": "pdfs/hoi-dap-pl-ve-hon-nhan-gia-dinh-02.docx",
+      "cover": "covers/hoi-dap-pl-ve-hon-nhan-gia-dinh-02.jpg"
     },
     {
       "id": 1625,
@@ -4430,7 +4437,8 @@
       "category": "Pháp luật/Hôn nhân và gia đình",
       "pages": 38,
       "size_mb": 0.59,
-      "pdf": "pdfs/luat-hon-nhan-va-gia-dinh-2014.pdf"
+      "pdf": "pdfs/luat-hon-nhan-va-gia-dinh-2014.pdf",
+      "cover": "covers/luat-hon-nhan-va-gia-dinh-2014.jpg"
     },
     {
       "id": 1626,
