@@ -1,6 +1,6 @@
 {
-  "total": 452,
-  "total_size_gb": 9.71,
+  "total": 456,
+  "total_size_gb": 9.72,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -94,8 +94,8 @@
     },
     {
       "name": "Pháp luật/Đất đai",
-      "count": 0,
-      "size_gb": 0
+      "count": 4,
+      "size_gb": 0.01
     }
   ],
   "books": [
@@ -4166,6 +4166,42 @@
       "pages": 552,
       "size_mb": 5.54,
       "pdf": "pdfs/soi-gia-pho-wall-2-jordan-belfort.pdf"
+    },
+    {
+      "id": 1609,
+      "title": "Hỏi đáp PL về luật đất đai 2024_01",
+      "creator": "",
+      "category": "Pháp luật/Đất đai",
+      "pages": 209,
+      "size_mb": 4.3,
+      "pdf": "pdfs/hoi-dap-pl-ve-luat-dat-dai-2024-01.pdf"
+    },
+    {
+      "id": 1610,
+      "title": "Hỏi đáp PL về luật đất đai 2024_02",
+      "creator": "",
+      "category": "Pháp luật/Đất đai",
+      "pages": 46,
+      "size_mb": 0.52,
+      "pdf": "pdfs/hoi-dap-pl-ve-luat-dat-dai-2024-02.pdf"
+    },
+    {
+      "id": 1611,
+      "title": "Luật đất đai 2024",
+      "creator": "",
+      "category": "Pháp luật/Đất đai",
+      "pages": 94,
+      "size_mb": 1.28,
+      "pdf": "pdfs/luat-dat-dai-2024.pdf"
+    },
+    {
+      "id": 1612,
+      "title": "Sổ tay hướng dẫn công tác QLNN trong lĩnh vực đất đai",
+      "creator": "",
+      "category": "Pháp luật/Đất đai",
+      "pages": 189,
+      "size_mb": 2.59,
+      "pdf": "pdfs/so-tay-huong-dan-cong-tac-qlnn-trong-linh-vuc-dat-dai.pdf"
     }
   ]
 }
