@@ -9,8 +9,8 @@
     },
     {
       "name": "Kinh tế",
-      "count": 6,
-      "size_gb": 0.08
+      "count": 7,
+      "size_gb": 0.1
     },
     {
       "name": "Lãnh đạo Đảng, Nhà nước",
@@ -29,8 +29,8 @@
     },
     {
       "name": "Tài liệu",
-      "count": 5,
-      "size_gb": 0.06
+      "count": 4,
+      "size_gb": 0.05
     },
     {
       "name": "Văn hóa, xã hội",
@@ -3075,7 +3075,7 @@
       "id": 1464,
       "uuid": "3dd84d1485514bb7946c132d6e691e01",
       "title": "Bảo đảm an ninh kinh tế số: Từ ứng phó thách thức đến kiến tạo phát triển (5 kỳ)",
-      "category": "Tài liệu",
+      "category": "Kinh tế",
       "creator": "Song Linh, Trà My, Quang Huy, Bích Liên, Ngọc Hiếu, Đăng Phi, Duy Long",
       "pages": 22,
       "size_mb": 15.38
