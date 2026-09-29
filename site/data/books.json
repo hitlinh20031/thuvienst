@@ -3487,7 +3487,8 @@
       "category": "Nước ngoài",
       "pages": 318,
       "size_mb": 2.13,
-      "pdf": "pdfs/dac-nhan-tam-dale-carnegie.pdf"
+      "pdf": "pdfs/dac-nhan-tam-dale-carnegie.pdf",
+      "cover": "covers/dac-nhan-tam-dale-carnegie.jpg"
     },
     {
       "id": 1531,
@@ -3496,7 +3497,8 @@
       "category": "Nước ngoài",
       "pages": 593,
       "size_mb": 10.15,
-      "pdf": "pdfs/khong-gia-dinh-hectormalot.pdf"
+      "pdf": "pdfs/khong-gia-dinh-hectormalot.pdf",
+      "cover": "covers/khong-gia-dinh-hectormalot.jpg"
     },
     {
       "id": 1532,
@@ -3505,7 +3507,8 @@
       "category": "Nước ngoài",
       "pages": 206,
       "size_mb": 2.41,
-      "pdf": "pdfs/toi-tai-gioi-ban-cung-the-adam-khoo.pdf"
+      "pdf": "pdfs/toi-tai-gioi-ban-cung-the-adam-khoo.pdf",
+      "cover": "covers/toi-tai-gioi-ban-cung-the-adam-khoo.jpg"
     },
     {
       "id": 1533,
@@ -3514,7 +3517,8 @@
       "category": "Văn học và đời sống",
       "pages": 114,
       "size_mb": 1.36,
-      "pdf": "pdfs/cho-toi-xin-mot-ve-di-tuoi-tho-nguyen-nhat-anh.pdf"
+      "pdf": "pdfs/cho-toi-xin-mot-ve-di-tuoi-tho-nguyen-nhat-anh.pdf",
+      "cover": "covers/cho-toi-xin-mot-ve-di-tuoi-tho-nguyen-nhat-anh.jpg"
     },
     {
       "id": 1534,
@@ -3523,7 +3527,8 @@
       "category": "Văn học và đời sống",
       "pages": 212,
       "size_mb": 18.54,
-      "pdf": "pdfs/doi-nhan-xu-the-hai-huoc-nho-tri-tue-lon-gia-khanh.pdf"
+      "pdf": "pdfs/doi-nhan-xu-the-hai-huoc-nho-tri-tue-lon-gia-khanh.pdf",
+      "cover": "covers/doi-nhan-xu-the-hai-huoc-nho-tri-tue-lon-gia-khanh.jpg"
     },
     {
       "id": 1535,
@@ -3532,7 +3537,8 @@
       "category": "Văn học và đời sống",
       "pages": 93,
       "size_mb": 1.19,
-      "pdf": "pdfs/gio-dau-mua-thach-lam.pdf"
+      "pdf": "pdfs/gio-dau-mua-thach-lam.pdf",
+      "cover": "covers/gio-dau-mua-thach-lam.jpg"
     },
     {
       "id": 1536,
@@ -3541,7 +3547,8 @@
       "category": "Văn học và đời sống",
       "pages": 169,
       "size_mb": 0.91,
-      "pdf": "pdfs/ha-do-nguyen-nhat-anh.pdf"
+      "pdf": "pdfs/ha-do-nguyen-nhat-anh.pdf",
+      "cover": "covers/ha-do-nguyen-nhat-anh.jpg"
     },
     {
       "id": 1537,
@@ -3550,7 +3557,8 @@
       "category": "Văn học và đời sống",
       "pages": 77,
       "size_mb": 0.45,
-      "pdf": "pdfs/lua-thieng-huy-can.pdf"
+      "pdf": "pdfs/lua-thieng-huy-can.pdf",
+      "cover": "covers/lua-thieng-huy-can.jpg"
     },
     {
       "id": 1538,
