@@ -78,12 +78,7 @@
       "size_gb": 0
     },
     {
-      "name": "TestChaMoi",
-      "count": 0,
-      "size_gb": 0
-    },
-    {
-      "name": "TestChaMoi/TestCon",
+      "name": "TestCon",
       "count": 0,
       "size_gb": 0
     }
