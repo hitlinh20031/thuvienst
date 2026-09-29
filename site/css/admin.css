@@ -186,3 +186,9 @@ input[type=color]{width:48px;height:38px;padding:2px;border:1px solid var(--line
 .tp-btn{display:inline-block;margin-top:14px;padding:8px 16px;border-radius:20px;background:#c0392b;color:#fff;font-size:13.5px;font-weight:600}
 .tp-footer{margin-top:10px;padding:12px;text-align:center;font-size:12.5px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:12px}
 .row-inline a.btn{display:inline-flex;align-items:center;text-decoration:none}
+
+/* ── danh mục mặc định khi tải lên ── */
+.up-default{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 14px;padding:12px 14px;background:#f8fafc;border:1px solid var(--line);border-radius:10px}
+.up-default label{font-size:14px;color:var(--txt);white-space:nowrap}
+.up-default select{min-width:250px}
+.up-default .hint{flex:1;min-width:250px}

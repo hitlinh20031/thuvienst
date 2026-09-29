@@ -690,6 +690,25 @@ async function saveTheme() {
 }
 
 /*══════════════ 4. TẢI LÊN PDF ══════════════*/
+/* Danh mục đã chọn cho lần tải này (ưu tiên ô đang chọn → lần trước → đầu tiên) */
+function defaultCat() {
+  const cur = $('#upCat') ? $('#upCat').value : '';
+  if (cur) return cur;
+  const saved = localStorage.getItem('adm_upcat');
+  if (saved && data.categories.some(c => c.name === saved)) return saved;
+  return data.categories[0] ? data.categories[0].name : '';
+}
+
+function fillUpCat() {
+  const sel = $('#upCat');
+  if (!sel || !data) return;
+  const want = sel.value || localStorage.getItem('adm_upcat');
+  sel.innerHTML = catOptions('');
+  sel.value = (want && data.categories.some(c => c.name === want))
+    ? want
+    : (data.categories[0] ? data.categories[0].name : '');
+}
+
 function slugify(s) {
   return String(s || '')
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
@@ -741,7 +760,7 @@ function addFiles(fileList) {
       file: f,
       title: base,
       creator: '',
-      category: data.categories[0] ? data.categories[0].name : '',
+      category: defaultCat(),
       pages: 0,
       blobSha: null
     });
@@ -853,6 +872,7 @@ function renderAll() {
     data.categories.map(c => `<option>${esc(c.name)}</option>`).join('');
   $('#bookCatFilter').value = cur;
   $('#bulkCat').innerHTML = catOptions('');
+  fillUpCat();
   $('#statLine').textContent = `${data.books.length} sách · ${data.categories.length} danh mục`;
   applyBookFilter();
 }
@@ -926,6 +946,17 @@ function bind() {
   ['dragenter', 'dragover'].forEach(ev => dz.addEventListener(ev, e => { e.preventDefault(); dz.classList.add('over'); }));
   ['dragleave', 'drop'].forEach(ev => dz.addEventListener(ev, e => { e.preventDefault(); dz.classList.remove('over'); }));
   dz.addEventListener('drop', e => addFiles(e.dataTransfer.files));
+
+  // danh mục mặc định cho lần tải: chọn 1 lần, áp dụng cho mọi file
+  $('#upCat').addEventListener('change', e => {
+    const v = e.target.value;
+    localStorage.setItem('adm_upcat', v);
+    if (queue.length) {
+      queue.forEach(q => { q.category = v; });
+      renderQueue();
+      toast(`Đã đổi danh mục của ${queue.length} file thành "${v}".`);
+    }
+  });
 
   $('#queueBody').addEventListener('input', e => {
     const el = e.target;
