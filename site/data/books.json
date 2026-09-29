@@ -3807,7 +3807,8 @@
       "category": "Thiếu nhi",
       "pages": 15,
       "size_mb": 16.2,
-      "pdf": "pdfs/nhung-chu-kien-ban-ron.pdf"
+      "pdf": "pdfs/nhung-chu-kien-ban-ron.pdf",
+      "cover": "covers/nhung-chu-kien-ban-ron.jpg"
     },
     {
       "id": 1563,
@@ -3816,7 +3817,8 @@
       "category": "Thiếu nhi",
       "pages": 55,
       "size_mb": 3.01,
-      "pdf": "pdfs/stem-mam-non-giac-giac-quan-cua-em.pdf"
+      "pdf": "pdfs/stem-mam-non-giac-giac-quan-cua-em.pdf",
+      "cover": "covers/stem-mam-non-giac-giac-quan-cua-em.jpg"
     },
     {
       "id": 1564,
@@ -3825,7 +3827,8 @@
       "category": "Thiếu nhi",
       "pages": 67,
       "size_mb": 1.6,
-      "pdf": "pdfs/stem-mam-non-giac-mo-rung-xanh.pdf"
+      "pdf": "pdfs/stem-mam-non-giac-mo-rung-xanh.pdf",
+      "cover": "covers/stem-mam-non-giac-mo-rung-xanh.jpg"
     },
     {
       "id": 1565,
@@ -3834,7 +3837,8 @@
       "category": "Thiếu nhi",
       "pages": 65,
       "size_mb": 3.6,
-      "pdf": "pdfs/stem-mam-non-khi-em-lon-len.pdf"
+      "pdf": "pdfs/stem-mam-non-khi-em-lon-len.pdf",
+      "cover": "covers/stem-mam-non-khi-em-lon-len.jpg"
     },
     {
       "id": 1566,
@@ -3843,7 +3847,8 @@
       "category": "Thiếu nhi",
       "pages": 55,
       "size_mb": 3.51,
-      "pdf": "pdfs/stem-mam-non-mot-ngay-o-thanh-pho.pdf"
+      "pdf": "pdfs/stem-mam-non-mot-ngay-o-thanh-pho.pdf",
+      "cover": "covers/stem-mam-non-mot-ngay-o-thanh-pho.jpg"
     },
     {
       "id": 1567,
@@ -3852,7 +3857,8 @@
       "category": "Thiếu nhi",
       "pages": 65,
       "size_mb": 3.64,
-      "pdf": "pdfs/stem-mam-non-ngay-xua-ngay-xua-co-mot-hanh-tinh-xanh.pdf"
+      "pdf": "pdfs/stem-mam-non-ngay-xua-ngay-xua-co-mot-hanh-tinh-xanh.pdf",
+      "cover": "covers/stem-mam-non-ngay-xua-ngay-xua-co-mot-hanh-tinh-xanh.jpg"
     },
     {
       "id": 1568,
@@ -3861,7 +3867,8 @@
       "category": "Thiếu nhi",
       "pages": 57,
       "size_mb": 3.28,
-      "pdf": "pdfs/stem-mam-non-nhin-vao-vu-tru.pdf"
+      "pdf": "pdfs/stem-mam-non-nhin-vao-vu-tru.pdf",
+      "cover": "covers/stem-mam-non-nhin-vao-vu-tru.jpg"
     },
     {
       "id": 1569,
@@ -3870,7 +3877,8 @@
       "category": "Thiếu nhi",
       "pages": 9,
       "size_mb": 1.07,
-      "pdf": "pdfs/su-tu-va-chuot-nhat.pdf"
+      "pdf": "pdfs/su-tu-va-chuot-nhat.pdf",
+      "cover": "covers/su-tu-va-chuot-nhat.jpg"
     },
     {
       "id": 1570,
