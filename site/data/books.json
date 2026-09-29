@@ -1,6 +1,6 @@
 {
-  "total": 456,
-  "total_size_gb": 9.72,
+  "total": 464,
+  "total_size_gb": 9.75,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -99,8 +99,8 @@
     },
     {
       "name": "Pháp luật/Doanh nghiệp, kinh doanh",
-      "count": 0,
-      "size_gb": 0
+      "count": 8,
+      "size_gb": 0.03
     }
   ],
   "books": [
@@ -4207,6 +4207,78 @@
       "pages": 189,
       "size_mb": 2.59,
       "pdf": "pdfs/so-tay-huong-dan-cong-tac-qlnn-trong-linh-vuc-dat-dai.pdf"
+    },
+    {
+      "id": 1613,
+      "title": "Cẩm nang danh mục tài liệu pháp lý doanh nghiệp cần có",
+      "creator": "",
+      "category": "Pháp luật/Doanh nghiệp, kinh doanh",
+      "pages": 15,
+      "size_mb": 4.69,
+      "pdf": "pdfs/cam-nang-danh-muc-tai-lieu-phap-ly-doanh-nghiep-can-co.pdf"
+    },
+    {
+      "id": 1614,
+      "title": "Cẩm nang hệ thống chính sách thuế và thủ tục đối với cá nhân chuyển nhượng bất động sản",
+      "creator": "",
+      "category": "Pháp luật/Doanh nghiệp, kinh doanh",
+      "pages": 10,
+      "size_mb": 2.71,
+      "pdf": "pdfs/cam-nang-he-thong-chinh-sach-thue-va-thu-tuc-doi-voi-ca-nhan.pdf"
+    },
+    {
+      "id": 1615,
+      "title": "Hỏi đáp PL các VB QĐ về công tác hỗ trợ pháp lý cho DN vừa và nhỏ và Luật hợp tác xã 2023",
+      "creator": "",
+      "category": "Pháp luật/Doanh nghiệp, kinh doanh",
+      "pages": 143,
+      "size_mb": 1.19,
+      "pdf": "pdfs/hoi-dap-pl-cac-vb-qd-ve-cong-tac-ho-tro-phap-ly-cho-dn-vua-v.pdf"
+    },
+    {
+      "id": 1616,
+      "title": "Hỏi đáp PL về doanh nghiệp 2020",
+      "creator": "",
+      "category": "Pháp luật/Doanh nghiệp, kinh doanh",
+      "pages": 33,
+      "size_mb": 0.37,
+      "pdf": "pdfs/hoi-dap-pl-ve-doanh-nghiep-2020.pdf"
+    },
+    {
+      "id": 1617,
+      "title": "Luật đầu tư 2025",
+      "creator": "",
+      "category": "Pháp luật/Doanh nghiệp, kinh doanh",
+      "pages": 76,
+      "size_mb": 1.15,
+      "pdf": "pdfs/luat-dau-tu-2025.pdf"
+    },
+    {
+      "id": 1618,
+      "title": "Luật thuế giá trị gia tăng 2025",
+      "creator": "",
+      "category": "Pháp luật/Doanh nghiệp, kinh doanh",
+      "pages": 20,
+      "size_mb": 9.16,
+      "pdf": "pdfs/luat-thue-gia-tri-gia-tang-2025.pdf"
+    },
+    {
+      "id": 1619,
+      "title": "Luật thuế thu nhập cá nhân 2025",
+      "creator": "",
+      "category": "Pháp luật/Doanh nghiệp, kinh doanh",
+      "pages": 15,
+      "size_mb": 6.48,
+      "pdf": "pdfs/luat-thue-thu-nhap-ca-nhan-2025.pdf"
+    },
+    {
+      "id": 1620,
+      "title": "Sổ tay hướng dẫn thực hiện nghĩa vụ thuế dành cho hộ kinh doanh, cá nhân kinh doanh",
+      "creator": "",
+      "category": "Pháp luật/Doanh nghiệp, kinh doanh",
+      "pages": 60,
+      "size_mb": 3.78,
+      "pdf": "pdfs/so-tay-huong-dan-thuc-hien-nghia-vu-thue-danh-cho-ho-kinh-do.pdf"
     }
   ]
 }
