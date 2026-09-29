@@ -9,8 +9,8 @@
     },
     {
       "name": "Các ấn phẩm khác",
-      "count": 2,
-      "size_gb": 0.03
+      "count": 1,
+      "size_gb": 0.01
     },
     {
       "name": "Kinh tế",
@@ -64,8 +64,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 47,
-      "size_gb": 1.3
+      "count": 48,
+      "size_gb": 1.32
     },
     {
       "name": "Người cao tuổi",
@@ -1627,7 +1627,7 @@
       "id": 794,
       "uuid": "62e5ddf5735c4c20b32ff5e0e3f9edd0",
       "title": "Mối quan hệ giữa thực hành dân chủ và tăng cường pháp chế, bảo đảm kỷ cương xã hội (Sách chuyên khảo)",
-      "category": "Các ấn phẩm khác",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "PGS.TS. Vũ Trọng Lâm (Chủ biên)",
       "pages": 402,
       "size_mb": 15.21
