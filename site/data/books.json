@@ -1,5 +1,5 @@
 {
-  "total": 441,
+  "total": 443,
   "total_size_gb": 9.69,
   "categories": [
     {
@@ -54,7 +54,7 @@
     },
     {
       "name": "Nước ngoài",
-      "count": 8,
+      "count": 10,
       "size_gb": 0.03
     },
     {
@@ -4062,6 +4062,24 @@
       "pages": 654,
       "size_mb": 2.95,
       "pdf": "pdfs/tuoi-tho-du-doi-phung-quan.pdf"
+    },
+    {
+      "id": 1598,
+      "title": "Chúa ruồi_William Golding",
+      "creator": "William Golding",
+      "category": "Nước ngoài",
+      "pages": 253,
+      "size_mb": 0.91,
+      "pdf": "pdfs/chua-ruoi-william-golding.pdf"
+    },
+    {
+      "id": 1599,
+      "title": "Lâu đài bay của pháp sư Howl_Diana Wynne Jones",
+      "creator": "Diana Wynne Jones",
+      "category": "Nước ngoài",
+      "pages": 183,
+      "size_mb": 0.75,
+      "pdf": "pdfs/lau-dai-bay-cua-phap-su-howl-diana-wynne-jones.pdf"
     }
   ]
 }
