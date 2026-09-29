@@ -29,8 +29,8 @@
     },
     {
       "name": "Tài liệu",
-      "count": 10,
-      "size_gb": 0.12
+      "count": 9,
+      "size_gb": 0.11
     },
     {
       "name": "Văn hóa, xã hội",
@@ -44,8 +44,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 55,
-      "size_gb": 1.39
+      "count": 56,
+      "size_gb": 1.4
     },
     {
       "name": "Người cao tuổi",
@@ -3012,7 +3012,7 @@
       "id": 1457,
       "uuid": "f2ab93379c2b4741980ddbea96d5756d",
       "title": "Tiếng nói lạc lõng giữa nỗi đau đồng bào",
-      "category": "Tài liệu",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "Nguyễn Tiến Hiếu",
       "pages": 21,
       "size_mb": 8.61
