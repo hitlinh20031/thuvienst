@@ -29,8 +29,8 @@
     },
     {
       "name": "Mới",
-      "count": 1,
-      "size_gb": 0.01
+      "count": 0,
+      "size_gb": 0
     },
     {
       "name": "Những vấn đề quốc tế",
@@ -84,8 +84,8 @@
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
-      "count": 0,
-      "size_gb": 0
+      "count": 1,
+      "size_gb": 0.01
     }
   ],
   "books": [
@@ -3351,7 +3351,7 @@
       "id": 1501,
       "uuid": "9ad4043bb3ba4b3e9ebe85482188a1c4",
       "title": "Những nội dung cơ bản về chuyển đổi số: Hỏi và đáp",
-      "category": "Mới",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
       "creator": "",
       "pages": 226,
       "size_mb": 5.76
