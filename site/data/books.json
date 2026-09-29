@@ -29,8 +29,8 @@
     },
     {
       "name": "Mới",
-      "count": 3,
-      "size_gb": 0.08
+      "count": 2,
+      "size_gb": 0.07
     },
     {
       "name": "Những vấn đề quốc tế",
@@ -54,8 +54,8 @@
     },
     {
       "name": "Văn hóa, xã hội",
-      "count": 9,
-      "size_gb": 0.17
+      "count": 10,
+      "size_gb": 0.19
     },
     {
       "name": "Văn kiện Đảng",
@@ -3337,7 +3337,7 @@
       "id": 1500,
       "uuid": "b33e15985add4953bdc628d0212d35c7",
       "title": "Tài liệu chuyên đề: Nhiệm vụ, giải pháp xây dựng, phát triển văn hóa và con người Việt Nam, giáo dục, khoa học và công nghệ theo tinh thần Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng (Dùng cho lãnh đạo các cơ quan báo chí, xuất bản; lãnh đạ",
-      "category": "Mới",
+      "category": "Văn hóa, xã hội",
       "creator": "",
       "pages": 218,
       "size_mb": 16.05
