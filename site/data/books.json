@@ -29,8 +29,8 @@
     },
     {
       "name": "Tài liệu",
-      "count": 7,
-      "size_gb": 0.09
+      "count": 6,
+      "size_gb": 0.08
     },
     {
       "name": "Văn hóa, xã hội",
@@ -44,8 +44,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 57,
-      "size_gb": 1.41
+      "count": 58,
+      "size_gb": 1.42
     },
     {
       "name": "Người cao tuổi",
@@ -3048,7 +3048,7 @@
       "id": 1461,
       "uuid": "754aae67c661418da74626a10283a5e0",
       "title": "Chùm bài viết: Xây dựng “Hệ miễn dịch số” trên trận địa tư tưởng",
-      "category": "Tài liệu",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "Vũ Mai Hoàng",
       "pages": 49,
       "size_mb": 11.6
