@@ -29,8 +29,8 @@
     },
     {
       "name": "Tài liệu",
-      "count": 9,
-      "size_gb": 0.11
+      "count": 8,
+      "size_gb": 0.1
     },
     {
       "name": "Văn hóa, xã hội",
@@ -44,8 +44,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 56,
-      "size_gb": 1.4
+      "count": 57,
+      "size_gb": 1.41
     },
     {
       "name": "Người cao tuổi",
@@ -3021,7 +3021,7 @@
       "id": 1458,
       "uuid": "2287897ba7cf495891fb39a072f22267",
       "title": "Loạt bài 3 kỳ: \"Khi sự im lặng không còn vô can\"",
-      "category": "Tài liệu",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "Cù Tất Dũng",
       "pages": 13,
       "size_mb": 12.18
