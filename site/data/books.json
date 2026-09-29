@@ -49,8 +49,8 @@
     },
     {
       "name": "Tài liệu",
-      "count": 15,
-      "size_gb": 0.21
+      "count": 14,
+      "size_gb": 0.19
     },
     {
       "name": "Văn hóa, xã hội",
@@ -64,8 +64,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 54,
-      "size_gb": 1.37
+      "count": 55,
+      "size_gb": 1.39
     },
     {
       "name": "Người cao tuổi",
@@ -3000,7 +3000,7 @@
       "id": 1454,
       "uuid": "dcf1da0eaf8347d59b709b4c6cf2f87e",
       "title": "Xây dựng xã hội trật tự, kỷ cương, an toàn, lành mạnh, nền tảng cốt yếu của phát triển bền vững trong kỷ nguyên vươn mình của dân tộc",
-      "category": "Tài liệu",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "Nguyễn Hữu Tuấn",
       "pages": 10,
       "size_mb": 15.25
