@@ -9,8 +9,8 @@
     },
     {
       "name": "Các ấn phẩm khác",
-      "count": 1,
-      "size_gb": 0.01
+      "count": 0,
+      "size_gb": 0
     },
     {
       "name": "Kinh tế",
@@ -64,8 +64,8 @@
     },
     {
       "name": "Xây dựng Đảng, Nhà nước",
-      "count": 48,
-      "size_gb": 1.32
+      "count": 49,
+      "size_gb": 1.33
     },
     {
       "name": "Người cao tuổi",
@@ -1906,7 +1906,7 @@
       "id": 1008,
       "uuid": "ee5a0e7060a94ae495e9735a49f34e20",
       "title": "Quy định về kỷ luật tổ chức đảng, đảng viên vi phạm",
-      "category": "Các ấn phẩm khác",
+      "category": "Xây dựng Đảng, Nhà nước",
       "creator": "Ủy ban Kiểm tra Trung ương",
       "pages": 254,
       "size_mb": 12.55
