@@ -1,5 +1,5 @@
 {
-  "total": 467,
+  "total": 466,
   "total_size_gb": 9.75,
   "categories": [
     {
@@ -74,7 +74,7 @@
     },
     {
       "name": "Các ấn phẩm khác",
-      "count": 1,
+      "count": 0,
       "size_gb": 0
     },
     {
@@ -4292,15 +4292,6 @@
       "pages": 164,
       "size_mb": 1.7,
       "pdf": "pdfs/luan-an-thua-ke-theo-pl-theo-blds-2015.pdf"
-    },
-    {
-      "id": 1623,
-      "title": "TEST docx xoa sau",
-      "creator": "",
-      "category": "Các ấn phẩm khác",
-      "pages": 0,
-      "size_mb": 0,
-      "pdf": "pdfs/test-docx-xoa-sau.docx"
     }
   ]
 }
