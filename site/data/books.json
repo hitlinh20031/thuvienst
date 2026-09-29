@@ -3967,7 +3967,8 @@
       "category": "Thiếu nhi",
       "pages": 35,
       "size_mb": 3.18,
-      "pdf": "pdfs/truyen-co-tich-viet-nam-so-dua.pdf"
+      "pdf": "pdfs/truyen-co-tich-viet-nam-so-dua.pdf",
+      "cover": "covers/truyen-co-tich-viet-nam-so-dua.jpg"
     },
     {
       "id": 1579,
@@ -3976,7 +3977,8 @@
       "category": "Thiếu nhi",
       "pages": 6,
       "size_mb": 17.23,
-      "pdf": "pdfs/truyen-co-tich-viet-nam-su-tich-banh-chung-banh-day.pdf"
+      "pdf": "pdfs/truyen-co-tich-viet-nam-su-tich-banh-chung-banh-day.pdf",
+      "cover": "covers/truyen-co-tich-viet-nam-su-tich-banh-chung-banh-day.jpg"
     },
     {
       "id": 1580,
@@ -3985,7 +3987,8 @@
       "category": "Thiếu nhi",
       "pages": 12,
       "size_mb": 7.31,
-      "pdf": "pdfs/truyen-co-tich-viet-nam-thanh-giong.pdf"
+      "pdf": "pdfs/truyen-co-tich-viet-nam-thanh-giong.pdf",
+      "cover": "covers/truyen-co-tich-viet-nam-thanh-giong.jpg"
     },
     {
       "id": 1581,
@@ -3994,7 +3997,8 @@
       "category": "Thiếu nhi",
       "pages": 8,
       "size_mb": 1.86,
-      "pdf": "pdfs/truyen-co-tich-viet-nam-tri-khon-cua-ta-day.pdf"
+      "pdf": "pdfs/truyen-co-tich-viet-nam-tri-khon-cua-ta-day.pdf",
+      "cover": "covers/truyen-co-tich-viet-nam-tri-khon-cua-ta-day.jpg"
     },
     {
       "id": 1582,
@@ -4003,7 +4007,8 @@
       "category": "Thiếu nhi",
       "pages": 22,
       "size_mb": 0.54,
-      "pdf": "pdfs/truyen-ngu-ngon-con-lua-bi-mat.pdf"
+      "pdf": "pdfs/truyen-ngu-ngon-con-lua-bi-mat.pdf",
+      "cover": "covers/truyen-ngu-ngon-con-lua-bi-mat.jpg"
     },
     {
       "id": 1583,
@@ -4012,7 +4017,8 @@
       "category": "Thiếu nhi",
       "pages": 35,
       "size_mb": 3.45,
-      "pdf": "pdfs/truyen-tieng-nhac-ve.pdf"
+      "pdf": "pdfs/truyen-tieng-nhac-ve.pdf",
+      "cover": "covers/truyen-tieng-nhac-ve.jpg"
     },
     {
       "id": 1584,
@@ -4021,7 +4027,8 @@
       "category": "Chủ tịch Hồ Chí Minh",
       "pages": 113,
       "size_mb": 0.65,
-      "pdf": "pdfs/ban-an-che-do-thuc-dan-phap-nguyen-ai-quoc.pdf"
+      "pdf": "pdfs/ban-an-che-do-thuc-dan-phap-nguyen-ai-quoc.pdf",
+      "cover": "covers/ban-an-che-do-thuc-dan-phap-nguyen-ai-quoc.jpg"
     },
     {
       "id": 1585,
@@ -4030,7 +4037,8 @@
       "category": "Văn học và đời sống",
       "pages": 172,
       "size_mb": 0.51,
-      "pdf": "pdfs/bi-vo-nguyen-hong.pdf"
+      "pdf": "pdfs/bi-vo-nguyen-hong.pdf",
+      "cover": "covers/bi-vo-nguyen-hong.jpg"
     },
     {
       "id": 1586,
