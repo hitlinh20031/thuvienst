@@ -29,7 +29,7 @@
     },
     {
       "name": "Mới",
-      "count": 13,
+      "count": 12,
       "size_gb": 0.18
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "name": "Người cao tuổi",
-      "count": 0,
+      "count": 1,
       "size_gb": 0
     }
   ],
@@ -3588,7 +3588,7 @@
       "id": 1506,
       "title": "Suối nguồn tươi trẻ_Peter Kelder",
       "creator": "Peter Kelder",
-      "category": "Mới",
+      "category": "Người cao tuổi",
       "pages": 29,
       "size_mb": 0.64,
       "pdf": "pdfs/suoi-nguon-tuoi-tre-peter-kelder.pdf"
