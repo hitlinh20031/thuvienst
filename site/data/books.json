@@ -1,5 +1,5 @@
 {
-  "total": 464,
+  "total": 467,
   "total_size_gb": 9.54,
   "categories": [
     {
@@ -59,8 +59,8 @@
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
-      "count": 1,
-      "size_gb": 0.01
+      "count": 4,
+      "size_gb": 0.02
     },
     {
       "name": "Văn học và đời sống",
@@ -4396,6 +4396,36 @@
       "size_mb": 0.03,
       "pdf": "pdfs/tinh-huong-ve-pl-hon-nhan-va-gia-dinh.docx",
       "cover": "covers/tinh-huong-ve-pl-hon-nhan-va-gia-dinh.jpg"
+    },
+    {
+      "id": 1628,
+      "title": "AI trong cuộc cách mạng công nghệ 4.0_Ajay Agrawal & Joshua Gans & Avi Goldfarb",
+      "creator": "",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 224,
+      "size_mb": 0.89,
+      "pdf": "pdfs/ai-trong-cuoc-cach-mang-cong-nghe-4-0-ajay-agrawal-joshua-ga.pdf",
+      "cover": "covers/ai-trong-cuoc-cach-mang-cong-nghe-4-0-ajay-agrawal-joshua-ga.jpg"
+    },
+    {
+      "id": 1629,
+      "title": "Cách mạng công nghiệp 4.0 với phát triển khoa học công nghệ ở Việt Nam",
+      "creator": "",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 7,
+      "size_mb": 0.52,
+      "pdf": "pdfs/cach-mang-cong-nghiep-4-0-voi-phat-trien-khoa-hoc-cong-nghe-.pdf",
+      "cover": "covers/cach-mang-cong-nghiep-4-0-voi-phat-trien-khoa-hoc-cong-nghe-.jpg"
+    },
+    {
+      "id": 1630,
+      "title": "Công nghiệp 4.0 xu hướng toàn cầu và gợi ý cho Việt Nam",
+      "creator": "",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 11,
+      "size_mb": 1.03,
+      "pdf": "pdfs/cong-nghiep-4-0-xu-huong-toan-cau-va-goi-y-cho-viet-nam.pdf",
+      "cover": "covers/cong-nghiep-4-0-xu-huong-toan-cau-va-goi-y-cho-viet-nam.jpg"
     }
   ]
 }
