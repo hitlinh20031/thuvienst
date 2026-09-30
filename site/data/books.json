@@ -1,6 +1,6 @@
 {
-  "total": 471,
-  "total_size_gb": 9.76,
+  "total": 470,
+  "total_size_gb": 9.75,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -14,8 +14,8 @@
     },
     {
       "name": "Lãnh đạo Đảng, Nhà nước",
-      "count": 70,
-      "size_gb": 2.39
+      "count": 69,
+      "size_gb": 2.38
     },
     {
       "name": "Pháp luật",
@@ -2222,15 +2222,6 @@
       "creator": "Nguyễn Phú Trọng",
       "pages": 666,
       "size_mb": 18.52
-    },
-    {
-      "id": 1088,
-      "uuid": "7f3c337b0f694e0fad2dca17bb5f8244",
-      "title": "Quyết tâm ngăn chặn và đẩy lùi tham nhũng (Tiếng Lào)",
-      "category": "Lãnh đạo Đảng, Nhà nước",
-      "creator": "Nguyễn Phú Trọng",
-      "pages": 386,
-      "size_mb": 6.54
     },
     {
       "id": 1089,
