@@ -1,6 +1,6 @@
 {
-  "total": 466,
-  "total_size_gb": 9.6,
+  "total": 464,
+  "total_size_gb": 9.54,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -24,8 +24,8 @@
     },
     {
       "name": "Quốc phòng, an ninh, đối ngoại",
-      "count": 14,
-      "size_gb": 0.33
+      "count": 12,
+      "size_gb": 0.27
     },
     {
       "name": "Văn hóa, xã hội",
@@ -1637,24 +1637,6 @@
       "creator": "Nguyễn Phú Trọng",
       "pages": 446,
       "size_mb": 18.9
-    },
-    {
-      "id": 815,
-      "uuid": "8b10365ec95846758586087be4913a3a",
-      "title": "Lịch sử 60 năm quan hệ quốc phòng Việt Nam - Cuba (1960- 2020) - 60 años de historia de las relaciones de defensa entre Vietnam y Cuba (1960 - 2020)",
-      "category": "Quốc phòng, an ninh, đối ngoại",
-      "creator": "Ministerio de defensa Instituto de historia militar de Vietnam",
-      "pages": 438,
-      "size_mb": 13.43
-    },
-    {
-      "id": 816,
-      "uuid": "d7a620e5c1e54da2b9212fc9eb6a9605",
-      "title": "Quan hệ quốc phòng Việt Nam - Cuba (1960-2020) - Biên niên sự kiện - Relaciones de defensa Vietnam-Cuba. Crónica de eventos (1960- 2020)",
-      "category": "Quốc phòng, an ninh, đối ngoại",
-      "creator": "Ministerio de defensa Instituto de historia militar de Vietnam",
-      "pages": 514,
-      "size_mb": 49.95
     },
     {
       "id": 824,
