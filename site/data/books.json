@@ -1,6 +1,6 @@
 {
-  "total": 467,
-  "total_size_gb": 9.54,
+  "total": 469,
+  "total_size_gb": 9.55,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -59,7 +59,7 @@
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
-      "count": 4,
+      "count": 6,
       "size_gb": 0.02
     },
     {
@@ -4426,6 +4426,26 @@
       "size_mb": 1.03,
       "pdf": "pdfs/cong-nghiep-4-0-xu-huong-toan-cau-va-goi-y-cho-viet-nam.pdf",
       "cover": "covers/cong-nghiep-4-0-xu-huong-toan-cau-va-goi-y-cho-viet-nam.jpg"
+    },
+    {
+      "id": 1631,
+      "title": "Sóng Thần Công Nghệ_ Trí Tuệ Nhân Tạo, Quyền Lực Và Thách Thức Nhất Thế Kỷ 21 - Mustafa Suleyman & Michael Bhaskar & AI (dịch)",
+      "creator": "",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 405,
+      "size_mb": 3.04,
+      "pdf": "pdfs/song-than-cong-nghe-tri-tue-nhan-tao-quyen-luc-va-thach-thuc.pdf",
+      "cover": "covers/song-than-cong-nghe-tri-tue-nhan-tao-quyen-luc-va-thach-thuc.jpg"
+    },
+    {
+      "id": 1632,
+      "title": "Inevitable_ Lam Chu Cong Nghe, Lam Chu Tuong Lai, The - Kevin Kelly",
+      "creator": "",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 278,
+      "size_mb": 0.87,
+      "pdf": "pdfs/inevitable-lam-chu-cong-nghe-lam-chu-tuong-lai-the-kevin-kel.pdf",
+      "cover": "covers/inevitable-lam-chu-cong-nghe-lam-chu-tuong-lai-the-kevin-kel.jpg"
     }
   ]
 }
