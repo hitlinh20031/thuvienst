@@ -475,10 +475,36 @@ function updatePageInfo() {
   document.getElementById('pageSlider').value = currentPage + 1;
 }
 
+/* ── Mũi tên “Quay lại” góc trái: về đúng trang vừa xem (danh mục, trang chủ…) ──
+   catalog.js ghi trang này vào sessionStorage khi bấm vào sách (trangtrước);
+   không có thì dùng lịch sử trình duyệt; vào thẳng trang đọc thì về trang chủ. */
+function backFromReader() {
+  let saved = '';
+  try { saved = sessionStorage.getItem('trv:back') || ''; } catch (e) { /* bỏ qua */ }
+  const sameSite = u => typeof u === 'string' && u.indexOf(location.origin) === 0 && u !== location.href;
+
+  if (sameSite(saved)) { location.href = saved; return; }              // sách mở ở tab riêng
+  if (sameSite(document.referrer) && history.length > 1) {             // cùng tab → lùi một bước
+    history.back();
+    return;
+  }
+  location.href = '/';                                                 // không có gì để lùi
+}
+
+function bindBackButton() {
+  const back = document.querySelector('.reader-back');
+  if (back) back.addEventListener('click', e => { e.preventDefault(); backFromReader(); });
+  document.addEventListener('click', e => {
+    const a = e.target && e.target.closest && e.target.closest('a[data-back]');
+    if (a) { e.preventDefault(); backFromReader(); }
+  });
+}
+bindBackButton();
+
 function showError(msg) {
   document.getElementById('readerLoading').style.display = 'flex';
   document.getElementById('readerLoading').innerHTML =
-    `<p style="color:#e57373">${msg}</p><a href="/" style="color:#90caf9;margin-top:8px;display:block">Quay lại thư viện</a>`;
+    `<p style="color:#e57373">${msg}</p><a href="/" data-back style="color:#90caf9;margin-top:8px;display:block">Quay lại thư viện</a>`;
 }
 
 /* ── Kéo lướt bằng chuột khi đang zoom (xem toàn trang) ── */

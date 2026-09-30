@@ -164,7 +164,34 @@ let currentCat = '';
 let currentSort = 'title';
 let searchQuery = '';
 
+/* Trở lại trang bằng nút back của trình duyệt → dựng lại đúng chỗ đang cuộn */
+function scrollMap() {
+  try { return JSON.parse(sessionStorage.getItem('trv:viTri') || '{}'); } catch (e) { return {}; }
+}
+
+function saveScroll() {
+  try {
+    const m = scrollMap();
+    m[location.href] = Math.round(window.scrollY);
+    const keys = Object.keys(m);
+    if (keys.length > 8) delete m[keys[0]];                 // giữ 8 trang gần nhất
+    sessionStorage.setItem('trv:viTri', JSON.stringify(m));
+  } catch (e) { /* bỏ qua */ }
+}
+
+function restoreScroll() {
+  const y = scrollMap()[location.href];
+  const nav = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0]) || null;
+  if (!y || !nav || nav.type !== 'back_forward') return;
+  const apply = () => { if (window.scrollY < y - 8) window.scrollTo(0, y); };
+  apply();
+  [250, 700, 1300].forEach(ms => setTimeout(apply, ms));    // chờ ảnh/bố cục dựng xong
+}
+
 async function init() {
+  // Trang này tự phục hồi vị trí cuộn khi bấm back → tắt cơ chế tự phục hồi mặc định
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
   const resp = await fetch('/data/books.json');
   const data = await resp.json();
   allBooks = data.books;
@@ -183,7 +210,9 @@ async function init() {
   renderChips();
   bindEvents();
   route();
+  restoreScroll();
   window.addEventListener('hashchange', route);
+  window.addEventListener('pagehide', saveScroll);
 
   // Cài đặt giao diện do admin sửa (site/data/settings.json)
   try {
@@ -383,7 +412,6 @@ function markActive() {
 
 function route() {
   const h = location.hash || HOME_HASH;
-  const prev = currentView();
 
   if (h.startsWith(CAT_HASH)) {
     const cat = decodeURIComponent(h.slice(CAT_HASH.length));
@@ -403,7 +431,8 @@ function route() {
   updateListingHead();
   markActive();
   applyFilters();
-  if (h !== (route.last || HOME_HASH) || prev !== currentView()) window.scrollTo(0, 0);
+  if (route.started && h !== route.last) window.scrollTo(0, 0);   // đổi danh mục → về đầu trang
+  route.started = true;                                            // lần đầu: giữ nguyên vị trí (trở về từ trình đọc)
   route.last = h;
 }
 
@@ -502,6 +531,19 @@ function bindEvents() {
     currentPage++;
     renderBooks();
   });
+
+  // Ghi lại trang đang xem để nút ← trong trình đọc quay về đúng chỗ đó
+  const bookGrid = document.getElementById('bookGrid');
+  const markBack = e => {
+    const card = e.target && e.target.closest && e.target.closest('.book-card');
+    if (!card) return;
+    const newTab = e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1;  // mở tab riêng
+    try { sessionStorage.setItem('trv:back', newTab ? location.href : ''); } catch (err) { /* bỏ qua */ }
+  };
+  if (bookGrid) {
+    bookGrid.addEventListener('click', markBack);
+    bookGrid.addEventListener('auxclick', markBack);   // chuột giữa
+  }
 
   const dropdown = document.getElementById('catDropdown');
   const toggle = dropdown.querySelector('.nav-drop-toggle');
