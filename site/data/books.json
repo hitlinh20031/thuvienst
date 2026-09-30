@@ -1,6 +1,6 @@
 {
-  "total": 469,
-  "total_size_gb": 9.55,
+  "total": 470,
+  "total_size_gb": 9.59,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -59,8 +59,8 @@
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
-      "count": 6,
-      "size_gb": 0.02
+      "count": 7,
+      "size_gb": 0.06
     },
     {
       "name": "Văn học và đời sống",
@@ -4446,6 +4446,16 @@
       "size_mb": 0.87,
       "pdf": "pdfs/inevitable-lam-chu-cong-nghe-lam-chu-tuong-lai-the-kevin-kel.pdf",
       "cover": "covers/inevitable-lam-chu-cong-nghe-lam-chu-tuong-lai-the-kevin-kel.jpg"
+    },
+    {
+      "id": 1633,
+      "title": "Hiểu Hết Về Công Nghệ",
+      "creator": "",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 257,
+      "size_mb": 39.97,
+      "pdf": "pdfs/hieu-het-ve-cong-nghe.pdf",
+      "cover": "covers/hieu-het-ve-cong-nghe.jpg"
     }
   ]
 }
