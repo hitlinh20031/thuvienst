@@ -374,7 +374,7 @@ body {
 .book-cover {
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 6 / 7;            /* bìa gọn hơn → chừa chỗ cho trọn tên sách */
   background: #f0f0f4;
   overflow: hidden;
 }
@@ -437,11 +437,8 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.4;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
   margin-bottom: 6px;
+  overflow-wrap: anywhere;         /* hiện trọn tên sách, không cắt … */
 }
 
 .book-meta {
