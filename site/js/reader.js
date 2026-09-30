@@ -330,6 +330,11 @@ function applyZoom() {
   stage.style.height = fitH + 'px';
   stage.style.transform = `scale(${zoom})`;
   document.getElementById('zoomLevel').textContent = Math.round(zoom * 100) + '%';
+
+  // khi đã vượt khung xem → bật chế độ kéo lướt (con trỏ nắm tay)
+  const sc = document.getElementById('stageScroll');
+  const canPan = sc.scrollWidth > sc.clientWidth + 1 || sc.scrollHeight > sc.clientHeight + 1;
+  sc.classList.toggle('can-pan', canPan);
 }
 
 function layoutAndCreate() {
@@ -348,8 +353,31 @@ function onResize() {
 }
 
 function setZoom(z) {
-  zoom = Math.min(ZOOMS[ZOOMS.length - 1], Math.max(ZOOMS[0], z));
+  const next = Math.min(ZOOMS[ZOOMS.length - 1], Math.max(ZOOMS[0], z));
+  if (Math.abs(next - zoom) < 1e-4) return;
+
+  const sc = document.getElementById('stageScroll');
+  const stage = document.getElementById('bookStage');
+  const scr = sc.getBoundingClientRect();
+  const cx = scr.left + scr.width / 2;
+  const cy = scr.top + scr.height / 2;
+
+  // toạ độ (theo khổ fit) của điểm đang nằm NGAY GIỮA khung xem
+  const stg = stage.getBoundingClientRect();
+  const px = (cx - stg.left) / zoom;
+  const py = (cy - stg.top) / zoom;
+
+  zoom = next;
   applyZoom();
+
+  // cuộn lại để chính điểm đó quay về giữa → zoom vào TÂM, khôngzoom vào góc
+  sc.scrollLeft = 0;
+  sc.scrollTop = 0;
+  const stg2 = stage.getBoundingClientRect();
+  const maxL = Math.max(0, sc.scrollWidth - sc.clientWidth);
+  const maxT = Math.max(0, sc.scrollHeight - sc.clientHeight);
+  sc.scrollLeft = Math.max(0, Math.min(maxL, stg2.left + px * zoom - cx));
+  sc.scrollTop = Math.max(0, Math.min(maxT, stg2.top + py * zoom - cy));
 }
 
 function stepZoom(dir) {
@@ -453,7 +481,56 @@ function showError(msg) {
     `<p style="color:#e57373">${msg}</p><a href="/" style="color:#90caf9;margin-top:8px;display:block">Quay lại thư viện</a>`;
 }
 
+/* ── Kéo lướt bằng chuột khi đang zoom (xem toàn trang) ── */
+function bindStageDrag() {
+  const sc = document.getElementById('stageScroll');
+  if (!sc || sc.dataset.dragBound) return;
+  sc.dataset.dragBound = '1';
+
+  let dragging = false, moved = 0, sx = 0, sy = 0, sl = 0, st = 0, pid = null;
+  let swallowUntil = 0;
+
+  sc.addEventListener('pointerdown', e => {
+    if (e.pointerType !== 'mouse' || e.button !== 0) return;   // cảm ứng: để cuộn tự nhiên
+    if (e.target.closest('button, a, .nav-arrow')) return;     // không kéo khi bấm nút
+    if (sc.scrollWidth <= sc.clientWidth + 1 && sc.scrollHeight <= sc.clientHeight + 1) return;
+    dragging = true;
+    moved = 0;
+    sx = e.clientX; sy = e.clientY;
+    sl = sc.scrollLeft; st = sc.scrollTop;
+    pid = e.pointerId;
+    try { sc.setPointerCapture(pid); } catch (err) {}
+    sc.classList.add('grabbing');
+  });
+
+  sc.addEventListener('pointermove', e => {
+    if (!dragging) return;
+    const dx = e.clientX - sx, dy = e.clientY - sy;
+    if (Math.abs(dx) + Math.abs(dy) > moved) moved = Math.abs(dx) + Math.abs(dy);
+    sc.scrollLeft = sl - dx;
+    sc.scrollTop = st - dy;
+    if (moved > 4) e.preventDefault();
+  });
+
+  const endDrag = () => {
+    if (!dragging) return;
+    dragging = false;
+    sc.classList.remove('grabbing');
+    if (moved > 4) swallowUntil = Date.now() + 300;   // vừa kéo → chặn click kế tiếp
+    try { if (pid != null) sc.releasePointerCapture(pid); } catch (err) {}
+    pid = null;
+  };
+  sc.addEventListener('pointerup', endDrag);
+  sc.addEventListener('pointercancel', endDrag);
+
+  // chặn click "vô tình" làm lật trang sau một cú kéo
+  sc.addEventListener('click', e => {
+    if (Date.now() < swallowUntil) { e.stopPropagation(); e.preventDefault(); }
+  }, true);
+}
+
 function bindControls() {
+  bindStageDrag();
   document.getElementById('btnPrev').addEventListener('click', goPrev);
   document.getElementById('btnNext').addEventListener('click', goNext);
   document.getElementById('btnLayout').addEventListener('click', toggleLayout);

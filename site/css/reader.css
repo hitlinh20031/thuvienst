@@ -333,3 +333,10 @@
 @media (max-width: 640px) {
   .reader-btn.zoom-value { min-width: 46px; padding: 0 5px; font-size: 11px; }
 }
+
+/* ── Kéo lướt khi zoom vượt khung xem ── */
+/* ── Kéo lướt khi zoom vượt khung xem ── */
+.stage-scroll.can-pan { cursor: grab; }
+.stage-scroll.grabbing,
+.stage-scroll.grabbing * { cursor: grabbing !important; }
+.stage-scroll.grabbing { user-select: none; }
