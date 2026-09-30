@@ -116,6 +116,17 @@ const CAT_ICONS = {
   'Mới':                      { svg: 'sparkles',  bg: '#fffbeb', color: '#d97706' },
   'Các ấn phẩm khác':        { svg: 'layers',    bg: '#f8fafc', color: '#475569' },
   'Những vấn đề quốc tế':    { svg: 'globe',     bg: '#ecfdf5', color: '#047857' },
+  'Người cao tuổi':           { svg: 'heart',     bg: '#fff1f2', color: '#e11d48' },
+  'Khuyến nông':              { svg: 'plant',     bg: '#ecfdf5', color: '#059669' },
+  'Nước ngoài':               { svg: 'globe',     bg: '#eff6ff', color: '#2563eb' },
+  'Khoa học, công nghệ, chuyển đổi số': { svg: 'cpu', bg: '#f5f3ff', color: '#7c3aed' },
+  'Văn học và đời sống':      { svg: 'book-open', bg: '#fff7ed', color: '#ea580c' },
+  'Thiếu nhi':                { svg: 'smile',     bg: '#fefce8', color: '#ca8a04' },
+  // danh mục con (Pháp luật)
+  'Đất đai':                   { svg: 'building',  bg: '#ecfeff', color: '#0891b2' },
+  'Doanh nghiệp, kinh doanh':  { svg: 'trending',  bg: '#fff7ed', color: '#ea580c' },
+  'Hôn nhân và gia đình':      { svg: 'heart',     bg: '#fff1f2', color: '#e11d48' },
+  'Thừa kế, di chúc':          { svg: 'file-text', bg: '#fefce8', color: '#a16207' },
 };
 const DEFAULT_CAT = { svg: 'book', bg: '#f8fafc', color: '#475569' };
 
@@ -134,6 +145,10 @@ const SVG_ICONS = {
   sparkles:   '<path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2z"/><path d="M5 16l.75 2.25L8 19l-2.25.75L5 22l-.75-2.25L2 19l2.25-.75L5 16z"/><path d="M19 14l.75 2.25L22 17l-2.25.75L19 20l-.75-2.25L16 17l2.25-.75L19 14z"/>',
   layers:     '<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>',
   book:       '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
+  heart:      '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
+  plant:      '<path d="M12 22v-9"/><path d="M12 13c0-3.9 3.1-7 7-7 0 3.9-3.1 7-7 7z"/><path d="M12 16c0-3.3-2.7-6-6-6 0 3.3 2.7 6 6 6z"/>',
+  cpu:        '<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="2" y1="15" x2="4" y2="15"/><line x1="20" y1="15" x2="22" y2="15"/>',
+  smile:      '<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>',
 };
 
 function svgIcon(name, color, size = 22) {
@@ -164,8 +179,11 @@ async function init() {
 
   renderStats(data);
   renderCategories();
-  applyFilters();
+  renderHome();
+  renderChips();
   bindEvents();
+  route();
+  window.addEventListener('hashchange', route);
 
   // Cài đặt giao diện do admin sửa (site/data/settings.json)
   try {
@@ -226,7 +244,7 @@ function renderCategories() {
   const item = (c, d) => {
     const style = CAT_ICONS[c.name] || CAT_ICONS[leafOf(c.name)] || DEFAULT_CAT;
     const total = catCount(c.name);                 // gồm cả mọi danh mục con
-    return `<a class="cat-item${d ? ' cat-sub' : ''}" data-cat="${esc(c.name)}"
+    return `<a class="cat-item${d ? ' cat-sub' : ''}" href="${hrefFor(c.name)}" data-cat="${esc(c.name)}"
         style="padding-left:${10 + d * 20}px">
         <span class="cat-item-icon" style="background:${style.bg};color:${style.color}">${svgIcon(style.svg, style.color, 16)}</span>
         <span class="cat-item-name">${esc(leafOf(c.name))}</span>
@@ -251,11 +269,142 @@ function renderCategories() {
   });
 
   menu.innerHTML =
-    `<a class="cat-item cat-item-all" data-cat="">
+    `<a class="cat-item cat-item-all" href="${hrefFor('')}" data-cat="">
       <span class="cat-item-name">Tất cả sách</span>
       <span class="cat-item-count">${allBooks.length}</span>
     </a>` + groups;
   catFilter.innerHTML = '<option value="">Tất cả danh mục</option>' + optHtml;
+}
+
+/* ═════════ ĐIỀU HƯỚNG HASH: #/ trang chủ · #/tat-ca · #/dm/<danh mục> ═════════ */
+const HOME_HASH = '#/';
+const ALL_HASH = '#/tat-ca';
+const CAT_HASH = '#/dm/';
+const hrefFor = cat => (cat ? CAT_HASH + encodeURIComponent(cat) : ALL_HASH);
+function go(h) { if (location.hash === h) route(); else location.hash = h; }
+
+function setView(v) { document.body.dataset.view = v; }
+function currentView() { return document.body.dataset.view || 'home'; }
+
+/* Trang chủ: lưới ô bấm “Tất cả sách” + từng danh mục (kèm danh mục con) */
+function renderHome() {
+  const grid = document.getElementById('homeGrid');
+  if (!grid) return;
+
+  const logo = (st, big) =>
+    `<span class="home-logo"${st.flat ? '' : ` style="background:${st.color}"`}>${svgIcon(st.svg, '#fff', big || 30)}</span>`;
+
+  const head = (href, st, name, count, foot) => `
+    <a class="home-card-head" href="${href}">
+      <span class="home-card-top">
+        ${logo(st)}
+        <span class="home-card-name">${name}</span>
+        <span class="home-card-count">${count}</span>
+      </span>
+      ${foot ? `<span class="home-card-foot"><span>${foot}</span><span class="home-go">&rarr;</span></span>` : ''}
+    </a>`;
+
+  const subRow = c => {
+    const st = CAT_ICONS[c.name] || CAT_ICONS[leafOf(c.name)] || DEFAULT_CAT;
+    return `<a class="home-sub" href="${hrefFor(c.name)}">
+      <span class="home-sub-dot" style="background:${st.bg};color:${st.color}">${svgIcon(st.svg, st.color, 14)}</span>
+      <span class="home-sub-name">${esc(leafOf(c.name))}</span>
+      <span class="home-sub-count">${catCount(c.name)}</span>
+    </a>`;
+  };
+
+  let html = `<div class="home-card home-card-all">
+      ${head(ALL_HASH, { svg: 'book-open', color: 'var(--accent)', flat: true },
+        'Tất cả sách', allBooks.length, `Xem toàn bộ ${allBooks.length} cuốn sách`)}
+    </div>`;
+
+  rootCats().forEach(root => {
+    const st = CAT_ICONS[root.name] || CAT_ICONS[leafOf(root.name)] || DEFAULT_CAT;
+    const kids = kidsOf(root.name);
+    const n = catCount(root.name);
+    html += `<div class="home-card">
+      ${head(hrefFor(root.name), st, esc(leafOf(root.name)), n,
+             kids.length ? '' : `Xem ${n} cuốn sách`)}
+      ${kids.length ? `<div class="home-card-kids">${kids.map(subRow).join('')}</div>` : ''}
+    </div>`;
+  });
+
+  grid.innerHTML = html;
+}
+
+/* Thanh chọn danh mục (dính trên đầu) trong trang xem sách */
+function renderChips() {
+  const bar = document.getElementById('catChips');
+  if (!bar) return;
+  const chip = (name, count, cls) =>
+    `<a class="cat-chip ${cls}" data-chip="${esc(name)}" href="${hrefFor(name)}">${cls === 'cat-chip-all' ? 'Tất cả sách' : esc(leafOf(name))} <span class="cat-chip-n">${count}</span></a>`;
+  let html = chip('', allBooks.length, 'cat-chip-all');
+  rootCats().forEach(root => {
+    html += chip(root.name, catCount(root.name), 'cat-chip-root');
+    kidsOf(root.name).forEach(k => { html += chip(k.name, catCount(k.name), 'cat-chip-sub'); });
+  });
+  bar.innerHTML = html;
+}
+
+function updateListingHead() {
+  const t = document.getElementById('listingTitle');
+  if (!t) return;
+  t.textContent = currentCat
+    ? (currentCat.includes(SEP) ? `${parentOf(currentCat)} / ${leafOf(currentCat)}` : currentCat)
+    : 'Tất cả sách';
+  renderCrumbs();
+}
+
+function renderCrumbs() {
+  const el = document.getElementById('crumbs');
+  if (!el) return;
+  const root = `<a href="${HOME_HASH}">Trang chủ</a><span class="crumb-sep">&rsaquo;</span>`;
+  if (!currentCat) { el.innerHTML = root + `<span class="cur">Tất cả sách</span>`; return; }
+  let path = '';
+  const links = currentCat.split(SEP).map((p, i, arr) => {
+    path = path ? path + SEP + p : p;
+    return i === arr.length - 1
+      ? `<span class="cur">${esc(p)}</span>`
+      : `<a href="${hrefFor(path)}">${esc(p)}</a><span class="crumb-sep">&rsaquo;</span>`;
+  }).join('');
+  el.innerHTML = root + links;
+}
+
+function markActive() {
+  const onBooks = currentView() === 'books';
+  document.querySelectorAll('[data-nav]').forEach(a => {
+    const active = (a.dataset.nav === 'home' && !onBooks) ||
+                   (a.dataset.nav === 'all' && onBooks && !currentCat);
+    a.classList.toggle('active', active);
+  });
+  document.querySelectorAll('#catChips .cat-chip').forEach(a =>
+    a.classList.toggle('active', (a.dataset.chip || '') === currentCat));
+}
+
+function route() {
+  const h = location.hash || HOME_HASH;
+  const prev = currentView();
+
+  if (h.startsWith(CAT_HASH)) {
+    const cat = decodeURIComponent(h.slice(CAT_HASH.length));
+    currentCat = categories.some(c => c.name === cat) ? cat : '';
+    setView('books');
+  } else if (h === ALL_HASH || h === '#all-books') {   // #all-books: liên kết cũ
+    currentCat = '';
+    setView('books');
+  } else {
+    currentCat = '';
+    setView('home');
+  }
+
+  const cf = document.getElementById('catFilter');
+  if (cf && cf.value !== currentCat) cf.value = currentCat;
+
+  updateListingHead();
+  markActive();
+  applyFilters();
+  if (h !== (route.last || HOME_HASH) || prev !== currentView()) window.scrollTo(0, 0);
+  route.last = h;
 }
 
 function applyFilters() {
@@ -288,7 +437,15 @@ function renderBooks() {
   const end = currentPage * BOOKS_PER_PAGE;
   const visible = filteredBooks.slice(0, end);
 
-  grid.innerHTML = visible.map(b => {
+  const countEl = document.getElementById('listingCount');
+  if (countEl) {
+    const base = currentCat ? catCount(currentCat) : allBooks.length;
+    countEl.textContent = searchQuery
+      ? `${filteredBooks.length} / ${base} cuốn sách`
+      : `${base} cuốn sách`;
+  }
+
+  grid.innerHTML = visible.length ? visible.map(b => {
     const coverUrl = getCoverUrl(b);
     // Sách tải lên (PDF/Word) → mở trong trình đọc lật trang; liên kết ngoài vẫn mở tab mới
     const remote = /^https?:\/\//i.test(b.pdf || '');
@@ -313,22 +470,27 @@ function renderBooks() {
         </div>
       </div>
     </a>`;
-  }).join('');
+  }).join('') : `<div class="empty-state">
+      <div class="empty-icon">&#128269;</div>
+      <p>Chưa có cuốn sách nào${searchQuery ? ` khớp với “${esc(searchQuery)}”` : (currentCat ? ' trong danh mục này' : '')}.</p>
+      <a class="btn btn-outline" href="${currentCat ? ALL_HASH : HOME_HASH}">${currentCat ? 'Xem tất cả sách' : 'Về trang chủ'}</a>
+    </div>`;
 
   const loadMore = document.getElementById('loadMore');
   loadMore.style.display = end < filteredBooks.length ? 'block' : 'none';
 }
 
 function bindEvents() {
+  // Tìm kiếm: đang ở trang chủ mà bắt đầu gõ → chuyển sang trang xem sách
   document.getElementById('searchInput').addEventListener('input', debounce(e => {
     searchQuery = e.target.value.trim();
+    if (currentView() === 'home' && searchQuery) { go(ALL_HASH); return; }
     applyFilters();
   }, 250));
 
+  // Chọn danh mục trong bộ lọc → đổi hash, các nút trên thanh tự đồng bộ
   document.getElementById('catFilter').addEventListener('change', e => {
-    currentCat = e.target.value;
-    applyFilters();
-    document.getElementById('all-books').scrollIntoView({ behavior: 'smooth' });
+    go(hrefFor(e.target.value));
   });
 
   document.getElementById('sortFilter').addEventListener('change', e => {
@@ -351,15 +513,20 @@ function bindEvents() {
     toggle.setAttribute('aria-expanded', dropdown.classList.contains('open'));
   });
 
+  // Chọn danh mục trong menu thả xuống (liên kết hash chạy route())
   document.getElementById('catMenu').addEventListener('click', e => {
     const item = e.target.closest('.cat-item');
     if (!item) return;
-    currentCat = item.dataset.cat;
-    document.getElementById('catFilter').value = currentCat;
     dropdown.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
-    applyFilters();
-    document.getElementById('all-books').scrollIntoView({ behavior: 'smooth' });
+    if (item.getAttribute('href') === location.hash) route();   // hash đã trùng
+  });
+
+  // Chọn chip trong thanh danh mục khi đang đứng đúng ở đó
+  const chips = document.getElementById('catChips');
+  if (chips) chips.addEventListener('click', e => {
+    const chip = e.target.closest('.cat-chip');
+    if (chip && chip.getAttribute('href') === location.hash) route();
   });
 
   // Đóng khi click ra ngoài
