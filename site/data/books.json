@@ -1,6 +1,6 @@
 {
-  "total": 467,
-  "total_size_gb": 9.63,
+  "total": 466,
+  "total_size_gb": 9.6,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -14,8 +14,8 @@
     },
     {
       "name": "Lãnh đạo Đảng, Nhà nước",
-      "count": 66,
-      "size_gb": 2.26
+      "count": 65,
+      "size_gb": 2.24
     },
     {
       "name": "Pháp luật",
@@ -1448,15 +1448,6 @@
       "creator": "Phạm Hồng Tung",
       "pages": 850,
       "size_mb": 29.08
-    },
-    {
-      "id": 524,
-      "uuid": "002d66113b2549e5b6da61a4d3233c54",
-      "title": "Pasos firmes en el camino de Doi Moi - Volumen 2: 2015-2017",
-      "category": "Lãnh đạo Đảng, Nhà nước",
-      "creator": "Nguyễn Phú Trọng",
-      "pages": 762,
-      "size_mb": 26.99
     },
     {
       "id": 548,
