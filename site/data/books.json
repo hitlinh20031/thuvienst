@@ -1,6 +1,6 @@
 {
-  "total": 470,
-  "total_size_gb": 9.75,
+  "total": 469,
+  "total_size_gb": 9.69,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -14,8 +14,8 @@
     },
     {
       "name": "Lãnh đạo Đảng, Nhà nước",
-      "count": 69,
-      "size_gb": 2.38
+      "count": 68,
+      "size_gb": 2.32
     },
     {
       "name": "Pháp luật",
@@ -1646,15 +1646,6 @@
       "creator": "Nguyễn Phú Trọng",
       "pages": 446,
       "size_mb": 18.9
-    },
-    {
-      "id": 812,
-      "uuid": "d1c9bb54bb524d22912332b89821dbfe",
-      "title": "Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam (tiếng Tây Ban Nha) - Algunas cuestiones teóricas y prácticas sobre el Socialismo y el camino hacia el Socialismo en Vietnam",
-      "category": "Lãnh đạo Đảng, Nhà nước",
-      "creator": "Nguyễn Phú Trọng",
-      "pages": 580,
-      "size_mb": 61.45
     },
     {
       "id": 815,
