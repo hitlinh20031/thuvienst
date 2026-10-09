@@ -1,6 +1,6 @@
 {
-  "total": 474,
-  "total_size_gb": 9.6,
+  "total": 475,
+  "total_size_gb": 9.61,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -59,8 +59,8 @@
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
-      "count": 11,
-      "size_gb": 0.07
+      "count": 12,
+      "size_gb": 0.08
     },
     {
       "name": "Văn học và đời sống",
@@ -4496,6 +4496,16 @@
       "size_mb": 0.8,
       "pdf": "pdfs/khoa-hoc-nghich-ly-nghich-ly-anh-viet-quang-toan.pdf",
       "cover": "covers/khoa-hoc-nghich-ly-nghich-ly-anh-viet-quang-toan.jpg"
+    },
+    {
+      "id": 1638,
+      "title": "Cấu trúc dữ liệu và giải thuật - Trần Hạnh Nhi, Dương Anh Đức",
+      "creator": "Trần Hạnh Nhi, Dương Anh Đức",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 221,
+      "size_mb": 8.8,
+      "pdf": "pdfs/cau-truc-du-lieu-va-giai-thuat-tran-hanh-nhi-duong-anh-duc.pdf",
+      "cover": "covers/cau-truc-du-lieu-va-giai-thuat-tran-hanh-nhi-duong-anh-duc.jpg"
     }
   ]
 }
