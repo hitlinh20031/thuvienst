@@ -1,6 +1,6 @@
 {
-  "total": 470,
-  "total_size_gb": 9.59,
+  "total": 474,
+  "total_size_gb": 9.6,
   "categories": [
     {
       "name": "Chủ tịch Hồ Chí Minh",
@@ -59,8 +59,8 @@
     },
     {
       "name": "Khoa học, công nghệ, chuyển đổi số",
-      "count": 7,
-      "size_gb": 0.06
+      "count": 11,
+      "size_gb": 0.07
     },
     {
       "name": "Văn học và đời sống",
@@ -4456,6 +4456,46 @@
       "size_mb": 39.97,
       "pdf": "pdfs/hieu-het-ve-cong-nghe.pdf",
       "cover": "covers/hieu-het-ve-cong-nghe.jpg"
+    },
+    {
+      "id": 1634,
+      "title": "Cuộc Chiến Vi Mạch - Chris Miller",
+      "creator": "Chris Miller",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 484,
+      "size_mb": 4.7,
+      "pdf": "pdfs/cuoc-chien-vi-mach-chris-miller.pdf",
+      "cover": "covers/cuoc-chien-vi-mach-chris-miller.jpg"
+    },
+    {
+      "id": 1635,
+      "title": "Cách Mạng Công Nghiệp Lần Thứ Tư - Klaus Schwab",
+      "creator": "Klaus Schwab",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 165,
+      "size_mb": 4.22,
+      "pdf": "pdfs/cach-mang-cong-nghiep-lan-thu-tu-klaus-schwab.pdf",
+      "cover": "covers/cach-mang-cong-nghiep-lan-thu-tu-klaus-schwab.jpg"
+    },
+    {
+      "id": 1636,
+      "title": "Những điều bạn nên biết về khoa học & công nghệ",
+      "creator": "",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 332,
+      "size_mb": 1.79,
+      "pdf": "pdfs/nhung-dieu-ban-nen-biet-ve-khoa-hoc-cong-nghe.pdf",
+      "cover": "covers/nhung-dieu-ban-nen-biet-ve-khoa-hoc-cong-nghe.jpg"
+    },
+    {
+      "id": 1637,
+      "title": "Khoa học, nghịch lý, nghịch lý - Anh Việt, Quang Toàn",
+      "creator": "Anh Việt, Quang Toàn",
+      "category": "Khoa học, công nghệ, chuyển đổi số",
+      "pages": 186,
+      "size_mb": 0.8,
+      "pdf": "pdfs/khoa-hoc-nghich-ly-nghich-ly-anh-viet-quang-toan.pdf",
+      "cover": "covers/khoa-hoc-nghich-ly-nghich-ly-anh-viet-quang-toan.jpg"
     }
   ]
 }
